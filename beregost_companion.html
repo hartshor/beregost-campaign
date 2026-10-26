@@ -430,7 +430,7 @@
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(0, 0, 0, 0.88);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 10000;
@@ -441,8 +441,9 @@
   }
 
   .modal-overlay.open, .modal.open {
-    opacity: 1;
-    pointer-events: auto;
+    display: flex !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
   }
 
   .modal-backdrop {
@@ -477,7 +478,6 @@
     max-height: 94vh;
     display: flex;
     flex-direction: column;
-    pointer-events: auto;
     border-radius: 10px;
     border: 2px solid var(--accent-gold);
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.95);
