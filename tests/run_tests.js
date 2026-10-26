@@ -987,6 +987,116 @@ suite("13. Campaign Visual Art Gallery & Offline Assets", () => {
     expect(html.includes('image-lightbox-wrapper'), "Markup must have image-lightbox-wrapper");
     expect(html.includes('closeImagePreviewModal'), "Markup must have closeImagePreviewModal trigger");
   });
+
+  test("All 27 NPCs, 12 Buildings, 36 Dungeon Rooms, and Landmarks have unique on-disk images & dual Place+Portrait rendering", () => {
+    const CAMPAIGN_IMAGES = getGlobal('CAMPAIGN_IMAGES');
+    const MASTER_NPC_DATA = getGlobal('MASTER_NPC_DATA');
+    const BEREGOST_BUILDINGS = getGlobal('BEREGOST_BUILDINGS');
+    const DUNGEON_DATA = getGlobal('DUNGEON_DATA');
+    const inspectHex = getGlobal('inspectHex');
+    const openDungeon = getGlobal('openDungeon');
+    const selectTownBuilding = getGlobal('selectTownBuilding');
+    const renderTownTab = getGlobal('renderTownTab');
+
+    // 1. Every gallery item exists on disk and is non-empty
+    const items = getAllCampaignGalleryItems();
+    items.forEach(it => {
+      const fullPath = path.join(__dirname, '..', it.url);
+      expect(fs.existsSync(fullPath), `Missing image file on disk: ${it.url}`);
+      expect(fs.statSync(fullPath).size > 1000, `Empty or invalid image file: ${it.url}`);
+    });
+
+    // 2. All 27 NPCs have unique portraits
+    const npcUrls = MASTER_NPC_DATA.map(n => CAMPAIGN_IMAGES.npcs[n.id]);
+    expect(new Set(npcUrls).size === MASTER_NPC_DATA.length, `Expected ${MASTER_NPC_DATA.length} unique NPC portraits, got ${new Set(npcUrls).size}`);
+
+    // 3. All 12 Town Buildings have unique architectural images
+    const bldgUrls = BEREGOST_BUILDINGS.map(b => CAMPAIGN_IMAGES.buildings[b.id]);
+    expect(new Set(bldgUrls).size === BEREGOST_BUILDINGS.length, `Expected ${BEREGOST_BUILDINGS.length} unique building images, got ${new Set(bldgUrls).size}`);
+
+    // 4. All 36 Dungeon Rooms have unique chamber paintings
+    const roomUrls = DUNGEON_DATA.flatMap(d => CAMPAIGN_IMAGES.dungeons[d.id]);
+    expect(roomUrls.length === 36, `Expected 36 dungeon room images, got ${roomUrls.length}`);
+    expect(new Set(roomUrls).size === 36, `Expected 36 unique dungeon room images, got ${new Set(roomUrls).size}`);
+
+    // 5. Dual Place + Character rendering for Aerie of the Four Winds (11, 12), Dungeons, and Town Buildings
+    inspectHex(11, 12);
+    const hexDesc1112 = sandbox.document.getElementById('hex-desc').innerHTML;
+    expect(hexDesc1112.includes('loc_aerie_four_winds.jpg'), "Hex (11, 12) must display Aerie of the Four Winds sky-temple image");
+    expect(hexDesc1112.includes('npc_zephyrus.jpg'), "Hex (11, 12) must also display Djinni Zephyrus portrait thumbnail");
+
+    openDungeon('dungeon_rimefang');
+    const dPanel = sandbox.document.getElementById('dungeon-detail-panel').innerHTML;
+    expect(dPanel.includes('loc_glacial_chasm_exterior.jpg'), "Rimefang dungeon must show Glacial Chasm exterior art");
+    expect(dPanel.includes('boss_rimefang.jpg'), "Rimefang dungeon must show Rimefang boss portrait");
+    expect(dPanel.includes('room_rimefang_1.jpg') && dPanel.includes('room_rimefang_4.jpg'), "Rimefang dungeon must show all unique room paintings");
+
+    selectTownBuilding('bldg_bakery');
+    renderTownTab(360);
+    const tDrawer = sandbox.document.getElementById('town-tab-drawer').innerHTML;
+    expect(tDrawer.includes('bldg_bakery.jpg'), "Bakery drawer must show bldg_bakery.jpg architectural art");
+    expect(tDrawer.includes('npc_tobias.jpg'), "Bakery drawer must also show Tobias Miller portrait thumbnail");
+  });
+});
+
+// ----------------------------------------------------------------------------
+// SUITE 14: Calibrated Travel Rules, Split-Party Pathing & 05:45 AM Commotion
+// ----------------------------------------------------------------------------
+suite("14. Calibrated Travel Rules, Split-Party Pathing & 05:45 AM Commotion", () => {
+  const hexDistance = getGlobal('hexDistance');
+  const FULL_HEX_DATA = getGlobal('FULL_HEX_DATA');
+  const selectBossDAG = getGlobal('selectBossDAG');
+  const inspectHex = getGlobal('inspectHex');
+
+  test("hexDistance() uses even-r offset geometry matching the SVG hex grid", () => {
+    expect(hexDistance(8, 10, 8, 9) === 1, "NW neighbor (8,9) of even row (8,10) must be distance 1");
+    expect(hexDistance(8, 10, 9, 9) === 1, "NE neighbor (9,9) of even row (8,10) must be distance 1");
+    expect(hexDistance(8, 10, 7, 9) === 2, "(7,9) from (8,10) in even-r grid must be distance 2");
+    expect(hexDistance(8, 10, 6, 8) === 3, "Spire (6,8) from (8,10) must be distance 3");
+    expect(hexDistance(8, 10, 12, 16) === 7, "Sunken Necropolis (12,16) from (8,10) must be distance 7");
+  });
+
+  test("General wilderness hexes allow 1 hex/hr walking and Hex (12,16) is inside Outer Red Boundary", () => {
+    const getHex = (c, r) => FULL_HEX_DATA.find(h => h.c === c && h.r === r);
+    expect(getHex(5, 11).foot_path_minutes === 240, "Commodore Caravel (5,11) should be 4h (240m) on foot in even-r grid");
+    expect(getHex(11, 12).foot_path_minutes === 240, "Aerie of the Four Winds (11,12) should be 4h (240m) on foot");
+    expect(getHex(14, 7).foot_path_minutes === 420, "Dwarven Aerie (14,7) should be 7h (420m) on foot");
+    expect(getHex(15, 7).foot_path_minutes === 480, "Dwarvenhold (15,7) should be 8h (480m) on foot");
+    const necropolis = getHex(12, 16);
+    expect(necropolis.in_outer === true, "Sunken Necropolis (12,16) must be inside the Outer Red Boundary");
+    expect(necropolis.dungeon_id === "dungeon_necropolis", "Hex (12,16) must link to dungeon_necropolis");
+    expect(necropolis.foot_path_minutes === 420, "Sunken Necropolis (12,16) should be 7h (420m) on foot");
+  });
+
+  test("Gryphon Bone Whistle rules enforce 2-player capacity and 2-hour (06:00-08:00 AM) flight window", () => {
+    expect(html.includes("carries <strong>2 players</strong>"), "Pike's Bone Whistle must specify 2-player capacity");
+    expect(html.includes("06:00–08:00 AM"), "Pike's Bone Whistle must specify 2-hour 06:00-08:00 AM flight window");
+
+    inspectHex(14, 7); // 7 hexes away: 4 hexes at 30m (120m) + 3 hexes at 60m (180m) = 300m (5h)
+    const hexDesc = sandbox.document.getElementById('hex-desc').innerHTML;
+    expect(hexDesc.includes("Gryphon (2 PCs)"), "Hex inspector should show Gryphon (2 PCs) travel card");
+    expect(hexDesc.includes("<div>5h</div>"), "7-hex Gryphon journey (2h flight + 3h walk) should total 5h");
+  });
+
+  test("Boss DAGs 1-5 encode Split-Party Pathing Puzzles (2 Flyers + 3 Walkers) & Single Wish Rule", () => {
+    selectBossDAG(1);
+    const dag1 = sandbox.document.getElementById('dag-details-panel').innerHTML;
+    expect(dag1.includes("2 Gryphon Riders") && dag1.includes("3 Walkers"), "Boss 1 DAG must explain 2 Flyers + 3 Walkers split path");
+
+    selectBossDAG(2);
+    const dag2 = sandbox.document.getElementById('dag-details-panel').innerHTML;
+    expect(dag2.includes("Single Wish Rule Honored"), "Boss 2 DAG must honor Single Wish Rule using Scarab + Wish of Frozen Heart");
+
+    selectBossDAG(4);
+    const dag4 = sandbox.document.getElementById('dag-details-panel').innerHTML;
+    expect(dag4.includes("09:00 AM") && dag4.includes("Starfire Powder Bomb"), "Boss 4 DAG must show 2 Flyers arriving at 09:00 AM to defuse 09:30 AM bomb");
+  });
+
+  test("Dual 05:45 AM thefts at Hex (5,11) explain using the Silt-Gull bandit raid commotion as a distraction", () => {
+    expect(html.includes("bandit raid's commotion as a distraction"), "Loop 0 Bootstrap card must explain using the 05:45 AM bandit commotion");
+    expect(html.includes("05:45 AM Silt-Gull bandit attack on the Commodore's Caravel (5,11) as a distraction"), "Boss 3 discovery section must explain the 05:45 AM distraction heist");
+    expect(!html.includes("exact mechanics TBD"), "No 'exact mechanics TBD' placeholder should remain");
+  });
 });
 
 // ----------------------------------------------------------------------------
@@ -1004,6 +1114,6 @@ if (failedTests > 0) {
   console.log(`\n${colors.bold}${colors.red}❌ SOME TESTS FAILED!${colors.reset}`);
   process.exit(1);
 } else {
-  console.log(`\n${colors.bold}${colors.green}✔ ALL 13 TEST SUITES PASSED 100%! ZERO REGRESSIONS DETECTED!${colors.reset}\n`);
+  console.log(`\n${colors.bold}${colors.green}✔ ALL 14 TEST SUITES PASSED 100%! ZERO REGRESSIONS DETECTED!${colors.reset}\n`);
   process.exit(0);
 }
