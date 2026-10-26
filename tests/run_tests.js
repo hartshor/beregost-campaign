@@ -112,7 +112,8 @@ const sandbox = {
     },
     querySelector: (selector) => null,
     createElement: (tag) => getOrCreateElement('elem_' + Math.random()),
-    createElementNS: (ns, tag) => getOrCreateElement('elem_ns_' + Math.random())
+    createElementNS: (ns, tag) => getOrCreateElement('elem_ns_' + Math.random()),
+    addEventListener: () => {}
   },
   window: {
     addEventListener: () => {}
@@ -961,6 +962,30 @@ suite("13. Campaign Visual Art Gallery & Offline Assets", () => {
     expect(newMode !== initialMode, "Framing mode should toggle");
     toggleGalleryFitMode();
     expect(getGlobal('galleryFitMode') === initialMode, "Framing mode should toggle back");
+  });
+
+  test("openImagePreviewModal() and closeImagePreviewModal() manage full-page lightbox state", () => {
+    const openImagePreviewModal = getGlobal('openImagePreviewModal');
+    const closeImagePreviewModal = getGlobal('closeImagePreviewModal');
+    expect(typeof openImagePreviewModal === 'function', "openImagePreviewModal must be a function");
+    expect(typeof closeImagePreviewModal === 'function', "closeImagePreviewModal must be a function");
+
+    const modal = sandbox.document.getElementById('campaign-image-modal');
+    expect(modal, "#campaign-image-modal must exist in DOM");
+
+    openImagePreviewModal('assets/images/boss_rimefang.jpg', 'Rimefang Test View');
+    expect(modal.classList.contains('open'), "Modal must have 'open' class when opened");
+    const imgEl = sandbox.document.getElementById('campaign-image-modal-img');
+    expect(imgEl.src && imgEl.src.includes('boss_rimefang.jpg'), "Image src must be set");
+
+    closeImagePreviewModal();
+    expect(!modal.classList.contains('open'), "Modal must not have 'open' class after close");
+  });
+
+  test("Majora's Notebook and Dungeons tab markup contain thumbnail interactive expand triggers", () => {
+    expect(html.includes('thumbnail-interactive'), "Markup must have thumbnail-interactive CSS class");
+    expect(html.includes('image-lightbox-wrapper'), "Markup must have image-lightbox-wrapper");
+    expect(html.includes('closeImagePreviewModal'), "Markup must have closeImagePreviewModal trigger");
   });
 });
 
