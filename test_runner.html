@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Beregost Time Loop - Frontend Visual Test Runner</title>
+  <style>
+    :root {
+      --bg-primary: #0d1117;
+      --bg-secondary: #161b22;
+      --bg-tertiary: #21262d;
+      --border-color: #30363d;
+      --text-primary: #f0f6fc;
+      --text-muted: #8b949e;
+      --accent-cyan: #58a6ff;
+      --accent-gold: #d29922;
+      --accent-emerald: #3fb950;
+      --accent-crimson: #f85149;
+      --accent-purple: #bc8cff;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      padding: 24px;
+      line-height: 1.5;
+    }
+    .container { max-width: 1100px; margin: 0 auto; }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 18px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    h1 { font-size: 1.5rem; color: var(--accent-gold); display: flex; align-items: center; gap: 10px; }
+    .btn-row { display: flex; gap: 10px; }
+    button {
+      background: var(--bg-tertiary);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    button:hover { border-color: var(--accent-cyan); color: var(--accent-cyan); }
+    button.primary { background: #238636; border-color: #2ea043; color: #fff; }
+    button.primary:hover { background: #2ea043; }
+
+    /* Summary Metric Grid */
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .metric-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 14px;
+      text-align: center;
+    }
+    .metric-val { font-size: 1.8rem; font-weight: 800; }
+    .metric-lbl { font-size: 0.78rem; text-transform: uppercase; color: var(--text-muted); margin-top: 4px; }
+
+    /* Progress Bar */
+    .progress-bar-wrap {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      height: 12px;
+      margin-bottom: 24px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #1f6feb, #3fb950);
+      transition: width 0.2s;
+    }
+
+    /* Suite Container */
+    .suite-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin-bottom: 16px;
+      overflow: hidden;
+    }
+    .suite-header {
+      background: var(--bg-tertiary);
+      padding: 12px 18px;
+      font-weight: bold;
+      font-size: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .test-list { padding: 8px 16px; }
+    .test-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(48, 54, 61, 0.5);
+      font-size: 0.88rem;
+    }
+    .test-item:last-child { border-bottom: none; }
+    .badge {
+      font-size: 0.72rem;
+      font-weight: bold;
+      padding: 2px 8px;
+      border-radius: 4px;
+      display: inline-block;
+    }
+    .badge-pass { background: rgba(63, 185, 80, 0.2); color: #3fb950; border: 1px solid #3fb950; }
+    .badge-fail { background: rgba(248, 81, 73, 0.2); color: #f85149; border: 1px solid #f85149; }
+    .badge-running { background: rgba(210, 153, 34, 0.2); color: #d29922; border: 1px solid #d29922; }
+
+    #app-frame {
+      display: none;
+      width: 100%;
+      height: 400px;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>🧪 Beregost Time Loop — Frontend Automated Test Harness</h1>
+        <p style="color:var(--text-muted); font-size:0.85rem; margin-top:4px;">
+          Automated integration test runner testing real DOM, state machines, SVG graphics, Dijkstra pathfinding, and D&D 2024 schemas.
+        </p>
+      </div>
+      <div class="btn-row">
+        <button class="primary" id="run-btn" onclick="startAllTests()">▶ Run All Tests</button>
+        <a href="index.html?open_tests=true" style="text-decoration:none;"><button class="primary" style="background:#1f6feb; border-color:#388bfd;">🚀 Launch In-App Suite</button></a>
+        <button onclick="window.open('index.html', '_blank')">⚔️ Open App</button>
+      </div>
+    </header>
+
+    <!-- Notice Container for CORS/file:/// feedback -->
+    <div id="notice-container"></div>
+
+    <!-- Metrics Grid -->
+    <div class="metric-grid">
+      <div class="metric-card">
+        <div class="metric-val" id="metric-total">38</div>
+        <div class="metric-lbl">Total Tests</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val" id="metric-passed" style="color:var(--accent-emerald);">0</div>
+        <div class="metric-lbl">Passed</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val" id="metric-failed" style="color:var(--accent-crimson);">0</div>
+        <div class="metric-lbl">Failed</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val" id="metric-asserts" style="color:var(--accent-cyan);">0</div>
+        <div class="metric-lbl">Assertions</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-val" id="metric-time" style="color:var(--accent-gold);">0ms</div>
+        <div class="metric-lbl">Duration</div>
+      </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-fill" id="progress-bar"></div>
+    </div>
+
+    <!-- Output Container for Test Suites -->
+    <div id="suites-container"></div>
+
+    <!-- Target Iframe for App Testing -->
+    <iframe id="app-frame" src="index.html"></iframe>
+  </div>
+
+  <script>
+    let appWindow = null;
+    let appDoc = null;
+    let testStats = { total: 0, passed: 0, failed: 0, asserts: 0, startTime: 0 };
+
+    const SUITES_DEFINITION = [
+      {
+        id: "suite-1",
+        title: "1. Navigation & Tab Switcher Architecture",
+        tests: [
+          {
+            name: "All 12 tab panes exist in DOM",
+            run: () => {
+              const tabs = ["tab-roadmap", "tab-timeline", "tab-loop0", "tab-dag", "tab-bosses", "tab-rakshasa", "tab-map", "tab-town", "tab-dungeons", "tab-notebook", "tab-party", "tab-ingest"];
+              tabs.forEach(t => {
+                assert(appDoc.getElementById(t) !== null, `Tab #${t} missing in DOM`);
+              });
+            }
+          },
+          {
+            name: "switchTab('tab-map') activates map pane and updates nav button",
+            run: () => {
+              appWindow.switchTab('tab-map');
+              const pane = appDoc.getElementById('tab-map');
+              assert(pane.classList.contains('active'), "tab-map pane should have active class");
+            }
+          },
+          {
+            name: "switchTab('tab-town') cleanly switches view to Beregost town layout",
+            run: () => {
+              appWindow.switchTab('tab-town');
+              const pane = appDoc.getElementById('tab-town');
+              assert(pane.classList.contains('active'), "tab-town pane should have active class");
+            }
+          },
+          {
+            name: "switchTab('tab-dungeons') cleanly switches view",
+            run: () => {
+              appWindow.switchTab('tab-dungeons');
+              const pane = appDoc.getElementById('tab-dungeons');
+              assert(pane.classList.contains('active'), "tab-dungeons pane should have active class");
+            }
+          }
+        ]
+      },
+      {
+        id: "suite-2",
+        title: "2. Master Data Schemas & Dijkstra Traversal",
+        tests: [
+          {
+            name: "FULL_HEX_DATA contains 380 hexes with Dijkstra shortest path minutes",
+            run: () => {
+              assert(Array.isArray(appWindow.FULL_HEX_DATA), "FULL_HEX_DATA is array");
+              assert(appWindow.FULL_HEX_DATA.length === 380, "Expected 380 hexes");
+              const hub = appWindow.FULL_HEX_DATA.find(h => h.c === 8 && h.r === 10);
+              assert(hub && hub.foot_path_minutes === 0, "Beregost hub foot path cost is 0");
+              const heavyForest = appWindow.FULL_HEX_DATA.find(h => h.c === 7 && h.r === 6);
+              assert(heavyForest && heavyForest.is_difficult === true && heavyForest.foot_hours_per_hex === 2, "Difficult forest requires 2h on foot");
+            }
+          },
+          {
+            name: "MASTER_NPC_DATA contains 27 canonical NPCs with full 12-hour schedules",
+            run: () => {
+              assert(Array.isArray(appWindow.MASTER_NPC_DATA), "MASTER_NPC_DATA is array");
+              assert(appWindow.MASTER_NPC_DATA.length === 27, "Expected 27 NPCs");
+              appWindow.MASTER_NPC_DATA.forEach(n => {
+                assert(n.id && n.name && n.schedule.length > 0, `NPC ${n.id} valid`);
+                assert(n.default_fate && n.intervention && n.persistent_reward, `NPC ${n.id} missing details`);
+              });
+            }
+          },
+          {
+            name: "CAPSTONE_ITEMS_DATA has 10 counter-items with target bosses",
+            run: () => {
+              assert(appWindow.CAPSTONE_ITEMS_DATA.length === 10, "Expected 10 counter-items");
+              appWindow.CAPSTONE_ITEMS_DATA.forEach(item => {
+                assert(item.id && item.name && item.target_boss && item.hex, `Item ${item.id} valid`);
+              });
+            }
+          },
+          {
+            name: "DUNGEON_DATA contains 9 complete dungeons with room hierarchies",
+            run: () => {
+              assert(appWindow.DUNGEON_DATA.length === 9, "Expected 9 dungeons");
+              appWindow.DUNGEON_DATA.forEach(d => {
+                assert(d.id && d.name && d.boss_name && d.hex, `Dungeon ${d.id} missing core fields`);
+                assert(d.rooms && d.rooms.length > 0, `Dungeon ${d.id} has rooms`);
+              });
+            }
+          },
+          {
+            name: "BEREGOST_BUILDINGS contains 12 canonical buildings",
+            run: () => {
+              assert(appWindow.BEREGOST_BUILDINGS.length === 12, "Expected 12 buildings");
+              appWindow.BEREGOST_BUILDINGS.forEach(b => {
+                assert(b.id && b.name && b.tactical && b.secrets && b.keywords, `Building ${b.id} valid`);
+              });
+            }
+          },
+          {
+            name: "MONSTER_STAT_BLOCKS contains all 26 monsters with complete D&D 2024 / 5.5e schemas & PB",
+            run: () => {
+              const monsters = appWindow.MONSTER_STAT_BLOCKS;
+              assert(typeof monsters === 'object', "MONSTER_STAT_BLOCKS is object map");
+              assert(Object.keys(monsters).length >= 26, "Expected >= 26 monsters");
+              Object.keys(monsters).forEach(mId => {
+                const m = monsters[mId];
+                assert(m.name && m.cr && m.hp && m.ac && m.pb && m.counter, `Monster ${mId} valid`);
+                assert(m.edition === "D&D 2024 / 5.5e", `Monster ${mId} tagged D&D 2024 / 5.5e`);
+              });
+            }
+          }
+        ]
+      },
+      {
+        id: "suite-3",
+        title: "3. 12-Hour Timeline Scrubber & State Machine",
+        tests: [
+          {
+            name: "06:00 AM (360m): Clock reads 06:00 AM, ambient air is Crisp & Cool",
+            run: () => {
+              appWindow.onSliderChange(360);
+              const clock = appDoc.getElementById('clock-display');
+              const badge = appDoc.getElementById('heat-badge');
+              assert(clock.textContent === "06:00 AM", `Clock expected 06:00 AM, got ${clock.textContent}`);
+              assert(badge.textContent.includes("Crisp & Cool (Safe)"), `Badge expected Crisp & Cool, got ${badge.textContent}`);
+            }
+          },
+          {
+            name: "09:00 AM (540m): Thermal Spike & Divine Static activated",
+            run: () => {
+              appWindow.onSliderChange(540);
+              const badge = appDoc.getElementById('heat-badge');
+              assert(badge.textContent.includes("Thermal Spike"), "Should show Thermal Spike");
+            }
+          },
+          {
+            name: "12:00 PM (720m): Solar Scorch (2d6 Fire/10m) activated",
+            run: () => {
+              appWindow.onSliderChange(720);
+              const badge = appDoc.getElementById('heat-badge');
+              assert(badge.textContent.includes("Solar Scorch"), "Should show Solar Scorch");
+            }
+          },
+          {
+            name: "15:00 PM (900m): Bunker Panic & Conflagration (10d6/rd outdoor)",
+            run: () => {
+              appWindow.onSliderChange(900);
+              const badge = appDoc.getElementById('heat-badge');
+              assert(badge.textContent.includes("Bunker Panic"), "Should show Bunker Panic");
+            }
+          },
+          {
+            name: "18:00 PM (1080m): Total Detonation wipeout triggers",
+            run: () => {
+              appWindow.onSliderChange(1080);
+              const badge = appDoc.getElementById('heat-badge');
+              assert(badge.textContent.includes("TOTAL SOLAR DETONATION"), "Should show Detonation");
+            }
+          }
+        ]
+      },
+      {
+        id: "suite-4",
+        title: "4. Beregost Town Hub Schematic & Live Census",
+        tests: [
+          {
+            name: "inspectHex(8, 10) renders town layout SVG and building cards",
+            run: () => {
+              appWindow.inspectHex(8, 10);
+              const desc = appDoc.getElementById('hex-desc');
+              assert(desc.innerHTML.includes("Township of Beregost"), "Must show Township of Beregost");
+              assert(desc.innerHTML.includes("openTownMapModal()"), "Must have open modal CTA");
+              assert(desc.innerHTML.includes("bldg_clocktower"), "Must show buildings");
+            }
+          },
+          {
+            name: "Belfry has Bram & Corin, Bakery has Tobias, Well has Maya at 06:00 AM",
+            run: () => {
+              const belfry = appWindow.getNPCsInTownBuilding("bldg_clocktower", 360).map(o => o.npc.id);
+              const bakery = appWindow.getNPCsInTownBuilding("bldg_bakery", 360).map(o => o.npc.id);
+              const well = appWindow.getNPCsInTownBuilding("bldg_well", 360).map(o => o.npc.id);
+              assert(belfry.includes("artificer_bram"), "Bram in belfry");
+              assert(belfry.includes("corin_urchin"), "Corin in belfry");
+              assert(bakery.includes("tobias_baker"), "Tobias in bakery");
+              assert(well.includes("little_maya"), "Maya at well");
+            }
+          },
+          {
+            name: "Departed NPCs at 12:00 PM lists Bram (East Quarry) and Aurelius (North Wilds)",
+            run: () => {
+              const departed = appWindow.getTownDepartedNPCs(720).map(o => o.npc.id);
+              assert(departed.includes("artificer_bram"), "Bram departed by noon");
+              assert(departed.includes("rakshasa_ravana"), "Aurelius departed by noon");
+            }
+          },
+          {
+            name: "renderTownSvg() outputs valid SVG with arterial highways and avatar pills",
+            run: () => {
+              const svg = appWindow.renderTownSvg(360, "bldg_clocktower", false);
+              assert(svg.includes("<svg"), "Valid SVG tag");
+              assert(svg.includes("COAST WAY"), "Shows Coast Way");
+              assert(svg.includes("TEMPLE WALK"), "Shows Temple Walk");
+              assert(svg.includes("Artificer"), "Shows Artificer avatar");
+            }
+          },
+          {
+            name: "Townsfolk congregate in Temple of Lathander crypts during 15:00 PM Conflagration",
+            run: () => {
+              const occupants = appWindow.getNPCsInTownBuilding("bldg_temple", 900);
+              const ids = occupants.map(o => o.npc.id);
+              assert(ids.includes("tobias_baker") && ids.includes("little_maya") && ids.includes("captain_rebecca") && ids.includes("old_morwen") && ids.includes("sister_althea") && ids.includes("taerom_thunderhammer") && ids.includes("bartender_feldepost") && ids.includes("young_kaelen") && ids.includes("corin_urchin") && ids.includes("constable_renwick"), "Residents sheltering in temple");
+              assert(occupants.length >= 10, "Expected >= 10 town residents gathered");
+            }
+          },
+          {
+            name: "Building click keeps building in town tab list regardless of district filters",
+            run: () => {
+              appWindow.selectTownBuilding('bldg_smithy');
+              appWindow.renderTownTab(360);
+              const listHtml = appDoc.getElementById('town-tab-bldg-list').innerHTML;
+              assert(listHtml.includes('bldg_smithy') || listHtml.includes('Thunderhammer'), "Smithy retained in town tab list");
+              appWindow.selectTownBuilding('bldg_clocktower');
+            }
+          },
+          {
+            name: "renderTownTab() populates Town Map SVG, building details, and occupant census",
+            run: () => {
+              appWindow.renderTownTab(360);
+              const svgWrap = appDoc.getElementById('town-tab-svg-wrap');
+              const drawer = appDoc.getElementById('town-tab-drawer');
+              assert(svgWrap && svgWrap.innerHTML.includes("<svg"), "Town tab SVG wrap must contain rendered SVG");
+              assert(drawer && drawer.innerHTML.includes("Grand Clocktower"), "Town tab drawer must render default building");
+              assert(drawer && drawer.innerHTML.includes("Artificer Bram"), "Town tab drawer must render Bram inside clocktower at dawn");
+            }
+          }
+        ]
+      },
+      {
+        id: "suite-5",
+        title: "5. Difficult Terrain & Red Loop Travel Lore",
+        tests: [
+          {
+            name: "Paved Highway (9, 9) allows 1h foot traversal",
+            run: () => {
+              appWindow.inspectHex(9, 9);
+              const desc = appDoc.getElementById('hex-desc');
+              assert(desc.innerHTML.includes("1h Foot Cost") || desc.innerHTML.includes("1 Hour"), "1h foot cost");
+            }
+          },
+          {
+            name: "Heavy Forest Hex (7, 6) enforces 2-hour traversal & Red Boundary lore",
+            run: () => {
+              appWindow.inspectHex(7, 6);
+              const desc = appDoc.getElementById('hex-desc');
+              assert(desc.innerHTML.includes("DIFFICULT TERRAIN (2 Hours / Hex On Foot)"), "2h foot cost banner");
+              assert(desc.innerHTML.includes("Red Boundary Shape Factor"), "Explains Outer Red Loop shape factor");
+            }
+          },
+          {
+            name: "Glacial Peak Hex (17, 10) enforces 2-hour traversal",
+            run: () => {
+              appWindow.inspectHex(17, 10);
+              const desc = appDoc.getElementById('hex-desc');
+              assert(desc.innerHTML.includes("DIFFICULT TERRAIN (2 Hours / Hex On Foot)"), "Glacial peak 2h foot cost");
+            }
+          }
+        ]
+      },
+      {
+        id: "suite-6",
+        title: "6. Dungeons Tab & Direct Navigation Integration",
+        tests: [
+          {
+            name: "Inspecting (12, 16) renders CTA button to Sunken Desert Necropolis",
+            run: () => {
+              appWindow.inspectHex(12, 16);
+              const desc = appDoc.getElementById('hex-desc');
+              assert(desc.innerHTML.includes("openDungeon('dungeon_necropolis')"), "CTA to open necropolis");
+              assert(desc.innerHTML.includes("Akh-en-Amon"), "Lists Akh-en-Amon");
+            }
+          },
+          {
+            name: "openDungeon('dungeon_necropolis') navigates to tab-dungeons & renders rooms",
+            run: () => {
+              appWindow.openDungeon('dungeon_necropolis');
+              const panel = appDoc.getElementById('dungeon-detail-panel');
+              assert(panel.innerHTML.includes("Sunken Necropolis"), "Renders Necropolis title");
+              assert(panel.innerHTML.includes("Inversion Swap Tablets"), "Renders Inversion Swap Tablets");
+              assert(panel.innerHTML.includes("Akh-en-Amon"), "Renders Akh-en-Amon");
+              assert(panel.innerHTML.includes("Mummy Sentinels"), "Renders Mummy Sentinels in Room 2");
+            }
+          },
+          {
+            name: "openDungeon('dungeon_rimefang') renders Zephyrus, Rime-Anchor, and White Dragon",
+            run: () => {
+              appWindow.openDungeon('dungeon_rimefang');
+              const panel = appDoc.getElementById('dungeon-detail-panel');
+              assert(panel.innerHTML.includes("Rime-Anchor Harpoon"), "Rime-Anchor Harpoon present");
+              assert(panel.innerHTML.includes("Zephyrus"), "Zephyrus present");
+              assert(panel.innerHTML.includes("Rimefang"), "Rimefang present");
+            }
+          },
+          {
+            name: "openDungeon('dungeon_mirage') renders Lord Ravana and the Arcanist's Resonance Ledger",
+            run: () => {
+              appWindow.openDungeon('dungeon_mirage');
+              const panel = appDoc.getElementById('dungeon-detail-panel');
+              assert(panel.innerHTML.includes("The Mirage Pavilion"), "Mirage Pavilion present");
+              assert(panel.innerHTML.includes("Arcanist's Resonance Ledger"), "Resonance Ledger present");
+              assert(panel.innerHTML.includes("Lord Ravana"), "Lord Ravana present");
+            }
+          }
+        ]
+      },
+      {
+        id: "suite-7",
+        title: "7. Monster Stat Blocks & Tactical Counters",
+        tests: [
+          {
+            name: "Inspecting (17, 10) displays White Dragon CR 13 D&D 2024 statblock with PB & loop counter",
+            run: () => {
+              appWindow.inspectHex(17, 10);
+              const desc = appDoc.getElementById('hex-desc');
+              assert(desc.innerHTML.includes("Adult White Dragon"), "Shows White Dragon");
+              assert(desc.innerHTML.includes("CR 13"), "Shows CR 13");
+              assert(desc.innerHTML.includes("PB +5"), "Shows 2024 Proficiency Bonus PB +5");
+              assert(desc.innerHTML.includes("D&D 2024 / 5.5e"), "Shows D&D 2024 badge");
+              assert(desc.innerHTML.includes("Tactical Counterplay"), "Shows tactical counterplay");
+            }
+          },
+          {
+            name: "Inspecting (7, 6) displays Horned Fiend (True Angel) D&D 2024 statblock with PB +4",
+            run: () => {
+              appWindow.inspectHex(7, 6);
+              const desc = appDoc.getElementById('hex-desc');
+              assert(desc.innerHTML.includes("Horned Fiend (The True Angel)"), "Shows Horned Fiend");
+              assert(desc.innerHTML.includes("PB +4"), "Shows PB +4");
+              assert(desc.innerHTML.includes("Pulls Punches") || desc.innerHTML.includes("Celestial"), "Notes angelic nature");
+            }
+          },
+          {
+            name: "Inspecting Northeast Hills hex (12, 5) renders Spire of the False Angel & Singing Devil",
+            run: () => {
+              appWindow.inspectHex(12, 5);
+              const desc = appDoc.getElementById('hex-desc');
+              assert(desc.innerHTML.includes("Spire of the False Angel"), "Spire of False Angel");
+              assert(desc.innerHTML.includes("Singing Devil"), "Singing Devil");
+              assert(desc.innerHTML.includes("CR 16"), "CR 16");
+            }
+          },
+          {
+            name: "Mummy Sentinel statblock complies with D&D 2024 / 5.5e schema",
+            run: () => {
+              const sentinel = appWindow.MONSTER_STAT_BLOCKS['mummy_sentinel'];
+              assert(sentinel, "mummy_sentinel exists in MONSTER_STAT_BLOCKS");
+              assert(sentinel.cr === "3" && sentinel.pb === "+2" && sentinel.hp.includes("58") && sentinel.vuln === "Fire", "Sentinel stats");
+              assert(sentinel.actions.some(a => a.desc.includes("Mummy Rot")), "Sentinel Mummy Rot");
+            }
+          }
+        ]
+      },
+      {
+        id: "suite-8",
+        title: "8. Bosses Tab & DAG Progression Pipeline",
+        tests: [
+          {
+            name: "tab-bosses contains all 6 Boss Dossiers including True Final Boss",
+            run: () => {
+              const tabBosses = appDoc.getElementById('tab-bosses');
+              assert(tabBosses.innerHTML.includes('FIRST BOSS (Prelude Capstone): The "Horned Fiend"'), "Has First Boss");
+              assert(tabBosses.innerHTML.includes('1. Adult White Dragon — Rimefang'), "Has Boss 1");
+              assert(tabBosses.innerHTML.includes('2. Mummy Lord — Akh-en-Amon'), "Has Boss 2");
+              assert(tabBosses.innerHTML.includes('3. The Rakshasa — Lord Ravana'), "Has Boss 3");
+              assert(tabBosses.innerHTML.includes('4. Storm Giant — Tempest Lord Otheus'), "Has Boss 4");
+              assert(tabBosses.innerHTML.includes('5. TRUE FINAL BOSS: The Singing Devil in the Angel\'s Body'), "Has Boss 5 True Final Boss");
+              assert(tabBosses.innerHTML.includes('Official D&D 2024 (5.5e) Stat Block'), "Has D&D 2024 stat blocks in boss cards");
+            }
+          },
+          {
+            name: "selectBossDAG(0..5) re-renders DAG SVG graphs",
+            run: () => {
+              for (let i = 0; i <= 5; i++) {
+                appWindow.selectBossDAG(i);
+                const svg = appDoc.getElementById('dag-svg');
+                assert(svg.innerHTML.includes('<defs') || svg.innerHTML.includes('<rect'), `DAG stage ${i} renders`);
+              }
+            }
+          }
+        ]
+      },
+      {
+        id: "suite-9",
+        title: "9. Official Dawn Monologue & Loop Reset Flow",
+        tests: [
+          {
+            name: "monologue-modal displays official read-aloud script verbatim",
+            run: () => {
+              const modal = appDoc.getElementById('monologue-modal');
+              assert(modal.innerHTML.includes("sharp, heavy <strong>CLACK</strong> as the clock ticks forward to 6:00 AM"), "CLACK forward to 6:00 AM");
+              assert(modal.innerHTML.includes("great bronze bell strikes—<strong>GONG</strong>"), "bell strikes GONG");
+              assert(modal.innerHTML.includes("pale bone that jammed the mechanism crumbles"), "bone crumbles to dust");
+              assert(modal.innerHTML.includes("The morning air is crisp and cool"), "morning air is crisp and cool");
+              assert(modal.innerHTML.includes("It is dawn, and the sun sets in 12 hours."), "sun sets in 12 hours");
+              assert(modal.innerHTML.includes("Hey! You got the clock working! Thank you! Happy Solstice!"), "guard happy solstice");
+            }
+          },
+          {
+            name: "triggerTimeReset() increments loop, resets clock to 06:00 AM, and opens modal",
+            run: () => {
+              const initialLoop = appWindow.currentLoop;
+              appWindow.triggerTimeReset();
+              assert(appWindow.currentLoop === initialLoop + 1, "Loop incremented");
+              assert(appWindow.currentMinutes === 360, "Clock reset to 360 (06:00 AM)");
+              const modal = appDoc.getElementById('monologue-modal');
+              assert(modal.classList.contains('open'), "Modal opened");
+              appWindow.closeResetModal();
+              assert(!modal.classList.contains('open'), "Modal closed");
+            }
+          }
+        ]
+      }
+    ];
+
+    function assert(condition, msg) {
+      testStats.asserts++;
+      if (!condition) throw new Error(msg || "Assertion failed");
+    }
+
+    function renderSuiteContainers() {
+      const container = document.getElementById('suites-container');
+      container.innerHTML = '';
+
+      SUITES_DEFINITION.forEach(s => {
+        const card = document.createElement('div');
+        card.className = 'suite-card';
+        card.id = `card-${s.id}`;
+
+        card.innerHTML = `
+          <div class="suite-header">
+            <span>${s.title}</span>
+            <span class="badge" id="badge-${s.id}">WAITING</span>
+          </div>
+          <div class="test-list" id="list-${s.id}">
+            ${s.tests.map((t, idx) => `
+              <div class="test-item" id="item-${s.id}-${idx}">
+                <span>${t.name}</span>
+                <span class="badge badge-running" id="badge-${s.id}-${idx}">QUEUED</span>
+              </div>
+            `).join('')}
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    function showCorsWarning() {
+      const notice = document.getElementById('notice-container');
+      notice.innerHTML = `
+        <div style="background: rgba(248, 81, 73, 0.12); border: 2px solid var(--accent-crimson); border-radius: 8px; padding: 24px; text-align: center; margin-bottom: 24px;">
+          <div style="font-size: 2rem; margin-bottom: 8px;">🛡️</div>
+          <h2 style="color: var(--accent-crimson); margin-bottom: 10px;">Browser Security Notice: Local file:/// Isolation Active</h2>
+          <p style="color: var(--text-primary); font-size: 0.95rem; margin-bottom: 16px; max-width: 720px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+            You opened this test runner directly from your filesystem (<code>file:///</code>). Modern web browsers (Chrome, Edge, Firefox, Safari) strictly isolate iframe documents on local files to protect your computer, preventing this standalone HTML page from reading inside <code>index.html</code>.
+          </p>
+          <p style="color: var(--accent-gold); font-weight: 600; font-size: 1rem; margin-bottom: 20px;">
+            Good news! The complete Automated Test Suite is built directly into the main Companion App:
+          </p>
+          <a href="index.html?open_tests=true" style="text-decoration:none;">
+            <button class="primary" style="font-size: 1.05rem; padding: 12px 28px; cursor: pointer; border-radius: 6px; box-shadow: 0 0 15px rgba(46, 160, 67, 0.4);">
+              🚀 Launch & Execute All 38 Tests Inside App
+            </button>
+          </a>
+        </div>
+      `;
+    }
+
+    async function startAllTests() {
+      const runBtn = document.getElementById('run-btn');
+      runBtn.disabled = true;
+      runBtn.textContent = '⏳ Checking Environment...';
+
+      const iframe = document.getElementById('app-frame');
+      let canAccessIframe = false;
+
+      try {
+        if (iframe && iframe.contentDocument && iframe.contentDocument.getElementById) {
+          appDoc = iframe.contentDocument;
+          appWindow = iframe.contentWindow;
+          if (appDoc.getElementById('tab-roadmap')) {
+            canAccessIframe = true;
+          }
+        }
+      } catch (err) {
+        canAccessIframe = false;
+      }
+
+      if (!canAccessIframe) {
+        showCorsWarning();
+        runBtn.disabled = false;
+        runBtn.textContent = '▶ Run All Tests';
+        return;
+      }
+
+      runBtn.textContent = '⏳ Running Tests...';
+      testStats = { total: 0, passed: 0, failed: 0, asserts: 0, startTime: Date.now() };
+      renderSuiteContainers();
+
+      let totalTestsCount = SUITES_DEFINITION.reduce((sum, s) => sum + s.tests.length, 0);
+      let executedCount = 0;
+
+      for (let s of SUITES_DEFINITION) {
+        let suitePassed = true;
+        const suiteBadge = document.getElementById(`badge-${s.id}`);
+        suiteBadge.className = 'badge badge-running';
+        suiteBadge.textContent = 'RUNNING';
+
+        for (let idx = 0; idx < s.tests.length; idx++) {
+          const t = s.tests[idx];
+          const itemBadge = document.getElementById(`badge-${s.id}-${idx}`);
+          testStats.total++;
+          executedCount++;
+
+          try {
+            t.run();
+            testStats.passed++;
+            itemBadge.className = 'badge badge-pass';
+            itemBadge.textContent = '✔ PASS';
+          } catch (err) {
+            testStats.failed++;
+            suitePassed = false;
+            itemBadge.className = 'badge badge-fail';
+            itemBadge.textContent = '✖ FAIL';
+            console.error(`FAIL [${s.title} - ${t.name}]:`, err);
+          }
+
+          // Update metrics live
+          document.getElementById('metric-total').textContent = testStats.total;
+          document.getElementById('metric-passed').textContent = testStats.passed;
+          document.getElementById('metric-failed').textContent = testStats.failed;
+          document.getElementById('metric-asserts').textContent = testStats.asserts;
+          document.getElementById('metric-time').textContent = (Date.now() - testStats.startTime) + 'ms';
+          document.getElementById('progress-bar').style.width = ((executedCount / totalTestsCount) * 100) + '%';
+
+          // Small delay for smooth visual feedback
+          await new Promise(r => setTimeout(r, 20));
+        }
+
+        suiteBadge.className = suitePassed ? 'badge badge-pass' : 'badge badge-fail';
+        suiteBadge.textContent = suitePassed ? '✔ ALL PASS' : '✖ SOME FAILED';
+      }
+
+      runBtn.disabled = false;
+      runBtn.textContent = '🔄 Re-run All Tests';
+    }
+
+    // Auto-check when iframe is loaded
+    window.addEventListener('load', () => {
+      const iframe = document.getElementById('app-frame');
+      iframe.onload = () => {
+        setTimeout(startAllTests, 300);
+      };
+      // Fallback check after 800ms
+      setTimeout(() => {
+        try {
+          if (!iframe.contentDocument || !iframe.contentDocument.getElementById) {
+            showCorsWarning();
+          }
+        } catch (e) {
+          showCorsWarning();
+        }
+      }, 800);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,1111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 920" width="1060" height="920" style="background:#0d1117; font-family:-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif;">
+<defs>
+      <filter id="glow-inner" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+      <filter id="glow-outer" x="-20%" y="-20%" width="140%" height="140%">
+        <feGaussianBlur stdDeviation="2" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+      <linearGradient id="road-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#b09b7c"/>
+        <stop offset="100%" stop-color="#736652"/>
+      </linearGradient>
+      <linearGradient id="river-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#388bfd"/>
+        <stop offset="100%" stop-color="#1f6feb"/>
+      </linearGradient>
+    </defs>
+<rect width="1060" height="920" fill="#161b22" />
+<rect x="25" y="20" width="1010" height="875" rx="12" fill="#1b2028" stroke="#30363d" stroke-width="2" />
+<g id="hex-grid-layer">
+<polygon points="74.7,30.7 74.7,59.3 50.0,73.6 25.3,59.3 25.3,30.7 50.0,16.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="1" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="49.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="61.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,1)</text>
+<polygon points="124.2,55.2 124.2,83.8 99.5,98.1 74.7,83.8 74.7,55.2 99.5,40.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="1" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="73.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="85.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,1)</text>
+<polygon points="173.6,30.7 173.6,59.3 148.9,73.6 124.2,59.3 124.2,30.7 148.9,16.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="1" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="49.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="61.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,1)</text>
+<polygon points="223.1,55.2 223.1,83.8 198.4,98.1 173.6,83.8 173.7,55.2 198.4,40.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="1" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="73.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="85.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,1)</text>
+<polygon points="272.6,30.7 272.6,59.3 247.8,73.6 223.1,59.3 223.1,30.7 247.8,16.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="1" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="49.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="61.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,1)</text>
+<polygon points="322.0,55.2 322.0,83.8 297.3,98.1 272.6,83.8 272.6,55.2 297.3,40.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="6" data-row="1" data-biome="ocean" class="hex-cell" />
+<text x="297.3" y="73.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="297.3" y="85.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,1)</text>
+<polygon points="371.5,30.7 371.5,59.3 346.8,73.6 322.0,59.3 322.0,30.7 346.8,16.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="7" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="346.76" y="49.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="346.76" y="61.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,1)</text>
+<polygon points="421.0,55.2 421.0,83.8 396.2,98.1 371.5,83.8 371.5,55.2 396.2,40.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="8" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="396.22" y="73.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="396.22" y="85.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,1)</text>
+<polygon points="470.4,30.7 470.4,59.3 445.7,73.6 420.9,59.3 420.9,30.7 445.7,16.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="9" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="445.68" y="49.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="445.68" y="61.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,1)</text>
+<polygon points="519.9,55.2 519.9,83.8 495.1,98.1 470.4,83.8 470.4,55.2 495.1,40.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="10" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="495.14" y="73.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="495.14" y="85.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,1)</text>
+<polygon points="569.3,30.7 569.3,59.3 544.6,73.6 519.9,59.3 519.9,30.7 544.6,16.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="11" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="544.6" y="49.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="544.6" y="61.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,1)</text>
+<polygon points="618.8,55.2 618.8,83.8 594.1,98.1 569.3,83.8 569.3,55.2 594.1,40.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="12" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="594.06" y="73.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="594.06" y="85.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,1)</text>
+<polygon points="668.2,30.7 668.2,59.3 643.5,73.6 618.8,59.3 618.8,30.7 643.5,16.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="13" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="643.52" y="49.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="643.52" y="61.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,1)</text>
+<polygon points="717.7,55.2 717.7,83.8 693.0,98.1 668.2,83.8 668.2,55.2 693.0,40.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="14" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="692.98" y="73.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="692.98" y="85.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,1)</text>
+<polygon points="767.2,30.7 767.2,59.3 742.4,73.6 717.7,59.3 717.7,30.7 742.4,16.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="15" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="742.44" y="49.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="742.44" y="61.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,1)</text>
+<polygon points="816.6,55.2 816.6,83.8 791.9,98.1 767.2,83.8 767.2,55.2 791.9,40.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="16" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="791.9" y="73.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="791.9" y="85.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,1)</text>
+<polygon points="866.1,30.7 866.1,59.3 841.4,73.6 816.6,59.3 816.6,30.7 841.4,16.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="17" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="841.36" y="49.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="841.36" y="61.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,1)</text>
+<polygon points="915.6,55.2 915.6,83.8 890.8,98.1 866.1,83.8 866.1,55.2 890.8,40.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="18" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="890.82" y="73.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="890.82" y="85.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,1)</text>
+<polygon points="965.0,30.7 965.0,59.3 940.3,73.6 915.5,59.3 915.5,30.7 940.3,16.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="19" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="940.28" y="49.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="940.28" y="61.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,1)</text>
+<polygon points="1014.5,55.2 1014.5,83.8 989.7,98.1 965.0,83.8 965.0,55.2 989.7,40.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="20" data-row="1" data-biome="pine_forest" class="hex-cell" />
+<text x="989.74" y="73.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="989.74" y="85.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,1)</text>
+<polygon points="74.7,79.7 74.7,108.3 50.0,122.6 25.3,108.3 25.3,79.7 50.0,65.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="2" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="98.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="110.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,2)</text>
+<polygon points="124.2,104.2 124.2,132.8 99.5,147.1 74.7,132.8 74.7,104.2 99.5,89.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="2" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="122.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="134.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,2)</text>
+<polygon points="173.6,79.7 173.6,108.3 148.9,122.6 124.2,108.3 124.2,79.7 148.9,65.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="2" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="98.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="110.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,2)</text>
+<polygon points="223.1,104.2 223.1,132.8 198.4,147.1 173.6,132.8 173.7,104.2 198.4,89.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="2" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="122.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="134.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,2)</text>
+<polygon points="272.6,79.7 272.6,108.3 247.8,122.6 223.1,108.3 223.1,79.7 247.8,65.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="2" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="98.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="110.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,2)</text>
+<polygon points="322.0,104.2 322.0,132.8 297.3,147.1 272.6,132.8 272.6,104.2 297.3,89.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="6" data-row="2" data-biome="ocean" class="hex-cell" />
+<text x="297.3" y="122.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="297.3" y="134.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,2)</text>
+<polygon points="371.5,79.7 371.5,108.3 346.8,122.6 322.0,108.3 322.0,79.7 346.8,65.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="7" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="346.76" y="98.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="346.76" y="110.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,2)</text>
+<polygon points="421.0,104.2 421.0,132.8 396.2,147.1 371.5,132.8 371.5,104.2 396.2,89.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="8" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="396.22" y="122.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="396.22" y="134.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,2)</text>
+<polygon points="470.4,79.7 470.4,108.3 445.7,122.6 420.9,108.3 420.9,79.7 445.7,65.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="9" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="445.68" y="98.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="445.68" y="110.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,2)</text>
+<polygon points="519.9,104.2 519.9,132.8 495.1,147.1 470.4,132.8 470.4,104.2 495.1,89.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="10" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="495.14" y="122.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="495.14" y="134.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,2)</text>
+<polygon points="569.3,79.7 569.3,108.3 544.6,122.6 519.9,108.3 519.9,79.7 544.6,65.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="11" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="544.6" y="98.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="544.6" y="110.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,2)</text>
+<polygon points="618.8,104.2 618.8,132.8 594.1,147.1 569.3,132.8 569.3,104.2 594.1,89.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="12" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="594.06" y="122.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="594.06" y="134.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,2)</text>
+<polygon points="668.2,79.7 668.2,108.3 643.5,122.6 618.8,108.3 618.8,79.7 643.5,65.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="13" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="643.52" y="98.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="643.52" y="110.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,2)</text>
+<polygon points="717.7,104.2 717.7,132.8 693.0,147.1 668.2,132.8 668.2,104.2 693.0,89.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="14" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="692.98" y="122.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="692.98" y="134.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,2)</text>
+<polygon points="767.2,79.7 767.2,108.3 742.4,122.6 717.7,108.3 717.7,79.7 742.4,65.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="15" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="742.44" y="98.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="742.44" y="110.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,2)</text>
+<polygon points="816.6,104.2 816.6,132.8 791.9,147.1 767.2,132.8 767.2,104.2 791.9,89.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="16" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="791.9" y="122.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="791.9" y="134.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,2)</text>
+<polygon points="866.1,79.7 866.1,108.3 841.4,122.6 816.6,108.3 816.6,79.7 841.4,65.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="17" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="841.36" y="98.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="841.36" y="110.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,2)</text>
+<polygon points="915.6,104.2 915.6,132.8 890.8,147.1 866.1,132.8 866.1,104.2 890.8,89.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="18" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="890.82" y="122.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="890.82" y="134.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,2)</text>
+<polygon points="965.0,79.7 965.0,108.3 940.3,122.6 915.5,108.3 915.5,79.7 940.3,65.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="19" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="940.28" y="98.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="940.28" y="110.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,2)</text>
+<polygon points="1014.5,104.2 1014.5,132.8 989.7,147.1 965.0,132.8 965.0,104.2 989.7,89.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="20" data-row="2" data-biome="pine_forest" class="hex-cell" />
+<text x="989.74" y="122.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="989.74" y="134.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,2)</text>
+<polygon points="74.7,128.7 74.7,157.3 50.0,171.6 25.3,157.3 25.3,128.7 50.0,114.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="3" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="147.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="159.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,3)</text>
+<polygon points="124.2,153.2 124.2,181.8 99.5,196.1 74.7,181.8 74.7,153.2 99.5,138.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="3" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="171.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="183.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,3)</text>
+<polygon points="173.6,128.7 173.6,157.3 148.9,171.6 124.2,157.3 124.2,128.7 148.9,114.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="3" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="147.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="159.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,3)</text>
+<polygon points="223.1,153.2 223.1,181.8 198.4,196.1 173.6,181.8 173.7,153.2 198.4,138.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="3" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="171.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="183.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,3)</text>
+<polygon points="272.6,128.7 272.6,157.3 247.8,171.6 223.1,157.3 223.1,128.7 247.8,114.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="3" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="147.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="159.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,3)</text>
+<polygon points="322.0,153.2 322.0,181.8 297.3,196.1 272.6,181.8 272.6,153.2 297.3,138.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="6" data-row="3" data-biome="ocean" class="hex-cell" />
+<text x="297.3" y="171.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="297.3" y="183.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,3)</text>
+<polygon points="371.5,128.7 371.5,157.3 346.8,171.6 322.0,157.3 322.0,128.7 346.8,114.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="7" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="346.76" y="147.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="346.76" y="159.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,3)</text>
+<polygon points="421.0,153.2 421.0,181.8 396.2,196.1 371.5,181.8 371.5,153.2 396.2,138.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="8" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="396.22" y="171.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="396.22" y="183.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,3)</text>
+<polygon points="470.4,128.7 470.4,157.3 445.7,171.6 420.9,157.3 420.9,128.7 445.7,114.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="9" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="445.68" y="147.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="445.68" y="159.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,3)</text>
+<polygon points="519.9,153.2 519.9,181.8 495.1,196.1 470.4,181.8 470.4,153.2 495.1,138.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="10" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="495.14" y="171.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="495.14" y="183.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,3)</text>
+<polygon points="569.3,128.7 569.3,157.3 544.6,171.6 519.9,157.3 519.9,128.7 544.6,114.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="11" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="544.6" y="147.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="544.6" y="159.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,3)</text>
+<polygon points="618.8,153.2 618.8,181.8 594.1,196.1 569.3,181.8 569.3,153.2 594.1,138.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="12" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="594.06" y="171.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="594.06" y="183.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,3)</text>
+<polygon points="668.2,128.7 668.2,157.3 643.5,171.6 618.8,157.3 618.8,128.7 643.5,114.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="13" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="643.52" y="147.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="643.52" y="159.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,3)</text>
+<polygon points="717.7,153.2 717.7,181.8 693.0,196.1 668.2,181.8 668.2,153.2 693.0,138.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="14" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="692.98" y="171.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="692.98" y="183.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,3)</text>
+<polygon points="767.2,128.7 767.2,157.3 742.4,171.6 717.7,157.3 717.7,128.7 742.4,114.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="15" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="742.44" y="147.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="742.44" y="159.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,3)</text>
+<polygon points="816.6,153.2 816.6,181.8 791.9,196.1 767.2,181.8 767.2,153.2 791.9,138.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="16" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="791.9" y="171.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="791.9" y="183.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,3)</text>
+<polygon points="866.1,128.7 866.1,157.3 841.4,171.6 816.6,157.3 816.6,128.7 841.4,114.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="17" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="841.36" y="147.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="841.36" y="159.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,3)</text>
+<polygon points="915.6,153.2 915.6,181.8 890.8,196.1 866.1,181.8 866.1,153.2 890.8,138.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="18" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="890.82" y="171.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="890.82" y="183.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,3)</text>
+<polygon points="965.0,128.7 965.0,157.3 940.3,171.6 915.5,157.3 915.5,128.7 940.3,114.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="19" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="940.28" y="147.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="940.28" y="159.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,3)</text>
+<polygon points="1014.5,153.2 1014.5,181.8 989.7,196.1 965.0,181.8 965.0,153.2 989.7,138.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="20" data-row="3" data-biome="pine_forest" class="hex-cell" />
+<text x="989.74" y="171.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="989.74" y="183.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,3)</text>
+<polygon points="74.7,177.7 74.7,206.3 50.0,220.6 25.3,206.3 25.3,177.7 50.0,163.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="4" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="196.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="208.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,4)</text>
+<polygon points="124.2,202.2 124.2,230.8 99.5,245.1 74.7,230.8 74.7,202.2 99.5,187.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="4" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="220.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="232.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,4)</text>
+<polygon points="173.6,177.7 173.6,206.3 148.9,220.6 124.2,206.3 124.2,177.7 148.9,163.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="4" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="196.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="208.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,4)</text>
+<polygon points="223.1,202.2 223.1,230.8 198.4,245.1 173.6,230.8 173.7,202.2 198.4,187.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="4" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="220.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="232.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,4)</text>
+<polygon points="272.6,177.7 272.6,206.3 247.8,220.6 223.1,206.3 223.1,177.7 247.8,163.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="4" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="196.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="208.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,4)</text>
+<polygon points="322.0,202.2 322.0,230.8 297.3,245.1 272.6,230.8 272.6,202.2 297.3,187.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="6" data-row="4" data-biome="ocean" class="hex-cell" />
+<text x="297.3" y="220.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="297.3" y="232.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,4)</text>
+<polygon points="371.5,177.7 371.5,206.3 346.8,220.6 322.0,206.3 322.0,177.7 346.8,163.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="7" data-row="4" data-biome="pine_forest" class="hex-cell" />
+<text x="346.76" y="196.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="346.76" y="208.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,4)</text>
+<polygon points="421.0,202.2 421.0,230.8 396.2,245.1 371.5,230.8 371.5,202.2 396.2,187.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="8" data-row="4" data-biome="pine_forest" class="hex-cell" />
+<text x="396.22" y="220.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="396.22" y="232.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,4)</text>
+<polygon points="470.4,177.7 470.4,206.3 445.7,220.6 420.9,206.3 420.9,177.7 445.7,163.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="9" data-row="4" data-biome="pine_forest" class="hex-cell" />
+<text x="445.68" y="196.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="445.68" y="208.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,4)</text>
+<polygon points="519.9,202.2 519.9,230.8 495.1,245.1 470.4,230.8 470.4,202.2 495.1,187.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="10" data-row="4" data-biome="pine_forest" class="hex-cell" />
+<text x="495.14" y="220.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="495.14" y="232.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,4)</text>
+<polygon points="569.3,177.7 569.3,206.3 544.6,220.6 519.9,206.3 519.9,177.7 544.6,163.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="11" data-row="4" data-biome="pine_forest" class="hex-cell" />
+<text x="544.6" y="196.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="544.6" y="208.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,4)</text>
+<polygon points="618.8,202.2 618.8,230.8 594.1,245.1 569.3,230.8 569.3,202.2 594.1,187.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="12" data-row="4" data-biome="pine_forest" class="hex-cell" />
+<text x="594.06" y="220.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="594.06" y="232.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,4)</text>
+<polygon points="668.2,177.7 668.2,206.3 643.5,220.6 618.8,206.3 618.8,177.7 643.5,163.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="13" data-row="4" data-biome="pine_forest" class="hex-cell" />
+<text x="643.52" y="196.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="643.52" y="208.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,4)</text>
+<polygon points="717.7,202.2 717.7,230.8 693.0,245.1 668.2,230.8 668.2,202.2 693.0,187.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="14" data-row="4" data-biome="pine_forest" class="hex-cell" />
+<text x="692.98" y="220.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="692.98" y="232.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,4)</text>
+<polygon points="767.2,177.7 767.2,206.3 742.4,220.6 717.7,206.3 717.7,177.7 742.4,163.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="15" data-row="4" data-biome="mountain" class="hex-cell" />
+<text x="742.44" y="196.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="742.44" y="208.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,4)</text>
+<polygon points="816.6,202.2 816.6,230.8 791.9,245.1 767.2,230.8 767.2,202.2 791.9,187.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="16" data-row="4" data-biome="mountain" class="hex-cell" />
+<text x="791.9" y="220.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="791.9" y="232.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,4)</text>
+<polygon points="866.1,177.7 866.1,206.3 841.4,220.6 816.6,206.3 816.6,177.7 841.4,163.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="17" data-row="4" data-biome="mountain" class="hex-cell" />
+<text x="841.36" y="196.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="841.36" y="208.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,4)</text>
+<polygon points="915.6,202.2 915.6,230.8 890.8,245.1 866.1,230.8 866.1,202.2 890.8,187.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="18" data-row="4" data-biome="mountain" class="hex-cell" />
+<text x="890.82" y="220.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="890.82" y="232.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,4)</text>
+<polygon points="965.0,177.7 965.0,206.3 940.3,220.6 915.5,206.3 915.5,177.7 940.3,163.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="19" data-row="4" data-biome="mountain" class="hex-cell" />
+<text x="940.28" y="196.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="940.28" y="208.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,4)</text>
+<polygon points="1014.5,202.2 1014.5,230.8 989.7,245.1 965.0,230.8 965.0,202.2 989.7,187.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="20" data-row="4" data-biome="mountain" class="hex-cell" />
+<text x="989.74" y="220.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="989.74" y="232.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,4)</text>
+<polygon points="74.7,226.7 74.7,255.3 50.0,269.6 25.3,255.3 25.3,226.7 50.0,212.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="5" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="245.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="257.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,5)</text>
+<polygon points="124.2,251.2 124.2,279.8 99.5,294.1 74.7,279.8 74.7,251.2 99.5,236.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="5" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="269.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="281.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,5)</text>
+<polygon points="173.6,226.7 173.6,255.3 148.9,269.6 124.2,255.3 124.2,226.7 148.9,212.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="5" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="245.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="257.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,5)</text>
+<polygon points="223.1,251.2 223.1,279.8 198.4,294.1 173.6,279.8 173.7,251.2 198.4,236.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="5" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="269.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="281.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,5)</text>
+<polygon points="272.6,226.7 272.6,255.3 247.8,269.6 223.1,255.3 223.1,226.7 247.8,212.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="5" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="245.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="257.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,5)</text>
+<polygon points="322.0,251.2 322.0,279.8 297.3,294.1 272.6,279.8 272.6,251.2 297.3,236.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="6" data-row="5" data-biome="ocean" class="hex-cell" />
+<text x="297.3" y="269.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="297.3" y="281.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,5)</text>
+<polygon points="371.5,226.7 371.5,255.3 346.8,269.6 322.0,255.3 322.0,226.7 346.8,212.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="7" data-row="5" data-biome="pine_forest" class="hex-cell" />
+<text x="346.76" y="245.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="346.76" y="257.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,5)</text>
+<polygon points="421.0,251.2 421.0,279.8 396.2,294.1 371.5,279.8 371.5,251.2 396.2,236.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="8" data-row="5" data-biome="pine_forest" class="hex-cell" />
+<text x="396.22" y="269.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="396.22" y="281.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,5)</text>
+<polygon points="470.4,226.7 470.4,255.3 445.7,269.6 420.9,255.3 420.9,226.7 445.7,212.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="9" data-row="5" data-biome="pine_forest" class="hex-cell" />
+<text x="445.68" y="245.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="445.68" y="257.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,5)</text>
+<polygon points="519.9,251.2 519.9,279.8 495.1,294.1 470.4,279.8 470.4,251.2 495.1,236.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="10" data-row="5" data-biome="pine_forest" class="hex-cell" />
+<text x="495.14" y="269.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="495.14" y="281.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,5)</text>
+<polygon points="569.3,226.7 569.3,255.3 544.6,269.6 519.9,255.3 519.9,226.7 544.6,212.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="11" data-row="5" data-biome="pine_forest" class="hex-cell" />
+<text x="544.6" y="245.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="544.6" y="257.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,5)</text>
+<polygon points="618.8,251.2 618.8,279.8 594.1,294.1 569.3,279.8 569.3,251.2 594.1,236.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="12" data-row="5" data-biome="pine_forest" class="hex-cell" />
+<text x="594.06" y="269.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="594.06" y="281.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,5)</text>
+<polygon points="668.2,226.7 668.2,255.3 643.5,269.6 618.8,255.3 618.8,226.7 643.5,212.4" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="13" data-row="5" data-biome="pine_forest" class="hex-cell" />
+<text x="643.52" y="245.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="643.52" y="257.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,5)</text>
+<polygon points="717.7,251.2 717.7,279.8 693.0,294.1 668.2,279.8 668.2,251.2 693.0,236.9" fill="#224128" stroke="#172d1c" stroke-width="1.2" opacity="0.92" data-col="14" data-row="5" data-biome="pine_forest" class="hex-cell" />
+<text x="692.98" y="269.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌲</text>
+<text x="692.98" y="281.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,5)</text>
+<polygon points="767.2,226.7 767.2,255.3 742.4,269.6 717.7,255.3 717.7,226.7 742.4,212.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="15" data-row="5" data-biome="mountain" class="hex-cell" />
+<text x="742.44" y="245.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="742.44" y="257.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,5)</text>
+<polygon points="816.6,251.2 816.6,279.8 791.9,294.1 767.2,279.8 767.2,251.2 791.9,236.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="16" data-row="5" data-biome="mountain" class="hex-cell" />
+<text x="791.9" y="269.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="791.9" y="281.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,5)</text>
+<polygon points="866.1,226.7 866.1,255.3 841.4,269.6 816.6,255.3 816.6,226.7 841.4,212.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="17" data-row="5" data-biome="mountain" class="hex-cell" />
+<text x="841.36" y="245.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="841.36" y="257.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,5)</text>
+<polygon points="915.6,251.2 915.6,279.8 890.8,294.1 866.1,279.8 866.1,251.2 890.8,236.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="18" data-row="5" data-biome="mountain" class="hex-cell" />
+<text x="890.82" y="269.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="890.82" y="281.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,5)</text>
+<polygon points="965.0,226.7 965.0,255.3 940.3,269.6 915.5,255.3 915.5,226.7 940.3,212.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="19" data-row="5" data-biome="mountain" class="hex-cell" />
+<text x="940.28" y="245.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="940.28" y="257.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,5)</text>
+<polygon points="1014.5,251.2 1014.5,279.8 989.7,294.1 965.0,279.8 965.0,251.2 989.7,236.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="20" data-row="5" data-biome="mountain" class="hex-cell" />
+<text x="989.74" y="269.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="989.74" y="281.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,5)</text>
+<polygon points="74.7,275.7 74.7,304.3 50.0,318.6 25.3,304.3 25.3,275.7 50.0,261.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="6" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="294.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="306.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,6)</text>
+<polygon points="124.2,300.2 124.2,328.8 99.5,343.1 74.7,328.8 74.7,300.2 99.5,285.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="6" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="318.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="330.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,6)</text>
+<polygon points="173.6,275.7 173.6,304.3 148.9,318.6 124.2,304.3 124.2,275.7 148.9,261.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="6" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="294.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="306.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,6)</text>
+<polygon points="223.1,300.2 223.1,328.8 198.4,343.1 173.6,328.8 173.7,300.2 198.4,285.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="6" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="318.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="330.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,6)</text>
+<polygon points="272.6,275.7 272.6,304.3 247.8,318.6 223.1,304.3 223.1,275.7 247.8,261.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="6" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="294.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="306.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,6)</text>
+<polygon points="322.0,300.2 322.0,328.8 297.3,343.1 272.6,328.8 272.6,300.2 297.3,285.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="6" data-row="6" data-biome="ocean" class="hex-cell" />
+<text x="297.3" y="318.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="297.3" y="330.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,6)</text>
+<polygon points="371.5,275.7 371.5,304.3 346.8,318.6 322.0,304.3 322.0,275.7 346.8,261.4" fill="#7ee787" stroke="#2ea043" stroke-width="1.2" opacity="0.92" data-col="7" data-row="6" data-biome="ash_grove" class="hex-cell" />
+<text x="346.76" y="306.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,6)</text>
+<polygon points="421.0,300.2 421.0,328.8 396.2,343.1 371.5,328.8 371.5,300.2 396.2,285.9" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="8" data-row="6" data-biome="deciduous_forest" class="hex-cell" />
+<text x="396.22" y="318.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="396.22" y="330.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,6)</text>
+<polygon points="470.4,275.7 470.4,304.3 445.7,318.6 420.9,304.3 420.9,275.7 445.7,261.4" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="9" data-row="6" data-biome="deciduous_forest" class="hex-cell" />
+<text x="445.68" y="294.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="445.68" y="306.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,6)</text>
+<polygon points="519.9,300.2 519.9,328.8 495.1,343.1 470.4,328.8 470.4,300.2 495.1,285.9" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="10" data-row="6" data-biome="deciduous_forest" class="hex-cell" />
+<text x="495.14" y="318.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="495.14" y="330.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,6)</text>
+<polygon points="569.3,275.7 569.3,304.3 544.6,318.6 519.9,304.3 519.9,275.7 544.6,261.4" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="11" data-row="6" data-biome="hills" class="hex-cell" />
+<text x="544.6" y="294.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="544.6" y="306.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,6)</text>
+<polygon points="618.8,300.2 618.8,328.8 594.1,343.1 569.3,328.8 569.3,300.2 594.1,285.9" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="12" data-row="6" data-biome="hills" class="hex-cell" />
+<text x="594.06" y="318.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="594.06" y="330.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,6)</text>
+<polygon points="668.2,275.7 668.2,304.3 643.5,318.6 618.8,304.3 618.8,275.7 643.5,261.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="13" data-row="6" data-biome="mountain" class="hex-cell" />
+<text x="643.52" y="294.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="643.52" y="306.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,6)</text>
+<polygon points="717.7,300.2 717.7,328.8 693.0,343.1 668.2,328.8 668.2,300.2 693.0,285.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="14" data-row="6" data-biome="mountain" class="hex-cell" />
+<text x="692.98" y="318.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="692.98" y="330.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,6)</text>
+<polygon points="767.2,275.7 767.2,304.3 742.4,318.6 717.7,304.3 717.7,275.7 742.4,261.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="15" data-row="6" data-biome="mountain" class="hex-cell" />
+<text x="742.44" y="294.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="742.44" y="306.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,6)</text>
+<polygon points="816.6,300.2 816.6,328.8 791.9,343.1 767.2,328.8 767.2,300.2 791.9,285.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="16" data-row="6" data-biome="mountain" class="hex-cell" />
+<text x="791.9" y="318.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="791.9" y="330.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,6)</text>
+<polygon points="866.1,275.7 866.1,304.3 841.4,318.6 816.6,304.3 816.6,275.7 841.4,261.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="17" data-row="6" data-biome="mountain" class="hex-cell" />
+<text x="841.36" y="294.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="841.36" y="306.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,6)</text>
+<polygon points="915.6,300.2 915.6,328.8 890.8,343.1 866.1,328.8 866.1,300.2 890.8,285.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="18" data-row="6" data-biome="mountain" class="hex-cell" />
+<text x="890.82" y="318.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="890.82" y="330.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,6)</text>
+<polygon points="965.0,275.7 965.0,304.3 940.3,318.6 915.5,304.3 915.5,275.7 940.3,261.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="19" data-row="6" data-biome="mountain" class="hex-cell" />
+<text x="940.28" y="294.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="940.28" y="306.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,6)</text>
+<polygon points="1014.5,300.2 1014.5,328.8 989.7,343.1 965.0,328.8 965.0,300.2 989.7,285.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="20" data-row="6" data-biome="mountain" class="hex-cell" />
+<text x="989.74" y="318.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="989.74" y="330.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,6)</text>
+<polygon points="74.7,324.7 74.7,353.3 50.0,367.6 25.3,353.3 25.3,324.7 50.0,310.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="7" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="343.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="355.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,7)</text>
+<polygon points="124.2,349.2 124.2,377.8 99.5,392.1 74.7,377.8 74.7,349.2 99.5,334.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="7" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="367.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="379.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,7)</text>
+<polygon points="173.6,324.7 173.6,353.3 148.9,367.6 124.2,353.3 124.2,324.7 148.9,310.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="7" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="343.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="355.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,7)</text>
+<polygon points="223.1,349.2 223.1,377.8 198.4,392.1 173.6,377.8 173.7,349.2 198.4,334.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="7" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="367.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="379.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,7)</text>
+<polygon points="272.6,324.7 272.6,353.3 247.8,367.6 223.1,353.3 223.1,324.7 247.8,310.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="7" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="343.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="355.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,7)</text>
+<polygon points="322.0,349.2 322.0,377.8 297.3,392.1 272.6,377.8 272.6,349.2 297.3,334.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="6" data-row="7" data-biome="ocean" class="hex-cell" />
+<text x="297.3" y="367.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="297.3" y="379.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,7)</text>
+<polygon points="371.5,324.7 371.5,353.3 346.8,367.6 322.0,353.3 322.0,324.7 346.8,310.4" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="7" data-row="7" data-biome="deciduous_forest" class="hex-cell" />
+<text x="346.76" y="343.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="346.76" y="355.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,7)</text>
+<polygon points="421.0,349.2 421.0,377.8 396.2,392.1 371.5,377.8 371.5,349.2 396.2,334.9" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="8" data-row="7" data-biome="deciduous_forest" class="hex-cell" />
+<text x="396.22" y="367.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="396.22" y="379.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,7)</text>
+<polygon points="470.4,324.7 470.4,353.3 445.7,367.6 420.9,353.3 420.9,324.7 445.7,310.4" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="9" data-row="7" data-biome="deciduous_forest" class="hex-cell" />
+<text x="445.68" y="343.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="445.68" y="355.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,7)</text>
+<polygon points="519.9,349.2 519.9,377.8 495.1,392.1 470.4,377.8 470.4,349.2 495.1,334.9" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="10" data-row="7" data-biome="deciduous_forest" class="hex-cell" />
+<text x="495.14" y="367.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="495.14" y="379.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,7)</text>
+<polygon points="569.3,324.7 569.3,353.3 544.6,367.6 519.9,353.3 519.9,324.7 544.6,310.4" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="11" data-row="7" data-biome="hills" class="hex-cell" />
+<text x="544.6" y="343.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="544.6" y="355.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,7)</text>
+<polygon points="618.8,349.2 618.8,377.8 594.1,392.1 569.3,377.8 569.3,349.2 594.1,334.9" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="12" data-row="7" data-biome="hills" class="hex-cell" />
+<text x="594.06" y="367.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="594.06" y="379.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,7)</text>
+<polygon points="668.2,324.7 668.2,353.3 643.5,367.6 618.8,353.3 618.8,324.7 643.5,310.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="13" data-row="7" data-biome="mountain" class="hex-cell" />
+<text x="643.52" y="343.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="643.52" y="355.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,7)</text>
+<polygon points="717.7,349.2 717.7,377.8 693.0,392.1 668.2,377.8 668.2,349.2 693.0,334.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="14" data-row="7" data-biome="mountain" class="hex-cell" />
+<text x="692.98" y="367.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="692.98" y="379.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,7)</text>
+<polygon points="767.2,324.7 767.2,353.3 742.4,367.6 717.7,353.3 717.7,324.7 742.4,310.4" fill="#8b949e" stroke="#6e7681" stroke-width="1.2" opacity="0.92" data-col="15" data-row="7" data-biome="dwarvenhold" class="hex-cell" />
+<text x="742.44" y="355.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,7)</text>
+<polygon points="816.6,349.2 816.6,377.8 791.9,392.1 767.2,377.8 767.2,349.2 791.9,334.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="16" data-row="7" data-biome="snow_mountain" class="hex-cell" />
+<text x="791.9" y="367.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="791.9" y="379.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,7)</text>
+<polygon points="866.1,324.7 866.1,353.3 841.4,367.6 816.6,353.3 816.6,324.7 841.4,310.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="17" data-row="7" data-biome="snow_mountain" class="hex-cell" />
+<text x="841.36" y="343.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="841.36" y="355.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,7)</text>
+<polygon points="915.6,349.2 915.6,377.8 890.8,392.1 866.1,377.8 866.1,349.2 890.8,334.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="18" data-row="7" data-biome="snow_mountain" class="hex-cell" />
+<text x="890.82" y="367.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="890.82" y="379.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,7)</text>
+<polygon points="965.0,324.7 965.0,353.3 940.3,367.6 915.5,353.3 915.5,324.7 940.3,310.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="19" data-row="7" data-biome="snow_mountain" class="hex-cell" />
+<text x="940.28" y="343.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="940.28" y="355.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,7)</text>
+<polygon points="1014.5,349.2 1014.5,377.8 989.7,392.1 965.0,377.8 965.0,349.2 989.7,334.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="20" data-row="7" data-biome="snow_mountain" class="hex-cell" />
+<text x="989.74" y="367.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="989.74" y="379.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,7)</text>
+<polygon points="74.7,373.7 74.7,402.3 50.0,416.6 25.3,402.3 25.3,373.7 50.0,359.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="8" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="392.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="404.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,8)</text>
+<polygon points="124.2,398.2 124.2,426.8 99.5,441.1 74.7,426.8 74.7,398.2 99.5,383.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="8" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="416.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="428.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,8)</text>
+<polygon points="173.6,373.7 173.6,402.3 148.9,416.6 124.2,402.3 124.2,373.7 148.9,359.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="8" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="392.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="404.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,8)</text>
+<polygon points="223.1,398.2 223.1,426.8 198.4,441.1 173.6,426.8 173.7,398.2 198.4,383.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="8" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="416.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="428.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,8)</text>
+<polygon points="272.6,373.7 272.6,402.3 247.8,416.6 223.1,402.3 223.1,373.7 247.8,359.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="8" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="392.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="404.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,8)</text>
+<polygon points="322.0,398.2 322.0,426.8 297.3,441.1 272.6,426.8 272.6,398.2 297.3,383.9" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="6" data-row="8" data-biome="deciduous_forest" class="hex-cell" />
+<text x="297.3" y="416.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="297.3" y="428.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,8)</text>
+<polygon points="371.5,373.7 371.5,402.3 346.8,416.6 322.0,402.3 322.0,373.7 346.8,359.4" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="7" data-row="8" data-biome="deciduous_forest" class="hex-cell" />
+<text x="346.76" y="392.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="346.76" y="404.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,8)</text>
+<polygon points="421.0,398.2 421.0,426.8 396.2,441.1 371.5,426.8 371.5,398.2 396.2,383.9" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="8" data-row="8" data-biome="deciduous_forest" class="hex-cell" />
+<text x="396.22" y="416.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="396.22" y="428.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,8)</text>
+<polygon points="470.4,373.7 470.4,402.3 445.7,416.6 420.9,402.3 420.9,373.7 445.7,359.4" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="9" data-row="8" data-biome="deciduous_forest" class="hex-cell" />
+<text x="445.68" y="392.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="445.68" y="404.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,8)</text>
+<polygon points="519.9,398.2 519.9,426.8 495.1,441.1 470.4,426.8 470.4,398.2 495.1,383.9" fill="#2f5c35" stroke="#214226" stroke-width="1.2" opacity="0.92" data-col="10" data-row="8" data-biome="deciduous_forest" class="hex-cell" />
+<text x="495.14" y="416.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌳</text>
+<text x="495.14" y="428.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,8)</text>
+<polygon points="569.3,373.7 569.3,402.3 544.6,416.6 519.9,402.3 519.9,373.7 544.6,359.4" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="11" data-row="8" data-biome="hills" class="hex-cell" />
+<text x="544.6" y="392.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="544.6" y="404.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,8)</text>
+<polygon points="618.8,398.2 618.8,426.8 594.1,441.1 569.3,426.8 569.3,398.2 594.1,383.9" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="12" data-row="8" data-biome="hills" class="hex-cell" />
+<text x="594.06" y="416.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="594.06" y="428.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,8)</text>
+<polygon points="668.2,373.7 668.2,402.3 643.5,416.6 618.8,402.3 618.8,373.7 643.5,359.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="13" data-row="8" data-biome="mountain" class="hex-cell" />
+<text x="643.52" y="392.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="643.52" y="404.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,8)</text>
+<polygon points="717.7,398.2 717.7,426.8 693.0,441.1 668.2,426.8 668.2,398.2 693.0,383.9" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="14" data-row="8" data-biome="mountain" class="hex-cell" />
+<text x="692.98" y="416.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="692.98" y="428.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,8)</text>
+<polygon points="767.2,373.7 767.2,402.3 742.4,416.6 717.7,402.3 717.7,373.7 742.4,359.4" fill="#6b645b" stroke="#524d45" stroke-width="1.2" opacity="0.92" data-col="15" data-row="8" data-biome="mountain" class="hex-cell" />
+<text x="742.44" y="392.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">⛰️</text>
+<text x="742.44" y="404.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,8)</text>
+<polygon points="816.6,398.2 816.6,426.8 791.9,441.1 767.2,426.8 767.2,398.2 791.9,383.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="16" data-row="8" data-biome="snow_mountain" class="hex-cell" />
+<text x="791.9" y="416.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="791.9" y="428.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,8)</text>
+<polygon points="866.1,373.7 866.1,402.3 841.4,416.6 816.6,402.3 816.6,373.7 841.4,359.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="17" data-row="8" data-biome="snow_mountain" class="hex-cell" />
+<text x="841.36" y="392.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="841.36" y="404.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,8)</text>
+<polygon points="915.6,398.2 915.6,426.8 890.8,441.1 866.1,426.8 866.1,398.2 890.8,383.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="18" data-row="8" data-biome="snow_mountain" class="hex-cell" />
+<text x="890.82" y="416.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="890.82" y="428.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,8)</text>
+<polygon points="965.0,373.7 965.0,402.3 940.3,416.6 915.5,402.3 915.5,373.7 940.3,359.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="19" data-row="8" data-biome="snow_mountain" class="hex-cell" />
+<text x="940.28" y="392.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="940.28" y="404.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,8)</text>
+<polygon points="1014.5,398.2 1014.5,426.8 989.7,441.1 965.0,426.8 965.0,398.2 989.7,383.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="20" data-row="8" data-biome="snow_mountain" class="hex-cell" />
+<text x="989.74" y="416.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="989.74" y="428.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,8)</text>
+<polygon points="74.7,422.7 74.7,451.3 50.0,465.6 25.3,451.3 25.3,422.7 50.0,408.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="9" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="441.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="453.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,9)</text>
+<polygon points="124.2,447.2 124.2,475.8 99.5,490.1 74.7,475.8 74.7,447.2 99.5,432.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="9" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="465.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="477.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,9)</text>
+<polygon points="173.6,422.7 173.6,451.3 148.9,465.6 124.2,451.3 124.2,422.7 148.9,408.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="9" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="441.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="453.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,9)</text>
+<polygon points="223.1,447.2 223.1,475.8 198.4,490.1 173.6,475.8 173.7,447.2 198.4,432.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="9" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="465.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="477.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,9)</text>
+<polygon points="272.6,422.7 272.6,451.3 247.8,465.6 223.1,451.3 223.1,422.7 247.8,408.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="9" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="441.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="453.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,9)</text>
+<polygon points="322.0,447.2 322.0,475.8 297.3,490.1 272.6,475.8 272.6,447.2 297.3,432.9" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="6" data-row="9" data-biome="plains" class="hex-cell" />
+<text x="297.3" y="465.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="297.3" y="477.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,9)</text>
+<polygon points="371.5,422.7 371.5,451.3 346.8,465.6 322.0,451.3 322.0,422.7 346.8,408.4" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="7" data-row="9" data-biome="plains" class="hex-cell" />
+<text x="346.76" y="441.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="346.76" y="453.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,9)</text>
+<polygon points="421.0,447.2 421.0,475.8 396.2,490.1 371.5,475.8 371.5,447.2 396.2,432.9" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="8" data-row="9" data-biome="plains" class="hex-cell" />
+<text x="396.22" y="465.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="396.22" y="477.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,9)</text>
+<polygon points="470.4,422.7 470.4,451.3 445.7,465.6 420.9,451.3 420.9,422.7 445.7,408.4" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="9" data-row="9" data-biome="plains" class="hex-cell" />
+<text x="445.68" y="441.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="445.68" y="453.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,9)</text>
+<polygon points="519.9,447.2 519.9,475.8 495.1,490.1 470.4,475.8 470.4,447.2 495.1,432.9" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="10" data-row="9" data-biome="plains" class="hex-cell" />
+<text x="495.14" y="465.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="495.14" y="477.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,9)</text>
+<polygon points="569.3,422.7 569.3,451.3 544.6,465.6 519.9,451.3 519.9,422.7 544.6,408.4" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="11" data-row="9" data-biome="plains" class="hex-cell" />
+<text x="544.6" y="441.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="544.6" y="453.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,9)</text>
+<polygon points="618.8,447.2 618.8,475.8 594.1,490.1 569.3,475.8 569.3,447.2 594.1,432.9" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="12" data-row="9" data-biome="hills" class="hex-cell" />
+<text x="594.06" y="465.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="594.06" y="477.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,9)</text>
+<polygon points="668.2,422.7 668.2,451.3 643.5,465.6 618.8,451.3 618.8,422.7 643.5,408.4" fill="#f85149" stroke="#da3633" stroke-width="1.2" opacity="0.92" data-col="13" data-row="9" data-biome="quarry" class="hex-cell" />
+<text x="643.52" y="453.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,9)</text>
+<polygon points="717.7,447.2 717.7,475.8 693.0,490.1 668.2,475.8 668.2,447.2 693.0,432.9" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="14" data-row="9" data-biome="plains" class="hex-cell" />
+<text x="692.98" y="465.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="692.98" y="477.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,9)</text>
+<polygon points="767.2,422.7 767.2,451.3 742.4,465.6 717.7,451.3 717.7,422.7 742.4,408.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="15" data-row="9" data-biome="snow_mountain" class="hex-cell" />
+<text x="742.44" y="441.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="742.44" y="453.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,9)</text>
+<polygon points="816.6,447.2 816.6,475.8 791.9,490.1 767.2,475.8 767.2,447.2 791.9,432.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="16" data-row="9" data-biome="snow_mountain" class="hex-cell" />
+<text x="791.9" y="465.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="791.9" y="477.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,9)</text>
+<polygon points="866.1,422.7 866.1,451.3 841.4,465.6 816.6,451.3 816.6,422.7 841.4,408.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="17" data-row="9" data-biome="snow_mountain" class="hex-cell" />
+<text x="841.36" y="441.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="841.36" y="453.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,9)</text>
+<polygon points="915.6,447.2 915.6,475.8 890.8,490.1 866.1,475.8 866.1,447.2 890.8,432.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="18" data-row="9" data-biome="snow_mountain" class="hex-cell" />
+<text x="890.82" y="465.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="890.82" y="477.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,9)</text>
+<polygon points="965.0,422.7 965.0,451.3 940.3,465.6 915.5,451.3 915.5,422.7 940.3,408.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="19" data-row="9" data-biome="snow_mountain" class="hex-cell" />
+<text x="940.28" y="441.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="940.28" y="453.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,9)</text>
+<polygon points="1014.5,447.2 1014.5,475.8 989.7,490.1 965.0,475.8 965.0,447.2 989.7,432.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="20" data-row="9" data-biome="snow_mountain" class="hex-cell" />
+<text x="989.74" y="465.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="989.74" y="477.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,9)</text>
+<polygon points="74.7,471.7 74.7,500.3 50.0,514.6 25.3,500.3 25.3,471.7 50.0,457.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="10" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="490.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="502.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,10)</text>
+<polygon points="124.2,496.2 124.2,524.8 99.5,539.1 74.7,524.8 74.7,496.2 99.5,481.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="10" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="514.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="526.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,10)</text>
+<polygon points="173.6,471.7 173.6,500.3 148.9,514.6 124.2,500.3 124.2,471.7 148.9,457.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="10" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="490.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="502.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,10)</text>
+<polygon points="223.1,496.2 223.1,524.8 198.4,539.1 173.6,524.8 173.7,496.2 198.4,481.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="10" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="514.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="526.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,10)</text>
+<polygon points="272.6,471.7 272.6,500.3 247.8,514.6 223.1,500.3 223.1,471.7 247.8,457.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="10" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="490.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="502.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,10)</text>
+<polygon points="322.0,496.2 322.0,524.8 297.3,539.1 272.6,524.8 272.6,496.2 297.3,481.9" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="6" data-row="10" data-biome="plains" class="hex-cell" />
+<text x="297.3" y="514.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="297.3" y="526.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,10)</text>
+<polygon points="371.5,471.7 371.5,500.3 346.8,514.6 322.0,500.3 322.0,471.7 346.8,457.4" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="7" data-row="10" data-biome="plains" class="hex-cell" />
+<text x="346.76" y="490.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="346.76" y="502.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,10)</text>
+<polygon points="421.0,496.2 421.0,524.8 396.2,539.1 371.5,524.8 371.5,496.2 396.2,481.9" fill="#e3b341" stroke="#b08800" stroke-width="1.2" opacity="0.92" data-col="8" data-row="10" data-biome="town_hub" class="hex-cell" />
+<text x="396.22" y="526.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,10)</text>
+<polygon points="470.4,471.7 470.4,500.3 445.7,514.6 420.9,500.3 420.9,471.7 445.7,457.4" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="9" data-row="10" data-biome="plains" class="hex-cell" />
+<text x="445.68" y="490.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="445.68" y="502.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,10)</text>
+<polygon points="519.9,496.2 519.9,524.8 495.1,539.1 470.4,524.8 470.4,496.2 495.1,481.9" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="10" data-row="10" data-biome="plains" class="hex-cell" />
+<text x="495.14" y="514.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="495.14" y="526.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,10)</text>
+<polygon points="569.3,471.7 569.3,500.3 544.6,514.6 519.9,500.3 519.9,471.7 544.6,457.4" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="11" data-row="10" data-biome="plains" class="hex-cell" />
+<text x="544.6" y="490.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="544.6" y="502.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,10)</text>
+<polygon points="618.8,496.2 618.8,524.8 594.1,539.1 569.3,524.8 569.3,496.2 594.1,481.9" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="12" data-row="10" data-biome="hills" class="hex-cell" />
+<text x="594.06" y="514.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="594.06" y="526.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,10)</text>
+<polygon points="668.2,471.7 668.2,500.3 643.5,514.6 618.8,500.3 618.8,471.7 643.5,457.4" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="13" data-row="10" data-biome="hills" class="hex-cell" />
+<text x="643.52" y="490.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="643.52" y="502.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,10)</text>
+<polygon points="717.7,496.2 717.7,524.8 693.0,539.1 668.2,524.8 668.2,496.2 693.0,481.9" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="14" data-row="10" data-biome="plains" class="hex-cell" />
+<text x="692.98" y="514.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="692.98" y="526.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,10)</text>
+<polygon points="767.2,471.7 767.2,500.3 742.4,514.6 717.7,500.3 717.7,471.7 742.4,457.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="15" data-row="10" data-biome="snow_mountain" class="hex-cell" />
+<text x="742.44" y="490.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="742.44" y="502.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,10)</text>
+<polygon points="816.6,496.2 816.6,524.8 791.9,539.1 767.2,524.8 767.2,496.2 791.9,481.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="16" data-row="10" data-biome="snow_mountain" class="hex-cell" />
+<text x="791.9" y="514.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="791.9" y="526.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,10)</text>
+<polygon points="866.1,471.7 866.1,500.3 841.4,514.6 816.6,500.3 816.6,471.7 841.4,457.4" fill="#79c0ff" stroke="#388bfd" stroke-width="1.2" opacity="0.92" data-col="17" data-row="10" data-biome="dragon_lair" class="hex-cell" />
+<text x="841.36" y="502.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,10)</text>
+<polygon points="915.6,496.2 915.6,524.8 890.8,539.1 866.1,524.8 866.1,496.2 890.8,481.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="18" data-row="10" data-biome="snow_mountain" class="hex-cell" />
+<text x="890.82" y="514.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="890.82" y="526.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,10)</text>
+<polygon points="965.0,471.7 965.0,500.3 940.3,514.6 915.5,500.3 915.5,471.7 940.3,457.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="19" data-row="10" data-biome="snow_mountain" class="hex-cell" />
+<text x="940.28" y="490.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="940.28" y="502.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,10)</text>
+<polygon points="1014.5,496.2 1014.5,524.8 989.7,539.1 965.0,524.8 965.0,496.2 989.7,481.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="20" data-row="10" data-biome="snow_mountain" class="hex-cell" />
+<text x="989.74" y="514.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="989.74" y="526.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,10)</text>
+<polygon points="74.7,520.7 74.7,549.3 50.0,563.6 25.3,549.3 25.3,520.7 50.0,506.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="11" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="539.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="551.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,11)</text>
+<polygon points="124.2,545.2 124.2,573.8 99.5,588.1 74.7,573.8 74.7,545.2 99.5,530.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="11" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="563.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="575.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,11)</text>
+<polygon points="173.6,520.7 173.6,549.3 148.9,563.6 124.2,549.3 124.2,520.7 148.9,506.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="11" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="539.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="551.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,11)</text>
+<polygon points="223.1,545.2 223.1,573.8 198.4,588.1 173.6,573.8 173.7,545.2 198.4,530.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="11" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="563.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="575.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,11)</text>
+<polygon points="272.6,520.7 272.6,549.3 247.8,563.6 223.1,549.3 223.1,520.7 247.8,506.4" fill="#388bfd" stroke="#0969da" stroke-width="1.2" opacity="0.92" data-col="5" data-row="11" data-biome="shipwreck" class="hex-cell" />
+<text x="247.84" y="551.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,11)</text>
+<polygon points="322.0,545.2 322.0,573.8 297.3,588.1 272.6,573.8 272.6,545.2 297.3,530.9" fill="#58a6ff" stroke="#1f6feb" stroke-width="1.2" opacity="0.92" data-col="6" data-row="11" data-biome="port" class="hex-cell" />
+<text x="297.3" y="575.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,11)</text>
+<polygon points="371.5,520.7 371.5,549.3 346.8,563.6 322.0,549.3 322.0,520.7 346.8,506.4" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="7" data-row="11" data-biome="plains" class="hex-cell" />
+<text x="346.76" y="539.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="346.76" y="551.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,11)</text>
+<polygon points="421.0,545.2 421.0,573.8 396.2,588.1 371.5,573.8 371.5,545.2 396.2,530.9" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="8" data-row="11" data-biome="plains" class="hex-cell" />
+<text x="396.22" y="563.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="396.22" y="575.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,11)</text>
+<polygon points="470.4,520.7 470.4,549.3 445.7,563.6 420.9,549.3 420.9,520.7 445.7,506.4" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="9" data-row="11" data-biome="hills" class="hex-cell" />
+<text x="445.68" y="539.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="445.68" y="551.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,11)</text>
+<polygon points="519.9,545.2 519.9,573.8 495.1,588.1 470.4,573.8 470.4,545.2 495.1,530.9" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="10" data-row="11" data-biome="hills" class="hex-cell" />
+<text x="495.14" y="563.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="495.14" y="575.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,11)</text>
+<polygon points="569.3,520.7 569.3,549.3 544.6,563.6 519.9,549.3 519.9,520.7 544.6,506.4" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="11" data-row="11" data-biome="plains" class="hex-cell" />
+<text x="544.6" y="539.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="544.6" y="551.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,11)</text>
+<polygon points="618.8,545.2 618.8,573.8 594.1,588.1 569.3,573.8 569.3,545.2 594.1,530.9" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="12" data-row="11" data-biome="plains" class="hex-cell" />
+<text x="594.06" y="563.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="594.06" y="575.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,11)</text>
+<polygon points="668.2,520.7 668.2,549.3 643.5,563.6 618.8,549.3 618.8,520.7 643.5,506.4" fill="#2c6c99" stroke="#1d4766" stroke-width="1.2" opacity="0.92" data-col="13" data-row="11" data-biome="mountain_lake" class="hex-cell" />
+<text x="643.52" y="539.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="643.52" y="551.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,11)</text>
+<polygon points="717.7,545.2 717.7,573.8 693.0,588.1 668.2,573.8 668.2,545.2 693.0,530.9" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="14" data-row="11" data-biome="plains" class="hex-cell" />
+<text x="692.98" y="563.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="692.98" y="575.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,11)</text>
+<polygon points="767.2,520.7 767.2,549.3 742.4,563.6 717.7,549.3 717.7,520.7 742.4,506.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="15" data-row="11" data-biome="desert" class="hex-cell" />
+<text x="742.44" y="539.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="742.44" y="551.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,11)</text>
+<polygon points="816.6,545.2 816.6,573.8 791.9,588.1 767.2,573.8 767.2,545.2 791.9,530.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="16" data-row="11" data-biome="snow_mountain" class="hex-cell" />
+<text x="791.9" y="563.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="791.9" y="575.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,11)</text>
+<polygon points="866.1,520.7 866.1,549.3 841.4,563.6 816.6,549.3 816.6,520.7 841.4,506.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="17" data-row="11" data-biome="snow_mountain" class="hex-cell" />
+<text x="841.36" y="539.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="841.36" y="551.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,11)</text>
+<polygon points="915.6,545.2 915.6,573.8 890.8,588.1 866.1,573.8 866.1,545.2 890.8,530.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="18" data-row="11" data-biome="snow_mountain" class="hex-cell" />
+<text x="890.82" y="563.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="890.82" y="575.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,11)</text>
+<polygon points="965.0,520.7 965.0,549.3 940.3,563.6 915.5,549.3 915.5,520.7 940.3,506.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="19" data-row="11" data-biome="snow_mountain" class="hex-cell" />
+<text x="940.28" y="539.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="940.28" y="551.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,11)</text>
+<polygon points="1014.5,545.2 1014.5,573.8 989.7,588.1 965.0,573.8 965.0,545.2 989.7,530.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="20" data-row="11" data-biome="snow_mountain" class="hex-cell" />
+<text x="989.74" y="563.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="989.74" y="575.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,11)</text>
+<polygon points="74.7,569.7 74.7,598.3 50.0,612.6 25.3,598.3 25.3,569.7 50.0,555.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="12" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="588.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="600.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,12)</text>
+<polygon points="124.2,594.2 124.2,622.8 99.5,637.1 74.7,622.8 74.7,594.2 99.5,579.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="12" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="612.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="624.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,12)</text>
+<polygon points="173.6,569.7 173.6,598.3 148.9,612.6 124.2,598.3 124.2,569.7 148.9,555.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="12" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="588.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="600.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,12)</text>
+<polygon points="223.1,594.2 223.1,622.8 198.4,637.1 173.6,622.8 173.7,594.2 198.4,579.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="12" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="612.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="624.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,12)</text>
+<polygon points="272.6,569.7 272.6,598.3 247.8,612.6 223.1,598.3 223.1,569.7 247.8,555.4" fill="#3e5239" stroke="#2d3c2a" stroke-width="1.2" opacity="0.92" data-col="5" data-row="12" data-biome="swamp" class="hex-cell" />
+<text x="247.84" y="588.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="247.84" y="600.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,12)</text>
+<polygon points="322.0,594.2 322.0,622.8 297.3,637.1 272.6,622.8 272.6,594.2 297.3,579.9" fill="#3e5239" stroke="#2d3c2a" stroke-width="1.2" opacity="0.92" data-col="6" data-row="12" data-biome="swamp" class="hex-cell" />
+<text x="297.3" y="612.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="297.3" y="624.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,12)</text>
+<polygon points="371.5,569.7 371.5,598.3 346.8,612.6 322.0,598.3 322.0,569.7 346.8,555.4" fill="#3e5239" stroke="#2d3c2a" stroke-width="1.2" opacity="0.92" data-col="7" data-row="12" data-biome="swamp" class="hex-cell" />
+<text x="346.76" y="588.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="346.76" y="600.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,12)</text>
+<polygon points="421.0,594.2 421.0,622.8 396.2,637.1 371.5,622.8 371.5,594.2 396.2,579.9" fill="#c5b25f" stroke="#a6944b" stroke-width="1.2" opacity="0.92" data-col="8" data-row="12" data-biome="plains" class="hex-cell" />
+<text x="396.22" y="612.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="396.22" y="624.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,12)</text>
+<polygon points="470.4,569.7 470.4,598.3 445.7,612.6 420.9,598.3 420.9,569.7 445.7,555.4" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="9" data-row="12" data-biome="hills" class="hex-cell" />
+<text x="445.68" y="588.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="445.68" y="600.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,12)</text>
+<polygon points="519.9,594.2 519.9,622.8 495.1,637.1 470.4,622.8 470.4,594.2 495.1,579.9" fill="#9c8259" stroke="#7d6844" stroke-width="1.2" opacity="0.92" data-col="10" data-row="12" data-biome="hills" class="hex-cell" />
+<text x="495.14" y="612.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">▲</text>
+<text x="495.14" y="624.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,12)</text>
+<polygon points="569.3,569.7 569.3,598.3 544.6,612.6 519.9,598.3 519.9,569.7 544.6,555.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="11" data-row="12" data-biome="desert" class="hex-cell" />
+<text x="544.6" y="588.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="544.6" y="600.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,12)</text>
+<polygon points="618.8,594.2 618.8,622.8 594.1,637.1 569.3,622.8 569.3,594.2 594.1,579.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="12" data-row="12" data-biome="desert" class="hex-cell" />
+<text x="594.06" y="612.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="594.06" y="624.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,12)</text>
+<polygon points="668.2,569.7 668.2,598.3 643.5,612.6 618.8,598.3 618.8,569.7 643.5,555.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="13" data-row="12" data-biome="desert" class="hex-cell" />
+<text x="643.52" y="588.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="643.52" y="600.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,12)</text>
+<polygon points="717.7,594.2 717.7,622.8 693.0,637.1 668.2,622.8 668.2,594.2 693.0,579.9" fill="#bc8cff" stroke="#8a63d2" stroke-width="1.2" opacity="0.92" data-col="14" data-row="12" data-biome="necropolis" class="hex-cell" />
+<text x="692.98" y="624.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,12)</text>
+<polygon points="767.2,569.7 767.2,598.3 742.4,612.6 717.7,598.3 717.7,569.7 742.4,555.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="15" data-row="12" data-biome="desert" class="hex-cell" />
+<text x="742.44" y="588.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="742.44" y="600.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,12)</text>
+<polygon points="816.6,594.2 816.6,622.8 791.9,637.1 767.2,622.8 767.2,594.2 791.9,579.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="16" data-row="12" data-biome="snow_mountain" class="hex-cell" />
+<text x="791.9" y="612.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="791.9" y="624.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,12)</text>
+<polygon points="866.1,569.7 866.1,598.3 841.4,612.6 816.6,598.3 816.6,569.7 841.4,555.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="17" data-row="12" data-biome="snow_mountain" class="hex-cell" />
+<text x="841.36" y="588.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="841.36" y="600.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,12)</text>
+<polygon points="915.6,594.2 915.6,622.8 890.8,637.1 866.1,622.8 866.1,594.2 890.8,579.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="18" data-row="12" data-biome="snow_mountain" class="hex-cell" />
+<text x="890.82" y="612.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="890.82" y="624.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,12)</text>
+<polygon points="965.0,569.7 965.0,598.3 940.3,612.6 915.5,598.3 915.5,569.7 940.3,555.4" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="19" data-row="12" data-biome="snow_mountain" class="hex-cell" />
+<text x="940.28" y="588.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="940.28" y="600.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,12)</text>
+<polygon points="1014.5,594.2 1014.5,622.8 989.7,637.1 965.0,622.8 965.0,594.2 989.7,579.9" fill="#d7e0e6" stroke="#b0c0cc" stroke-width="1.2" opacity="0.92" data-col="20" data-row="12" data-biome="snow_mountain" class="hex-cell" />
+<text x="989.74" y="612.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">❄️</text>
+<text x="989.74" y="624.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,12)</text>
+<polygon points="74.7,618.7 74.7,647.3 50.0,661.6 25.3,647.3 25.3,618.7 50.0,604.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="13" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="637.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="649.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,13)</text>
+<polygon points="124.2,643.2 124.2,671.8 99.5,686.1 74.7,671.8 74.7,643.2 99.5,628.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="13" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="661.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="673.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,13)</text>
+<polygon points="173.6,618.7 173.6,647.3 148.9,661.6 124.2,647.3 124.2,618.7 148.9,604.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="13" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="637.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="649.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,13)</text>
+<polygon points="223.1,643.2 223.1,671.8 198.4,686.1 173.6,671.8 173.7,643.2 198.4,628.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="13" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="661.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="673.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,13)</text>
+<polygon points="272.6,618.7 272.6,647.3 247.8,661.6 223.1,647.3 223.1,618.7 247.8,604.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="13" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="637.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="649.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,13)</text>
+<polygon points="322.0,643.2 322.0,671.8 297.3,686.1 272.6,671.8 272.6,643.2 297.3,628.9" fill="#3e5239" stroke="#2d3c2a" stroke-width="1.2" opacity="0.92" data-col="6" data-row="13" data-biome="swamp" class="hex-cell" />
+<text x="297.3" y="661.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="297.3" y="673.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,13)</text>
+<polygon points="371.5,618.7 371.5,647.3 346.8,661.6 322.0,647.3 322.0,618.7 346.8,604.4" fill="#3e5239" stroke="#2d3c2a" stroke-width="1.2" opacity="0.92" data-col="7" data-row="13" data-biome="swamp" class="hex-cell" />
+<text x="346.76" y="637.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="346.76" y="649.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,13)</text>
+<polygon points="421.0,643.2 421.0,671.8 396.2,686.1 371.5,671.8 371.5,643.2 396.2,628.9" fill="#3fb950" stroke="#238636" stroke-width="1.2" opacity="0.92" data-col="8" data-row="13" data-biome="aqueducts" class="hex-cell" />
+<text x="396.22" y="661.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">💧</text>
+<text x="396.22" y="673.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,13)</text>
+<polygon points="470.4,618.7 470.4,647.3 445.7,661.6 420.9,647.3 420.9,618.7 445.7,604.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="9" data-row="13" data-biome="desert" class="hex-cell" />
+<text x="445.68" y="637.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="445.68" y="649.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,13)</text>
+<polygon points="519.9,643.2 519.9,671.8 495.1,686.1 470.4,671.8 470.4,643.2 495.1,628.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="10" data-row="13" data-biome="desert" class="hex-cell" />
+<text x="495.14" y="661.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="495.14" y="673.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,13)</text>
+<polygon points="569.3,618.7 569.3,647.3 544.6,661.6 519.9,647.3 519.9,618.7 544.6,604.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="11" data-row="13" data-biome="desert" class="hex-cell" />
+<text x="544.6" y="637.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="544.6" y="649.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,13)</text>
+<polygon points="618.8,643.2 618.8,671.8 594.1,686.1 569.3,671.8 569.3,643.2 594.1,628.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="12" data-row="13" data-biome="desert" class="hex-cell" />
+<text x="594.06" y="661.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="594.06" y="673.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,13)</text>
+<polygon points="668.2,618.7 668.2,647.3 643.5,661.6 618.8,647.3 618.8,618.7 643.5,604.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="13" data-row="13" data-biome="desert" class="hex-cell" />
+<text x="643.52" y="637.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="643.52" y="649.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,13)</text>
+<polygon points="717.7,643.2 717.7,671.8 693.0,686.1 668.2,671.8 668.2,643.2 693.0,628.9" fill="#a371f7" stroke="#7c4cc7" stroke-width="1.2" opacity="0.92" data-col="14" data-row="13" data-biome="sanctum" class="hex-cell" />
+<text x="692.98" y="673.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,13)</text>
+<polygon points="767.2,618.7 767.2,647.3 742.4,661.6 717.7,647.3 717.7,618.7 742.4,604.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="15" data-row="13" data-biome="desert" class="hex-cell" />
+<text x="742.44" y="637.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="742.44" y="649.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,13)</text>
+<polygon points="816.6,643.2 816.6,671.8 791.9,686.1 767.2,671.8 767.2,643.2 791.9,628.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="16" data-row="13" data-biome="desert" class="hex-cell" />
+<text x="791.9" y="661.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="791.9" y="673.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,13)</text>
+<polygon points="866.1,618.7 866.1,647.3 841.4,661.6 816.6,647.3 816.6,618.7 841.4,604.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="17" data-row="13" data-biome="desert" class="hex-cell" />
+<text x="841.36" y="637.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="841.36" y="649.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,13)</text>
+<polygon points="915.6,643.2 915.6,671.8 890.8,686.1 866.1,671.8 866.1,643.2 890.8,628.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="18" data-row="13" data-biome="desert" class="hex-cell" />
+<text x="890.82" y="661.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="890.82" y="673.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,13)</text>
+<polygon points="965.0,618.7 965.0,647.3 940.3,661.6 915.5,647.3 915.5,618.7 940.3,604.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="19" data-row="13" data-biome="desert" class="hex-cell" />
+<text x="940.28" y="637.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="940.28" y="649.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,13)</text>
+<polygon points="1014.5,643.2 1014.5,671.8 989.7,686.1 965.0,671.8 965.0,643.2 989.7,628.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="20" data-row="13" data-biome="desert" class="hex-cell" />
+<text x="989.74" y="661.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="989.74" y="673.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,13)</text>
+<polygon points="74.7,667.7 74.7,696.3 50.0,710.6 25.3,696.3 25.3,667.7 50.0,653.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="14" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="686.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="698.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,14)</text>
+<polygon points="124.2,692.2 124.2,720.8 99.5,735.1 74.7,720.8 74.7,692.2 99.5,677.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="14" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="710.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="722.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,14)</text>
+<polygon points="173.6,667.7 173.6,696.3 148.9,710.6 124.2,696.3 124.2,667.7 148.9,653.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="14" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="686.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="698.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,14)</text>
+<polygon points="223.1,692.2 223.1,720.8 198.4,735.1 173.6,720.8 173.7,692.2 198.4,677.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="14" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="710.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="722.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,14)</text>
+<polygon points="272.6,667.7 272.6,696.3 247.8,710.6 223.1,696.3 223.1,667.7 247.8,653.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="14" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="686.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="698.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,14)</text>
+<polygon points="322.0,692.2 322.0,720.8 297.3,735.1 272.6,720.8 272.6,692.2 297.3,677.9" fill="#3e5239" stroke="#2d3c2a" stroke-width="1.2" opacity="0.92" data-col="6" data-row="14" data-biome="swamp" class="hex-cell" />
+<text x="297.3" y="710.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="297.3" y="722.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,14)</text>
+<polygon points="371.5,667.7 371.5,696.3 346.8,710.6 322.0,696.3 322.0,667.7 346.8,653.4" fill="#3e5239" stroke="#2d3c2a" stroke-width="1.2" opacity="0.92" data-col="7" data-row="14" data-biome="swamp" class="hex-cell" />
+<text x="346.76" y="686.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌾</text>
+<text x="346.76" y="698.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,14)</text>
+<polygon points="421.0,692.2 421.0,720.8 396.2,735.1 371.5,720.8 371.5,692.2 396.2,677.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="8" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="396.22" y="710.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="396.22" y="722.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,14)</text>
+<polygon points="470.4,667.7 470.4,696.3 445.7,710.6 420.9,696.3 420.9,667.7 445.7,653.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="9" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="445.68" y="686.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="445.68" y="698.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,14)</text>
+<polygon points="519.9,692.2 519.9,720.8 495.1,735.1 470.4,720.8 470.4,692.2 495.1,677.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="10" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="495.14" y="710.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="495.14" y="722.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,14)</text>
+<polygon points="569.3,667.7 569.3,696.3 544.6,710.6 519.9,696.3 519.9,667.7 544.6,653.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="11" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="544.6" y="686.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="544.6" y="698.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,14)</text>
+<polygon points="618.8,692.2 618.8,720.8 594.1,735.1 569.3,720.8 569.3,692.2 594.1,677.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="12" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="594.06" y="710.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="594.06" y="722.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,14)</text>
+<polygon points="668.2,667.7 668.2,696.3 643.5,710.6 618.8,696.3 618.8,667.7 643.5,653.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="13" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="643.52" y="686.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="643.52" y="698.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,14)</text>
+<polygon points="717.7,692.2 717.7,720.8 693.0,735.1 668.2,720.8 668.2,692.2 693.0,677.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="14" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="692.98" y="710.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="692.98" y="722.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,14)</text>
+<polygon points="767.2,667.7 767.2,696.3 742.4,710.6 717.7,696.3 717.7,667.7 742.4,653.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="15" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="742.44" y="686.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="742.44" y="698.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,14)</text>
+<polygon points="816.6,692.2 816.6,720.8 791.9,735.1 767.2,720.8 767.2,692.2 791.9,677.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="16" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="791.9" y="710.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="791.9" y="722.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,14)</text>
+<polygon points="866.1,667.7 866.1,696.3 841.4,710.6 816.6,696.3 816.6,667.7 841.4,653.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="17" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="841.36" y="686.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="841.36" y="698.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,14)</text>
+<polygon points="915.6,692.2 915.6,720.8 890.8,735.1 866.1,720.8 866.1,692.2 890.8,677.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="18" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="890.82" y="710.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="890.82" y="722.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,14)</text>
+<polygon points="965.0,667.7 965.0,696.3 940.3,710.6 915.5,696.3 915.5,667.7 940.3,653.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="19" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="940.28" y="686.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="940.28" y="698.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,14)</text>
+<polygon points="1014.5,692.2 1014.5,720.8 989.7,735.1 965.0,720.8 965.0,692.2 989.7,677.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="20" data-row="14" data-biome="desert" class="hex-cell" />
+<text x="989.74" y="710.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="989.74" y="722.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,14)</text>
+<polygon points="74.7,716.7 74.7,745.3 50.0,759.6 25.3,745.3 25.3,716.7 50.0,702.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="15" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="735.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="747.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,15)</text>
+<polygon points="124.2,741.2 124.2,769.8 99.5,784.1 74.7,769.8 74.7,741.2 99.5,726.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="15" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="759.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="771.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,15)</text>
+<polygon points="173.6,716.7 173.6,745.3 148.9,759.6 124.2,745.3 124.2,716.7 148.9,702.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="15" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="735.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="747.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,15)</text>
+<polygon points="223.1,741.2 223.1,769.8 198.4,784.1 173.6,769.8 173.7,741.2 198.4,726.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="15" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="759.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="771.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,15)</text>
+<polygon points="272.6,716.7 272.6,745.3 247.8,759.6 223.1,745.3 223.1,716.7 247.8,702.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="15" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="735.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="747.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,15)</text>
+<polygon points="322.0,741.2 322.0,769.8 297.3,784.1 272.6,769.8 272.6,741.2 297.3,726.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="6" data-row="15" data-biome="ocean" class="hex-cell" />
+<text x="297.3" y="759.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="297.3" y="771.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,15)</text>
+<polygon points="371.5,716.7 371.5,745.3 346.8,759.6 322.0,745.3 322.0,716.7 346.8,702.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="7" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="346.76" y="735.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="346.76" y="747.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,15)</text>
+<polygon points="421.0,741.2 421.0,769.8 396.2,784.1 371.5,769.8 371.5,741.2 396.2,726.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="8" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="396.22" y="759.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="396.22" y="771.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,15)</text>
+<polygon points="470.4,716.7 470.4,745.3 445.7,759.6 420.9,745.3 420.9,716.7 445.7,702.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="9" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="445.68" y="735.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="445.68" y="747.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,15)</text>
+<polygon points="519.9,741.2 519.9,769.8 495.1,784.1 470.4,769.8 470.4,741.2 495.1,726.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="10" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="495.14" y="759.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="495.14" y="771.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,15)</text>
+<polygon points="569.3,716.7 569.3,745.3 544.6,759.6 519.9,745.3 519.9,716.7 544.6,702.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="11" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="544.6" y="735.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="544.6" y="747.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,15)</text>
+<polygon points="618.8,741.2 618.8,769.8 594.1,784.1 569.3,769.8 569.3,741.2 594.1,726.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="12" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="594.06" y="759.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="594.06" y="771.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,15)</text>
+<polygon points="668.2,716.7 668.2,745.3 643.5,759.6 618.8,745.3 618.8,716.7 643.5,702.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="13" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="643.52" y="735.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="643.52" y="747.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,15)</text>
+<polygon points="717.7,741.2 717.7,769.8 693.0,784.1 668.2,769.8 668.2,741.2 693.0,726.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="14" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="692.98" y="759.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="692.98" y="771.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,15)</text>
+<polygon points="767.2,716.7 767.2,745.3 742.4,759.6 717.7,745.3 717.7,716.7 742.4,702.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="15" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="742.44" y="735.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="742.44" y="747.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,15)</text>
+<polygon points="816.6,741.2 816.6,769.8 791.9,784.1 767.2,769.8 767.2,741.2 791.9,726.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="16" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="791.9" y="759.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="791.9" y="771.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,15)</text>
+<polygon points="866.1,716.7 866.1,745.3 841.4,759.6 816.6,745.3 816.6,716.7 841.4,702.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="17" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="841.36" y="735.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="841.36" y="747.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,15)</text>
+<polygon points="915.6,741.2 915.6,769.8 890.8,784.1 866.1,769.8 866.1,741.2 890.8,726.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="18" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="890.82" y="759.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="890.82" y="771.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,15)</text>
+<polygon points="965.0,716.7 965.0,745.3 940.3,759.6 915.5,745.3 915.5,716.7 940.3,702.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="19" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="940.28" y="735.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="940.28" y="747.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,15)</text>
+<polygon points="1014.5,741.2 1014.5,769.8 989.7,784.1 965.0,769.8 965.0,741.2 989.7,726.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="20" data-row="15" data-biome="desert" class="hex-cell" />
+<text x="989.74" y="759.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="989.74" y="771.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,15)</text>
+<polygon points="74.7,765.7 74.7,794.3 50.0,808.6 25.3,794.3 25.3,765.7 50.0,751.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="16" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="784.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="796.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,16)</text>
+<polygon points="124.2,790.2 124.2,818.8 99.5,833.1 74.7,818.8 74.7,790.2 99.5,775.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="16" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="808.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="820.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,16)</text>
+<polygon points="173.6,765.7 173.6,794.3 148.9,808.6 124.2,794.3 124.2,765.7 148.9,751.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="16" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="784.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="796.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,16)</text>
+<polygon points="223.1,790.2 223.1,818.8 198.4,833.1 173.6,818.8 173.7,790.2 198.4,775.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="16" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="808.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="820.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,16)</text>
+<polygon points="272.6,765.7 272.6,794.3 247.8,808.6 223.1,794.3 223.1,765.7 247.8,751.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="16" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="784.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="796.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,16)</text>
+<polygon points="322.0,790.2 322.0,818.8 297.3,833.1 272.6,818.8 272.6,790.2 297.3,775.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="6" data-row="16" data-biome="ocean" class="hex-cell" />
+<text x="297.3" y="808.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="297.3" y="820.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,16)</text>
+<polygon points="371.5,765.7 371.5,794.3 346.8,808.6 322.0,794.3 322.0,765.7 346.8,751.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="7" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="346.76" y="784.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="346.76" y="796.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,16)</text>
+<polygon points="421.0,790.2 421.0,818.8 396.2,833.1 371.5,818.8 371.5,790.2 396.2,775.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="8" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="396.22" y="808.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="396.22" y="820.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,16)</text>
+<polygon points="470.4,765.7 470.4,794.3 445.7,808.6 420.9,794.3 420.9,765.7 445.7,751.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="9" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="445.68" y="784.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="445.68" y="796.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,16)</text>
+<polygon points="519.9,790.2 519.9,818.8 495.1,833.1 470.4,818.8 470.4,790.2 495.1,775.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="10" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="495.14" y="808.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="495.14" y="820.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,16)</text>
+<polygon points="569.3,765.7 569.3,794.3 544.6,808.6 519.9,794.3 519.9,765.7 544.6,751.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="11" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="544.6" y="784.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="544.6" y="796.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,16)</text>
+<polygon points="618.8,790.2 618.8,818.8 594.1,833.1 569.3,818.8 569.3,790.2 594.1,775.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="12" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="594.06" y="808.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="594.06" y="820.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,16)</text>
+<polygon points="668.2,765.7 668.2,794.3 643.5,808.6 618.8,794.3 618.8,765.7 643.5,751.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="13" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="643.52" y="784.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="643.52" y="796.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,16)</text>
+<polygon points="717.7,790.2 717.7,818.8 693.0,833.1 668.2,818.8 668.2,790.2 693.0,775.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="14" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="692.98" y="808.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="692.98" y="820.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,16)</text>
+<polygon points="767.2,765.7 767.2,794.3 742.4,808.6 717.7,794.3 717.7,765.7 742.4,751.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="15" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="742.44" y="784.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="742.44" y="796.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,16)</text>
+<polygon points="816.6,790.2 816.6,818.8 791.9,833.1 767.2,818.8 767.2,790.2 791.9,775.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="16" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="791.9" y="808.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="791.9" y="820.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,16)</text>
+<polygon points="866.1,765.7 866.1,794.3 841.4,808.6 816.6,794.3 816.6,765.7 841.4,751.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="17" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="841.36" y="784.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="841.36" y="796.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,16)</text>
+<polygon points="915.6,790.2 915.6,818.8 890.8,833.1 866.1,818.8 866.1,790.2 890.8,775.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="18" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="890.82" y="808.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="890.82" y="820.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,16)</text>
+<polygon points="965.0,765.7 965.0,794.3 940.3,808.6 915.5,794.3 915.5,765.7 940.3,751.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="19" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="940.28" y="784.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="940.28" y="796.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,16)</text>
+<polygon points="1014.5,790.2 1014.5,818.8 989.7,833.1 965.0,818.8 965.0,790.2 989.7,775.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="20" data-row="16" data-biome="desert" class="hex-cell" />
+<text x="989.74" y="808.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="989.74" y="820.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,16)</text>
+<polygon points="74.7,814.7 74.7,843.3 50.0,857.6 25.3,843.3 25.3,814.7 50.0,800.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="1" data-row="17" data-biome="ocean" class="hex-cell" />
+<text x="50.0" y="833.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="50.0" y="845.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(1,17)</text>
+<polygon points="124.2,839.2 124.2,867.8 99.5,882.1 74.7,867.8 74.7,839.2 99.5,824.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="2" data-row="17" data-biome="ocean" class="hex-cell" />
+<text x="99.46" y="857.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="99.46" y="869.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(2,17)</text>
+<polygon points="173.6,814.7 173.6,843.3 148.9,857.6 124.2,843.3 124.2,814.7 148.9,800.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="3" data-row="17" data-biome="ocean" class="hex-cell" />
+<text x="148.92" y="833.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="148.92" y="845.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(3,17)</text>
+<polygon points="223.1,839.2 223.1,867.8 198.4,882.1 173.6,867.8 173.7,839.2 198.4,824.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="4" data-row="17" data-biome="ocean" class="hex-cell" />
+<text x="198.38" y="857.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="198.38" y="869.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(4,17)</text>
+<polygon points="272.6,814.7 272.6,843.3 247.8,857.6 223.1,843.3 223.1,814.7 247.8,800.4" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="5" data-row="17" data-biome="ocean" class="hex-cell" />
+<text x="247.84" y="833.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="247.84" y="845.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(5,17)</text>
+<polygon points="322.0,839.2 322.0,867.8 297.3,882.1 272.6,867.8 272.6,839.2 297.3,824.9" fill="#1f4769" stroke="#16344d" stroke-width="1.2" opacity="0.92" data-col="6" data-row="17" data-biome="ocean" class="hex-cell" />
+<text x="297.3" y="857.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🌊</text>
+<text x="297.3" y="869.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(6,17)</text>
+<polygon points="371.5,814.7 371.5,843.3 346.8,857.6 322.0,843.3 322.0,814.7 346.8,800.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="7" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="346.76" y="833.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="346.76" y="845.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(7,17)</text>
+<polygon points="421.0,839.2 421.0,867.8 396.2,882.1 371.5,867.8 371.5,839.2 396.2,824.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="8" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="396.22" y="857.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="396.22" y="869.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(8,17)</text>
+<polygon points="470.4,814.7 470.4,843.3 445.7,857.6 420.9,843.3 420.9,814.7 445.7,800.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="9" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="445.68" y="833.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="445.68" y="845.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(9,17)</text>
+<polygon points="519.9,839.2 519.9,867.8 495.1,882.1 470.4,867.8 470.4,839.2 495.1,824.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="10" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="495.14" y="857.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="495.14" y="869.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(10,17)</text>
+<polygon points="569.3,814.7 569.3,843.3 544.6,857.6 519.9,843.3 519.9,814.7 544.6,800.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="11" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="544.6" y="833.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="544.6" y="845.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(11,17)</text>
+<polygon points="618.8,839.2 618.8,867.8 594.1,882.1 569.3,867.8 569.3,839.2 594.1,824.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="12" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="594.06" y="857.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="594.06" y="869.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(12,17)</text>
+<polygon points="668.2,814.7 668.2,843.3 643.5,857.6 618.8,843.3 618.8,814.7 643.5,800.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="13" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="643.52" y="833.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="643.52" y="845.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(13,17)</text>
+<polygon points="717.7,839.2 717.7,867.8 693.0,882.1 668.2,867.8 668.2,839.2 693.0,824.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="14" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="692.98" y="857.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="692.98" y="869.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(14,17)</text>
+<polygon points="767.2,814.7 767.2,843.3 742.4,857.6 717.7,843.3 717.7,814.7 742.4,800.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="15" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="742.44" y="833.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="742.44" y="845.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(15,17)</text>
+<polygon points="816.6,839.2 816.6,867.8 791.9,882.1 767.2,867.8 767.2,839.2 791.9,824.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="16" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="791.9" y="857.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="791.9" y="869.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(16,17)</text>
+<polygon points="866.1,814.7 866.1,843.3 841.4,857.6 816.6,843.3 816.6,814.7 841.4,800.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="17" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="841.36" y="833.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="841.36" y="845.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(17,17)</text>
+<polygon points="915.6,839.2 915.6,867.8 890.8,882.1 866.1,867.8 866.1,839.2 890.8,824.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="18" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="890.82" y="857.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="890.82" y="869.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(18,17)</text>
+<polygon points="965.0,814.7 965.0,843.3 940.3,857.6 915.5,843.3 915.5,814.7 940.3,800.4" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="19" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="940.28" y="833.0" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="940.28" y="845.0" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(19,17)</text>
+<polygon points="1014.5,839.2 1014.5,867.8 989.7,882.1 965.0,867.8 965.0,839.2 989.7,824.9" fill="#c5a45b" stroke="#a38645" stroke-width="1.2" opacity="0.92" data-col="20" data-row="17" data-biome="desert" class="hex-cell" />
+<text x="989.74" y="857.5" font-size="11" text-anchor="middle" fill="#ffffff" opacity="0.35">🏜️</text>
+<text x="989.74" y="869.5" font-size="7.5" text-anchor="middle" fill="#ffffff" opacity="0.25">(20,17)</text>
+</g>
+<g id="river-layer">
+<polyline points="643.52,535.0 594.06,559.5 544.6,535.0 495.14,559.5 445.68,535.0 396.22,559.5 346.76,584.0 297.3,657.5 247.84,682.0 198.38,706.5" fill="none" stroke="url(#river-grad)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" />
+<polyline points="643.52,535.0 594.06,559.5 544.6,535.0 495.14,559.5 445.68,535.0 396.22,559.5 346.76,584.0 297.3,657.5 247.84,682.0 198.38,706.5" fill="none" stroke="#79c0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+</g>
+<g id="road-layer">
+<polyline points="297.3,559.5 346.76,535.0 396.22,510.5 445.68,486.0 495.14,461.5 544.6,388.0 594.06,363.5 643.52,339.0 692.98,363.5 742.44,339.0" fill="none" stroke="#4a3e2c" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
+<polyline points="297.3,559.5 346.76,535.0 396.22,510.5 445.68,486.0 495.14,461.5 544.6,388.0 594.06,363.5 643.52,339.0 692.98,363.5 742.44,339.0" fill="none" stroke="url(#road-grad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="10 3" />
+</g>
+<g id="outer-loop-layer">
+<polygon points="99.46,510.5 148.92,339.0 247.84,192.0 396.22,118.5 544.6,94.0 643.52,143.0 742.44,290.0 791.9,363.5 890.82,461.5 890.82,559.5 791.9,608.5 742.44,633.0 692.98,755.5 544.6,780.0 396.22,804.5 247.84,731.0 198.38,657.5 99.46,510.5" fill="#f85149" fill-opacity="0.04" stroke="#e63946" stroke-width="3" stroke-dasharray="8 5" stroke-linejoin="round" filter="url(#glow-outer)" />
+</g>
+<g id="inner-loop-layer">
+<polygon points="247.84,535.0 297.3,510.5 297.3,412.5 346.76,290.0 396.22,314.5 495.14,314.5 544.6,339.0 594.06,412.5 544.6,486.0 544.6,584.0 495.14,657.5 396.22,657.5 346.76,633.0 297.3,608.5 247.84,535.0" fill="#f85149" fill-opacity="0.08" stroke="#f85149" stroke-width="4" stroke-linejoin="round" filter="url(#glow-inner)" />
+</g>
+<g id="landmarks-layer">
+<circle cx="396.22" cy="510.5" r="18" fill="#e3b341" fill-opacity="0.25" stroke="#e3b341" stroke-width="2" />
+<text x="396.22" y="515.5" font-size="16" text-anchor="middle">🏰</text>
+<rect x="351.22" y="528.5" width="90" height="15" rx="3" fill="#161b22" stroke="#e3b341" stroke-width="1" />
+<text x="396.22" y="539.5" font-size="8" font-weight="bold" text-anchor="middle" fill="#e3b341">START 06:00</text>
+<circle cx="297.3" cy="559.5" r="18" fill="#58a6ff" fill-opacity="0.25" stroke="#58a6ff" stroke-width="2" />
+<text x="297.3" y="564.5" font-size="16" text-anchor="middle">🗼</text>
+<rect x="252.3" y="577.5" width="90" height="15" rx="3" fill="#161b22" stroke="#58a6ff" stroke-width="1" />
+<text x="297.3" y="588.5" font-size="8" font-weight="bold" text-anchor="middle" fill="#58a6ff">PORT</text>
+<circle cx="247.84" cy="535.0" r="18" fill="#388bfd" fill-opacity="0.25" stroke="#388bfd" stroke-width="2" />
+<text x="247.84" y="540.0" font-size="16" text-anchor="middle">⚓</text>
+<rect x="202.84" y="553.0" width="90" height="15" rx="3" fill="#161b22" stroke="#388bfd" stroke-width="1" />
+<text x="247.84" y="564.0" font-size="8" font-weight="bold" text-anchor="middle" fill="#388bfd">BOSS 4: STORM GIANT</text>
+<circle cx="346.76" cy="290.0" r="18" fill="#7ee787" fill-opacity="0.25" stroke="#7ee787" stroke-width="2" />
+<text x="346.76" y="295.0" font-size="16" text-anchor="middle">🌟</text>
+<rect x="301.76" y="308.0" width="90" height="15" rx="3" fill="#161b22" stroke="#7ee787" stroke-width="1" />
+<text x="346.76" y="319.0" font-size="8" font-weight="bold" text-anchor="middle" fill="#7ee787">TRUE ANGEL CRASH</text>
+<circle cx="742.44" cy="339.0" r="18" fill="#8b949e" fill-opacity="0.25" stroke="#8b949e" stroke-width="2" />
+<text x="742.44" y="344.0" font-size="16" text-anchor="middle">⛏️</text>
+<rect x="697.44" y="357.0" width="90" height="15" rx="3" fill="#161b22" stroke="#8b949e" stroke-width="1" />
+<text x="742.44" y="368.0" font-size="8" font-weight="bold" text-anchor="middle" fill="#8b949e">GROUNDING BALLISTAS</text>
+<circle cx="841.36" cy="486.0" r="18" fill="#79c0ff" fill-opacity="0.25" stroke="#79c0ff" stroke-width="2" />
+<text x="841.36" y="491.0" font-size="16" text-anchor="middle">🐉</text>
+<rect x="796.36" y="504.0" width="90" height="15" rx="3" fill="#161b22" stroke="#79c0ff" stroke-width="1" />
+<text x="841.36" y="515.0" font-size="8" font-weight="bold" text-anchor="middle" fill="#79c0ff">BOSS 1: WHITE DRAGON</text>
+<circle cx="692.98" cy="608.5" r="18" fill="#bc8cff" fill-opacity="0.25" stroke="#bc8cff" stroke-width="2" />
+<text x="692.98" y="613.5" font-size="16" text-anchor="middle">💀</text>
+<rect x="647.98" y="626.5" width="90" height="15" rx="3" fill="#161b22" stroke="#bc8cff" stroke-width="1" />
+<text x="692.98" y="637.5" font-size="8" font-weight="bold" text-anchor="middle" fill="#bc8cff">BOSS 2: MUMMY LORD</text>
+<circle cx="692.98" cy="657.5" r="18" fill="#a371f7" fill-opacity="0.25" stroke="#a371f7" stroke-width="2" />
+<text x="692.98" y="662.5" font-size="16" text-anchor="middle">🧙</text>
+<rect x="647.98" y="675.5" width="90" height="15" rx="3" fill="#161b22" stroke="#a371f7" stroke-width="1" />
+<text x="692.98" y="686.5" font-size="8" font-weight="bold" text-anchor="middle" fill="#a371f7">CHRONOMANCY SPIRE</text>
+<circle cx="643.52" cy="437.0" r="18" fill="#f85149" fill-opacity="0.25" stroke="#f85149" stroke-width="2" />
+<text x="643.52" y="442.0" font-size="16" text-anchor="middle">☀️</text>
+<rect x="598.52" y="455.0" width="90" height="15" rx="3" fill="#161b22" stroke="#f85149" stroke-width="1" />
+<text x="643.52" y="466.0" font-size="8" font-weight="bold" text-anchor="middle" fill="#f85149">SOLAR RESONATOR</text>
+<circle cx="643.52" cy="535.0" r="18" fill="#2c6c99" fill-opacity="0.25" stroke="#2c6c99" stroke-width="2" />
+<text x="643.52" y="540.0" font-size="16" text-anchor="middle">🌊</text>
+<rect x="598.52" y="553.0" width="90" height="15" rx="3" fill="#161b22" stroke="#2c6c99" stroke-width="1" />
+<text x="643.52" y="564.0" font-size="8" font-weight="bold" text-anchor="middle" fill="#2c6c99">ALPINE LAKE</text>
+</g>
+<g id="legend-layer" transform="translate(35, 30)">
+      <rect width="360" height="100" rx="6" fill="#161b22" fill-opacity="0.92" stroke="#30363d" stroke-width="1.5" />
+      <text x="14" y="22" font-size="12" font-weight="bold" fill="#e3b341">⚔️ THE BEREGOST TIME LOOP — MASTER REGION MAP</text>
+      
+      <!-- Inner Loop Legend -->
+      <line x1="14" y1="42" x2="45" y2="42" stroke="#f85149" stroke-width="4" />
+      <text x="52" y="45" font-size="10" font-weight="bold" fill="#f85149">INNER RED LOOP: Aerial Flight Limit (12:00 PM Cutoff)</text>
+      <text x="52" y="57" font-size="8.5" fill="#8b949e">Zephyr Gryphon / Fly (15m/hex). Beyond this, midday heat & thermals force mounts down.</text>
+
+      <!-- Outer Loop Legend -->
+      <line x1="14" y1="74" x2="45" y2="74" stroke="#e63946" stroke-width="3" stroke-dasharray="6 3" />
+      <text x="52" y="77" font-size="10" font-weight="bold" fill="#e63946">OUTER RED LOOP: On-Foot Travel Limit (15:00 PM Cutoff)</text>
+      <text x="52" y="89" font-size="8.5" fill="#8b949e">Ground Foot (60m/hex) / Mount (30m/hex). Beyond this, 175°F surface conflagration is lethal.</text>
+    </g>
+</svg>

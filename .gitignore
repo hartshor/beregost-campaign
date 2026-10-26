@@ -1,0 +1,9 @@
+# Scratch/build scripts and temporary test files
+scratch/
+
+# Operating System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
