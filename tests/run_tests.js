@@ -103,14 +103,37 @@ function getOrCreateElement(id) {
   return elementsStore[id];
 }
 
+const bodyClassSet = new Set();
+const bodyEl = {
+  classList: {
+    add: (cls) => bodyClassSet.add(cls),
+    remove: (cls) => bodyClassSet.delete(cls),
+    toggle: (cls, force) => {
+      if (force !== undefined) {
+        if (force) bodyClassSet.add(cls); else bodyClassSet.delete(cls);
+        return force;
+      }
+      if (bodyClassSet.has(cls)) { bodyClassSet.delete(cls); return false; }
+      bodyClassSet.add(cls); return true;
+    },
+    contains: (cls) => bodyClassSet.has(cls)
+  }
+};
+const timelineBarEl = getOrCreateElement('timeline_bar_elem');
+timelineBarEl.className = 'timeline-bar';
+
 const sandbox = {
   console: console,
   document: {
+    body: bodyEl,
     getElementById: (id) => getOrCreateElement(id),
     querySelectorAll: (selector) => {
       return [];
     },
-    querySelector: (selector) => null,
+    querySelector: (selector) => {
+      if (selector === '.timeline-bar') return timelineBarEl;
+      return null;
+    },
     createElement: (tag) => getOrCreateElement('elem_' + Math.random()),
     createElementNS: (ns, tag) => getOrCreateElement('elem_ns_' + Math.random()),
     addEventListener: () => {}
@@ -149,10 +172,10 @@ const getGlobal = (name) => vm.runInContext(name, sandbox);
 suite("1. Core Navigation & Tab Architecture", () => {
   const tabs = [
     "tab-roadmap", "tab-timeline", "tab-loop0", "tab-memory", "tab-dag", "tab-bosses",
-    "tab-rakshasa", "tab-map", "tab-town", "tab-dungeons", "tab-gallery", "tab-notebook", "tab-party", "tab-ingest", "tab-todo"
+    "tab-rakshasa", "tab-map", "tab-town", "tab-dungeons", "tab-gallery", "tab-notebook", "tab-notes", "tab-party", "tab-ingest", "tab-todo"
   ];
 
-  test("All 15 Tab Panes exist in HTML markup", () => {
+  test("All 16 Tab Panes exist in HTML markup", () => {
     tabs.forEach(tabId => {
       expect(html.includes(`id="${tabId}"`), `Markup missing tab element #${tabId}`);
     });
@@ -191,6 +214,18 @@ suite("1. Core Navigation & Tab Architecture", () => {
     switchTab('tab-todo');
     const todoEl = sandbox.document.getElementById('tab-todo');
     expect(todoEl.classList.contains('active'), "tab-todo should have 'active' class");
+
+    // Switch to tab-notes
+    switchTab('tab-notes');
+    const notesEl = sandbox.document.getElementById('tab-notes');
+    expect(notesEl.classList.contains('active'), "tab-notes should have 'active' class");
+    expect(timelineBarEl.style.display === 'none', "timeline-bar should be hidden on tab-notes");
+    expect(bodyEl.classList.contains('notes-active'), "body should have 'notes-active' class on tab-notes");
+
+    // Switch back to tab-map
+    switchTab('tab-map');
+    expect(timelineBarEl.style.display !== 'none', "timeline-bar should be restored on tab-map");
+    expect(!bodyEl.classList.contains('notes-active'), "body should not have 'notes-active' class on tab-map");
   });
 });
 

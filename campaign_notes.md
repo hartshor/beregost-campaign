@@ -395,7 +395,7 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
        │
 [BOSS 3: LVL 10] Tiger-Headed Rakshasa (Beregost/Forest) ► Shatters Deception, Unmasks Mastermind & Saves Angel
        │
-[CAUSAL BOOTSTRAP] Party & Restored True Angel ──────────► Forge & Trigger the Time Loop Itself! (Details TBD)
+[CAUSAL BOOTSTRAP] Party & Restored True Angel ──────────► Forge & Trigger the Time Loop Itself! (05:45 AM Heist)
        │
 [BOSS 4: LVL 11] Storm Giant (Coast/Ocean) ──────────────► Unchains Sea Titan & Calls 17:30 Supercell Storm
        │
@@ -1343,7 +1343,7 @@ Because the 5 PCs retain full memories of all prior loops, they can divide into 
 * **Role**: Benevolent celestial entity trapped in monstrous form, clutching a scorched white solar feather from her stolen wings.
 * **Routine**: Bleeds silver vapor, pulls strikes against druids, utters agonized, fragmented Celestial prayers (*"Father of Dawn... forgive them... the feathers..."*).
 * **Intervention**: On early loops, planar inversion shock prevents coherent conversation or halting the 11:30 AM rejection pulse; once the party memorizes the **Somatic Inversion Touch & Celestial Reversal Chant** from Boss 2's Golden Alabaster Tablets (`Hex 12, 16`), performing the somatic touch and speaking its True Celestial Name at `Hex (7, 6)` stabilizes the Angel's mind on any loop without needing to re-visit the desert tomb!
-* **Reward**: Bestows **Aegis of the Host** (+2 saves vs radiant/fire for that day), works alongside the party (after defeating the Rakshasa, Boss 3, and before freeing the Storm Giant, Boss 4) to **actually create the 12-hour causal time loop itself** (*exact mechanics TBD*), reveals **Tempest Lord Otheus** bound beneath the western sea (`Hex 5, 11`), and flies to the **Spire of the False Angel (`Hex 6, 8`)** for the 17:30 PM finale!
+* **Reward**: Bestows **Aegis of the Host** (+2 saves vs radiant/fire for that day), works alongside the party (after defeating the Rakshasa, Boss 3, and before freeing the Storm Giant, Boss 4) to **actually create the 12-hour causal time loop itself** (using the Djinni's Wish and the 05:45 AM Caravel heist to anchor the dawn threshold), reveals **Tempest Lord Otheus** bound beneath the western sea (`Hex 5, 11`), and flies to the **Spire of the False Angel (`Hex 6, 8`)** for the 17:30 PM finale!
 
 #### 19. Thane Torvald Ironbreaker (Dwarvenhold King's Hall — Hex 15,7)
 * **Role**: Dwarven king holding the mountain pass against the White Dragon.
