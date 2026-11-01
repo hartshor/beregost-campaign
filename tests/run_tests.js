@@ -1132,6 +1132,27 @@ suite("14. Calibrated Travel Rules, Split-Party Pathing & 05:45 AM Commotion", (
     expect(html.includes("05:45 AM Silt-Gull bandit attack on the Commodore's Caravel (5,11) as a distraction"), "Boss 3 discovery section must explain the 05:45 AM distraction heist");
     expect(!html.includes("exact mechanics TBD"), "No 'exact mechanics TBD' placeholder should remain");
   });
+
+  test("Blazing Farmland (7, 10), Lost Burning Book & 05:45 AM Tiny Fire Discovery", () => {
+    const hex710 = FULL_HEX_DATA.find(h => h.c === 7 && h.r === 10);
+    expect(hex710, "Hex (7, 10) must exist");
+    expect(hex710.name.includes("Blazing Farmland"), "Hex (7, 10) must be named Blazing Farmland");
+    expect(hex710.icon === "🔥", "Hex (7, 10) must display fire icon 🔥");
+    expect(hex710.desc.includes("Burning Book"), "Hex (7, 10) desc must mention the Burning Book");
+    expect(hex710.desc.toLowerCase().includes("contained"), "Hex (7, 10) desc must explain the fire is contained from Beregost by stone ditches");
+    expect(hex710.desc.includes("05:45 AM") && hex710.desc.includes("tiny"), "Hex (7, 10) desc must explain 05:45 AM aerial spotting of the tiny fire");
+    
+    // Check Spire (6, 8) requires Burning Book
+    const hex68 = FULL_HEX_DATA.find(h => h.c === 6 && h.r === 8);
+    expect(hex68, "Spire Hex (6, 8) must exist");
+    expect(hex68.desc.includes("Burning Book"), "Spire Hex (6, 8) must require the Burning Book to unseal its portal");
+
+    // Check West Timeline Matrix
+    const LOCATIONS = getGlobal('LOCATION_MAJOR_TABLES');
+    expect(LOCATIONS && LOCATIONS.west, "LOCATION_MAJOR_TABLES.west must exist");
+    const row0545 = LOCATIONS.west.rows.find(r => r[0] === "05:45");
+    expect(row0545 && row0545[2].includes("tiny"), "West timeline at 05:45 must describe the tiny fire over Hex (7, 10)");
+  });
 });
 
 // ----------------------------------------------------------------------------
