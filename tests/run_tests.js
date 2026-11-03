@@ -394,7 +394,7 @@ suite("4. Township of Beregost & Live Building Census", () => {
   test("getTownDepartedNPCs(720) correctly lists NPCs who departed town by 12:00 PM", () => {
     const departed = getTownDepartedNPCs(720);
     const ids = departed.map(d => d.npc.id);
-    expect(ids.includes("artificer_bram"), "Bram departs for East Quarry by noon");
+    expect(!ids.includes("artificer_bram"), "Bram remains at the Clocktower in town");
     expect(ids.includes("rakshasa_ravana"), "Aurelius / Ravana departs for northern wilds by noon");
   });
 
@@ -820,7 +820,7 @@ suite("11. Hex Map Zoom, Pan & Encounter CR Badges", () => {
 
     // Horned Fiend / True Angel (7, 6)
     const angel = getMonsterCRForHex(7, 6);
-    expect(angel && angel.cr === "11", "Hex (7, 6) must have CR 11");
+    expect(angel && angel.cr === "10", "Hex (7, 6) must have CR 10");
 
     // Wilderness: Owlbear (7, 4)
     const owlbear = getMonsterCRForHex(7, 4);

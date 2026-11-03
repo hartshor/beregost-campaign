@@ -13,10 +13,13 @@
 * **Asymmetric Knowledge Rule**: The 5 player characters are the **only entities in the multiverse aware of the time loop**. No NPCs, bosses, genies, devils, angels, or monsters retain memories or "soul-imprints" across cycles. Their routines, dialogues, and tactical responses reset identically every dawn.
 * **Strict Reset Boundary (Memories & Level-Ups Only)**: Nothing persists across time resets except **the players' memories** and **their milestone level-ups** (Level 7 $\rightarrow$ 8 $\rightarrow$ 10 $\rightarrow$ 11). No physical items, no soul-imprinted blessings, no persistent boss state changes, and no permanent movement buffs carry over. Faster progression on later loops relies 100% on the players' memorized knowledge of **True Names**, **ritual chants/somatic touches**, **vault combinations**, **passwords**, and **clockwork schedules**.
 
-### 1.1 Narrative Continuity: The Arcanist's Battery & The Swapped Souls
-* **The Previous Campaign (The Arcanist's Battery)**: In the party's prior adventures, they defeated a corrupt arcanist who was exploiting an **Angel** and an **Archdevil** as an opposing-planar magical battery. When the party shattered the arcane conduits and liberated them, the catastrophic planar backlash caused an unforeseen **Inversion Soul-Swap**:
+### 1.1 Narrative Continuity: The Arcanist's Battery, The Swapped Souls & The Lost Burning Book
+* **The Previous Campaign (The Arcanist's Battery & The Burning Book)**: In the party's prior adventures, they defeated a corrupt arcanist who was exploiting an **Angel** and an **Archdevil** as an opposing-planar magical battery, and recovered the Arcanist's **Burning Book** (a living solar-angelic grimoire). When the party shattered the arcane conduits and liberated the two planar beings, the catastrophic planar backlash caused an unforeseen **Inversion Soul-Swap**:
   - The **True Angel's soul** was drawn into the grotesque, horned physical vessel of the Devil.
   - The **True Devil's soul** was drawn into the resplendent, feathered physical vessel of the Angel.
+* **The Missing Burning Book (Organic Discovery)**:
+  - On their pre-dawn march toward Beregost before Loop 0 (`~05:25 AM`), the party accidentally dropped the **Burning Book** in the dark western barleyfields of **`Hex (7, 10)`**, sparking the massive farmland wildfire outside the West Gate.
+  - **Wait for Organic Discovery (With True Angel Fallback)**: Do not force an automatic prompt at 06:00 AM—wait for the players to notice on their own that the Burning Book is missing from their packs. Worst case, once they heal and speak with the **True Angel** (or inspect the sealed **Spire of the False Angel** at `Hex 6, 8`), the True Angel tells them that the **Burning Book** from the Arcanist's sanctum can unseal the Spire's solar-adamantine portal wards—prompting the party to check their inventory and realize they lost it on the way into town! Then, during the `05:45 AM` causal bootstrap flight over `Hex (7, 10)`, they spot the **tiny fire** where it first landed and can retrieve it on subsequent loops.
 * **Player Recognition & The "Angel Acting Weird" Observation**:
   - The players recognize both entities from the previous campaign!
   - However, the players **do not know their bodies were swapped**.
@@ -32,17 +35,16 @@
 ## 2. Loop 0: The Emotional Baseline & Session 1 Walkthrough
 
 > **DM Design Philosophy:**  
-> Loop 0 must play out as a completely standard, charming, high-fantasy adventure. **Do not introduce time loop mechanics, the Rakshasa disguise, or the angel/devil swap during the morning of Loop 0.**  
-> The players should believe this is a classic heroic quest in a lively, welcoming town. The goal is to build deep, authentic emotional attachment to Beregost and its civilians, making the afternoon conflagration harrowing and the final reset an unforgettable, jaw-dropping twist.
+> Loop 0 plays out as a charming, high-fantasy adventure that builds deep emotional attachment to Beregost and its civilians before the afternoon conflagration and the 18:00 PM reset twist. **"Lord Aurelius the Radiant" (the disguised Rakshasa) appears on Day 1 in Loop 0 on his normal schedule at the North Gate (`06:45–07:15 AM`) before heading north.** Most parties will be busy in the town square and won't run into him on Loop 0 morning—and if they do happen to walk to the North Gate and meet him on Day 1, that's completely okay!
 
 ### 2.0 DM Quick-Memory Cheat Sheet (Sessions 1 & 2)
 *(Built into the Web Companion under the `🧠 Sessions 1 & 2 Memory Sheet` tab for fast mid-session reference)*
 
 1. **The 30-Second North Star**:
-   - **Session 1 (Loop 0)**: Pure, heartwarming festival fun followed by catastrophic solar heartbreak. Let players earn tokens from Tobias, Maya, and Captain Rebecca. At 17:59 PM, the Angel atop the West Cliffs tears the sun down, vaporizing Beregost. At 06:00 AM, the clock resets.
-   - **Session 2 (Loop 1)**: The party wakes with full memories and rushes West to investigate. At 07:15 AM on the West Road, **"Aurelius the Radiant" (Lord Ravana the Rakshasa)** intercepts them with a convincing cover story (*"The Angel was corrupted; kill the horned beast in Ash Grove to cleanse it!"*). Killing the beast detonates a 70 Radiant death-burst at 11:30 AM, wiping the grove and resetting the loop!
+   - **Session 1 (Loop 0)**: Heartwarming festival fun and three morning errands (West firebreak containment at `7,10`, South scarecrow at `8,11`, East goblin scout at `9,10`) with a clear **11:00 AM High Sun Muster** hook pulling the party back into town before noon, followed by the **11:30 AM default northern explosion** and catastrophic afternoon solar heartbreak. At 17:59 PM, the Angel atop the West Cliffs tears the sun down, vaporizing Beregost. At 06:00 AM, the clock resets.
+   - **Session 2 (Loop 1)**: The party wakes with full memories. At 07:15 AM by the North Gate/Road, **"Aurelius the Radiant" (Lord Ravana the Rakshasa)** offers his convincing cover story (*"The Angel was corrupted; kill the horned beast in Ash Grove to cleanse it!"*). Meanwhile, the druids hunt the horned beast every loop regardless (asking the party to join if present, or executing it themselves at 11:30 AM), triggering the 70 Radiant death-burst at 11:30 AM!
 2. **The 3 Aha! Clues to Seed**:
-   - **05:45 AM**: Commodore's caravel lockbox stolen by winged figure & crew (*"That was us!"*).
+   - **05:45 AM**: Commodore's caravel lockbox stolen by winged figure & crew (*"That was us!"*), and tiny fire sparked in `Hex (7, 10)` where the party dropped their **Burning Book**.
    - **05:59 AM**: Clocktower stone balcony freshly smashed into rubble (*"That was us!"*).
    - **06:00 AM Reset**: Guard calls up: *"Hey! You got the clock working! Thank you! Happy Solstice!"*
 3. **Aurelius's 3 Secret Tells**:
@@ -50,9 +52,10 @@
    - **INVERTED PALMS**: Hands are backward; concealed under silk gloves.
    - **SCENT**: Sweet cinnamon pastry undercut with blood and sulfur.
 4. **Combat Numbers at a Glance**:
+   - **Blazing Farmland Firebreak & Cinder Mephits (CR 1/2, Hex 7,10)**: 2x Cinder Mephits (AC 12, HP 22) + chop down cedar windbreak containment (DC 13 Athletics / 30 HP timber) to save Tobias's western barley shed.
    - **Cornfield Scarecrow (CR 1, Hex 8,11)**: AC 11, HP 36, DC 11 Wis save vs paralyzing claws, **Vulnerable to Fire**.
    - **Snirk the Goblin (CR 1/4, Hex 9,10)**: AC 15, HP 7, dangling in tree snare. DC 10 check / pastry bribe reveals White Dragon Rimefang in Cloud Peaks.
-   - **Horned Fiend / True Angel (CR 10, Hex 7,6)**: AC 18, HP 144, non-lethal strikes (mercy). 70 Radiant death-burst on Crucible execution.
+   - **Horned Fiend / True Angel (CR 10, Hex 7,6)**: AC 17, HP 144, non-lethal strikes (mercy). 70 Radiant death-burst at 11:30 AM (happens every loop by default unless saved!).
 
 ---
 
@@ -80,7 +83,7 @@
 
 *(Delivered at 06:00 AM by the haggard old prophet wrapped in a patched quilt sitting against the municipal well in Feldepost Square. Townsfolk ignore him as an eccentric madman, but on Loop 1 the players realize every line is literal truth.)*
 
-> **[THE SOLSTICE DAWN CHANT — RECITED BY OLD JONAS (14 LINES)]**  
+> **[THE SOLSTICE DAWN CHANT — RECITED BY OLD JONAS (8 LINES)]**  
 > *"With six chimes the belfry wakes,  
 > But doom is coming with no escape.  
 > Only one narrow path can provide salvation,  
@@ -96,22 +99,22 @@
    - *Atmospheric Doom*: At 06:00 AM, six chimes ring from the clocktower. Time resets, and doom rushes toward 18:00 PM sunset with no natural escape.
    - *Threading the Needle*: The campaign is not a wide-open wandering sandbox—there is only **one narrow sequence of operations** that can break the temporal recursion before the dusk vaporization.
 2. **Lines 5–6 (The Tactical Directive: First East, Then South)**:
-   - *The Immediate Roadmap*: After the Loop 1 disaster in the Ash Grove (where attacking the horned beast triggers a 70-damage radiant suicide blast at 11:30 AM), the party wakes up on Loop 2 and hears Jonas chant this line.
-   - *The Pivot*: The rhyme explicitly redirects the party away from the Ash Grove dead end: **First East to the ice** (Hex 17, 10: Adult White Dragon Rimefang) to acquire the *Wish of Frozen Heart*, and **Then South to the sand** (Hex 14, 12: Sunken Necropolis of Akh-en-Amon)!
+   - *The Immediate Roadmap*: After the 11:30 AM disaster in the Ash Grove (where the horned beast's execution triggers a 70-damage radiant soul detonation at 11:30 AM), the party hears Jonas chant this line.
+   - *The Pivot*: The rhyme explicitly redirects the party away from the Ash Grove dead end: **First East to the ice** (Hex 17, 10: Adult White Dragon Rimefang) to acquire the *Wish of Frozen Heart*, and **Then South to the sand** (Hex 12, 16: Sunken Necropolis of Akh-en-Amon, via Waystation 14, 12)!
 3. **Lines 7–8 (Blame Not the Angel & The Fiendish Ruse — The Phase 1 Assumption vs. Phase 2 Reveal)**:
    - **Phase 1 (Loops 1–7 — What the Players Believe)**: The players still do **NOT** know of the body swap! Hearing *"Blame not the angel for he is confused, led astray by the fiendish ruse,"* they believe the radiant seraph on the Western Sea Cliffs is merely "confused" or grieving, and that an unseen devil is manipulating the cosmos. They set out across the map thinking they are gathering artifacts to stop this devil's hand.
-   - **Phase 2 (Loop 8 — The Mummy Lair Revelation)**: Deep inside the **Sunken Necropolis of Akh-en-Amon (Boss 2)**, the party recovers the **Complete Solstice Codex & Golden Alabaster Tablets**. The full scripture explicitly reveals that the *"fiendish ruse"* was spun by **Lord Ravana the Rakshasa ("Aurelius")**, and that the souls were swapped: the weeping horned fiend in the woods was the True Angel, and the radiant creature pulling down the sun on the cliffs is the Archdevil!
+   - **Phase 2 (Loop 8 — The Mummy Lair Revelation)**: Deep inside the **Sunken Necropolis of Akh-en-Amon (Boss 2, Hex 12, 16)**, the party recovers the **Complete Solstice Codex & Golden Alabaster Tablets**. The full scripture explicitly reveals that the *"fiendish ruse"* was spun by **Lord Ravana the Rakshasa ("Aurelius")**, and that the souls were swapped: the weeping horned fiend in the woods was the True Angel, and the radiant creature pulling down the sun on the cliffs is the Archdevil!
 
 ---
 
 ### 2.1.2 The Complete Solstice Codex: The Unabridged Scripture (Discovered at the Mummy Lair)
 
-What Old Jonas shouts by the municipal well is only Stanza I—the 8-line street nursery rhyme that guides the party through the first half of the campaign. The full, unabridged text—**"The Complete Solstice Codex: The Canticle of the Inverted Souls"**—is discovered carved into the golden alabaster slabs inside the **Sunken Necropolis of Akh-en-Amon (Hex 14, 12)**:
+What Old Jonas shouts by the municipal well is only Stanza I—the 8-line street nursery rhyme that guides the party through the first half of the campaign. The full, unabridged text—**"The Complete Solstice Codex: The Canticle of the Inverted Souls"**—is discovered carved into the golden alabaster slabs inside the **Sunken Necropolis of Akh-en-Amon (Hex 12, 16)**:
 
 ```text
 ═══════════════════════════════════════════════════════════════════════
 THE COMPLETE SOLSTICE CODEX: CANTICLE OF THE INVERTED SOULS
-Recovered from the Pharaoh's Suncophagus Chamber (Hex 14, 12)
+Recovered from the Pharaoh's Suncophagus Chamber (Hex 12, 16)
 ═══════════════════════════════════════════════════════════════════════
 
 [STANZA I: THE AWAKENING DAWN & THE NARROW PATH (JONAS'S STREET CHANT)]
@@ -198,7 +201,7 @@ During the morning of Loop 0 (06:00 – 09:00 AM), as the party explores Beregos
 | **2** | **The Frozen Hoard & The Djinn's Brass Urn** *(East / Dragon Treasure)* | Barnaby Feldepost / Old Gorm the Prospector *(Feldepost's Inn Taproom)* | *"Every prospector from Nashkel to the Peaks knows what Rimefang sleeps on! It ain't just mountains of ancient dwarven silver and uncut star rubies. Legend says an ancient Netherese treasure-vault lies frozen in his grotto, holding a seamless brass urn bound with four elemental seals. Trapped inside is Zephyrus, a Prince of the Djinn! The old verses say whoever slays the white wyrm and frees the genie claims a Wish that can freeze the gears of fate itself!"* | **True.** Rimefang's frozen hoard at **Hex (17, 10)** contains the *Brass Urn of Zephyrus*, yielding 15,000 gp in gems, ancient Netherese star-charts, and the *Wish of Frozen Heart*—the essential counter-boon needed to survive Boss 2! |
 | **3** | **Snirk's Warning on the East Highway** *(East / Foothills)* | Corporal Harek / Town Watch Guard *(North-East Gatehouse)* | *"We caught a miserable green wretch named Snirk dangling upside down from a boar snare in the eastern orchard this morning. Little goblin wasn't scouting for a raid—he was shaking like a dry reed, weeping that his entire tribe abandoned their caves in the eastern foothills because the white dragon's shadow swept right over their pine woods at sunrise! If goblins are running west in broad daylight, there's pure terror on that eastern ridge."* | **True.** Leads directly to the morning errand at **Hex (9, 10)** where players can interrogate Snirk and confirm the Eastern Dragon threat early on Day 0. |
 | **4** | **The Lost Dwarven Expedition & Rime-Anchor** *(East / Dwarvenhold)* | Brenda Deepforge *(Dwarven Merchant in Market Row)* | *"Three days ago, Master Smith Taerom's cousin led a 10-dwarf excavation team up into the old Cloud Peak mines. Not a single mule has returned down the pass. A shepherd swears he saw blue lightning crackle over the peaks and heard a roar that shattered avalanches. My cousin took half of Taerom's runic cold-chisels—if that dragon got them, a fortune in masterwork dwarven forgecraft is locked under the ice!"* | **True.** Dwarvenhold at **Hex (15, 7)** has been isolated by Rimefang's territorial hunting. Thane Torvald is trapped behind barricades and will reward the party with *Glacial Grappling Hooks* and cold-resistance dwarven tonics. |
-| **5** | **The Late Yeast Carts & The 05:45 AM Caravel Heist** *(West / Commodore & Future-Self Clue)* | Tobias Miller *(Master Baker at the Bakery Porch)* | *"My solstice morning is ruined if the teamsters don't arrive! The wagon hauling my fresh sea-salt and sea-fermented yeast from the West Port is two hours overdue. Word from a frightened carriage driver is that at 5:45 AM in the pre-dawn fog, a band of flying thieves dropped onto an old sea captain's beached caravel, snatched a strange pale bone from his lockbox, and rocketed straight east toward Beregost—while coastal silt-gull bandits made off with his iron relic chest into the sea caves!"* | **True (Dual Clue!).** Points to Commodore Vance's beached caravel at **Hex (5, 11)** and the Bandit Sea Caves at **Hex (4, 10)**—AND plants **Early Bootstrap Clue #2**: the `05:45 AM` flying thieves who stole the bone from the Commodore and flew east toward Beregost were **the future party and the True Angel** on their way to start the time loop! |
+| **5** | **The West Barleyfield Firebreak & The 05:45 AM Caravel Heist** *(West / Fire Quest & Future-Self Clue)* | Tobias Miller *(Master Baker at the Bakery Porch)* | *"Look at that smoke billowing outside the West Gate! Old Branden's barleyfield at Hex (7, 10) caught fire before dawn! The town stone canals protect Beregost, but if someone doesn't chop down the dry cedar windbreak on the eastern furrow, the flames will jump the ditch and burn my sourdough grain shed! Worse yet, a terrified fish-carter who fled up the coast road says at 5:45 AM in the pre-dawn fog, a band of flying thieves dropped onto an old sea captain's beached caravel, snatched a strange pale bone from his lockbox, and rocketed straight east toward Beregost—while coastal silt-gull bandits made off with his iron relic chest into the sea caves!"* | **True (Dual Clue!).** Gives the party the **West Gate Firebreak Quest at Hex (7, 10)**, points to Commodore Vance's beached caravel at **Hex (5, 11)** and Bandit Sea Caves at **Hex (4, 10)**—AND plants **Early Bootstrap Clue #2**: the `05:45 AM` flying thieves who stole the bone from the Commodore and flew east over `Hex (7, 10)` toward Beregost were **the future party and the True Angel**! |
 | **6** | **Unnatural Geometrics in the Southern Dunes** *(South / Necropolis)* | Zahir the Nomad *(Caravan Master at the South Gate Caravanserai)* | *"The south winds carry ash and old incense this morning, effendi. My camel-scouts returned from the edge of the Southern Dunes before dawn with wide eyes. They swear the shifting sands receded overnight, uncovering alabaster obelisks and a sunken golden necropolis that has slept under the grit since the Age of Netheril. But no desert fox or scorpion dares tread near it—the sand itself glints like hot gold."* | **True.** Zahir's Desert Margin camp at **Hex (14, 12)** guides travelers to the **Sunken Necropolis of Akh-en-Amon at Hex (12, 16)** (Boss 2)—home to the Mummy Lord and the *Golden Alabaster Tablets* containing the Complete Codex! |
 | **7** | **The Shadowless Arch-Mage at Sunrise** *(North / Aurelius)* | Constable Renwick *(North Gate Checkpoint)* | *"Fine-looking noble rode in through the North Gate just after the clock struck six. Called himself 'Lord Aurelius the Radiant,' wearing silk robes stitched in spun gold and smelling of saffron and burnt cinnamon. Claimed he was an envoy of the Sun Father here to bless our solstice. But mark my words: when he stepped into the direct morning glare... the cobblestones beneath his boots didn't cast a single speck of shadow. Not a millimeter."* | **True.** Aurelius is Lord Ravana, the Tiger-Headed Rakshasa (CR 13, Boss 3). As a fiendish illusionist walking in false daylight, his radiant disguise subtly fails physical optics (casts no shadow). |
 | **8** | **Weeping Weirwood in the Briars** *(North / Ash Grove)* | Woodcutter Torben *(Porch of the Jovial Juggler)* | *"Don't you go wandering north toward the Briarwood or the Ash Grove today, travelers! The druids have drawn thorny brambles across the woodcutter trails. A huntsman fled the woods at daybreak swearing an immense horned fiend fell out of the sky like a dying star, bleeding black ichor. And the sacred Great Weirwood at the grove's heart? It started weeping thick red resin that smells like temple frankincense and roses."* | **True.** The Ash Grove at **Hex (7, 6)** is where the Horned Fiend (the True Angel trapped in the devil's body) lies weeping in agony. The druids believe it's a demon and plan to execute it at 11:30 AM, triggering the radiant cataclysm unless stopped! |
@@ -206,7 +209,6 @@ During the morning of Loop 0 (06:00 – 09:00 AM), as the party explores Beregos
 | **10** | **Old Jonas's Mad Well Chants** *(Town Square / Prophecy)* | Little Maya *(Skipping rope by the Municipal Well)* | *"Poor Old Jonas was crying so loud into his patched quilt when the clock gonged! He told Mrs. Miller that the sun was going to fall out of the sky like a burning coal, and he kept saying the same funny rhyme over and over: 'First east to the ice, then south to the sand, find the path to stop the devil's hand!' Mama told me not to listen because he's touched in the head, but he sounded awful scared!"* | **True.** Jonas's 8-line Solstice Prophecy contains the literal causal roadmap for breaking the loop. |
 | **11** | **The Whirling Chronometer in Room #4** *(Town / The Sanctum)* | Corin the Bar-Boy *(Sweeping the common room at Feldepost's Inn)* | *"That young scholar who checked into Room #4 upstairs—Master Kaelen—hasn't slept a blink in two nights. You can hear weird whirring noises through his keyhole, like a dozen spinning brass gyroscopes and water clocks! He came down at dawn looking white as milk, tapped the grandfather clock in the hall, and muttered that the pendulum was dropping two seconds faster than yesterday. Strange fellow."* | **True.** Apprentice Chronomancer Kaelen in Room #4 (and his 86-year-old future self at **Hex 14, 13 The Sanctum**) possesses temporal tracking equipment and is the party's primary scientific ally in decoding the Bootstrap Paradox. |
 | **12** | **The Mirrored Spire on the Western Cliffs** *(West / Spire of False Angel)* | Elorion the Bard *(Tuning his mandolin at Jovial Juggler stage)* | *"I climbed the high hill west of town at first light to watch the sunrise over the valley. Far out on the coastal bluffs, the ancient Spire of the Sea Cliffs caught the dawn light—except the light didn't shine white, it burned with a harsh violet glare. Through my spyglass, I saw a winged form with feathers of blinding fire perched on the highest parapet, weeping into the wind. It looked holy... yet the hair on my arms stood on end like before a lightning strike."* | **True.** The Spire of the False Angel at **Hex (6, 8)** where the Devil (wearing the angel's body) perches. At 17:59 PM, he pulls down the sun! |
-| **13** | **The Wildfire in the West Barleyfields & The Lost Burning Book** *(West / Farmland Fire)* | Barnaby Feldepost / West Gate Guard | *"Look at that thick smoke out the west gate! Old Branden's barleyfields at Hex (7, 10) caught fire right before dawn! Good thing the stone irrigation canals and plowed firebreaks hold the eastern edge, so Beregost is in no danger of burning, but out there on the road to the coast it's an impassable furnace. Travelers say someone dropped an incandescent relic or lantern in the dark, but nobody can search the raging flames on foot."* | **True.** The conflagration was sparked by the party's dropped **Burning Book** on their initial predawn arrival into Beregost. Searching on foot is impossible, but flying over at 05:45 AM during the True Angel causal loop reveals the tiny fire at the exact furrow where it fell, allowing them to retrieve it to unseal the Spire of the Angel (Hex 6, 8)! |
 
 ---
 
@@ -219,7 +221,7 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
 | d8 | Tall Tale & Topic | Speaker & Location | What the Townsfolk Claim (Read-Aloud Dialogue) | Why It's False (The Bogus Claim) | The Real Secret Breadcrumb & Future Payoff |
 | :---: | :--- | :--- | :--- | :--- | :--- |
 | **1** | **The Dragon-Tamer's Silver Whistle** | Old Gorm *(Red Sheaf Taproom)* | *"My grandfather swore the founder of the Red Sheaf, Menas Redsheaf, was an ancient wyrm-rider! Hidden behind the vintage casks in the deep wine cellar is Menas's silver whistle. Blow three shrill notes, and any dragon of the Cloud Peaks must land and kneel to your will!"* | **Bogus.** White dragons are feral apex predators that cannot be tamed by whistles; Menas was merely an imaginative drunken cobbler. | **The Real Breadcrumb:** Searching the Red Sheaf wine cellar (DC 13 Investigation) finds no whistle, but reveals a smuggler's false stone wall hiding a vintage cask of *Dwarven Dragon-Fire Brandy* (acts as a *Potion of Fire Resistance*) and an old mining survey map showing a hidden chimney into Rimefang's mountain that bypasses the frost giant guards! |
-| **2** | **The Witch of the Southern Oasis & Her Love Elixir** | Selim the Caravan Guard *(South Gate)* | *"They say an immortal sorceress dwells by an azure pool deep in the southern dunes. If you bring her a bouquet of fresh sun-lilies plucked from the Temple of Lathander before noon, she'll brew you an elixir of eternal youth and grant you three wishes!"* | **Bogus.** There is no witch, azure pool, or youth elixir. The "oasis" is a heat mirage shimmering above the necrotic furnace of Akh-en-Amon. | **The Real Breadcrumb:** Plucking fresh sun-lilies from the temple lawn and carrying them south causes their sacred golden pollen to crackle and align with the necrotic dust like a compass needle—leading the party directly through the sandstorms to the hidden entrance of the Sunken Necropolis (Hex 14, 12), and serving as the key botanical catalyst to brew holy embalming oil! |
+| **2** | **The Witch of the Southern Oasis & Her Love Elixir** | Selim the Caravan Guard *(South Gate)* | *"They say an immortal sorceress dwells by an azure pool deep in the southern dunes. If you bring her a bouquet of fresh sun-lilies plucked from the Temple of Lathander before noon, she'll brew you an elixir of eternal youth and grant you three wishes!"* | **Bogus.** There is no witch, azure pool, or youth elixir. The "oasis" is a heat mirage shimmering above the necrotic furnace of Akh-en-Amon. | **The Real Breadcrumb:** Plucking fresh sun-lilies from the temple lawn and carrying them south causes their sacred golden pollen to crackle and align with the necrotic dust like a compass needle—leading the party directly through the sandstorms via Zahir's waystation (Hex 14, 12) to the hidden entrance of the Sunken Necropolis (Hex 12, 16), and serving as the key botanical catalyst to brew holy embalming oil! |
 | **3** | **The "Werewolf Alderman" of Stonecrest Manor** | Mistress Martha *(Cobbler's Lane)* | *"Have you heard the furious thumping and groaning coming from Alderman Durlag's private study after dark? Mark my words, the man is a cursed lycanthrope! He locks himself in every full moon to gnaw on raw beef bones and howl at the stars!"* | **Bogus.** Durlag is NOT a werewolf; he is a neurotic, dyspeptic politician suffering from severe acid reflux and anxiety. | **The Real Breadcrumb:** The nocturnal thumping is Durlag furiously trying to smash open an iron floor-safe his late grandfather forgot the combination to! Once the party learns the combination (found in Scribe Vane's municipal records) or cracks it, the safe holds 500 gp and a *Ring of Mind Shielding*—which shields the wearer's thoughts from Rakshasa Lord Ravana's telepathic probes! |
 | **4** | **The Sun God's Golden Egg & The Smashed Belfry Balcony** *(Early Bootstrap Clue #1!)* | Pip the Urchin *(Municipal Cistern)* | *"Look up at that freshly smashed, rubbled western balcony on the Clocktower! My cousin swears at 5:59 AM right before the bell rang, Lathander's giant celestial rooster crashed straight through the stone railing out of the western fog and laid a solid gold egg the size of a sheep in the gears! Whoever touches the egg at 12:00 sharp gets the strength of a demigod!"* | **Bogus.** The Morninglord has no giant celestial poultry, and touching the clockwork gears at 12:00 PM deals 2d6 scalding fire damage from solar superheating. | **The Real Breadcrumb (Early Bootstrap Clue #1):** What *actually* crashed out of the western fog at `05:59 AM`, smashed the Clocktower's western balcony into rubble, and jammed the pale **Chronocite Bone** into the escapement gear was **the future party and the True Angel** arriving at breakneck speed after stealing the bone from the Commodore at `05:45 AM`! Inspecting the brass gear housing also reveals ancient Dwarven runes: *"Time bound in bone, sundered in flame."* |
 | **5** | **The Ghost Pirate of the Western Shoals** | Barnaby Feldepost *(Feldepost's Inn)* | *"Coast teamsters swear the beached caravel out west is cursed by Captain Blood-Eye's vengeful wraith! If you dare board her decks without tossing a silver piece into the tide for his ghost-crew, the rigging ropes will come alive and throttle you in your sleep!"* | **Bogus.** There are no ghosts on the ship. The strange lights and moans are coastal silt-gull raiders with hooded lanterns and Storm Giant Otheus groaning beneath the ocean floor. | **The Real Breadcrumb:** If the party *does* toss silver coins into the surf near the wreck, friendly coastal otter-folk swim up, take the shiny coins, and gratefully fetch a submerged waterproof leather tool-roll from the reefs containing an *Adamantine Crowbar*—granting Advantage on Strength checks to pry open the caravel's powder magazine and disarm the raiders' bomb before it detonates! |
@@ -238,12 +240,12 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
   * Bram shouts up from the ladder in bewilderment: *"By Gond's teeth, look at my western balcony—some freak meteor or flying beast smashed clean through the stone rail in the fog a minute ago! Did you find what jammed the escapement gear?! Pull it out quick so the 6:00 bell can ring!"*
   * **The 06:00 AM Trigger**: The players pull the bone from the gears. The clock ticks forward to `06:00 AM`, the great bronze bell strikes, and the bone dissolves into gray dust in their hands! *(Later in the campaign, after defeating the Rakshasa, the players will realize: **THEY** were the ones who crashed through the Clocktower balcony at 05:59 AM with the True Angel and jammed the bone into the gears!)*
   * **The DM reads the Dawn Monologue** *(including the town guard calling up to the party standing on the rubbled, destroyed clocktower balcony: `"Hey! You got the clock working! Thank you! Happy Solstice!"`)*.
-  * Bram is overjoyed: *"Praise Gond's cogwheels! The Solstice mechanism is free—even if the town masons will be cursing that wrecked balcony all week!"* He rewards them with 25 gp each or festival vouchers: *"Take the day off, champions! Drink, feast, and enjoy our town!"*
-* **Scene 2: Feldepost Square & The 3 Emotional Anchors (06:15 – 07:30 AM)**:
-  * **Tobias the Baker (Bakery)**: Frazzled because his apprentice threw his back out. Party helps unload a cart of solstice flour. Tobias gifts them warm honey-currant rolls (+5 temp HP, delicious). He laughs warmly: *"Promise you'll be back at sunset for the grand roast!"*
+  * Bram is overjoyed: *"Praise Gond's cogwheels! The Solstice mechanism is free—even if the town masons will be cursing that wrecked balcony all week!"* He rewards them with 25 gp each and points down to the square: *"Enjoy the morning booths and lend Captain Rebecca or Baker Tobias a hand if you like—just make sure you're back in Town Square by **11:00 AM sharp**! At eleven o'clock we ring the High Sun Muster Bell, Alderman Durlag pays out the **250 gp Solstice Hero Commendation** at Town Hall, and Tobias taps the midday festival feast!"*
+* **Scene 2: Feldepost Square, The 3 Emotional Anchors & The 11:00 AM Muster Hook (06:15 – 07:30 AM)**:
+  * **Tobias the Baker (Bakery & West Firebreak Quest)**: Frazzled because the pre-dawn wildfire in **Old Branden's barleyfield (`Hex 7, 10`)** outside the West Gate is threatening to jump a dry cedar windbreak and ignite Tobias's western sourdough grain shed. Party helps unload a cart of solstice flour and Tobias gifts them warm honey-currant rolls (+5 temp HP, delicious), begging them: *"If you head out the West Gate this morning, please help Old Branden chop down that dry cedar windbreak to contain the fire! And promise you'll be back inside the gates by **11:00 AM** when I tap the High Sun cider casks and hand out my Hearth Loaves!"*
   * **Little Maya (Municipal Well)**: 8-year-old orphan crying over her dropped wooden thrush. Quick Mage Hand or climb check retrieves it. Maya beams with gratitude and weaves a green clover bracelet on a PC's wrist: *"It's for good luck! Don't take it off until the festival stars come out tonight!"*
-  * **Captain Rebecca (Guard Barracks)**: Veteran with a bad knee organizing the festival patrol. Party assists with drilling or resolving merchant disputes. Rebecca gives them lodging vouchers for the Jovial Juggler.
-  * *Tone*: Wholesome, cheerful high fantasy. The party feels respected, welcomed, and emotionally invested.
+  * **Captain Rebecca (Guard Barracks & 11:00 AM Muster Deadline)**: Veteran with a bad knee organizing the festival patrol. Party assists with drilling or resolving merchant disputes. Rebecca gives them lodging vouchers for the Jovial Juggler and offers three nearby morning errands (West to `Hex 7, 10` firebreak, South to `Hex 8, 11` cornfields, or East to `Hex 9, 10` highway patrol), adding firmly: *"Whichever gate you head out, report back to the Town Square by **11:00 AM sharp** for the High Sun Muster and your **250 gp council bounty**—the midday heat is already climbing and we close the outer gates for the noon procession!"*
+  * *Tone*: Wholesome, cheerful high fantasy. The party feels respected, welcomed, and emotionally invested—with a clear reason to return to Beregost by **11:00 AM** before the afternoon catastrophe begins.
 
 * **Scene 2A: The Solstice Carnival Games & NPC Skill Challenges (06:30 – 08:30 AM)**:
   * **Sister Althea (Temple Priest - Temple Garden)**:
@@ -266,31 +268,36 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
     * *Description*: A weaving slalom through cheering festival spectators balancing a scorching hot copper platter loaded with 6 fresh sugar-glazed buns without dropping a single crumb!
     * *Reward*: *Baker's Apron Pin & Warm Currant Buns* (Restores 2 HP on short rest; beloved by town children).
     * *Roleplay*: Tobias wipes flour from his brow: *"Magnificent footwork! Keep a bun warm in your pocket for sunset!"*
-  * **Garrick & Elorion (Bards - Jovial Juggler Plaza Stage)**:
+  * **Elorion the Bard & Pip the Juggler (Jovial Juggler Plaza Stage)**:
     * *Game*: **Solstice Rhyme Duel & Baton Knife-Catch** (DC 13 Charisma (Performance) or Dexterity (Acrobatics) Check).
-    * *Description*: A rapid-fire rhyming exchange on stage while catching spinning wooden festival batons tossed in syncopated tempo.
-    * *Reward*: *Bardic Solstice Token* (Usable once to add 1d6 Bardic Inspiration to any d20 ability check or attack).
-    * *Roleplay*: Garrick strums his lute: *"A master of rhyme and time! Beregost won't forget your verse today, champions!"*
+    * *Description*: A cheerful, rapid-fire rhyming exchange on stage with Elorion while catching spinning wooden festival batons tossed in syncopated tempo.
+    * *Reward*: *Bardic Solstice Token* (Usable once to add 1d6 Bardic Inspiration to any d20 ability check or attack) and Elorion's *Counter-Harmony of the Morning* sheet music!
+    * *Roleplay*: Elorion cheerfully strums his mandolin: *"A master of rhyme and time! Beregost won't forget your verse today, champions!"*
 
 * **Scene 2B: Day 0 Solstice Street & Tavern Gossip (06:00 – 09:00 AM)**:
   * While exploring the town square, sampling festival treats, or stopping for morning cider at Feldepost's Inn or the Jovial Juggler, the DM should roll on or pick from **Section 2.1.4: Day 0 Solstice Street & Tavern Gossip Table (d12)** and **Section 2.1.5: Plausible False Rumors & Tall Tales (d8)**.
   * *Narrative Function & Bootstrap Clues*: Specifically seeds rumors about **Rimefang the White Dragon in the East**, his **frozen Netherese hoard**, and the **legendary bound Djinni**, as well as the **two early time-loop bootstrap clues** that players will recontextualize after defeating the Rakshasa:
-    1. **Rumor #5 (Tobias the Baker — The 05:45 AM Caravel Bone Heist)**: At `05:45 AM` in the pre-dawn fog, a squad of flying thieves with a *"hulking winged figure"* dropped onto the Commodore's beached caravel (`Hex 5, 11`), stole a strange pale fossilized bone from his lockbox, and rocketed east toward Beregost (*"Aha—that was US and the True Angel!"*).
+    1. **Rumor #5 (Tobias the Baker — The West Barleyfield Fire & The 05:45 AM Caravel Bone Heist)**: While asking the party to help contain the `Hex (7, 10)` barleyfield fire, Tobias shares word from a coastal fish-carter that at `05:45 AM` in the pre-dawn fog, a squad of flying thieves with a *"hulking winged figure"* dropped onto the Commodore's beached caravel (`Hex 5, 11`), stole a strange pale fossilized bone from his lockbox, and rocketed east toward Beregost (*"Aha—that was US and the True Angel!"*).
     2. **Tall Tale #4 (Pip the Urchin — The 05:59 AM Smashed Clocktower Balcony)**: At `05:59 AM` right before the bell rang, something hurtling out of the western fog crashed straight through the Clocktower's western balcony, leaving it in rubble (*"Aha—that destroyed balcony was US too!"*).
 
-* **Scene 2C: Day 1 Morning Heroic Errands Outside Town (07:30 – 10:30 AM)**:
-  * **Errand 1: South Cornfields: The Scarecrow Snare (Hex 8, 11)**:
+* **Scene 2C: Day 1 Morning Heroic Errands Outside Town (07:30 – 10:30 AM — Return by 11:00 AM Muster)**:
+  * **Errand 1: West Barleyfields: The Firebreak Containment (Hex 7, 10)**:
+    * *The Hook (07:15 AM)*: Tobias the Baker and West Gate guards ask the party to head 1 hex West to **Old Branden's Blazing Barleyfields (`Hex 7, 10`)**. While Beregost itself is protected by stone irrigation canals, a 60-foot stand of dry cedar windbreak trees threatens to carry the flames across the ditch into Tobias's western sourdough grain shed.
+    * *The Travel & Terrain*: Hex (7, 10) is 1 hex West of Beregost (1 hour on foot along the paved Coast Way firebreak). The interior of the 600-acre field is an impassable wall of blinding black smoke and 20-foot flames (3d6 fire damage/10m; impossible to traverse or search on foot).
+    * *The Encounter*: At the eastern containment ditch, Old Farmer Branden is pinned down by **2x Cinder Mephits (CR 1/2, HP 22, AC 12)** leaping out of the burning barley! The party must defeat the mephits and **chop down the containment windbreak** (three DC 13 Strength [Athletics] checks with axes, or dealing 30 slashing/force damage to the dry cedar treeline, or dousing the ditch with *Create Water*).
+    * *Lore & Reward*: Containing the firebreak saves Tobias's grain shed! Old Branden points into the impenetrable 600-acre inferno: *"That blaze started around 5:25 AM right out in the middle of the dark furrows—like somebody dropped a burning coal or a glowing book on their walk into town! You'd never find it on foot in all this smoke; you'd have to have flown over at dawn before the fire spread!"* Returning to Tobias earns his *Baker's Warmth Loaf* (+5 Temp HP & Cold Resistance) and **Subterranean Flour-Chute Key**!
+  * **Errand 2: South Cornfields: The Scarecrow Snare (Hex 8, 11)**:
     * *The Hook (07:30 AM)*: Farmer Old Bran rushes to the south gate panicked: his 16-year-old apprentice, *Young Tom*, walked out into the sweetcorn fields at sunrise to gather festival ears and never returned. Distant crying was heard from the center maze.
     * *The Travel & Terrain*: Hex (8, 11) is rolling pastoral farmland directly south of Beregost (1 hour on foot).
     * *The Encounter*: An animated **Cornfield Scarecrow (CR 1, HP 36, AC 11)** has trapped Tom inside a wicker corn crib! Its claws threaten paralysis (DC 11 Wis) and its Terrifying Glare freezes victims.
     * *Tactical Counter*: Vulnerable to Fire! Torches or fire cantrips ignite it quickly, freeing apprentice Young Tom unharmed.
-    * *Lore & Reward*: Rescuing Tom reveals the scarecrow twitched alive at dawn when a strange sulfurous chime echoed from the south (foreshadowing the desert tombs). Farmer Bran tearfully gifts the party an *Ivory-Carved Cornucopia Whistle* and a wheel of solstice smoked cheddar.
-  * **Errand 2: East Highway Verge: Watch Scout Patrol (Hex 9, 10)**:
-    * *The Hook (08:30 AM)*: Captain Rebecca asks the party to take a brisk ride down the Coast Way eastern verge towards the foothills to check on Corporal Harek's 3-man patrol, sent out to ensure goblins don't harass arriving merchant caravans.
+    * *Lore & Reward*: Rescuing Tom reveals the scarecrow twitched alive at dawn when a strange sulfurous chime echoed from the south (foreshadowing the desert tombs). Farmer Bran tearfully gifts the party an *Ivory-Carved Cornucopia Whistle*, a wheel of solstice smoked cheddar, and reminds them to hurry back to Beregost before the **11:00 AM High Sun Muster**.
+  * **Errand 3: East Highway Verge: Watch Scout Patrol (Hex 9, 10)**:
+    * *The Hook (08:30 AM)*: Captain Rebecca asks the party to take a brisk walk/ride down the Coast Way eastern verge towards the foothills to check on Corporal Harek's 3-man patrol, sent out to ensure goblins don't harass arriving merchant caravans, and return before the **11:00 AM High Sun Muster**.
     * *The Travel & Terrain*: Hex (9, 10) is along the paved Coast Way highway (1 hour on foot, 30 min mounted).
     * *The Encounter*: Everything is mostly fine! Harek's guards are leisurely sharing canteens while holding a snared **Goblin Scout (CR 1/4, Snirk)** dangling upside down from a sapling in his own failed rope snare after trying to steal strawberry tarts.
     * *The Interrogation & Lore Clue*: Interrogating Snirk (DC 10 Persuasion/Intimidation or offering a pastry) yields panic: *"Snirk clan ran from Cloud Peaks! White blizzard dragon Rimefang woke shivering with rage! Cold mountain winds creeping down!"* This is the party's very first organic in-game clue pointing to the Adult White Dragon at Hex (17, 10)!
-    * *Reward*: Corporal Harek gives the party a flask of spiced dwarven apple cider and a signed militia voucher.
+    * *Reward*: Corporal Harek gives the party a flask of spiced dwarven apple cider and a signed militia voucher, urging them: *"Head back through the East Gate now—Captain Rebecca is ringing the 11:00 AM Muster Bell soon!"*
 
 #### Act 2: The Unnatural Thermal Creep (09:00 AM – 12:00 PM)
 * **Scene 3: 09:00 AM — The Thermal Spike (95°F)**:
@@ -300,7 +307,8 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
   * Sky turns an unnatural, blinding bleached-white glare. No clouds.
   * DC 12 Con save for medium/heavy armor wearers or gain 1 level of exhaustion unless cooled.
   * Party uses utility spells (*Create Water*, *Prestidigitation*) to help elderly townsfolk.
-* **Scene 5: 11:30 AM — The Northern Thunderclap (Audible Region-Wide)**:
+* **Scene 5: 11:30 AM — The Northern Thunderclap (Happens Every Loop by Default — Audible Region-Wide)**:
+  * By default on every loop, Archdruid Faelan's circle hunts down and executes the Horned Fiend (True Angel) in the northern Ash Grove (`Hex 7, 6`) at **11:30 AM** (whether the party is there or not!).
   * A deafening, concussive **BOOM** rumbles from the northern forest! Windows rattle across town; crows scatter in panic. A towering column of white-crimson smoke rises in the north.
   * Townsfolk murmur in confusion: *"Thunder on a cloudless sky?"*
 * **Scene 6: 12:00 PM — Solar Scorch (140°F)**:
@@ -350,9 +358,9 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
 
 ### Sympathetic Civilian Anchor Quests (Morning 06:00 – 09:00)
 1. **Tobias the Baker (Feldepost Square)**:
-   * *The Problem*: An exhausted, warm-hearted baker whose special Solstice yeast delivery was delayed on the Coast Road.
-   * *Party Interaction*: The party helps retrieve the cart or helps knead and stoke the morning hearth.
-   * *The Token*: Tobias gives each character a warm honey-currant roll and laughs: *"May Lathander smile upon you today, travelers! Come back at sunset for the solstice feast!"*
+   * *The Problem*: An exhausted, warm-hearted baker whose western sourdough barley shed is threatened by the wildfire raging in Old Branden's field at `Hex (7, 10)`.
+   * *Party Interaction*: The party heads out the West Gate to chop down a dry cedar windbreak containment line at `Hex (7, 10)` (or helps stoke the morning hearth).
+   * *The Token*: Tobias gives each character a warm honey-currant roll (+5 Temp HP) and laughs: *"May Lathander smile upon you today, travelers! Be back by 11:00 AM for the High Sun Muster and sunset for the solstice roast!"*
 2. **Little Maya (Municipal Well)**:
    * *The Problem*: An 8-year-old orphan girl crying softly because her carved wooden thrush fell down the municipal well.
    * *Party Interaction*: Mage Hand or a quick climbing check easily recovers the toy.
@@ -403,10 +411,10 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
 [TRUE FINAL BOSS: LVL 11] The Singing Devil (Western Spire)► Restores Swapped Souls & Breaks Time Loop!
 ```
 
-### Prelude Boss / First Boss: The "Horned Fiend" — The True Angel in the Devil's Body (North Ash Grove — Hex 7,6 / 10,4)
-* **CR / Target Level**: CR 11 (XP 7,200; PB +4) Large Celestial (in Fiend Form), Lawful Good | Level 7 Party (The First Boss Encounter).
+### Prelude Boss / First Boss: The "Horned Fiend" — The True Angel in the Devil's Body (North Ash Grove — Hex 7,6)
+* **CR / Target Level**: CR 10 (XP 5,900; PB +4) Large Celestial (in Fiend Form), Lawful Good | Level 7 Party (The First Boss Encounter).
 * **Official D&D 2024 (5.5e) Stat Block**:
-  - **AC**: 18 (Natural Armor) | **HP**: 178 (17d10 + 85) | **Speed**: 30 ft., fly 50 ft.
+  - **AC**: 17 (Natural Armor) | **HP**: 144 (15d10 + 62) | **Speed**: 30 ft., fly 50 ft.
   - **Ability Scores**: STR 22 (+6), DEX 17 (+3), CON 21 (+5), INT 12 (+1), WIS 16 (+3), CHA 17 (+3)
   - **Saves**: Str +10, Dex +7, Wis +7, Cha +7 | **Skills**: Perception +7, Insight +7
   - **Resistances**: Cold; Bludgeoning, Piercing, and Slashing from nonmagical attacks
@@ -416,7 +424,7 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
     - *Devil's Sight:* Magical darkness doesn't impede darkvision.
     - *Magic Resistance:* Advantage on saving throws against spells and other magical effects.
     - *Merciful Soul (Pulls Strikes):* Chooses to deal non-lethal damage on melee strikes; knocks targets stably unconscious.
-    - *Celestial Rejection Resonance:* If executed with the Crucible Charm, its divine celestial soul detonates at 11:30 AM (70 radiant/fire damage region-wide), obliterating the grove and restarting the loop.
+    - *Celestial Rejection Resonance (11:30 AM Default Detonation):* Every loop by default, Archdruid Faelan's circle hunts down and executes the creature at 11:30 AM (asking the party to join if present, or executing it themselves if the party is elsewhere). When killed by the druids or struck with the Crucible Charm at 11:30 AM, its divine celestial soul detonates (70 radiant/fire damage across 300 ft, heard region-wide), obliterating the grove!
   - **Actions (D&D 2024 Format)**:
     - *Multiattack:* Makes three attacks: two with its Fork and one with its Tail, or uses Hurl Radiant Flame twice.
     - *Fork:* Melee Attack Roll: +10, reach 10 ft. Hit: 15 (2d8 + 6) Piercing damage.
@@ -431,8 +439,9 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
   - **Protective Instincts**: Spends reactions shielding fleeing young druids or woodland animals from falling burning timber and stray arrows.
   - **Sensory Incongruities**: Smells of sanctified frankincense, myrrh, and crisp morning ozone rather than sulfur or brimstone; weeps molten golden tears from burning red fiend eyes.
   - **Celestial Whispers**: Murmurs prayers in archaic Celestial (*"Forgive them, Father of Dawn... they see only the horns and not the sun..."*).
-* **The 11:30 AM Map-Wide Cataclysmic Explosion**:
-  - If the party or druids slay the creature (or touch it with the Crucible Charm): Upon physical death, the trapped celestial soul violently ruptures in a **Soul Detonation (70 radiant/fire damage)**.
+* **The 11:30 AM Map-Wide Cataclysmic Explosion (Happens Every Loop by Default)**:
+  - Archdruid Faelan's druids hunt and corner the horned creature every loop, inviting the party to join the execution if they are in the northern woods, and executing it themselves at **11:30 AM** even if the party never goes north.
+  - Upon physical death (from the druids' binding rite or the party's attack / Crucible Charm), the trapped celestial soul violently ruptures in a **Soul Detonation (70 radiant/fire damage)**.
   - The blast completely incinerates the Ash Grove, slays all surrounding druids, and leaves a smoldering crater.
   - **Audible Region-Wide**: The explosion is so violently loud that it is **heard clearly from wherever the party is across the entire hex map**. Ground rumbles, windows rattle in Beregost, and birds scatter from the distant mountains as a pillar of white-crimson smoke rises to the north.
 * **The Grand Revelation & Inverted Strategy**:
@@ -731,16 +740,19 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
                              [FINAL LOOP: Solve 12-Hour Route Puzzle]
                                                │
                                                ▼
-                             [Bind Ravana (06:15) -> Unchain Otheus (5,11)]
+                             [06:00-06:15: Bind Ravana in Beregost (8,10)]
                                                │
+            ┌──────────────────────────────────┼──────────────────────────────────┐
+            ▼                                  ▼                                  ▼
+ [WEST GRYPHON (2 Riders):]         [NORTH ENVOY (1 Walker):]          [SE TEAM (2 Walkers + Cloud):]
+ [Fly to (7,10) -> Burning Book]    [Walk 4h to Ash Grove (7,6)]       [Walk 4h to Aerie (11,12) -> Wish]
+ [Fly to (4,10) by 08:00 AM]        [Heal True Angel before 11:30!]    [Walk 3h to Sanctum (14,13) -> Fork]
+ [Walk (4,11)->(5,11): Free Otheus] [Walk 2h SW to Spire (6,8)]        [Ride 1-Time Cloud (15m/hex, 2.5h)]
+ [Walk 3h to Spire (6,8) -> Open!]             │                       [10 hexes directly to Spire (6,8)!]
+            │                                  │                                  │
+            └──────────────────────────────────┼──────────────────────────────────┘
                                                ▼
-                             [Claim Tuning Fork (14,13) & Genie Wish + Cloud (11,12)]
-                                               │
-                                               ▼
-                             [Ride 1-Time Nimbus Cloud (15m/hex) to Heal Angel (7,6)]
-                                               │
-                                               ▼
-                             [March On Foot (1 hex/hr) to Spire (6,8) by 17:30 PM!]
+                             [17:30 PM: All 5 PCs Unite at Spire (6,8)!]
                                                │
                                                ▼
                                     [TIME LOOP RESOLVED]
@@ -750,7 +762,7 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
 
 ## 6. Strict 15-to-30 Minute State Machine Matrix
 
-| Time | Central Hub (Beregost) | Snowy Mountain (17,10) | Desert Crypt (14,12) | Twisted Forest | Coast / Ocean (5,11) | Environmental Heat State |
+| Time | Central Hub (Beregost) | Snowy Mountain (17,10) | Desert Crypt (12,16) | Twisted Forest | Coast / Ocean (5,11) | Environmental Heat State |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **06:00** | Reset chime. Full resources. Tobias lights bakery oven. | Blizzard howling. White Dragon sleeping. Genie locked in ice. | Crypt sealed under cool morning sands. | True Angel crash-lands; bleeding white-silver vapor. | Caravel beached on morning flats. Relic stolen at 05:45. | Crisp morning chill |
 | **06:45** | Aurelius outside North Gate preparing illusion. | Blizzard continues. Scouts observe dragons. | Sands quiet. | Druid scout circle mobilizes perimeter. | Raiders rally in sea caves with brass tuning fork. | Mild / Calm |
@@ -762,8 +774,8 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
 | **11:00** | Scalding 20,000-gal sewer flush triggered! | Dragon hunts mountain goats. | Crypt guardians (Stalkers) patrol. | 11:30 AM: Angel Divine Rejection Pulse (70 dmg DC 18 Con). | Hurricane winds whip off ocean. | 125°F (Smoldering timber) |
 | **12:00** | **Solar Scorch begins.** Streets empty; metal scalds. | Glacial ice begins sweating meltwater. | Desert surface un-traversable without cover. | Forest canopy smoking from solar beam. | Storm Giant hurricane escalates. | **140°F (2d6 fire/10m sun; Heat Metal)** |
 | **12:10** | Charmed proxies attempt granary starfire arson. | Peak exposed to direct solar beam. | Tomb burial chamber active. | Rakshasa retreats to deep forest illusion sanctum. | Giant's lightning strikes hit exposed shores. | 145°F (Sunlight lethal) |
-| **13:00** | East Quarry Resonator fires 10d10 radiant canyon beam! | Mountain pass glassed by stray rays. | Sarcophagus chamber glowing with necrotic runes. | Illusion maze fully fortified. | Ocean churns violently. | 150°F (1d6 fire/1m direct sun) |
-| **15:00** | **Bunker Panic.** Cellars reach 150°F. Shingles burn. | Ice bridge collapses into valley. | Mummy Lord's insect plague fills tomb. | Forest burns. True Angel ashes cool. | Coastal waters steaming. | **175°F (10d6/rd outdoor, 1d10/rd cellar)** |
+| **13:00** | Clocktower upper stairs warp; Bram retreats to Temple Crypts at 13:30! | Mountain pass shimmers in blinding glare. | Sarcophagus chamber glowing with necrotic runes. | Illusion maze fully fortified. | Ocean churns violently; wreck smolders. | 150°F (1d6 fire/1m direct sun) |
+| **15:00** | **Bunker Panic.** Temple Crypts reach 150°F. Shingles burn. | Ice bridge collapses into valley. | Mummy Lord's insect plague fills tomb. | Forest burns. True Angel ashes cool. | Coastal waters steaming. | **175°F (10d6/rd outdoor, 1d10/rd cellar)** |
 | **17:15** | Ancient Kaelen completes Tuning Fork in Sanctum. | Molten stone flows down mountain slopes. | Crypt ceiling cracks under heat. | Rakshasa prepares final teleport. | Hurricane peaks. | 210°F (Stone weeping) |
 | **17:30** | Blinding white glare. Window for Otheus storm ward! | Sky incandescent. | Tombs collapse. | Ash everywhere. | Otheus unleashes supercell storm if freed. | 250°F (Supercharged) |
 | **17:59** | **TOTAL SOLAR DETONATION.** Region vaporized. | Mountain peak vaporized. | Desert glassed. | Forest vaporized. | Ocean flashes into steam. | **5000°F (100d10 radiant/fire wipe)** |
@@ -786,38 +798,38 @@ In addition to the overarching valley matrix, the campaign provides detailed, ho
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **05:59** | Belfry gears engage. Monologue read. | Shrine silent; Coast Way empty. | Morning mist cloaks pine needles. | Celestial crash-land! True Angel soul swapped into fiend body. | Mirages dormant; ruined pavilion. | Crisp dawn chill (50°F) |
 | **06:00** | Reset chime. Constable Renwick opens gate. | Aurelius approaches North Gate (no shadow).| Crows take flight from canopy. | Angel weeps silver ichor; clutches scorched solar feather. | Illusory wards flick on. | Cool morning breeze |
-| **06:45** | Old Jonas chants 14-line prophecy at well. | Aurelius establishes solar altar at shrine. | Druid Scout Sylvan spots smoke pillar. | Angel pulls punches against frightened beasts. | Shimmering heat mirage begins. | Mild / Calm (65°F) |
+| **06:45** | Old Jonas chants 8-line prophecy at well. | Aurelius establishes solar altar at shrine. | Druid Scout Sylvan spots smoke pillar. | Angel pulls punches against frightened beasts. | Shimmering heat mirage begins. | Mild / Calm (65°F) |
 | **07:15** | Merchants enter town; warn of north smoke. | Aurelius peddles Crucible Charm to party. | Circle of Weirwood forms defensive line. | Angel erects warding circle; prays in Celestial. | Mirror-walls materialize. | Distinct warmth (78°F) |
 | **08:30** | Scribe Vane burns cold-iron manifests. | Aurelius sends charmed hunters into woods. | Archdruid Faelan erects thorn barriers. | Angel retreats into deep impact crater. | Phantasmal guards patrol perimeter. | Warming (90°F) |
 | **09:15** | Town well water begins dropping. | Shrine deserted; Aurelius walks north. | Sylvan pinned under burning oak bough! | 🌟 Angel saves Sylvan; lifts fiery oak trunk! | Hall of Mirrors active. | Ozone smell in air (100°F) |
 | **09:30** | Divine static hums in metal weapons. | Hunters find blood trails on Coast Way. | Druids chant Great Thorn Binding Rite. | Circle surrounds crater; lashes beast with thorns. | Illusion maze CR 8 active. | Divine static (105°F) |
-| **10:30** | Guard patrols double at North Gate. | Stray arrows stick in shrine statues. | Faelan ignores Sylvan's plea for mercy. | Angel bleeding heavily; whispers Celestial names. | Rakshasa's illusory double smiles. | Oppressive heat (115°F) |
+| **10:30** | Guard patrols double at North Gate. | Stray arrows stick in shrine statues. | Faelan asks party to join hunt (or presses on alone). | Angel bleeding heavily; whispers Celestial names. | Rakshasa's illusory double smiles. | Oppressive heat (115°F) |
 | **11:00** | Sluice gates sabotaged by Scribe Vane. | Shrine stones begin sweating resin. | Charmed hunters loose silver-tipped volley. | Angel reaches breaking point; divine aura flares. | True Rakshasa retreats to sanctum. | 120°F (Armor DC 12 Con) |
-| **11:30** | 🔊 **Deafening blast rattles town windows!** | Shrine rose-bushes spontaneously combust. | Canopy engulfed in white-hot shockwave! | 💥 **DIVINE REJECTION PULSE (70 dmg DC 18 Con)**! Druids wiped out! | Illusion core absorbs shockwave. | Concussive white firestorm |
-| **12:00** | **Solar Scorch begins.** Streets empty. | North Gate portcullis scorched red-hot. | Wildfire sweeps through pine needles. | True Angel collapses in burning crater coma. | Rakshasa watches blaze from spire. | **140°F (2d6 fire/10m sun)** |
-| **13:00** | Town cellars reach 110°F. | Road asphalt melts into black sludge. | Heavy black smoke blocks sunlight locally. | Angel's flesh blistered; solar feather glows. | Maze defenses fully lethal. | 150°F (1d6 fire/1m direct sun) |
-| **15:00** | **Bunker Panic.** Cellars hit 150°F. | Gatehouse timbers collapse in flames. | Forest incinerated to blackened stumps. | True Angel incinerated into white ash. | Illusory pavilion dissolves in heat. | **175°F (10d6/rd outdoor)** |
+| **11:30** | 🔊 **Deafening blast rattles town windows!** | Shrine rose-bushes spontaneously combust. | Canopy engulfed in white-hot shockwave! | 💥 **DEFAULT 11:30 DETONATION (70 dmg)**! Druids & Fiend obliterated! | Illusion core absorbs shockwave. | Concussive white firestorm |
+| **12:00** | **Solar Scorch begins.** Streets empty. | North Gate portcullis scorched red-hot. | Wildfire sweeps through pine needles. | Glassed crater smolders; Angel soul dispersed (unless saved!). | Rakshasa watches blaze from spire. | **140°F (2d6 fire/10m sun)** |
+| **13:00** | Town cellars reach 110°F. | Road asphalt melts into black sludge. | Heavy black smoke blocks sunlight locally. | Scorched white feathers & ash swirl in crater. | Maze defenses fully lethal. | 150°F (1d6 fire/1m direct sun) |
+| **15:00** | **Bunker Panic.** Cellars hit 150°F. | Gatehouse timbers collapse in flames. | Forest incinerated to blackened stumps. | Vitrified glass crater radiates 175°F heat. | Illusory pavilion dissolves in heat. | **175°F (10d6/rd outdoor)** |
 | **17:30** | Singing Devil's choral resonance echoes through Clocktower `(8,10)` from Spire `(6,8)`. | Horizon white-hot; mountain shakes. | Ash plain swept by hurricane winds. | If restored: Angel flies to Spire `(6,8)` to aid party! | Rakshasa teleports to witness climax. | Hurricane downdraft (if freed) |
 | **17:59** | Master Reset Chime. | Vaporized. | Vaporized. | Vaporized. | Vaporized. | Reset to 06:00 AM |
 
 ---
 
-#### 6.1.3 East of Beregost: East Highway, Resonator Foundries, Dwarvenhold & Glacial Peak Timeline
+#### 6.1.3 East of Beregost: East Highway, Quartz Quarry, Dwarvenhold & Glacial Peak Timeline
 
-| Time | Hex (8, 10) Beregost Hub / East Gate | Hex (9, 10) / (10, 9) East Highway & Plains | Hex (13, 9) East Quarry & Resonators | Hex (15, 7) Dwarvenhold Fortress | Hex (17, 10) Glacial Peak & Frost Vault | Environmental East State |
+| Time | Hex (8, 10) Beregost Hub / East Gate | Hex (9, 10) East Highway & Verge | Hex (13, 9) East Quarry & Quartz Grotto | Hex (15, 7) Dwarvenhold Fortress | Hex (17, 10) Glacial Peak & Frost Vault | Environmental East State |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **05:59** | Belfry unjammed; clock strikes 6. | Morning mist over rolling grain fields. | Foundries cold; tachyonic residue inert. | King Torvald reviews wall garrison shifts. | Adult White Dragon Rimefang sleeping. | Alpine blizzard howling (-10°F) |
-| **06:00** | Reset chime. Taerom stokes Great Forge. | 🐾 Snirk the Goblin snared in boar trap (`9, 10`)! | Chronocite gear assemblies locked in racks. | Forge-Master Brenda checks ballista winches.| Permafrost slab intact over Djinni vault. | Sub-zero mountain gale |
-| **06:45** | Taerom finishes 4 cold-iron ballista tips.| Party can rescue Snirk (reveals dragon waking).| Scribe Vane hides warehouse manifests. | Brenda discovers cold-iron tips are missing! | Rimefang stirs; glacial blue eyes open. | Bitter cold winds |
-| **07:15** | Guard scouts depart East Gate with supply cart.| Guard scouts interrogate farmers; clear road. | Apprentice foundrymen stoke smelting kilns. | Torvald sounds muster horn; dragons spotted. | Rimefang shifts mass, cracking outer ice. | Crisp morning chill (45°F) |
-| **07:30** | Tobias awaits flour from east mill. | Scouts confirm goblin warbands are hiding. | Resonator quartz prisms aligned with sun. | Ballistas loaded with mundane iron bolts. | Rimefang yawns; frost breath chills canyon. | Distinct warming |
-| **08:30** | East gate barred to civilian carts. | Road empty; high-altitude shadows wheel. | Tachyonic resonance builds in quartz lens. | Brenda looks west for Taerom's cold-iron tips. | 🐉 **Rimefang takes flight! Circles summit.** | Alpine updrafts form |
-| **09:00** | Divine static hums in smithy anvil. | Farmers retreat inside stone barns. | Sub-chronomancy gears begin spinning. | ⚠️ **Tips must arrive now to prime ballistas!** | Dragon dives pass; hunts mountain goats. | Mountain pass warming (70°F) |
-| **09:30** | Panic spreads as well drops 4 ft. | Heat mirages shimmer over barley fields. | Resonance hum reaches audible whine. | Brenda fires test bolt; Rimefang strafes walls. | Ice chasms groan under thermal expansion. | High-altitude glare |
-| **10:30** | Guards retreat to stone watchtowers. | Road gravel burns through horse hooves. | Automatic cooling sluice jams in foundry. | Torvald orders fortress portcullis sealed. | Dragon returns to hoard with fresh carcass. | 110°F on lower slopes |
-| **11:00** | Distant northern explosion heard. | Ground trembles from northern shockwave. | Resonator chassis glows incandescent red. | Fortress masonry radiates convective heat. | Permafrost slab begins sweating meltwater. | 120°F (Armor DC 12 Con) |
-| **12:00** | **Solar Scorch begins.** Streets empty. | Grass ignites in spontaneous brushfires. | ⚠️ **Canyon Beam charging to critical!** | Fortress battlements glassed by stray solar rays.| ⚔️ **Party battles Rimefang / Frees Zephyrus!**| **140°F (Glacial melt torrents)** |
-| **13:00** | Cellars hit 115°F. | East Highway impassable; air scalding. | 💥 **Resonator fires 10d10 radiant canyon beam!** | Fortress water reservoirs begin boiling. | Vault broken: Zephyrus bestows Wish! | 150°F (Superheated steam) |
+| **05:59** | Belfry unjammed; clock strikes 6. | Morning mist over rolling grain fields. | Quarry derricks quiet; quartz caverns cool. | King Torvald reviews wall garrison shifts. | Adult White Dragon Rimefang sleeping. | Alpine blizzard howling (-10°F) |
+| **06:00** | Reset chime. Taerom stokes Great Forge. | 🐾 Snirk the Goblin snared in boar trap (`9, 10`)! | Spare clockwork stabilizers locked in safe. | Forge-Master Brenda checks ballista winches.| Permafrost slab intact over Djinni vault. | Sub-zero mountain gale |
+| **06:45** | Taerom finishes 4 cold-iron ballista tips.| Party can rescue Snirk (reveals dragon waking).| Quarry miners inspect violet quartz seams. | Brenda discovers cold-iron tips are missing! | Rimefang stirs; glacial blue eyes open. | Bitter cold winds |
+| **07:15** | Guard scouts depart East Gate with supply cart.| Corporal Harek's patrol secures Snirk at `9, 10`. | Smelting kilns stoked in lower foundry. | Torvald sounds muster horn; dragons spotted. | Rimefang shifts mass, cracking outer ice. | Crisp morning chill (45°F) |
+| **07:30** | Tobias checks flour reserves. | Scouts confirm goblin warbands fled dragon. | Optical quartz lenses cut in grotto. | Ballistas loaded with mundane iron bolts. | Rimefang yawns; frost breath chills canyon. | Distinct warming |
+| **08:30** | East gate barred to civilian carts. | Road empty; high-altitude shadows wheel. | Prismatic basilisks stir in crystal cave. | Brenda looks west for Taerom's cold-iron tips. | 🐉 **Rimefang takes flight! Circles summit.** | Alpine updrafts form |
+| **09:00** | Divine static hums in smithy anvil. | Farmers retreat inside stone barns. | Clockwork quarry automatons overheat. | Brenda scans western pass for Taerom's tips. | Dragon dives pass; hunts mountain goats. | Mountain pass warming (70°F) |
+| **09:30** | Panic spreads as well drops 4 ft. | Heat mirages shimmer over barley fields. | Haywire automatons patrol quarry terraces. | Brenda fires test bolt; Rimefang strafes walls. | Ice chasms groan under thermal expansion. | High-altitude glare |
+| **10:30** | Guards retreat to stone watchtowers. | Road gravel burns through horse hooves. | Cooling sluice jams in smelting floor. | Torvald orders outer gate reinforced. | Dragon returns to hoard with fresh carcass. | 110°F on lower slopes |
+| **11:00** | High Sun Muster Bell rings in town! | Patrols return inside Beregost walls. | Smelting vats bubble violently from heat. | Fortress masonry radiates convective heat. | Permafrost slab begins sweating meltwater. | 120°F (Armor DC 12 Con) |
+| **12:00** | **Solar Scorch begins.** Streets empty. | Grass ignites in spontaneous brushfires. | Crystal grotto refracts blinding sunbeams. | ⚠️ **Tips delivered by 12:00–14:00 PM prime ballistas!** | Permafrost slab sweats; sub-zero cavern stays cool.| **140°F (Glacial melt torrents)** |
+| **13:00** | Cellars hit 115°F; townsfolk flee to Temple Crypts. | East Highway impassable; air scalding. | Smelting brass vats overflow lower terraces. | Torvald opens subterranean siege-tunnel to peak. | ⚔️ **Party battles Rimefang / Frees Zephyrus!** | 150°F (Superheated steam) |
 | **15:00** | **Bunker Panic.** Cellars hit 150°F. | Soil vitrified into black glass. | Foundry machinery melts into slag pool. | Dwarves seal inner bunker blast doors. | Peak permafrost completely liquefied. | **175°F (10d6/rd outdoor)** |
 | **17:30** | Singing Devil's voice echoes in Clocktower from Spire `(6,8)`. | Gale-force hurricane winds roar east. | Slag pool supercooled by Otheus's storm. | Torvald sounds horn; mountain tremors peak. | Hurricane snow squall hits mountain peak. | Category-5 storm squall |
 | **17:59** | Master Reset Chime. | Vaporized. | Vaporized. | Fortress breached. | Peak vaporized. | Reset to 06:00 AM |
@@ -840,9 +852,9 @@ Unlike location-major matrices, these **character-major tables** follow each pri
 | **09:30** | Lurks in shadows; grins as druids constrict thorn ropes on beast. | Shackled by 40-ft briars; ichor boils in fiendish veins from pain. | Commands druids to tighten thorn ropes; prepares final execution rite. | Tries to intercede with Faelan; ordered to stand down or be banished. |
 | **10:30** | Whispers telepathic insults to the Angel: *"Die in the dirt, seraph."* | Celestial soul nears psychic collapse; body begins shuddering violently. | Chants execution liturgy; summons solar fire down into crater. | Retreats to outer tree line, weeping; knows a terrible mistake is occurring. |
 | **11:00** | Teleports to edge of crater to witness the final execution. | Silver blinding light pulses beneath fiend's ribs; warning tremors shake grove. | Raises oak staff to deal death blow: *"Return to the Abyss, fiend!"* | Shouts warning to circle druids to take cover. |
-| **11:30** | Chuckles coldly; teleports away as radiant flash blinds valley. | 💥 **Involuntary 70-radiant Divine Rejection Pulse!** Collapses into coma. | 💀 **FATAL CLIMAX**: Annihilated by divine pulse (unless party intervened). | Knocked unconscious by shockwave (survives if party healed him). |
-| **12:00** | Retreats to Mirage Pavilion (Hex 10, 6) behind Hall of Mirrors. | Comatose in burning crater; solar feather smolders in its claws. | Slain (body rapidly consumed in spreading forest fire). | Regains consciousness; crawls south to warn Beregost if alive. |
-| **15:00** | Channels solar radiation into illusory fortress; meditates on victory. | Fiend body incinerated into white ash; celestial soul dispersed. | Ash. | If alive, perishes in 175°F forest fire unless in stone redoubt. |
+| **11:30** | Chuckles coldly; teleports away as radiant flash blinds valley. | 💥 **DEFAULT 11:30 DETONATION (70 radiant/fire)!** Vessel destroyed & soul dispersed! | 💀 **FATAL CLIMAX**: Annihilated by divine pulse (unless party intervened). | Knocked unconscious by shockwave (survives if party healed him). |
+| **12:00** | Retreats to Mirage Pavilion (Hex 10, 6) behind Hall of Mirrors. | Vessel destroyed at 11:30; only scorched white feathers remain in glassed crater. | Slain (body rapidly consumed in spreading forest fire). | Regains consciousness; crawls south to warn Beregost if alive. |
+| **15:00** | Channels solar radiation into illusory fortress; meditates on victory. | Crater engulfed in 175°F forest wildfire (unless saved before 11:30!). | Ash. | If alive, perishes in 175°F forest fire unless in stone redoubt. |
 | **17:30** | Teleports to high overlook / Clocktower roof to savor the town's doom. | 🌟 If restored via Inversion Rite: flies to Spire of the False Angel `(6,8)`! | Ash. | Dead. |
 | **17:59** | Reset unless party used True Name (Lord Ravana-Zul) to bind him. | Consumed in reset. | Consumed in reset. | Consumed in reset. |
 
@@ -856,12 +868,11 @@ Unlike location-major matrices, these **character-major tables** follow each pri
 | **06:45** | Receives reports of blizzard winds on Frostpeak. | Discovers Taerom's cold-iron ballista tips overdue. | Glacial blue eyes open; senses warm thermal drafts. | Bound in permafrost; consciousness dreaming. | Rescued by party (reveals dragon waking). |
 | **07:30** | Orders battlements manned; alerts valley outposts. | Drills ballista crews with standard iron harpoons. | Stirs, crushing ice blocks; surveys mountain pass. | Frozen in vault. | Scurries into scrub brush with bread. |
 | **08:30** | Inspects mountain gate; watches dragon circle peak. | ⚠️ **Awaits Taerom's tips; ballistas unprimed.** | 🐉 Takes flight! Unleashes territorial roar. | Frozen in vault. | Hiding in burrow safe from scouts. |
-| **09:00** | Scans highway for delivery of cold-iron tips. | 🎯 **If tips delivered: ballistas primed to auto-ground!** | Dives mountain pass; strafes pack mules with frost. | Frozen in vault. | Hiding. |
-| **10:15** | Bars main gate as dragon buzzes battlements. | Fires test bolt into canyon; drives dragon off walls. | Strafes Dwarvenhold ramparts; retreats to peak. | Frozen in vault. | Hiding. |
-| **11:00** | Prepares assault force if party negotiated alliance. | Loads grounding harpoons into heavy ratchets. | Feeds on fresh kill; permafrost begins sweating. | Ice slab begins thinning from heat. | Hiding. |
-| **12:00** | Directs fortress archers to support peak assault. | Fires cold-iron grounding harpoon at dragon! | ⚔️ **Battled by party on summit! Slain.** | 🌟 **FREED! Bestows 1 Wish per loop to party!** | Hiding. |
-| **13:00** | Celebrates dragon's fall; sounds feast horns. | Disassembles ballistas as quarry beam overloads. | Dead (or nesting on scorched rock). | Dissolves into high clouds to buffer sun. | Hiding. |
-| **15:00** | Seals mountain blast doors against 175°F heat. | Retreats to subterranean deep-forge bunker. | Carcass scorched into dry bone. | Cloud buffer burns off in solar glare. | Perishes in burrow heat. |
+| **09:00** | Scans highway for delivery of cold-iron tips. | Continues drilling crews on rampart winches. | Dives mountain pass; strafes pack mules with frost. | Frozen in vault. | Hiding. |
+| **10:15** | Bars outer gate as dragon buzzes battlements. | Fires test bolt into canyon; drives dragon off walls. | Strafes Dwarvenhold ramparts; retreats to peak. | Frozen in vault. | Hiding. |
+| **11:00** | Prepares assault force if party negotiated alliance. | Readies heavy ratchets for cold-iron tips. | Feeds on fresh kill; permafrost begins sweating. | Ice slab begins thinning from heat. | Hiding. |
+| **12:00** | Opens subterranean siege-tunnel if passphrase given. | 🎯 **If tips delivered (12:00–14:00): ballistas primed!** | Roosts in sub-zero Glacial Cavern (`17, 10`). | Frozen in vault. | Hiding. |
+| **15:00** | Seals mountain blast doors against 175°F heat. | Fires cold-iron grounding harpoon at dragon! | ⚔️ **Battled by party in cavern (`15:00–15:30`)! Slain.** | 🌟 **FREED! Bestows 1 Wish + 1 Cloud Move!** | Perishes in burrow heat. |
 | **17:30** | Sounds the Great Horn of the Crags. | Shelters in deep bunker. | Ash. | Grants final wish empowerment at Spire `(6,8)`. | Ash. |
 | **17:59** | Reset. | Reset. | Reset. | Reset. | Reset. |
 
@@ -873,12 +884,12 @@ Unlike location-major matrices, these **character-major tables** follow each pri
 | :--- | :--- | :--- | :--- | :--- |
 | **05:45** | Robbed in fog: winged intruders steal the pale Bone & fly east; bandits grab Winch Key! | Boarded caravel in chaos; stole Winch Key & Tuning Fork. | Led boarding cutthroats; struck Vance. | Chained 80ft underwater to sunken monolith. |
 | **06:00** | Wakes bleeding on deck; winch locked solid. | In Raider Sea Caves (Hex 4, 10); examines fork. | Dividing stolen naval charts at Sea Caves. | Bound in brine; dormant beneath morning tide. |
-| **06:45** | Bandages head; rallies crew (Pike, Phillipa). | 🎶 Strikes tuning fork on altar; begins chant. | Prepares 12 barrels of Starfire powder. | Senses acoustic ripples; thrashes in chains. |
+| **06:45** | Bandages head; rallies crew (Lt. Sterling, Surgeon Hatcher, Bosun Cord). | 🎶 Strikes tuning fork on altar; begins chant. | Prepares 12 barrels of Starfire powder. | Senses acoustic ripples; thrashes in chains. |
 | **07:30** | Fires distress rockets toward Port (Hex 6, 11). | Chants tidal liturgy; sahuagin gather in caves. | Directs smugglers to blockade Coast Way road. | Involuntary 12d8 lightning discharges into sea. |
 | **08:30** | Spots raider assault force advancing on mud flats. | Convinced Vane's bomb will drown the false sun. | Marshals 20 raiders with grappling hooks. | Lightning arcs superheat localized brine. |
 | **09:30** | ⚠️ **Raiders assault! Repels boarding hooks.** | Boards caravel with Bloodfin; chants zealously. | 💣 **Lights 15-minute Starfire powder fuse!** | Senses explosive vibration; groans in deep. |
-| **09:45** | 💥 **Vaporized in explosion** (unless disarmed). | 💥 Vaporized in own bomb (unless parleyed). | 💥 Vaporized (or slain by party in gun deck). | 💀 Killed by 100d6 blast; trench collapses. |
-| **10:00** | 🔧 If saved with key: slots key & fires steam winch! | Surrenders key if party proved Vane's deceit. | Slain. | Relieved as cable tension slackens from deck. |
+| **09:45** | 💥 **Vaporized in explosion** (unless disarmed). Wreckage & logbook wash ashore! | 💥 Vaporized in own bomb (unless parleyed). | 💥 Vaporized (or slain by party in gun deck). | 💀 Killed by 100d6 blast; trench collapses. |
+| **10:00** | 🔧 *If saved*: slots key & fires winch! *If blown up*: scorched Captain's Logbook floats in surf! | Surrenders key if party proved Vane's deceit. | Slain. | Relieved as cable tension slackens (or buried under collapsed trench). |
 | **11:30** | Coordinates trench dive in scalding storm tides (120°F).| Drowns in caves if still there as tides surge. | Dead. | 🌊 120°F boiling water; pushes storm tides ashore. |
 | **12:00** | Shouts encouragement as party dives with potions. | Dead. | Dead. | ⚔️ **Party sunders 4 Abyssal Chains! Awakened.** |
 | **15:00** | Shelters crew in flooded lower hold (175°F heat). | Dead. | Dead. | Rests in deep trench, storing storm energy. |
@@ -893,7 +904,7 @@ Unlike location-major matrices, these **character-major tables** follow each pri
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **06:00** | Stoking hearth oven; honey-currant rolls. | Chanting 8-line prophecy at municipal well. | Muster inspection at Town Watch barracks. | Belfry balcony freshly smashed; party pulls bone at 05:59! | Locks municipal archives vault (Leaf 1 & Manifest). |
 | **06:45** | Baking first morning batch. | Reciting couplets to festival-goers. | Posts sentries at north and east town gates. | Calibrates escapement gears; checks teeth. | Burns forged evacuation manifests in hearth. |
-| **07:15** | Pacing on porch; yeast cart overdue from coast. | Approaches bakery porch; shivering in quilt. | Logs Aurelius arrival; notes lack of shadow. | Monitors tachyonic chronocite gear tension. | Dispatches couriers to cancel guard rotations. |
+| **07:15** | Pacing on porch; worried West Gate fire (`7,10`) will reach his barley shed! | Approaches bakery porch; shivering in quilt. | Logs Aurelius arrival; notes lack of shadow. | Monitors tachyonic chronocite gear tension. | Dispatches couriers to cancel guard rotations. |
 | **07:30** | 🍞 Gives roll to Jonas; hears prophecy chant. | 📜 Warns Tobias: *"With six chimes the belfry wakes!"* | Investigates reports of bandit cart on west road.| Sweep rubble on smashed belfry balcony. | Receives secret payment receipt from bandits. |
 | **08:30** | Sells rolls in market square. | Sits by sundial; points at gathering crows. | Orders patrols to check on eastern farmlands. | Notices gear ticking accelerating by 0.04s. | Sneaks into aqueduct control room. |
 | **09:00** | Distributes bread; feels divine hum in pans. | Cries: *"First east to the ice, then south to the sand!"* | Inspects well; discovers 4-ft water drop. | Discovers micro-hairline crack in drive shaft. | Steals cold-iron warehouse ledger keys. |
@@ -901,9 +912,9 @@ Unlike location-major matrices, these **character-major tables** follow each pri
 | **10:45** | Sweats profusely; bakery oven overheats. | Stares northeast as mountain tremors rumble. | Sends squad to reinforce aqueduct sluices. | Gears begin emitting high-pitched whine. | ⚠️ **Locks aqueduct sluice gates; traps sappers.** |
 | **11:30** | Rushes outside as northern explosion rumbles. | Weeps at well: *"Blame not the angel for he is confused, led astray by the fiendish ruse!"* | Sounds town muster bell; prepares barricades. | Gears glow dull cherry red (120°F). | Slips into alleyway; smiles at north smoke. |
 | **12:00** | **Solar Scorch.** Distributes water to crowd. | Walks toward Temple of Lathander crypts. | Enforces mandatory curfew; herds civilians. | Escalating heat forces Bram down ladder. | Directs arsonists to burn grain store. |
-| **13:00** | Retreats into cellar with family baking books. | Reaches temple steps clutching patched quilt. | Holds Watch Barracks bunker entrance. | Clocktower exterior scalds skin (150°F). | Teleports to stone vault in Town Hall. |
-| **15:00** | 💀 Suffocates in cellar fire (default fate). | Shelters in crypts; whispers verses to kids. | Leads last stand at Barracks bunker door. | Trapped in lower clocktower arcade. | Drinks iced wine in sealed Town Hall vault. |
-| **17:30** | Dead (unless evacuated to crypts by party). | Looks up: *"With six chimes the belfry wakes!"* | Bunker blast door begins glowing orange. | Trapped on belfry floor as singing echoes. | Teleports to Belfry roof to witness Rakshasa. |
+| **13:00** | Salvages recipe ledger; leads kids to Temple Crypts at 13:30. | Reaches temple steps clutching patched quilt. | Leads townsfolk evacuation to Temple Crypts at 13:30. | Retreats from warping Clocktower to Temple Crypts at 13:30. | Teleports to stone vault in Town Hall. |
+| **15:00** | Shelters in Temple Crypts; sings to crying kids. | Shelters in crypts; whispers verses to kids. | Holds Temple Crypt iron blast door shut. | Tends injured in Temple Crypts clutching gear notes. | Drinks iced wine in sealed Town Hall vault. |
+| **17:30** | Comforts Maya with last sourdough roll as singing echoes. | Looks up: *"With six chimes the belfry wakes!"* | Strains against glowing crypt blast door. | Listens in horror as Devil's song echoes from Spire `(6,8)`. | Suffocates in superheated Town Hall vault. |
 | **17:59** | Reset. | Reset. | Reset. | Reset. | Reset. |
 
 ---
@@ -926,7 +937,7 @@ Unlike location-major matrices, these **character-major tables** follow each pri
 ## 7. Cartography & Two-Tier Thermal Travel Envelopes (The Red Boundaries)
 
 ### 7.1 Grid Layout & Mathematical Specifications
-* **Grid Dimension**: 20 Columns $\times$ 17 Rows (340 total hexes).
+* **Grid Dimension**: 20 Columns $\times$ 19 Rows (380 total hexes).
 * **Hex Geometry**: Pointy-topped hexagons with vertical column zigzagging.
   * Column spacing ($\Delta x$): $\approx 49.5\text{ px}$.
   * Row spacing ($\Delta y$): $\approx 49.0\text{ px}$ with even columns offset vertically by $+24.5\text{ px}$.
@@ -946,31 +957,31 @@ Unlike location-major matrices, these **character-major tables** follow each pri
 ### 7.2 The Three Movement Tiers & Two Red Boundary Envelopes
 
 All travel across the Beregost valley obeys three strict movement rules:
-1. **On-Foot Movement (All Day)**: **1 hex per hour (`60 min/hex`)** on standard terrain (`120 min/hex` on unmitigated difficult terrain).
-2. **Early-Day Aerial Movement (`06:00 AM – 12:30 PM` Only)**: **2 hexes per hour (`30 min/hex`)** by air (Pike's *Zephyr Bone Whistle*, *Fly* spells, Giant Eagle wildshapes). **Strictly limited to the early part of the day**—by midday (`12:00–12:30 PM`), the `140°F` Solar Scorch and violent convective updrafts ground all regular aerial flight!
-3. **Djinni Zephyrus's Nimbus Cloud (One-Time Move Only)**: Once the party learns Zephyrus's True Name (`"Zephyrus-Al-Mubarak"`) from Boss 1 (`Hex 17, 10`), invoking him at the **Aerie of the Four Winds (`Hex 11, 12`)** grants **1 Elemental Wish** plus a **One-Time Nimbus Cloud traversal at 15 minutes per hex (`4 hexes/hr`) in ONE move only** (not a permanent unlock of 15 min/hex for the day).
+1. **On-Foot Movement (06:00 AM – 15:00 PM)**: **1 hex per hour (`60 min/hex`)** on standard terrain (`120 min/hex` on unmitigated difficult terrain).
+2. **Early-Morning Aerial Movement (`06:00 AM – 08:00 AM` Only — 2 Hours Max & 2 Riders on Gryphon)**: **2 hexes per hour (`30 min/hex`)** by air during the cool dawn window (`06:00–08:00 AM`, max 2 hours = 4 hexes before the upper air gets too hot!). Pike's *Zephyr Bone Whistle* summons a Gryphon that can carry **at most 2 players**, so the other 3 players must walk (`1 hex/hr`) unless Gwen uses a Wild Shape / spell for a second mount. At `08:00 AM`, rising thermal updrafts ground standard flying mounts for the rest of the day!
+3. **Djinni Zephyrus's Nimbus Cloud (One-Time Move Only)**: Once the party learns Zephyrus's True Name (`"Zephyrus-Al-Mubarak"`) from Boss 1 (`Hex 17, 10`), invoking him at the **Aerie of the Four Winds (`Hex 11, 12`)** grants **1 Elemental Wish** plus a **One-Time Nimbus Cloud traversal at 15 minutes per hex (`4 hexes/hr`) for the entire party in ONE continuous move only** (ignoring thermal turbulence; dissipates as soon as the party steps off).
 
 The map features two concentric crimson boundaries that dictate party logistics across the 12-hour cycle:
 
 ```
 [Beregost Hub (8,10)]
         │
-        ├───► [INNER RED LOOP]  ───► Early-Day Aerial Limit (12:00–12:30 PM Solar Scorch Cutoff)
-        │                            Speed: 30 min / hex (2 hexes/hr by air — Early Day Only!)
-        │                            Beyond Noon: Direct midday sun & violent thermal updrafts ground mounts.
+        ├───► [INNER RED LOOP]  ───► Early-Morning Aerial Window (06:00–08:00 AM Cool Dawn Air — 2 Hours Max)
+        │                            Speed: 30 min / hex (2 hexes/hr by air — 2 Riders on Gryphon, up to 4 hexes by 08:00 AM!)
+        │                            After 08:00 AM: Upper-air thermal updrafts ground flying mounts; party continues on foot (1 hex/hr).
         │
-        ├───► [GENIE CLOUD]     ───► One-Time Nimbus Cloud Move (Granted by Djinni Zephyrus)
-        │                            Speed: 15 min / hex (4 hexes/hr for ONE point-to-point move only!)
+        ├───► [GENIE CLOUD]     ───► One-Time Nimbus Cloud Move (Granted by Djinni Zephyrus at Hex 11,12)
+        │                            Speed: 15 min / hex (4 hexes/hr for the whole party in ONE point-to-point move only!)
         │
         └───► [OUTER RED LOOP]  ───► On-Foot Ground Limit (15:00 PM Bunker Panic Cutoff)
                                      Speed: 60 min / hex (1 hex/hr on foot)
                                      Beyond 15:00: Surface heat hits 175°F (10d6/rd outdoor fire). Wish / Bunker mandatory.
 ```
 
-#### 1. Inner Red Loop: Early-Day Aerial Flight Limit (Bold Red Boundary)
-* **Maximum Operational Window**: **06:00 AM to 12:30 PM (Early Day Only)**.
-* **Speed**: **30 minutes per hex (`2 hexes/hr`)** via early-day aerial transport (Pike’s *Zephyr Bone Whistle* summoning gryphon Zephyr, *Fly* spells, Giant Eagle wildshapes).
-* **The Thermal Barrier**: At 12:00–12:30 PM, ambient high-altitude temperature reaches **140°F** with zero atmospheric shade. Intense convective thermal updrafts and solar induction inflict the *Heat Metal* effect on flying creatures and gear. Flying characters or mounts must succeed on a **DC 16 Constitution saving throw every 10 minutes** or suffer heat exhaustion and plummet to the earth. Standard aerial traversal is strictly impossible after the early-day window.
+#### 1. Inner Red Loop: Early-Morning Aerial Range & Midday Thermal Limit (Bold Red Boundary)
+* **Maximum Aerial Window**: **06:00 AM to 08:00 AM (2 Hours Max = 4 Hexes by Air before heat grounds mounts)**.
+* **Speed & Capacity**: **30 minutes per hex (`2 hexes/hr`)** during the 2-hour dawn window. Pike’s *Zephyr Bone Whistle* summons a Gryphon that carries **2 players** (while the other 3 walk at `1 hex/hr`, or 2 more fly if Gwen Wild Shapes into a Giant Eagle).
+* **The Thermal Barrier**: By **08:00 AM**, upper-atmosphere thermal turbulence grounds regular flying mounts, forcing aerial vanguards to continue on foot (`1 hex/hr`). By **12:00 PM**, surface temperature reaches **140°F** (*Heat Metal* and 2d6 fire/10m in direct sun).
 * **Boundary Hex Perimeter**:
   `(5,11) Commodore` $\rightarrow$ `(6,10)` $\rightarrow$ `(6,8) Spire of False Angel` $\rightarrow$ `(7,6) Weirwood Tree` $\rightarrow$ `(8,6) North Ridge` $\rightarrow$ `(10,6)` $\rightarrow$ `(11,7) Road Checkpoint` $\rightarrow$ `(12,8) East Foothills` $\rightarrow$ `(11,10)` $\rightarrow$ `(11,12) River Basin Sluices` $\rightarrow$ `(10,13)` $\rightarrow$ `(8,13) South Aqueducts` $\rightarrow$ `(7,13)` $\rightarrow$ `(6,12) Port Dunes`.
 
@@ -985,48 +996,47 @@ The map features two concentric crimson boundaries that dictate party logistics 
 
 ### 7.3 Tactical Travel Routes to the 4 Capstone Bosses
 
-| Boss Target | Coordinates & Biome | Distance from Beregost (8,10) | Travel Time (Early-Day Air @ 30m/hex = 2 hex/hr) | Travel Time (On Foot @ 60m/hex = 1 hex/hr) | Critical Tactical Deadline |
+| Boss Target | Coordinates & Biome | Distance from Beregost (8,10) | Travel Time (2h Dawn Air @ 2 hex/hr + Foot @ 1 hex/hr) | Travel Time (Pure On Foot @ 60m/hex = 1 hex/hr) | Critical Tactical Deadline |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Boss 1: Adult White Dragon (*Rimefang*)** | Hex **(17, 10)**<br>Glacial Frostpeak | **9 hexes** east-northeast | **270 min** (4h 30m)<br>*Depart 06:00 $\rightarrow$ Arrive 10:30 AM* | **540 min** (9h 00m)<br>Arrives 15:00 PM (too late without early-day air!) | Arrive before 12:00 PM to slay dragon, crack ice vault, and memorize Djinni Zephyrus's True Name (`"Zephyrus-Al-Mubarak"`). |
-| **Boss 2: Mummy Lord (*Akh-en-Amon*)** | Hex **(12, 16)**<br>Sunken Desert Necropolis *(via 14,12 Waystation)* | **7–8 hexes** south-southeast | **210–240 min** (3.5h–4h)<br>*Depart 06:00 $\rightarrow$ Arrive 09:30–10:00 AM* | **420–480 min** (7h–8h)<br>Or use Genie's 1-Time Cloud (`15m/hex` = 1h 45m)! | Enter subterranean crypt at 10:15 AM when winds clear entrance. Memorize the Inversion Swap Tablets! |
-| **Boss 3: The Rakshasa (*"Aurelius"*)** | Hex **(8, 10)** Town Hub &<br>Hex **(10, 6)** Mirage Pavilion | **0 hexes** (Town Hub)<br>**4–5 hexes** (Mirage Pavilion) | **0 min** (Town Hub)<br>**120–150 min** (2h–2.5h to Pavilion) | **0 min** (Town Gate)<br>**240–300 min** (4h–5h on foot) | Raid Mirage Pavilion (`10,6`) after noon (12:00–15:30 PM) to slay Ravana and memorize his True Name (`"Ravana-Zul"`). |
-| **Boss 4: Storm Giant (*Tempest Lord Otheus*)** | Hex **(5, 11)**<br>Commodore Beached Caravel | **3 hexes** west-southwest | **90 min** (1h 30m)<br>*Depart 06:00 $\rightarrow$ Arrive 07:30 AM* | **180 min** (3h 00m)<br>*Depart 06:00 $\rightarrow$ Arrive 09:00 AM* | **CRITICAL: Arrive before 09:45 AM!** Raiders light the starfire fuse at 09:30. Freeing Otheus enables the 17:30 supercell thunderstorm! |
+| **Boss 1: Adult White Dragon (*Rimefang*)** | Hex **(17, 10)**<br>Glacial Frostpeak | **9 hexes** east-northeast | **420 min** (7h: 2h flight = 4 hexes + 5h foot = 5 hexes)<br>*Depart 06:00 $\rightarrow$ Arrive 13:00 PM (Alpine Cold)* | **540 min** (9h 00m)<br>*Depart 06:00 $\rightarrow$ Arrive 15:00 PM* | Slay dragon in sub-zero alpine peak, crack ice vault, and memorize Djinni Zephyrus's True Name (`"Zephyrus-Al-Mubarak"`). |
+| **Boss 2: Mummy Lord (*Akh-en-Amon*)** | Hex **(12, 16)**<br>Sunken Desert Necropolis *(via 14,12 Waystation)* | **7–8 hexes** south-southeast | **240 min** via Aerie `(11,12)` + **1-Time Genie Cloud** (`15m/hex`)<br>*Depart 06:00 $\rightarrow$ Arrive 10:30 AM* | **420–480 min** (7h–8h)<br>Use Genie's 1-Time Cloud (`15m/hex` = 1h) from `(11,12)`! | Enter subterranean crypt at 10:30 AM when winds clear entrance. Memorize the Inversion Swap Tablets! |
+| **Boss 3: The Rakshasa (*"Aurelius"*)** | Hex **(8, 10)** Town Hub &<br>Hex **(10, 6)** Mirage Pavilion | **0 hexes** (Town Hub)<br>**4–5 hexes** (Mirage Pavilion) | **0 min** (Town Hub)<br>**150 min** (2h flight = 4 hexes + 0.5h foot) | **0 min** (Town Gate)<br>**240–300 min** (4h–5h on foot) | Raid Mirage Pavilion (`10,6`) during midday siesta (12:00–15:30 PM) to slay Ravana and memorize his True Name (`"Ravana-Zul"`). |
+| **Boss 4: Storm Giant (*Tempest Lord Otheus*)** | Hex **(5, 11)**<br>Commodore Beached Caravel | **3 hexes** west-southwest | **90 min** (1h 30m Gryphon Vanguard)<br>*Depart 06:00 $\rightarrow$ Arrive 07:30 AM* | **180 min** (3h 00m Foot)<br>*Depart 06:00 $\rightarrow$ Arrive 09:00 AM* | **CRITICAL: Arrive before 09:45 AM!** Raiders light the starfire fuse at 09:30. Freeing Otheus enables the 17:30 supercell thunderstorm! |
 
 ---
 
 ### 7.4 Map Artifacts & Companion Files
-* **Authentic Hexer Map**: [`beregost_map.jpg`](file:///c:/Users/harts/Desktop/Beregost%20Time/beregost_map.jpg) — High-resolution hand-annotated 20x17 Hexer map with both original red boundary lines.
+* **Authentic Hexer Map**: [`beregost_map.jpg`](file:///c:/Users/harts/Desktop/Beregost%20Time/beregost_map.jpg) — High-resolution hand-annotated 20x19 (380-hex) Hexer map with both original red boundary lines.
 * **Regenerated Vector Map**: [`beregost_regenerated_map.svg`](file:///c:/Users/harts/Desktop/Beregost%20Time/beregost_regenerated_map.svg) — Crisp, print-ready 1060x920 standalone SVG vector map complete with highway, river system, glowing red travel boundaries, and landmark pins.
 * **Master Companion Web Application**: [`index.html`](file:///c:/Users/harts/Desktop/Beregost%20Time/index.html) — Single-file interactive DM tool featuring dual-mode map viewing (Vector vs Hexer Art Overlay), layer toggles, real-time travel simulation calculator, 15-minute timeline scrubber, and clue DAG.
 
 
 ---
 
-### 7.5 Tactical Travel Directive: Early-Day Air, Splitting the Party & The Genie's One-Time Cloud
+### 7.5 Tactical Travel Directive: The 2-Hour Flight Window, 2-Rider Gryphon Split & The Genie's One-Time Cloud
 
-A central logistical tension in the Beregost Time Loop is that **the clock is an unyielding opponent**:
-* **12:00–12:30 PM Solar Scorch Cutoff**: Temperatures reach 140°F. Unprotected creatures suffer 2d6 Fire damage per 10 minutes outdoors, exposed metal armor burns its wearers (*Heat Metal* effect), and volatile thermal updrafts **ground all standard aerial flight (`2 hexes/hr`)**.
-* **15:00 PM (900 min) Surface Conflagration**: Temperatures spike to 175°F. Lethal 10d6 Fire damage per round incinerates everything caught outside stone vaults unless protected by Zephyrus's *Wish of Frozen Heart*.
+A central logistical tension in the Beregost Time Loop is that **movement and time are a pathing puzzle**:
+* **06:00–08:00 AM Early Flight Window (2 Hours Max, 2 Riders on Gryphon)**: During the first 2 hours of the morning, aerial mounts fly at **2 hexes/hr (`30m/hex`)**, covering up to **4 hexes** before the rising heat grounds flying mounts at **08:00 AM**. Because Pike's *Zephyr Bone Whistle* summons a Gryphon that carries **only 2 players**, the other **3 players must walk (`1 hex/hr`)**!
+* **12:00 PM Solar Scorch Cutoff**: Surface temperatures reach 140°F (2d6 Fire/10m in direct sun, *Heat Metal* on armor).
+* **15:00 PM (900 min) Surface Conflagration**: Temperatures spike to 175°F (10d6 Fire/rd outdoors) unless inside alpine cold hexes, subterranean vaults, or protected by Zephyrus's *Wish of Frozen Heart*.
 
-To slay a Capstone Boss on its dedicated boss loop, the party must assemble that boss's **three counter-items** and reach their arena before lethal heat or time-bombs trigger. With **1 hex/hr (`60m/hex`) on foot**, **2 hexes/hr (`30m/hex`) by early-day air**, and **15 min/hex (`4 hexes/hr`) for one move only via the Genie's Nimbus Cloud**, the party can use either **Parallel Sub-Teams** or **Early-Day Air + Genie Cloud**:
+To slay a Capstone Boss on its dedicated boss loop, the party uses the **2-Rider Gryphon Vanguard (`06:00–08:00 AM`)** to grab far-flung counter-items while the **3-Walker Main Body (`1 hex/hr`)** clears closer caches along the direct road, converging at the boss arena:
 
-#### Operational Mode A: The Split Party Heist ("Clockwork Rendezvous")
-Because the 5 PCs retain full memories of all prior loops, they can divide into coordinated sub-teams at the 06:00 AM dawn chime, use **Early-Day Air (`2 hexes/hr = 30m/hex`)** along divergent paths, secure all three relics in parallel, and converge simultaneously at the boss arena before noon:
-
+#### Operational Mode A: The 2-Rider Gryphon Vanguard + 3-Walker Split ("Clockwork Rendezvous")
 1. **Boss 1: Adult White Dragon (*Rimefang*, Hex 17, 10)**
-   * **Team A (2 PCs)**: Depart `(8,10)` via early-day air (`2 hexes/hr`) to Dwarven Shelf `(15,6)` (`3.5h`) $\rightarrow$ Retrieve *Rime-Anchor Harpoon* (`0.5h`) $\rightarrow$ Fly `4 hexes` (`2.0h`) to peak `(17,10)` (**Arrives 12:00 PM**).
-   * **Team B (2 PCs)**: Depart `(8,10)` via early-day air (`2 hexes/hr`) to Glacial Frost Den `(18,9)` (`5.0h`), toss Tobias's bakery meat to Winter Wolves, grab *Boots of the Winter Strider*, and hop `1 hex` (`0.5h`) to `(17,10)` (**Arrives 11:30 AM**).
-   * **Team C (1 PC / Rogue)**: Depart `(8,10)` via early-day air (`2 hexes/hr`) to Granite Aerie `(14,7)` (`3.0h`), speak dwarven password `"Khazad-Mor"` to pacify sentinel, grab *Drake-Bane Censer*, deliver Taerom's cold-iron tips at Dwarvenhold `(15,7)` (`0.5h`), and fly `3 hexes` (`1.5h`) to `(17,10)` (**Arrives 11:00 AM**).
-   * **Rendezvous**: All teams unite at Rimefang's lair between **11:00 AM and 12:00 PM**, beating the midday aerial cutoff!
+   * **Gryphon Vanguard (2 PCs — Pike & Grog)**: Fly `(8,10)` $\rightarrow$ `(12,8)` during the `06:00–08:00 AM` flight window (`4 hexes` in `2.0h`), then march `2 hexes` to Granite Aerie `(14,7)` (`10:00 AM`, speak `"Khazad-Mor"` for *Drake-Bane Censer*), `1 hex` to Dwarven Shelf `(15,6)` (`11:15 AM`, grab *Rime-Anchor Harpoon*), deliver Taerom's tips at Dwarvenhold `(15,7)` (`12:00 PM`), and ascend into the sub-zero alpine cold of `(18,9)` (*Boots*) and Frostpeak `(17,10)` by **14:00 PM** (where the alpine blizzard keeps temperatures at -10°F!).
+   * **Walking Main Body (3 PCs — Burk, Phillipa & Gwen)**: March East at `06:00 AM` (`1 hex/hr`) along the sheltered Dwarven Roadway `(8,10)` $\rightarrow$ `(15,7)` (`7 hexes` = `13:00 PM`), joining the Dwarvenhold ballista crew and ascending `2 hexes` to `(17,10)` to unite with the Vanguard and slay Rimefang!
 
 2. **Boss 2: Mummy Lord (*Akh-en-Amon*, Hex 12, 16 via Waystation 14, 12)**
-   * **United Party via Genie Cloud**: Even without splitting up, once Boss 1 is defeated and Zephyrus's True Name (`"Zephyrus-Al-Mubarak"`) is memorized, the united party can fly via **Early-Day Air (`2 hexes/hr`)** from Beregost `(8,10)` through Sandstone Sluice `(12,13)` (*Sunburst Oil*, `2.0h`) and Sun Obelisk `(13,14)` (*Scarab*, `1.0h`) to Aerie of the Four Winds `(11, 12)` (*Mirror-Aegis*, `1.5h`), arriving at **10:30 AM**. There they invoke Zephyrus for **Necrotic Resistance** + the **One-Time Nimbus Cloud (`15m/hex`)**, riding the cloud `4 hexes` (`1.0h`) straight to the **Sunken Necropolis `(12,16)`** by **11:45 AM**!
+   * **Gryphon Vanguard (2 PCs)**: Fly SE during `06:00–08:00 AM` (`4 hexes` in `2.0h`) to Sandstone Sluice `(12,13)` (*Sunburst Oil*, `08:00 AM`), walk `1 hex` to Sun Obelisk `(13,14)` (*Scarab*, `09:15 AM`), and walk `2 hexes` to Aerie of the Four Winds `(11,12)` by **11:15 AM**.
+   * **Walking Main Body (3 PCs)**: Walk `3 hexes` SE `(8,10)` $\rightarrow$ Aerie of the Four Winds `(11,12)` (`06:00–09:00 AM`), claim the *Golden Mirror-Aegis*, and wait for the Vanguard at `11:15 AM`. Together they invoke Zephyrus (`"Zephyrus-Al-Mubarak"`) for **Necrotic Resistance** + the **One-Time Nimbus Cloud (`15m/hex`)**, riding the cloud `4 hexes` (`1.0h`) straight to the **Sunken Necropolis `(12,16)`** by **12:30 PM**!
 
 3. **Boss 3: The Rakshasa (*Lord Ravana*, Hex 10, 6 Mirage Pavilion)**
-   * **United Party Morning Circuit**: Using **Early-Day Air (`2 hexes/hr`)**, the party flies north from `(8,10)` at 06:15 AM: North Ridge `(8,6)` (*Monocle*, `2.0h` @ 08:15 AM) $\rightarrow$ Pine Hollow `(7,4)` (*Blessed Quiver*, `1.0h` @ 09:30 AM) $\rightarrow$ Standing Stones `(9,7)` (*Circlet*, `1.5h` @ 11:15 AM) $\rightarrow$ Mirage Pavilion `(10,6)` (`0.5h` @ **12:00 PM**), ambushing Ravana right as he begins his midday siesta!
+   * **Gryphon Vanguard (2 PCs)**: Fly North `06:00–08:00 AM` (`4 hexes`) to North Ridge `(8,6)` (*Monocle*, `08:00 AM`), walk `2 hexes` to Pine Hollow `(7,4)` (*Blessed Quiver*, `10:15 AM`), and walk `3 hexes` under the shaded forest canopy to Mirage Pavilion `(10,6)` by **13:15 PM**.
+   * **Walking Main Body (3 PCs)**: Walk North `(8,10)` $\rightarrow$ Standing Stones `(9,7)` (`3 hexes`, `09:00 AM`, *Circlet of Mind Sanctity*) $\rightarrow$ Ash Grove `(7,6)` (`2 hexes`, `11:00 AM`, heal **True Angel** before the 11:30 AM detonation!) $\rightarrow$ Mirage Pavilion `(10,6)` (`3 hexes`, **14:00 PM**), ambushing Ravana during his midday siesta!
 
 4. **Boss 4: Storm Giant (*Tempest Lord Otheus*, Hex 5, 11)**
-   * **United Party Coastal Run**: Fly via **Early-Day Air (`2 hexes/hr`)** from `(8,10)` to Raider Sea Caves `(4,10)` (`2.0h` @ 08:00 AM) to recover the *Abyssal Winch Key* from Prophet Joshua, grab the *Grounding Rod* at Sunken Reef `(4,11)` (`0.5h` @ 08:45 AM), and arrive at **The Commodore `(5,11)`** at **09:15 AM**—15 minutes before the 09:30 AM Sahuagin Starfire bomb!
+   * **Gryphon Vanguard (2 PCs)**: Fly West `06:00–08:00 AM` (`4 hexes`) to Raider Sea Caves `(4,10)` (`08:00 AM`) to recover the *Abyssal Winch Key* from Prophet Joshua, walk `1 hex` to Sunken Reef `(4,11)` (*Grounding Rod*, `09:00 AM`), and reach **The Commodore `(5,11)`** at **09:25 AM**—joining the **Walking Main Body (3 PCs)** who marched `3 hexes` `(8,10)` $\rightarrow$ `(5,11)` (`06:00–09:00 AM`) to stop the `09:30 AM` Starfire bomb!
 
 ---
 
@@ -1057,17 +1067,18 @@ Because the 5 PCs retain full memories of all prior loops, they can divide into 
 * **Visual & Demeanor**: A burly, flour-dusted human in his late 40s with a warm, booming laugh and calloused hands.
 * **Clockwork Schedule**:
   * **06:00 AM**: Stoking his great hearth oven; pulls out fresh trays of warm honey-currant solstice rolls.
-  * **07:30 AM**: Pacing nervously on his bakery porch; his solstice yeast cart is overdue on the Coast Road.
+  * **07:15 AM**: Pacing nervously on his bakery porch; the blazing wildfire in Old Branden's barleyfields (`Hex 7, 10`) threatens to jump the eastern cedar windbreak and burn his sourdough grain shed!
   * **09:00 AM**: Handing out rolls to neighbors; startled when metal baking pans hum with divine static.
-  * **11:00 AM**: Shocked to find the municipal well water dropped 4 feet; hauling heavy emergency water barrels.
+  * **11:00 AM**: Taps the High Sun Muster cider casks; shocked to find the municipal well water dropped 4 feet and begins hauling emergency water barrels.
   * **12:05 PM (The Crisis)**: Charmed arsonists slip into the granary and ignite his flour storage bins!
-  * **15:00 PM (Bunker Panic)**: Choking on black smoke behind his burning bakery, frantically trying to salvage his grandmother's recipe ledger.
+  * **13:30 PM**: Evacuates with surviving loaves and his grandmother's recipe ledger into the Temple of Lathander Crypts.
+  * **15:00 – 17:30 PM (Bunker Panic)**: Choking on smoke inside the sweltering Temple Crypts, singing to crying children and offering Little Maya his last loaf of sourdough bread as the Singing Devil's voice echoes at 17:30 PM.
   * **17:59 PM**: Obliterated in the solar detonation.
-* **Default Loop 0 Tragedy**: Suffocates behind the bakery at 15:15 while trying to extinguish the flour fire alone.
+* **Default Loop 0 Tragedy**: Perishes with the refugees in the Temple of Lathander Crypts during the 17:59 PM solar detonation (after losing his bakery to arson at 12:05 PM).
 * **Intervention Window**:
-  * *07:00 AM*: Help retrieve his broken-down cart on the Coast Road (Mending or DC 12 Athletics).
+  * *07:15–10:30 AM*: Head 1 hex West to `Hex (7, 10)` and chop down the dry cedar windbreak containment line (DC 13 Athletics) to protect his western grain shed from the farmland fire.
   * *12:05 PM*: Ambush the charmed arsonists behind the granary before they toss the starfire vial.
-* **Persistent Loop Boon**: Hands over the **Subterranean Flour-Chute Key** (leads into the old cistern tunnels, bypassing locked town blast doors) and teaches the party how to bake **Lathander Hearth Loaves** (+5 temporary HP per character each morning).
+* **Persistent Loop Boon**: Hands over the **Subterranean Flour-Chute Key** (leads into the old cistern tunnels, bypassing locked town blast doors) and gifts **Lathander Hearth Loaves** (+5 temporary HP & Cold Resistance).
 
 ---
 
@@ -1098,28 +1109,29 @@ Because the 5 PCs retain full memories of all prior loops, they can divide into 
   * **08:30 AM**: Mediating merchant arguments in the market square; baffled by reports of missing wagons.
   * **10:15 AM (The Sabotage)**: Scribe Vane delivers forged council dispatches ordering her to pull guards away from the granary out to the quarry.
   * **12:00 PM**: Sounding the brass alarm bells as townspeople panic from the *Heat Metal* solar scorch.
-  * **15:00 PM (Bunker Panic)**: Standing at the municipal bunker blast door; burns her hands to the bone holding the lever against the screaming crowd.
-  * **17:59 PM**: Incinerated standing at her post.
-* **Default Loop 0 Tragedy**: Suffers fatal third-degree burns at 15:30 while defending the bunker blast door against panic.
+  * **13:30 PM**: Coordinates the emergency evacuation of townsfolk into the Temple of Lathander Crypts.
+  * **15:00 PM (Bunker Panic)**: Bracing her bad knee against the Temple Crypt iron blast door, her plate armor scorching her skin as she holds the door shut against the 175°F inferno outside.
+  * **17:59 PM**: Incinerated standing at her post in the Temple Crypts.
+* **Default Loop 0 Tragedy**: Suffers severe burns holding the Temple Crypt blast door at 15:30 PM before perishing in the 17:59 PM solar detonation.
 * **Intervention Window**:
   * *10:15 AM*: Intercept the forged dispatches before she signs them, or expose Scribe Vane's enchantment aura (*Detect Magic*).
 * **Persistent Loop Boon**: Gives the party the **Municipal Armory Master Key** (access to 20 silvered crossbow bolts, heavy shields, and potion locker) and assigns veteran guard escorts to move civilians into deep cellars before 11:00 AM.
 
 ---
 
-#### 4. Artificer Bram Copperwheel — Chief Horologist (Clocktower & East Foundry)
+#### 4. Artificer Bram Copperwheel — Chief Horologist (Beregost Clocktower Belfry)
 * **Visual & Demeanor**: A wild-haired rock gnome artificer with copper magnifying goggles strapped across his forehead and grease-stained smocks.
 * **Clockwork Schedule**:
-  * **06:00 AM**: Cheering the party as the escapement clacks to 06:00 AM; inspecting the brass gears where the bone dissolved (previously jammed at 5:59 AM).
-  * **07:30 AM**: Discovers strange chronocite crystallization gumming up the brass escapement gear.
-  * **09:00 AM**: Rushed out to the East Quarry (Hex 13,9) by the council to calibrate the brass Solar Resonator array.
-  * **13:00 PM (Catastrophic Test)**: Believes he has aligned the optics; triggers the test firing, shooting a 10d10 radiant beam across the canyon!
-  * **15:00 PM**: Trapped in the quarry workshops as brass mirrors warp and melt in extreme heat.
+  * **06:00 AM**: Cheering the party as the escapement clacks to 06:00 AM; inspecting the brass gears where the bone dissolved (previously jammed at 05:59 AM) and the freshly smashed western stone balcony.
+  * **07:30 AM**: Discovers strange tachyonic chronocite crystallization gumming up the Grand Escapement Gear.
+  * **09:00 AM**: Notices the clocktower gear train accelerating by 0.04 seconds per minute and detects a hairline crack in the main drive shaft.
+  * **12:30 PM (Belfry Buckling)**: Escalating 140°F solar heat warps the upper iron belfry stairs; Bram grabs his gear-calibration notebook and retreats down to the street before the upper hatch buckles!
+  * **13:30 – 15:00 PM**: Evacuates into the Temple of Lathander Crypts, collapsing from heat exhaustion while clutching his calibration notes.
   * **17:59 PM**: Vaporized in the cataclysm.
-* **Default Loop 0 Tragedy**: Vaporized at 13:00 when stray reflections from the Solar Resonator glass the quarry workshop.
+* **Default Loop 0 Tragedy**: Collapses from heat exhaustion in the Temple Crypts at 15:30 PM and perishes in the 17:59 PM solar detonation.
 * **Intervention Window**:
-  * *06:30 AM*: Inspect the clock with him; use *Detect Magic* or Arcana check and share Chronocite lore.
-* **Persistent Loop Boon**: Reveals the **Resonator Disarm Code (7-3-9-1)** to disable or re-target the orbital weapon, and hands over **Cold-Iron Escapement Pins**.
+  * *06:30–11:30 AM*: Inspect the clockwork escapement with him (*Detect Magic* or DC 14 Arcana/Tinker's Tools) or bring him the **Clockwork Gyroscope Stabilizer** from the East Quarry (`Hex 13, 9`).
+* **Persistent Loop Boon**: Reveals the memorized **Escapement Calibration Code (`7-3-9-1`)** (which, alongside Young Kaelen's cipher, allows Ancient Kaelen at `Hex 14, 13` to finish the **Chronomancy Tuning Fork** immediately upon arrival!) and hands over **Cold-Iron Escapement Pins**.
 
 ---
 
@@ -1130,28 +1142,29 @@ Because the 5 PCs retain full memories of all prior loops, they can divide into 
   * **07:30 AM**: Sniffing the morning breeze from her porch: mutters that the northern wind carries the scent of ozone and frankincense.
   * **09:30 AM**: Brewing cooling burn ointments as ambient heat crosses 95°F.
   * **11:00 AM**: Barricading her shutters against scorching dust winds.
-  * **15:00 PM**: Barricaded in her stone root cellar with melting ice blocks; suffocating in smoke as her herb drying racks catch fire above.
+  * **13:30 – 15:00 PM**: Guided by neighbors into the Temple of Lathander Crypts after her herb cottage roof ignites; tends burned children with her remaining cooling salves.
   * **17:59 PM**: Obliterated in the final flash.
-* **Default Loop 0 Tragedy**: Suffocates in her root cellar at 14:15 when her hanging bundle of dried sage and oils ignites.
+* **Default Loop 0 Tragedy**: Succumbs to smoke inhalation in the overcrowded Temple Crypts at 16:00 PM before the 17:59 PM solar detonation.
 * **Intervention Window**:
   * *08:00 AM*: Bring her cool water from the deep well, or douse her thatched roof with water magic at 13:00.
 * **Persistent Loop Boon**: Teaches the party the recipe for **Frost-Lichen Salve** (grants 1 character immunity to ambient heat damage up to 140°F for 2 hours) and confirms the scent of the "fiend" is divine frankincense and ozone, not sulfur.
 
 ---
 
-#### 6. Elorion the Weeping Bard (The Jovial Juggler Inn)
-* **Visual & Demeanor**: A disheveled half-elf bard in torn silks, weeping silently in the dark corner of the tavern with bleeding knuckles.
+#### 6. Elorion the Solstice Bard (The Jovial Juggler Plaza Stage)
+* **Visual & Demeanor**: A charismatic, bright-eyed half-elf bard in gold-trimmed festival silks, cheerfully tuning his mandolin and trading witty couplets with the morning crowd on the outdoor stage at the Jovial Juggler Plaza.
 * **Clockwork Schedule**:
-  * **06:00 AM**: Catatonic in a corner booth, frantically gouging sheet music notes into the heavy oak table with a bent butter knife.
-  * **08:30 AM**: Humming eerie, high-pitched celestial counter-melodies between bouts of sobbing.
-  * **11:00 AM**: Bleeding from the ears as divine static hums through metal cutlery in the tavern.
-  * **13:00 PM**: Dragged into the dark beer cellar by tavern staff as heat overwhelms the taproom.
-  * **15:00 PM**: Choked by toxic smoke as the inn's thatch roof catches fire.
+  * **06:00 AM**: Steps onto the Jovial Juggler outdoor festival stage with a broad grin, striking up a lively dawn reel on his mandolin.
+  * **06:30 – 08:30 AM**: Cheerfully hosts the **Solstice Rhyme Duel & Baton Knife-Catch** carnival game for festival-goers.
+  * **09:30 AM**: Pauses between songs, tilting his head toward the western sea cliffs; remarks with cheerful curiosity that the morning breeze carries a strange musical overtone in F-sharp, and begins improvising a bright counter-harmony to match it.
+  * **11:00 AM**: Leads the High Sun festival sing-along in the square before the midday heat drives the crowd indoors.
+  * **13:00 PM**: Retreats into the Jovial Juggler taproom cellar, cheerfully playing lively ballads to keep frightened children calm as the heat rises.
+  * **15:00 PM**: Choked by smoke as the inn's roof ignites above the cellar.
   * **17:59 PM**: Consumed in the reset.
-* **Default Loop 0 Tragedy**: Mind shatters completely at 11:30 AM from fiendish psychic interference; perishes in the tavern fire.
+* **Default Loop 0 Tragedy**: Perishes in the Jovial Juggler cellar fire at 15:45 PM while still strumming his mandolin to comfort the townsfolk.
 * **Intervention Window**:
-  * *Before 09:00 AM*: Cast *Lesser Restoration* or succeed on a DC 14 Performance / Persuasion check to calm his mind and copy his sheet music.
-* **Persistent Loop Boon**: The **Hymn of the Shattered Choir**: When sung or played during the confrontation with the Singing Devil, it counters the fiend's hypnotic aura, granting the entire party Advantage on saving throws against fiendish charm and psychic scream!
+  * *06:30 – 11:30 AM*: Win his **Solstice Rhyme Duel** on stage (DC 13 Performance/Acrobatics) or tell him about the Singing Devil's choral resonance from the western cliffs so he can finish composing his counter-melody.
+* **Persistent Loop Boon**: Teaches the party the memorized **Hymn of the Shattered Choir (Counter-Harmony of the Morning)**: when sung or played during the confrontation with the Singing Devil, it counters the fiend's choral dirge, granting the entire party Advantage on saving throws against fiendish charm, fear, and psychic/thunder dirges!
 
 ---
 
@@ -1344,16 +1357,16 @@ Because the 5 PCs retain full memories of all prior loops, they can divide into 
 * **Role**: Benevolent celestial entity trapped in monstrous form, clutching a scorched white solar feather from her stolen wings.
 * **Routine**: Bleeds silver vapor, pulls strikes against druids, utters agonized, fragmented Celestial prayers (*"Father of Dawn... forgive them... the feathers..."*).
 * **Intervention**: On early loops, planar inversion shock prevents coherent conversation or halting the 11:30 AM rejection pulse; once the party memorizes the **Somatic Inversion Touch & Celestial Reversal Chant** from Boss 2's Golden Alabaster Tablets (`Hex 12, 16`), performing the somatic touch and speaking its True Celestial Name at `Hex (7, 6)` stabilizes the Angel's mind on any loop without needing to re-visit the desert tomb!
-* **Reward**: Bestows **Aegis of the Host** (+2 saves vs radiant/fire for that day), works alongside the party (after defeating the Rakshasa, Boss 3, and before freeing the Storm Giant, Boss 4) to **actually create the 12-hour causal time loop itself** (using the Djinni's Wish and the 05:45 AM Caravel heist to anchor the dawn threshold), reveals **Tempest Lord Otheus** bound beneath the western sea (`Hex 5, 11`), and flies to the **Spire of the False Angel (`Hex 6, 8`)** for the 17:30 PM finale!
+* **Reward**: Bestows **Aegis of the Host** (+2 saves vs radiant/fire for that day), works alongside the party (after defeating the Rakshasa, Boss 3, and before freeing the Storm Giant, Boss 4) to **actually create the 12-hour causal time loop itself** (jumping to 05:30 AM, stealing the Chronocite Bone from the Commodore at 05:45 AM, spotting the **tiny fire** in `Hex 7, 10` where the party dropped their **Burning Book**, and crashing into the Clocktower balcony at 05:59 AM), reminds the party that the **Burning Book** from the previous campaign is required to unseal the **Spire of the False Angel (`Hex 6, 8`)** (prompting them to check their packs if they haven't noticed it's missing yet!), reveals **Tempest Lord Otheus** bound beneath the western sea (`Hex 5, 11`), and flies to `Hex (6, 8)` for the 17:30 PM finale!
 
 #### 19. Thane Torvald Ironbreaker (Dwarvenhold King's Hall — Hex 15,7)
 * **Role**: Dwarven king holding the mountain pass against the White Dragon.
-* **Intervention**: Present Taerom's letter of introduction or memorized dwarven clan passphrase before 10:00 AM.
-* **Reward**: Orders fortress battlements to deploy heavy grounding ballistas for Boss 1.
+* **Intervention**: Present Taerom's letter of introduction or memorized dwarven clan passphrase by 14:00 PM (8 hexes ENE of Beregost).
+* **Reward**: Orders fortress battlements to deploy heavy grounding ballistas and opens the subterranean Dwarvenhold siege-tunnel to Frostpeak `(17, 10)` (1.5h sheltered transit) for Boss 1.
 
 #### 20. Forge-Master Brenda Deepforge (Dwarvenhold Battlements — Hex 15,7)
 * **Role**: Chief siege engineer operating anti-dragon grounding ballistas.
-* **Intervention**: Deliver Taerom's cold-iron ballista tips by 10:30 AM.
+* **Intervention**: Deliver Taerom's cold-iron ballista tips by 12:00–14:00 PM.
 * **Reward**: Auto-grounds Rimefang on round 1 of combat, eliminating its 80ft fly speed!
 
 #### 21. Zephyrus the Cloud-Lord (Djinni in Glacial Vault — Hex 17,10 & Shrine at Hex 11,12)
@@ -1363,7 +1376,7 @@ Because the 5 PCs retain full memories of all prior loops, they can divide into 
 
 #### 22. Zahir the Dune-Strider (South Desert Sandstone Bluffs — Hex 14,12)
 * **Role**: Desert hermit who camps at the Sandstone Sluice Waystation (`Hex 14, 12`) and tracks the shifting sands concealing the **Sunken Necropolis (`Hex 12, 16`)**.
-* **Intervention**: Trade fresh honey rolls or fresh water at 07:30 AM for his tomb chart.
+* **Intervention**: Trade fresh honey rolls or fresh water before 12:00 PM (`Hex 14, 12` is 7 hexes SE of Beregost; reachable by 11:00 AM via dawn Gryphon flight + walk) for his tomb chart.
 * **Reward**: Bypasses 3 lethal quicksand traps and guides the party safely to the Sunken Necropolis at `Hex (12, 16)`.
 
 #### 23. The Commodore — Alistair Vance (Beached Caravel — Hex 5,11)
@@ -1377,10 +1390,10 @@ Because the 5 PCs retain full memories of all prior loops, they can divide into 
 * **Clockwork Schedule & Travail**:
   - **05:45 AM**: Attacked by bandits in the chartroom; wounded across the scalp; relic box stolen.
   - **06:00 AM**: Staggers onto the quarterdeck, bandaging his head; discovers the tide is fully out, the ship is listing 15 degrees in damp silt, and the winch is locked solid.
-  - **07:00 AM**: Rallies his skeleton crew (Lt. Pike, Surgeon Phillipa, Bosun Cord); fires distress flares toward the Coastal Fishing Port (Hex 6, 11), but receives no answer due to smugglers occupying the docks.
+  - **07:00 AM**: Rallies his skeleton crew (Lt. Sterling, Surgeon Hatcher, Bosun Cord); fires distress flares toward the Coastal Fishing Port (Hex 6, 11), but receives no answer due to smugglers occupying the docks.
   - **08:15 AM**: Observes smoke rising from the Raider Sea Caves (Hex 4, 10); realizes the bandits are tinkering with his stolen box and preparing for a second assault.
   - **09:30 AM**: ⚠️ **RAIDER BOARDING ACTION**: Captain Bloodfin and sahuagin raiders assault the caravel; light a 15-minute Starfire powder fuse on the gun deck!
-  - **09:45 AM**: 💥 **STARFIRE EXPLOSION** (Default Fate): Deals 100d6 fire damage, blowing the *Sea Maiden* to splinters, incinerating Vance and his crew, and collapsing the entrance to the abyssal trench.
+  - **09:45 AM**: 💥 **STARFIRE EXPLOSION & WRECKAGE AFTERMATH** (Default Fate): Deals 100d6 fire damage, blowing the *Sea Maiden* in half, incinerating Vance and his crew, and collapsing the abyssal trench onto Otheus below. **If the party arrives at Hex (5, 11) after 09:45 AM**, they find a towering column of oily black Starfire smoke, burning oak hull ribs split across the boiling mud flats, shattered brass cannons, and Commodore Vance's scorched, waterlogged **Captain's Logbook** washed up on the tide line alongside a dying Bosun Cord—recording that winged intruders stole a pale bone from the lockbox at `05:45 AM`, Silt-Gull bandits fled to the **Raider Sea Caves (`Hex 4, 10`)** with the *Abyssal Winch Key*, and raiders lit the powder hold fuse at `09:30 AM` sharp on Scribe Vane's orders!
   - **10:00 AM** *(If Saved)*: If the party disarmed the fuse and returned the **Abyssal Winch Key** from Hex (4, 10), Vance slots the key into the quarterdeck winch and activates the steam boiler.
   - **11:30 AM – 14:00 PM**: **The Scalding Storm Tide Surge**: 15-foot storm tides crash onto the flats at 120°F–140°F. Vance stands at the winch wheel amid boiling spray, shouting instructions as the party dives the abyssal trench with Potions of Water Breathing.
   - **15:00 PM**: **Conflagration (175°F)**: Vance orders surviving crew into the flooded lower hold for thermal protection.
@@ -1546,8 +1559,8 @@ To conquer the four high-CR capstone bosses within the 12-hour operational windo
 | Capstone Boss | Party Member Synergies | Key Counter-Items to Retrieve | Optimal Execution Strategy |
 |---|---|---|---|
 | **Boss 1: Adult White Dragon** `(17, 10)` | **Phillipa** (Ordered Chance) & **Pike** (Long Arm of the Law) | Item 1 (Harpoon) + Item 2 (Boots) + Item 3 (Censer) | Ground dragon immediately with Item 1 or Brenda's ballistas. Deploy Item 3 Censer to negate Frightful Presence. Burk & Phillipa lock dragon in melee; dragon cannot take flight or exploit 80ft aerial breath cones. |
-| **Boss 2: Mummy Lord** `(14, 12)` | **Burk** (Chaos Wineskin Monk) & **Gwen** (Druid Fire/Web) | Item 4 (Scarab) + Item 5 (Sunburst Oil) + Item 6 (Mirror-Aegis) | Burk equips Item 4 (immune to Mummy Rot & max HP reduction). Throw Item 5 Oil round 1 to trigger Mummy Lord Fire Vulnerability (double damage) and strip Legendary Actions. Reflect Dread Glare using Item 6 Mirror-Aegis. |
-| **Boss 3: The Rakshasa** `(8, 10) / (7, 6)` | **Grog** (Rogue) & **Gwen** (Spider Druid) | Item 7 (Monocle) + Item 8 (Blessed Quiver) + Item 9 (Circlet) | Equip Item 9 Circlet to detect shapechangers within 120ft and block mental domination. Grog dons Item 7 Monocle to pierce illusions. Grog fires blessed piercing arrows from Item 8, dealing double damage and bypassing Rakshasa Limited Magic Immunity! |
+| **Boss 2: Mummy Lord** `(12, 16)` | **Burk** (Chaos Wineskin Monk) & **Gwen** (Druid Fire/Web) | Item 4 (Scarab) + Item 5 (Sunburst Oil) + Item 6 (Mirror-Aegis) | Burk equips Item 4 (immune to Mummy Rot & max HP reduction). Throw Item 5 Oil round 1 to trigger Mummy Lord Fire Vulnerability (double damage) and strip Legendary Actions. Reflect Dread Glare using Item 6 Mirror-Aegis. |
+| **Boss 3: The Rakshasa** `(8, 10) / (10, 6)` | **Grog** (Elven Rogue) & **Gwen** (Spider Druid) | Item 7 (Monocle) + Item 8 (Blessed Quiver) + Item 9 (Circlet) | Equip Item 9 Circlet to detect shapechangers within 120ft and block mental domination. Grog (Elven Rogue) dons Item 7 Monocle to pierce illusions and fires blessed piercing arrows from Item 8, dealing double Sneak Attack damage and bypassing Rakshasa Limited Magic Immunity! |
 | **Boss 4: Storm Giant** `(5, 11)` | **Burk** & **Phillipa** & **Pike** | Item 10 (Grounding Rod) + Djinni Wish (Lightning Res.) | Equip Item 10 Grounding Rod to absorb 100% of lightning strikes and recharge a 10d8 discharge beam. Use Djinni Zephyrus's Wish for full party Thunder/Lightning resistance. Unchain giant or shatter abyssal bindings before 10:00 AM to trigger the loop-breaking supercell! |
 
 
@@ -1572,8 +1585,8 @@ In standard tabletop campaigns, high-mortality encounters risk campaign derailme
 ---
 
 ### 10.1b Directed Acyclic Graph (DAG) 0: Prelude First Boss — The "Horned Fiend" (The True Angel)
-* **Target Encounter**: The Horned Fiend (CR 11/12 Monstrous Fiendish Celestial — 175 HP, AC 18, +9 Atk, Solar Smite / Non-lethal subdual).
-* **Target Arena**: Weirwood Ash Grove `Hex (7, 6) / (10, 4)`
+* **Target Encounter**: The Horned Fiend (CR 10 Monstrous Fiendish Celestial — 144 HP, AC 17, +10 Atk, Non-lethal subdual & 11:30 AM Default Detonation).
+* **Target Arena**: Weirwood Ash Grove `Hex (7, 6)`
 * **Level Progression**: Level 7 (Prelude First Boss Encounter).
 
 ```mermaid
@@ -1622,17 +1635,17 @@ flowchart TD
         K3["Learn: Scree Chasm (17,5) & Stone Giants drain 50% HP"]
     end
 
-    subgraph Preparation ["Phase 1: Beregost Morning (06:00 - 06:30)"]
+    subgraph Preparation ["Phase 1: Beregost Dawn Split (06:00 - 06:30)"]
         B1["06:00 Start at Sundial"]
-        B2["Collect fresh meat & breads from Tobias Bakery (8,10)"]
-        B3["Summon Zephyr Gryphon & Mounts"]
+        B2["Collect fresh meat from Tobias & cold-iron tips from Taerom (8,10)"]
+        B3["Split Party: 2 Gryphon Riders (Dawn Air 2 hex/hr until 08:00)<br/>+ 3 Walkers (On Foot 1 hex/hr via Dwarvenhold Road)"]
     end
 
-    subgraph ItemCaches ["Phase 2: Wilderness Item Route (06:30 - 10:00)"]
-        I3["Hex (14,7): Dragon-Watch Aerie<br/>Retrieve Drake-Bane Censer<br/>(Aura: Negates Frightful Presence & Dragon Disadvantage)"]
-        I1["Hex (15,6): Dwarven Shelf<br/>Retrieve Rime-Anchor Harpoon<br/>(Grounds dragon fly speed to 0)"]
-        D1["Hex (15,7): Dwarvenhold<br/>Deliver Taerom's note to Brenda<br/>(Dwarven battlements prep grounding ballistas)"]
-        I2["Hex (18,9): Glacial Frost Den<br/>Bypass 4 Winter Wolves using Tobias's meat<br/>Retrieve Boots of the Winter Strider"]
+    subgraph ItemCaches ["Phase 2: Split-Party Item Route (06:00 - 14:30)"]
+        I3["Gryphon Riders Fly 4 hexes (06:00-08:00) to (12,8)<br/>Walk 2h to Dragon-Watch Aerie (14,7) by 10:00 AM<br/>Retrieve Drake-Bane Censer"]
+        I1["Riders Walk 1h to Dwarven Shelf (15,6) by 11:00 AM<br/>Retrieve Rime-Anchor Harpoon (Grounds dragon fly speed to 0)"]
+        I2["Riders Walk 4h to Glacial Frost Den (18,9) by 15:00 PM<br/>Bypass 4 Winter Wolves using Tobias's meat<br/>Retrieve Boots of the Winter Strider"]
+        D1["3 Walkers March 8 hexes (06:00-14:00) to Dwarvenhold (15,7)<br/>Deliver Taerom's tips to Brenda & Torvald<br/>Transit 1.5h Sheltered Dwarven Siege-Tunnel to (17,10)!"]
     end
 
     subgraph Avoidance ["Resource Sinks AVOIDED"]
@@ -1640,27 +1653,25 @@ flowchart TD
         AV2["AVOID Hex (18,7): Ice Troll Crevasse (Preserve Fire Spells)"]
     end
 
-    subgraph Combat ["Phase 3: The Capstone Confrontation (10:30 - 11:30)"]
-        C1["Arrive Glacial Peak (17,10) before 12:00 Scorch"]
+    subgraph Combat ["Phase 3: The Capstone Confrontation (15:30 - 16:30)"]
+        C1["Unite at Glacial Peak (17,10) at 15:30 PM (-15°F Sub-Zero Shelter)"]
         C2["Round 1: Brenda fires ballista + Pike throws Harpoon<br/>Dragon Fly Speed becomes 0!"]
-        C3["Round 1: Light Drake-Bane Censer<br/>Dragon attack rolls suffer Disadvantage"]
+        C3["Round 1: Light Drake-Bane Censer<br/>Dragon attack rolls suffer Disadvantage & Negates Frightful Presence"]
         C4["Rounds 2-4: Burk & Phillipa lock melee; Gwen Web anchor; Grog Sneak Attack"]
-        C5["Boss Slayed (11:30 AM)!"]
+        C5["Boss Slayed (16:30 PM)!"]
     end
 
     subgraph Resolution ["Phase 4: Milestone & Permanent Boon"]
         R1["Shatter Permafrost Vault beneath Hoard"]
-        R2["FREE DJINNI ZEPHYRUS<br/>Grants 1 Active Wish per Loop for Campaign!"]
+        R2["FREE DJINNI ZEPHYRUS & MEMORIZE TRUE NAME ('Zephyrus-Al-Mubarak')<br/>Unlocks 1 Active Wish + 1-Time Nimbus Cloud at (11,12) on future loops!"]
         R3["Party Levels to Level 8!"]
     end
 
     K1 & K2 & K3 --> B1
     B1 --> B2 --> B3
-    B3 --> I3
-    I3 --> I1
-    I1 --> D1
-    D1 --> I2
-    I2 --> C1
+    B3 --> I3 & D1
+    I3 --> I1 --> I2 --> C1
+    D1 --> C1
     AV1 -.->|Bypassed| I1
     AV2 -.->|Bypassed| C1
     C1 --> C2 --> C3 --> C4 --> C5
@@ -1679,21 +1690,20 @@ flowchart TD
     subgraph MetaKnowledge ["Phase 0: Learned Meta-Knowledge (Past Loops)"]
         MK1["Learn: Mummy Rot stops all healing; Dread Glare paralyzes"]
         MK2["Learn: Air Elemental Basin (12,14) & Quicksand drain spell slots"]
-        MK3["Learn: Canopic Heart must be smashed or boss resurrects"]
-        MK4["Learn: Winds uncover entrance at 10:15 AM sharp"]
+        MK3["Learn: Funerary Sarcophagus Seal must be smashed or boss rejuvenates"]
+        MK4["Learn: Subterranean crypt interior is a cool 68°F thermal shelter"]
     end
 
-    subgraph PreBuff ["Phase 1: Beregost Dawn & Genie Wish (06:00 - 06:30)"]
-        P1["06:00 Start at Sundial"]
-        P2["CALL DJINNI ZEPHYRUS (Hex 11,12):<br/>'We wish for party-wide Necrotic Resistance!'"]
-        P3["Fill 4 Canteens at Beregost Town Well"]
+    subgraph PreBuff ["Phase 1: Beregost Dawn Split (06:00 - 08:00)"]
+        P1["06:00 Start at Sundial & Fill 4 Canteens at Town Well"]
+        P2["Split Party: 2 Gryphon Riders Fly 4 hexes (06:00-08:00) to Aerie (11,12)<br/>3 Walkers March 4 hexes (06:00-10:00) to Aerie (11,12)"]
     end
 
-    subgraph ItemRoute ["Phase 2: Desert Item Retrieval (06:30 - 10:15)"]
-        R_Sluice["Hex (12,13): Sandstone Sluice<br/>Retrieve Phial of Sunburst Oil<br/>(4d6 fire + double dmg + strips Legendary Actions)"]
-        R_Zahir["Hex (14,12): Sandstone Bluffs<br/>Trade canteens to Zahir for Tomb Map & Heart Chamber"]
-        R_Scarab["Hex (13,14): Sun Obelisk<br/>Bribe 2 Air Elementals with Auran prayers<br/>Retrieve Scarab of Solar Resurgence (Necrotic/Rot Immunity)"]
-        R_Shield["Hex (11,12): Aerie of the Four Winds<br/>Bypass Mummy Sentries using Zahir's route<br/>Retrieve Golden Mirror-Aegis (Reflects Dread Glare)"]
+    subgraph ItemRoute ["Phase 2: Desert Item Retrieval (08:00 - 15:00)"]
+        R_Shield["Hex (11,12): Aerie of the Four Winds<br/>Riders & Walkers retrieve Golden Mirror-Aegis (Reflects Dread Glare)<br/>Walkers invoke Zephyrus ('Zephyrus-Al-Mubarak'): Wish + 1-Time Nimbus Cloud!"]
+        R_Sluice["Riders Walk 1h to Hex (12,13): Sandstone Sluice (09:00-10:00)<br/>Retrieve Phial of Sunburst Oil (4d6 fire + strips Legendary Actions)"]
+        R_Scarab["Riders Walk 2h to Hex (13,14): Sun Obelisk (10:00-12:00)<br/>Retrieve Scarab of Solar Resurgence, then Walk 2h to Necropolis (12,16)"]
+        R_Zahir["Walkers Walk 3h to Hex (14,12): Sandstone Bluffs (10:30-13:30)<br/>Trade canteens to Zahir for Tomb Map, then Ride 1-Time Cloud (1h, 4 hexes) to (12,16)!"]
     end
 
     subgraph Avoidance2 ["Resource Sinks AVOIDED"]
@@ -1702,22 +1712,24 @@ flowchart TD
         AV5["AVOID Hex (15,15): Scorpion Ambush (Preserve Antidotes)"]
     end
 
-    subgraph TombAssault ["Phase 3: Crypt Infiltration & Boss Fight (10:15 - 11:45)"]
-        T1["Enter Necropolis (12,16) at 10:15 as sand clears<br/>Subterranean cool shields from 130°F heat"]
-        T2["Smash Canopic Heart Urn in Side Chamber"]
+    subgraph TombAssault ["Phase 3: Crypt Infiltration & Boss Fight (14:30 - 16:00)"]
+        T1["Unite inside Necropolis (12,16) by 14:30 PM<br/>Subterranean 68°F tomb shields from surface heat"]
+        T2["Extinguish Solar Braziers & Smash Funerary Sarcophagus Seal"]
         T3["Combat Round 1: Burk (Scarab) engages; Phillipa reflects Dread Glare with Mirror-Aegis!"]
         T4["Combat Round 2: Throw Sunburst Oil<br/>Triggers Fire Vulnerability (80+ fire dmg) & suppresses Legendary Actions"]
         T5["Combat Rounds 3-4: Melee Nova + Gwen Fire Spells<br/>Mummy Lord Destroyed!"]
     end
 
     subgraph Resolution2 ["Phase 4: Milestone & Canonical Lore"]
-        RES1["Recover Golden Alabaster Tablets<br/>Proves Angel & Devil body swap ritual!"]
+        RES1["Recover & Memorize Golden Alabaster Tablets<br/>Proves Angel/Devil body swap & teaches Somatic Inversion Touch!"]
         RES2["Party Levels to Level 10!"]
     end
 
     MK1 & MK2 & MK3 & MK4 --> P1
-    P1 --> P2 --> P3
-    P3 --> R_Sluice --> R_Zahir --> R_Scarab --> R_Shield --> T1
+    P1 --> P2 --> R_Shield
+    R_Shield --> R_Sluice & R_Zahir
+    R_Sluice --> R_Scarab --> T1
+    R_Zahir --> T1
     AV3 & AV4 & AV5 -.->|Bypassed| R_Zahir
     T1 --> T2 --> T3 --> T4 --> T5
     T5 --> RES1 --> RES2
@@ -1739,17 +1751,17 @@ flowchart TD
         LK4["Learn: Dominate Person turns Pike against Phillipa"]
     end
 
-    subgraph PreBuff3 ["Phase 1: Beregost Dawn (06:00 - 06:45)"]
+    subgraph PreBuff3 ["Phase 1: Beregost Dawn Split (06:00 - 06:15)"]
         PB1["06:00 Start at Sundial"]
-        PB2["CALL DJINNI ZEPHYRUS:<br/>'We wish for Fire & Radiant Resistance!'"]
-        PB3["Refuse Aurelius's Crucible Charm quest at 07:15"]
+        PB2["Refuse Aurelius's Crucible Charm quest"]
+        PB3["Split Party: 2 Gryphon Riders (Dawn Air 2 hex/hr until 08:00)<br/>+ 3 Walkers (On Foot 1 hex/hr North)"]
     end
 
-    subgraph ItemRoute3 ["Phase 2: Forest & Quarry Relic Run (06:45 - 10:30)"]
-        I9["Hex (9,7): Ancient Standing Stones<br/>Retrieve Circlet of Mind Sanctity<br/>Pike equips: 100% IMMUNE to Dominate Person!"]
-        I7["Hex (8,6): North Ridge Watchtower<br/>Blind Basilisks using Cloak of Mirror Array<br/>Retrieve Monocle of Piercing Truth (Truesight 60ft)"]
-        I8["Hex (7,4): Deep Pine Redwood<br/>Pike tames mother Owlbear with whistle<br/>Retrieve Quiver of the Just Stalker (Blessed Piercing)"]
-        ANG["Hex (7,6): Ash Grove<br/>Show Alabaster Tablets to True Angel<br/>Angel allies with party; grants Aegis of the Host"]
+    subgraph ItemRoute3 ["Phase 2: Forest Relic Run & Saving the Angel (06:00 - 12:30)"]
+        I7["Gryphon Riders Fly 2h (4 hexes) to North Ridge Watchtower (8,6) by 08:00 AM<br/>Blind Basilisks using Cloak of Mirror Array<br/>Retrieve Monocle of Piercing Truth (Truesight 60ft)"]
+        I8["Riders Walk 2h to Deep Pine Redwood (7,4) by 10:00 AM<br/>Pike tames mother Owlbear with whistle<br/>Retrieve Quiver of the Just Stalker (Blessed Piercing)"]
+        I9["3 Walkers Walk 3h to Ancient Standing Stones (9,7) by 09:00 AM<br/>Retrieve Circlet of Mind Sanctity (100% IMMUNE to Dominate Person!)"]
+        ANG["Walkers Walk 2h to Ash Grove (7,6) by 11:00 AM (Beats 11:30 Detonation!)<br/>Perform Somatic Inversion Touch (from Boss 2 Tablets)<br/>True Angel saved & allies with party!"]
     end
 
     subgraph Avoidance3 ["Traps AVOIDED"]
@@ -1757,23 +1769,25 @@ flowchart TD
         AV7["AVOID 12:10 Granary arson distraction (Preempt thugs early)"]
     end
 
-    subgraph BossFight3 ["Phase 3: Cornering & Slaying Ravana (11:00 - 12:15)"]
-        BF1["Corner Ravana at Forest Sanctum or Townhouse"]
+    subgraph BossFight3 ["Phase 3: Cornering & Slaying Ravana at Mirage Pavilion (12:30 - 14:00)"]
+        BF1["Riders & Walkers unite at Mirage Pavilion (10,6) at 12:30 PM during Ravana's Siesta"]
         BF2["Item 9 (Circlet) absorbs Dominate Person with zero effect"]
-        BF3["Grog uses Item 7 (Monocle) to pierce mirror clones & invisibility"]
+        BF3["Grog uses Item 7 (Monocle) to pierce Mirage Veil, mirror clones & invisibility"]
         BF4["Grog fires Item 8 (Blessed Piercing Arrows)<br/>Double Vulnerability Damage (65+ dmg/hit) ignores Limited Magic Immunity!"]
         BF5["Burk & Phillipa lock melee; Ravana slain before teleport!"]
     end
 
-    subgraph Resolution3 ["Phase 4: Milestone & True Angel Saved"]
-        R_FIN1["Town sabotage machine eradicated; Beregost defenses saved"]
-        R_FIN2["True Angel joins party at Sword Coast"]
+    subgraph Resolution3 ["Phase 4: Milestone, True Name & Causal Bootstrap"]
+        R_FIN1["Read Resonance Ledger & MEMORIZE TRUE NAME ('Ravana-Zul') + 06:15 AM Cobbler's Lane prep"]
+        R_FIN2["Causal Bootstrap: Party & True Angel travel to 05:30 AM, steal Chronocite Bone at 05:45 AM,<br/>and jam Beregost Clocktower at 05:59 AM — CREATING THE TIME LOOP!"]
         R_FIN3["Party Levels to Level 11!"]
     end
 
     LK1 & LK2 & LK3 & LK4 --> PB1
     PB1 --> PB2 --> PB3
-    PB3 --> I9 --> I7 --> I8 --> ANG --> BF1
+    PB3 --> I7 & I9
+    I7 --> I8 --> BF1
+    I9 --> ANG --> BF1
     AV6 & AV7 -.->|Bypassed| BF1
     BF1 --> BF2 --> BF3 --> BF4 --> BF5
     BF5 --> R_FIN1 --> R_FIN2 --> R_FIN3
@@ -1795,17 +1809,17 @@ flowchart TD
         SK4["Learn: Otheus is not an enemy to kill, but an ally to be freed!"]
     end
 
-    subgraph PreBuff4 ["Phase 1: Beregost Dawn & Genie Wish (06:00 - 06:15)"]
+    subgraph PreBuff4 ["Phase 1: Beregost Dawn Split (06:00 - 08:00)"]
         PW1["06:00 Start at Sundial"]
-        PW2["CALL DJINNI ZEPHYRUS:<br/>'We wish for Lightning & Thunder Resistance!'"]
-        PW3["Equip Boots of Inertia Core (Grog): immune to hurricane gale push"]
+        PW2["2 Gryphon Riders (Pike & Burk) Fly 4 hexes West (06:00-08:00 @ 2 hex/hr) to Raider Sea Caves (4,10)<br/>Spot 05:45 AM Burning Book culvert furrow at (7,10) while flying over!"]
+        PW3["3 Walkers (Phillipa, Gwen, Grog) March 4 hexes SW (06:00-10:00 @ 1 hex/hr) to The Commodore (5,11)"]
     end
 
-    subgraph CoastRush ["Phase 2: Coastal Infiltration & Rescue (06:15 - 09:45)"]
-        CR1["Mount/Flight along River Highway (8,10 -> 7,12 -> 5,11)<br/>Arrive Coast by 08:30 before gale intensifies"]
-        I10["Hex (4,11): Sea Caves<br/>Retrieve Grounding Rod of the Deep Trench<br/>Burk equips: 100% Lightning Absorption + Water Breathing!"]
-        COM["Hex (5,11): Beached Caravel at 09:20<br/>Phillipa & Pike crush Sahuagin raiders<br/>Grog defuses 09:45 Starfire Fuse<br/>THE COMMODORE RESCUED!"]
-        WINCH["The Commodore operates deck winch<br/>Slacks tension on 4 underwater Abyssal Chains!"]
+    subgraph CoastRush ["Phase 2: Coastal Infiltration & Rescue (08:00 - 10:15)"]
+        CR1["Hex (4,10): Raider Sea Caves (08:00 AM)<br/>Riders confront Prophet Joshua & recover stolen Abyssal Winch Crank-Key!"]
+        I10["Riders Split at 08:15 AM:<br/>Pike walks 1h to Caravel (5,11) by 09:15 AM to disarm 09:30 Starfire Fuse!<br/>Burk walks 1h to Sunken Reef (4,11) for Grounding Rod, then 1h to (5,11) by 10:15 AM!"]
+        COM["Hex (5,11): Beached Caravel (09:15 - 10:15 AM)<br/>Pike disarms 09:30 Starfire Fuse; Walkers & Burk arrive by 10:00-10:15 AM<br/>THE COMMODORE RESCUED!"]
+        WINCH["Insert Abyssal Winch Crank-Key on Quarterdeck<br/>Slacks tension on 4 underwater Abyssal Chains!"]
     end
 
     subgraph Avoidance4 ["Deadly Hazards AVOIDED"]
@@ -1813,40 +1827,39 @@ flowchart TD
         AV9["AVOID attacking Otheus directly (Absorb lightning; target chains only)"]
     end
 
-    subgraph TrenchAssault ["Phase 3: Underwater Chain Sundering (09:45 - 10:45)"]
-        TA1["Dive into Reef Trench with Water Breathing"]
+    subgraph TrenchAssault ["Phase 3: Underwater Chain Sundering (10:15 - 11:15)"]
+        TA1["Dive into Reef Trench with Water Breathing before 11:00 AM Scalding Tide"]
         TA2["Burk uses Item 10 (Grounding Rod) to absorb Otheus's 12d8 lightning blasts<br/>Party takes 0 damage; Rod charges to full!"]
         TA3["Phillipa, Pike & Grog focus all attacks on 4 slackened Abyssal Chains"]
         TA4["Burk discharges 10d8 stored lightning beam into final chain<br/>ALL 4 CHAINS SUNDERED!"]
     end
 
-    subgraph CampaignVictory ["Phase 4: The 17:30 Climax & Breaking the Loop"]
+    subgraph CampaignVictory ["Phase 4: Otheus Freed & The 17:30 Hurricane"]
         CV1["Tempest Lord Otheus Awakens!<br/>Luminous blue divine eyes restored"]
-        CV2["17:30: Otheus summons Category-5 Supercell Thunderstorm over Beregost"]
-        CV3["Storm cloud wall deflects 85% of Arcanist's orbital solar beam!"]
-        CV4["True Angel, The Commodore & Party breach the dilated time rift"]
-        CV5["Chronocite Resonator destroyed; Arcanist's temporal lock shatters!"]
-        CV6["TIME LOOP BROKEN — VICTORY!"]
+        CV2["Otheus pledges to summon Category-5 Supercell Thunderstorm at 17:30 PM<br/>over the Spire of the False Angel (Hex 6,8)!"]
+        CV3["Party Memorizes Prophet Joshua's Leverage ('Vane lied to you!')<br/>for instant non-combat Winch Key handover on the Golden Loop!"]
     end
 
     SK1 & SK2 & SK3 & SK4 --> PW1
-    PW1 --> PW2 --> PW3
-    PW3 --> CR1 --> I10 --> COM --> WINCH --> TA1
+    PW1 --> PW2 & PW3
+    PW2 --> CR1 --> I10 --> COM
+    PW3 --> COM
+    COM --> WINCH --> TA1
     AV8 & AV9 -.->|Bypassed| TA1
     TA1 --> TA2 --> TA3 --> TA4
-    TA4 --> CV1 --> CV2 --> CV3 --> CV4 --> CV5 --> CV6
+    TA4 --> CV1 --> CV2 --> CV3
 ```
 
 ---
 
 ### 10.6 Master Summary: Travel Budgets & Thermal Windows
 
-| Capstone Run | Departure | Critical Hex Visits | Required Items Retained | Arrival at Arena | Thermal Envelope Margin |
+| Capstone Run | Departure | Critical Hex Visits (2 Flyers `06:00–08:00` + 3 Walkers) | Required Items Retained | Arrival at Arena | Thermal Envelope Margin |
 |---|---|---|---|---|---|
-| **Boss 1: White Dragon** | 06:15 AM | `(14,7)` $\rightarrow$ `(15,6)` $\rightarrow$ `(15,7)` $\rightarrow$ `(18,9)` | Items 1, 2, 3 | 11:30 AM–12:00 PM at `(17,10)` | Arrives at or before 12:00 PM Aerial Scorch (or 11:00 AM if split). |
-| **Boss 2: Mummy Lord** | 06:30 AM | `(12,13)` $\rightarrow$ `(12,16)` $\rightarrow$ `(13,14)` $\rightarrow$ `(11, 12)` | Items 4, 5, 6 + Map | 10:15 AM at `(12,16)` | Enters subterranean tomb 4.75 hrs before 15:00 PM Surface Conflagration. |
-| **Boss 3: The Rakshasa** | 06:20 AM | `(8,6)` $\rightarrow$ `(9,7)` $\rightarrow$ `(7,4)` $\rightarrow$ `(7,6)` | Items 7, 8, 9 + Tablets | 10:00–11:00 AM at `(7,6)` | Fought under dense forest canopy; beats 11:30 AM soul detonation. |
-| **Boss 4: Storm Giant** | 06:15 AM | River Road $\rightarrow$ `(4,11)` $\rightarrow$ `(5,11)` Caravel | Item 10 + Winch Keys | 09:20 AM at `(5,11)` | Arrives 25 mins before 09:45 bomb; underwater before noon heat. |
+| **Boss 1: White Dragon** | 06:00 AM | Flyers: `(14,7)` $\rightarrow$ `(15,6)` $\rightarrow$ `(18,9)` $\rightarrow$ `(17,10)`<br>Walkers: `(15,7)` Dwarvenhold $\rightarrow$ Tunnel $\rightarrow$ `(17,10)` | Items 1, 2, 3 + Cold-Iron Tips | 15:30 PM at `(17,10)` | Walkers enter Dwarvenhold at 14:00 PM & use subterranean tunnel; `-15°F` peak shelters from heat. |
+| **Boss 2: Mummy Lord** | 06:00 AM | Flyers: `(11,12)` $\rightarrow$ `(12,13)` $\rightarrow$ `(13,14)` $\rightarrow$ `(12,16)`<br>Walkers: `(11,12)` $\rightarrow$ `(14,12)` $\rightarrow$ 1-Time Cloud $\rightarrow$ `(12,16)` | Items 4, 5, 6 + Zahir's Map + Wish | 14:30 PM at `(12,16)` | Enters subterranean `68°F` tomb before 15:00 PM Surface Conflagration. |
+| **Boss 3: The Rakshasa** | 06:00 AM | Flyers: `(8,6)` $\rightarrow$ `(7,4)` $\rightarrow$ `(10,6)`<br>Walkers: `(9,7)` $\rightarrow$ `(7,6)` Ash Grove $\rightarrow$ `(10,6)` | Items 7, 8, 9 + Memorized Tablets | 12:30 PM at `(10,6)` | Walkers reach `(7,6)` at 11:00 AM (beating 11:30 detonation); Mirage Pavilion is an oasis shelter. |
+| **Boss 4: Storm Giant** | 06:00 AM | Flyers: `(4,10)` $\rightarrow$ `(4,11)` & `(5,11)`<br>Walkers: `(8,10)` $\rightarrow$ `(5,11)` Caravel | Item 10 + Winch Crank-Key | 09:15–10:15 AM at `(5,11)` | Rider 1 arrives at 09:15 AM (15m before 09:30 fuse); party dives into trench before noon heat. |
 
 
 ---
@@ -1889,7 +1902,7 @@ By discovering NPC crimes, secrets, and grief during previous loops, the party c
 * **Alderman Durlag (06:15)**: Knowing his clerk is forging blackmail ledgers allows the party to instantly demand the release of the cold-iron transport wagons at 06:15 instead of waiting until 08:30.
 * **Scribe Vane (07:00)**: Knowing the vault combination (`12-44-09`) and his `07:45 AM` alleyway meeting with Aurelius allows breaking his charm or opening the archive in seconds.
 * **Lord Ravana / "Aurelius" (06:15)**: Knowing he prepares his Deva disguise in Cobbler's Lane (`Hex 8, 10`) at `06:15 AM` and knowing his True Name (`"Ravana-Zul"`) lets the party bind him in Beregost before he ever steps outside the North Gate.
-* **Ancient Kaelen at The Sanctum (Hex 14, 13)**: Reciting Young Kaelen's memorized **Tachyonic Calibration Cipher** and Artificer Bram's **Resonator Code (`7-3-9-1`)** allows Ancient Kaelen to finish and hand over the **Chronomancy Tuning Fork** immediately upon the party's arrival (rather than waiting until 17:15 PM).
+* **Ancient Kaelen at The Sanctum (Hex 14, 13)**: Reciting Young Kaelen's memorized **Tachyonic Calibration Cipher** and Artificer Bram's **Escapement Calibration Code (`7-3-9-1`)** allows Ancient Kaelen to finish and hand over the **Chronomancy Tuning Fork** immediately upon the party's arrival (rather than waiting until 17:15 PM).
 * **The Circle of Druids & True Angel (Hex 7, 6)**: Reciting the memorized **Inversion Swap Chant** and performing the **Somatic Inversion Touch** from Boss 2's Golden Alabaster Tablets halts the druid binding ritual and heals the True Angel without needing the physical stone tablets.
 
 #### 4. The Wilderness Hazard Blacklist (Resource Preservation)
@@ -1939,7 +1952,7 @@ The party discovers that nearly every counter-item guardian can be **bypassed wi
 
 | # | Potential Issue / Inconsistency | Original State | Calibration / Fix | Why This Balances the Game |
 |---|---|---|---|---|
-| **1** | **Strict Movement & Genie Cloud Math** | Unclear / permanent 15m/hex flight | **1 hex/hr (`60m/hex`) on foot** all day; **2 hexes/hr (`30m/hex`) by air in the early part of the day (`06:00 AM – 12:30 PM` only)**; **15 min/hex (`4 hexes/hr`) for ONE move only** via the Genie's Nimbus Cloud. | Prevents trivializing the map. Early-day air (`2 hexes/hr`) is grounded at midday (`12:30 PM`) by solar turbulence, making the Genie's **one-time `15m/hex` Nimbus Cloud move** the centerpiece of the Endgame Route Puzzle! |
+| **1** | **Strict Movement, 2-Rider Gryphon & Genie Cloud Math** | Unclear / permanent 15m/hex flight | **1 hex/hr (`60m/hex`) on foot**; **2 hexes/hr (`30m/hex`) by air for the first 2 hours only (`06:00–08:00 AM`, max 2 riders on the Bone Whistle Gryphon while the other 3 walk)**; **15 min/hex (`4 hexes/hr`) for ONE move only** via the Genie's Nimbus Cloud. | Prevents trivializing the map. Because the Gryphon only carries 2 players and early-morning flight is grounded at `08:00 AM`, the party must coordinate a morning split and use the Genie's **one-time `15m/hex` Nimbus Cloud move** to solve the Endgame Route Puzzle! |
 | **2** | **Strict Reset Rule (Memories & Level-Ups Only)** | Soul-imprints, persistent Canopic Heart, or teleport sigils | **Nothing persists across resets except player memories and milestone level-ups.** All shortcuts use memorized True Names (`"Zephyrus-Al-Mubarak"`, `"Ravana-Zul"`), memorized somatic/vocal rites (Inversion Tablets), and memorized codes (`7-3-9-1`, `"Khazad-Mor"`). | Keeps the time-loop logic 100% pure and fair: players win because of what they *know*, not because of magical inventory loopholes. |
 | **3** | **The True Final Boss vs. Capstone Bosses** | Storm Giant framed as sole climax | **Storm Giant is Boss 4 (deflects solar beam); The True Final Boss is the Singing Devil in the Angel's Body (CR 16) at Spire `(6, 8)`**! | Slaying the 4 capstone bosses levels the party to 11 and unlocks the knowledge/allies needed to assemble the Final Day victory route. |
 | **4** | **Rakshasa Limited Magic Immunity** | 1st–6th level spell immunity shuts down Druid | **Gwen's role is tactical support, touch-buffs, terrain control, and wild shape grapples**; Grog's Blessed Piercing arrows (`Hex 7, 4`) serve as primary DPS. | Prevents caster frustration while rewarding the retrieval of the 3 counter-items. |
@@ -1969,27 +1982,28 @@ To survive the `17:30 PM` confrontation at `Hex (6, 8)`, the party needs **Six V
    * *Why Boss 2 (`Hex 12, 16`) Is Skipped*: The party already memorized the **Somatic Inversion Touch & Celestial Reversal Chant** from Boss 2's Golden Alabaster Tablets. They never need to return to the Southern Desert (`Hex 12, 16`); they simply visit **Ash Grove (`Hex 7, 6`)**, perform the memorized somatic touch, and recruit the True Angel to meet them at the **Spire (`Hex 6, 8`)** at `17:30 PM`!
 
 #### Step 2: Why Naive Routes Fail (The Movement Math Puzzle)
-The players must visit **West (`Hex 5, 11`)**, **Southeast (`Hex 14, 13` & `Hex 11, 12`)**, and **North (`Hex 7, 6`)**, and finish at **Spire of the False Angel (`Hex 6, 8`)** by **`17:30 PM`** (`11.5 hours` total budget):
-* ❌ **Why Walking Fails**: The circuit is `~21 hexes` long. At `1 hex/hr` on foot, it takes `21+ hours` (the sun explodes at `12.0 hours`).
-* ❌ **Why Flying All Day Fails**: **Early-Day Air (`2 hexes/hr = 30 min/hex`)** is only available during the early part of the day (`06:00 AM – 12:30 PM`). At `12:30 PM`, the `140°F` Solar Scorch thermal turbulence permanently grounds regular flying mounts for the rest of the afternoon!
-* ❌ **Why Visiting Southeast First (`06:15 AM`) Wastes the Cloud**: If the party flies SE to the Genie (`Hex 11, 12`) first thing in the morning (`06:15 – 10:15 AM`) and uses the **One-Time Nimbus Cloud (`15m/hex`)** to jump to only *one* of the northern/western stops (e.g., `Hex 5, 11`), the cloud dissipates before noon—leaving them forced to travel on foot (`1 hex/hr`) in the afternoon across the burning valley to reach both `Hex (7, 6)` and `Hex (6, 8)`!
-* ✅ **The Winning Insight**: Use **Early-Day Air (`2 hexes/hr`)** during the morning (`06:15 AM – 12:30 PM`) to clear **Stop 1 (West `5, 11` OR North `7, 6`)** AND fly Southeast to **The Sanctum (`14, 13`) & Aerie (`11, 12`)**, arriving at the Genie right at **`12:30 PM`** just as normal flight is grounded! Then invoke Zephyrus for the *Wish of Frozen Heart* + **One-Time Nimbus Cloud (`15 min/hex`)**, ride the cloud **10 hexes across the entire map in a single move (`2.5 hours`)** to clear the remaining stop (`Hex 7, 6` or `Hex 5, 11`), and march the final **2 hexes on foot (`1 hex/hr` = `2.0 hours`)** to the **Spire (`Hex 6, 8`)** by **`17:30 PM`**!
+The players must clear **Five External Stops**—**The Burning Book (`Hex 7, 10`)**, **West Coast (`Hex 5, 11`, deadline `09:45 AM`)**, **North Ash Grove (`Hex 7, 6`, deadline `11:30 AM`)**, and **Southeast (`Hex 14, 13` & `Hex 11, 12`)**—and unite at the **Spire of the False Angel (`Hex 6, 8`)** by **`17:30 PM`**:
+* ❌ **Why Walking Together Fails**: The full circuit (`8,10` $\rightarrow$ `7,10` $\rightarrow$ `5,11` $\rightarrow$ `7,6` $\rightarrow$ `14,13` $\rightarrow$ `11,12` $\rightarrow$ `6,8`) is `~23 hexes` long (`23+ hours` on foot), and the druids execute the True Angel at `Hex (7, 6)` at `11:30 AM` every loop by default while the raiders blow up `Hex (5, 11)` at `09:45 AM`!
+* ❌ **Why Flying All Day Together Fails**: **Early-Morning Flight (`2 hexes/hr = 30 min/hex`)** only lasts **2 hours (`06:00 AM – 08:00 AM`)** before rising heat grounds flying mounts, AND the *Zephyr Bone Whistle* Gryphon carries **at most 2 players** (the other 3 must walk at `1 hex/hr`)!
+* ✅ **The Winning Insight (Coordinated Morning Split + Genie's One-Time Nimbus Cloud)**:
+  - Because every non-combat checkmate on the Final Loop uses **memorized True Names, Ciphers, and Somatic Rites**, the party splits at **`06:15 AM`** (right after binding Ravana in Beregost) to beat both morning deadlines (`09:45 AM` West & `11:30 AM` North) and uses Zephyrus's **One-Time Nimbus Cloud (`15 min/hex`)** to reunite everyone at the **Spire (`Hex 6, 8`)** before `17:30 PM`!
 
 #### Step 3: The Canonical Hour-by-Hour "Golden Loop" Solution (`06:00 AM – 18:00 PM`)
 
-| Time Window | Duration & Mode | Route & Hex Coordinates | Action & Memorized Knowledge Used |
+| Time Window | Sub-Team & Mode | Exact Hex Route & Distance | Action & Memorized Knowledge Used |
 | :--- | :--- | :--- | :--- |
-| **`06:00 – 06:15 AM`** | `0.25h` (In Town) | **Beregost Hub `(8, 10)`** | Ambush **Lord Ravana** in Cobbler's Lane (`8,10`) using his memorized True Name (**`"Ravana-Zul"`**). He surrenders his *Blessed Quiver & Monocle*, cancels Vane's sabotage, and is bound to aid the party at `(6,8)` at `17:30 PM`. Give **Rebecca**, **Althea**, and **Elorion** the vault code (`12-44-09`) and counter-hymn. |
-| **`06:15 – 07:45 AM`** | `1.50h` (**Early-Day Air** @ `2 hex/hr`, `3 hexes`) | `(8, 10)` $\rightarrow$ **The Commodore `(5, 11)`** *(via `4, 10`)* | Fly West (`30m/hex`) to the Coast before the storm tide rises. Use memorized leverage on **Prophet Joshua** ("Vane lied to you!") to grab the *Abyssal Winch Key* & *Grounding Rod*. |
-| **`07:45 – 08:15 AM`** | `0.50h` (In-Hex Action) | **The Commodore `(5, 11)`** | Unlock Commodore Vance's steam winch, slacken the 4 chains, and sunder them with the *Grounding Rod*. **Tempest Lord Otheus** is freed (promises `17:30 PM` Category-5 Hurricane!). *(Note: Route B swaps West & North, visiting `Hex 7, 6` first and `Hex 5, 11` via the afternoon Cloud—both work cleanly!)* |
-| **`08:15 – 11:15 AM`** | `3.00h` (**Early-Day Air** @ `2 hex/hr`, `6 hexes`) | `(5, 11)` $\rightarrow$ **The Sanctum `(14, 13)`** | Fly East-Southeast across the southern foothills (`6 hexes` @ `30m/hex` while early-day air is still active) to the Chronomancy Spire at **The Sanctum `(14, 13)`**. |
-| **`11:15 – 11:30 AM`** | `0.25h` (In-Hex Action) | **The Sanctum `(14, 13)`** | Speak Young Kaelen's memorized **Tachyonic Calibration Cipher** and Bram's code (**`7-3-9-1`**). **Ancient Kaelen** finishes and hands over the **Chronomancy Tuning Fork**! |
-| **`11:30 – 12:30 PM`** | `1.00h` (**Early-Day Air** @ `2 hex/hr`, `2 hexes`) | `(14, 13)` $\rightarrow$ **Aerie of Four Winds `(11, 12)`** | Fly the final `2 hexes` SE (`30m/hex`) to the alabaster mesa of **Hex `(11, 12)`**, landing at **`12:30 PM`** right as `140°F` midday solar turbulence grounds all normal aerial mounts! |
-| **`12:30 – 12:45 PM`** | `0.25h` (In-Hex Action) | **Aerie of Four Winds `(11, 12)`** | Speak Zephyrus's memorized True Name (**`"Zephyrus-Al-Mubarak"`**). Claim **1 Wish** (*Wish of Frozen Heart*: party-wide heat/fire immunity for the afternoon) **AND** board the **One-Time Nimbus Cloud (`15 min/hex` in ONE move only)**! |
-| **`12:45 – 15:15 PM`** | `2.50h` (**Genie Cloud** @ `15m/hex`, `10 hexes`) | `(11, 12)` $\rightarrow$ **Ash Grove `(7, 6)`** *(1-Time Move!)* | Ride the **One-Time Nimbus Cloud** (`15m/hex`) across all `10 hexes` of the burning valley directly from `Hex (11, 12)` to **Ash Grove `(7, 6)`**! The Nimbus Cloud dissipates upon landing. |
-| **`15:15 – 15:30 PM`** | `0.25h` (In-Hex Action) | **Ash Grove `(7, 6)`** | Because Ravana was bound at `06:15 AM`, he never incited Faelan's druids to execute the beast at `11:30 AM`. Perform the memorized **Somatic Inversion Touch & Celestial Chant** (from Boss 2's Tablets) to stabilize and recruit the **True Angel**! |
-| **`15:30 – 17:30 PM`** | `2.00h` (**On Foot** @ `1 hex/hr`, `2 hexes`) | `(7, 6)` $\rightarrow$ **Spire of False Angel `(6, 8)`** | Protected from the `175°F` surface fire by Zephyrus's *Wish of Frozen Heart*, march **2 hexes on foot (`60m/hex`)** SW from `(7, 6)` through `(6, 7)` to the **Spire of the False Angel `(6, 8)`**, arriving at **`17:30 PM` sharp**! |
-| **`17:30 – 17:59 PM`** | `0.50h` (Final Climax) | **Spire `(6, 8)` & Belfry `(8, 10)`** | At `17:30 PM`, **Otheus's Hurricane** deflects 85% of the solar beam, **Ravana** shatters the mirror wards, and the **True Angel** grapples **The Singing Devil (CR 16)**. After defeating the Devil and reversing the soul-swap, strike the sympathetic resonance rift with the **Chronomancy Tuning Fork** to sunder the **Chronocite Bone** before `18:00 PM`! |
+| **`06:00 – 06:30 AM`** | **West Gryphon Team (2 PCs: Pike & Burk)**<br>(`0.5h` **Dawn Air** @ `2 hex/hr`, `1 hex`) | `(8, 10)` $\rightarrow$ **Blazing Farmland `(7, 10)`** | Depart `06:00 AM` sharp on the Bone-Whistle Gryphon (`2 hex/hr` during the `06:00–08:00 AM` dawn flight window). Swoop down to the northern stone irrigation culvert furrow at `(7, 10)` (memorized from the `05:45 AM` tiny fire!) and snatch the **Burning Book**! |
+| **`06:30 – 08:00 AM`** | **West Gryphon Team (2 PCs)**<br>(`1.5h` **Dawn Air** @ `2 hex/hr`, `3 hexes`) | `(7, 10)` $\rightarrow$ `(6, 10)` $\rightarrow$ `(5, 10)` $\rightarrow$ **Raider Sea Caves `(4, 10)`** | Fly `3 hexes` West to **Raider Sea Caves `(4, 10)`**, landing at **`08:00 AM` sharp** just as the 2-hour dawn flight window ends (`4 hexes` total flown). Use memorized leverage on **Prophet Joshua** (*"Vane lied to you!"*) to claim the **Abyssal Winch Crank-Key** without combat! |
+| **`08:00 – 10:00 AM`** | **West Gryphon Team (2 PCs)**<br>(`2.0h` **On Foot** @ `1 hex/hr`, `2 hexes`) | `(4, 10)` $\rightarrow$ **Sunken Reef `(4, 11)`** $\rightarrow$ **The Commodore `(5, 11)`** | Walk `1 hex` South to **Sunken Reef `(4, 11)`** (`08:00–09:00 AM`) to claim the **Grounding Rod of the Deep Trench**, then walk `1 hex` East to **The Commodore `(5, 11)`** (`09:00–10:00 AM`), arriving at `09:15–09:30 AM` to stop the Starfire bomb! |
+| **`10:00 – 11:00 AM`** | **West Gryphon Team (2 PCs)**<br>(`1.0h` In-Hex Action) | **The Commodore `(5, 11)`** | Unlock Commodore Vance's steam winch with the Crank-Key, slacken the 4 chains, and sunder them with the *Grounding Rod*. **Tempest Lord Otheus** is freed and pledges the `17:30 PM` Category-5 Hurricane! |
+| **`11:00 AM – 14:00 PM`** | **West Gryphon Team (2 PCs)**<br>(`3.0h` **On Foot** @ `1 hex/hr`, `3 hexes`) | `(5, 11)` $\rightarrow$ `(5, 10)` $\rightarrow$ `(6, 9)` $\rightarrow$ **Spire `(6, 8)`** | Walk `3 hexes` North along the coastal cliffs to the **Spire of the False Angel `(6, 8)`**, arriving at **`14:00 PM`** and presenting the **Burning Book** to unseal the Spire's solar-adamantine portal gates! |
+| **`06:00 – 06:15 AM`** | **Town Team (3 PCs: Phillipa, Gwen, Grog)**<br>(`0.25h` In Town) | **Beregost Hub `(8, 10)`** | Ambush **Lord Ravana** in Cobbler's Lane (`8,10`) using his memorized True Name (**`"Ravana-Zul"`**). He surrenders his *Blessed Quiver & Monocle*, cancels Vane's sabotage, and is bound to report to Spire `(6,8)` at `17:30 PM`. Brief **Rebecca**, **Althea**, and **Elorion** (`12-44-09`). |
+| **`06:15 – 11:30 AM`** | **North Envoy (1 PC: Phillipa)**<br>(`5.0h` **On Foot**: `3h` via `8,9`–`8,7` + `2h` Difficult Forest into `7,6`) | `(8, 10)` $\rightarrow$ `(8, 9)` $\rightarrow$ `(8, 8)` $\rightarrow$ `(8, 7)` $\rightarrow$ **Ash Grove `(7, 6)`** | Walk North (passing `8,7` at `09:15 AM` to save Sylvan and pushing `2h` through the heavy forest of `7,6`), arriving at **`11:15 AM`—15 minutes before the `11:30 AM` default druid execution**! Perform the memorized **Somatic Inversion Touch & Celestial Chant** (from Boss 2's Tablets) to halt Faelan's ritual (receiving his *Weirwood Staff*) and heal the **True Angel**! |
+| **`11:30 AM – 13:30 PM`** | **North Envoy + True Angel**<br>(`2.0h` **On Foot** @ `1 hex/hr` w/ *Weirwood Staff*, `2 hexes`) | `(7, 6)` $\rightarrow$ `(7, 7)` $\rightarrow$ **Spire `(6, 8)`** | Walk `2 hexes` SW from Ash Grove `(7, 6)` (using Faelan's *Weirwood Staff* to negate forest difficult terrain at `7,6` and `7,7`) to the **Spire `(6, 8)`**, arriving at **`13:30 PM`** and joining Pike & Burk at `14:00 PM`! |
+| **`06:15 – 10:30 AM`** | **Southeast Team (2 PCs: Gwen & Grog)**<br>(`4.0h` **On Foot** @ `1 hex/hr`, `4 hexes` + `0.25h` Action) | `(8, 10)` $\rightarrow$ `(9, 10)` $\rightarrow$ `(10, 10)` $\rightarrow$ `(11, 11)` $\rightarrow$ **Aerie `(11, 12)`** | Walk `4 hexes` SE to **Aerie of the Four Winds `(11, 12)`** (`06:15–10:15 AM`). Speak Zephyrus's memorized True Name (**`"Zephyrus-Al-Mubarak"`**) to activate the *Wish of Frozen Heart* (party-wide afternoon heat immunity) and direct his **One-Time Nimbus Cloud** to meet them at `The Sanctum (14, 13)`! |
+| **`10:30 AM – 13:45 PM`** | **Southeast Team (2 PCs)**<br>(`3.0h` **On Foot** @ `1 hex/hr`, `3 hexes` + `0.25h` Action) | `(11, 12)` $\rightarrow$ `(12, 13)` $\rightarrow$ `(13, 13)` $\rightarrow$ **The Sanctum `(14, 13)`** | Walk `3 hexes` ESE to **The Sanctum `(14, 13)`** (`10:30 AM–13:30 PM`). Recite Young Kaelen's memorized **Tachyonic Calibration Cipher** & Bram's code (**`7-3-9-1`**); **Ancient Kaelen** immediately finishes and hands over the **Chronomancy Tuning Fork**! |
+| **`13:45 – 16:15 PM`** | **Southeast Team (2 PCs)**<br>(`2.5h` **Genie Cloud** @ `15m/hex`, `10 hexes`) | `(14, 13)` $\rightarrow$ **Spire of False Angel `(6, 8)`** *(1-Time Move!)* | Board Zephyrus's **One-Time Nimbus Cloud (`15m/hex` in ONE continuous point-to-point move)** at `(14, 13)` and streak `10 hexes` WNW (`150 mins`) directly across the valley to the **Spire of the False Angel `(6, 8)`**, uniting all 5 PCs at **`16:15 PM`**! *(Alternatively, Gwen can cast 6th-level **Wind Walk**).* |
+| **`17:30 – 17:59 PM`** | **Full United Party (Level 11)**<br>(`0.50h` Final Climax) | **Spire `(6, 8)` & Belfry `(8, 10)`** | With the Spire gates unsealed by the **Burning Book**, **Otheus's Hurricane** deflects 85% of the solar beam, **Ravana** shatters the mirror wards, and the **True Angel** grapples **The Singing Devil (CR 16)**. After defeating the Devil and reversing the soul-swap, strike the sympathetic resonance rift with the **Chronomancy Tuning Fork** to sunder the **Chronocite Bone** before `18:00 PM`! |
 
 ---
 
@@ -2049,27 +2063,27 @@ The players must visit **West (`Hex 5, 11`)**, **Southeast (`Hex 14, 13` & `Hex 
   * *Cliffhanger*: 06:00 AM. Dawn Monologue read verbatim.
 * **Session 2: Loop 1 — The First Boss Duel & The 11:30 AM Loud Explosion**
   * *Events*: Testing loop causality. At 07:15 AM, the party is approached by "Aurelius the Radiant" (the disguised tiger-headed Rakshasa). He tells them the Angel from their prior campaign was corrupted by a horned fiend in the northern woods and gives them the Crucible Charm to "cleanse" it.
-  * *The First Boss Battle (`Hex 7, 6`)*: The party engages the Horned Fiend (CR 11)! The creature fights defensively, pulls lethal blows, protects Druid Scout Sylvan at 09:15 AM, and whispers fragmented Celestial prayers.
-  * *The Soul Detonation*: When defeated or struck with the charm at 11:30 AM, its celestial soul ruptures in a 70 radiant/fire damage Soul Detonation, wiping out the grove and prompting Old Jonas's 8-line rhyme on the next dawn (*"First east to the ice, then south to the sand..."*).
+  * *The First Boss Battle (`Hex 7, 6`)*: The party engages the Horned Fiend (CR 10)! The creature fights defensively, pulls lethal blows, protects Druid Scout Sylvan at 09:15 AM, and whispers fragmented Celestial prayers.
+  * *The Soul Detonation (Default Every Loop)*: When defeated by the party or executed by Faelan's druids at 11:30 AM, its celestial soul ruptures in a 70 radiant/fire damage Soul Detonation, wiping out the grove and prompting Old Jonas's 8-line rhyme on the next dawn (*"First east to the ice, then south to the sand..."*).
 * **Session 3: Loop 2 — Mapping the Wilderness & The Movement Lesson**
   * *Events*: Venturing east and south to investigate Jonas's rhyme and Bram's thermal readings.
-  * *The Lesson*: Discovering the strict movement rules: **1 hex/hr (`60m/hex`) on foot** and **2 hexes/hr (`30m/hex`) by air only in the early part of the day (`06:00 AM – 12:30 PM`)**. Stumbling into screening hazards teaches the party to map detours and locate counter-items.
+  * *The Lesson*: Discovering the strict movement rules: **1 hex/hr (`60m/hex`) on foot** and **2 hexes/hr (`30m/hex`) by air only during the 2-hour dawn window (`06:00 AM – 08:00 AM`, max 2 riders on the Bone Whistle Gryphon)**. Stumbling into screening hazards teaches the party to map detours and locate counter-items.
 
 #### Act II: The Frozen Peak & The Genie Protocol (Sessions 4–5)
 * **Session 4: Loops 3–4 — Scouting Dwarvenhold & The Dragon's Aerial Dominance**
   * *Events*: Flying east (`2 hexes/hr` early-day air) to Dwarvenhold `(15,7)`. Meeting Thane Torvald and Forge-Master Brenda.
   * *Reconnaissance*: Attempting Rimefang `(17,10)` unprepared wipes the party from 80 ft in the air. Discovering the dwarven password **`"Khazad-Mor"`**, the *Drake-Bane Censer* `(14,7)`, *Rime-Anchor Harpoon* `(15,6)`, and *Boots of the Winter Strider* `(18,9)`.
 * **Session 5: Loop 5 — Slaying Rimefang & Memorizing Zephyrus's True Name (Milestone: Level 8!)**
-  * *The Execution Run*: Using early-day air (`2 hexes/hr`) or split sub-teams to gather the 3 counter-items and deliver Taerom's cold-iron tips to Brenda before 10:30 AM.
+  * *The Execution Run*: Splitting into 2 Gryphon Riders (`06:00–08:00 AM` early-day air @ `2 hexes/hr`, then foot) to gather the 3 counter-items at `(14,7)`, `(15,6)`, and `(18,9)` while 3 Walkers march `8 hexes` to Dwarvenhold `(15,7)` by `14:00 PM` to deliver Taerom's cold-iron tips to Brenda and transit the sheltered dwarven siege-tunnel to Frostpeak `(17,10)`.
   * *Boss Fight*: Rimefang grounded on Round 1; Censer negates Frightful Presence. Dragon slain!
   * *Payoff*: Freeing Djinni Zephyrus and **memorizing his True Name (`"Zephyrus-Al-Mubarak"`)** and shrine coordinates (`Hex 11, 12`), unlocking **1 Wish + 1 One-Time Nimbus Cloud move (`15 min/hex`)** on future loops without re-fighting Rimefang!
   * *Milestone*: **Party reaches Level 8**!
 
 #### Act III: The Sunken Necropolis & The Alabaster Tablets (Sessions 6–7)
 * **Session 6: Loops 6–7 — Desert Infiltration & The Genie's Cloud**
-  * *Events*: Flying SE (`2 hexes/hr`) to grab *Sunburst Oil* `(12,13)`, *Scarab of Solar Resurgence* `(13,14)`, and *Golden Mirror-Aegis* `(11, 12)`. Invoking Zephyrus at `(11, 12)` with his memorized True Name for **Necrotic Resistance** + the **One-Time Nimbus Cloud (`15m/hex`)** to hop to the Sunken Necropolis `(12,16)`.
+  * *Events*: Flying SE (`2 hexes/hr` until `08:00 AM`) and walking to grab *Sunburst Oil* `(12,13)`, *Scarab of Solar Resurgence* `(13,14)`, and *Golden Mirror-Aegis* `(11, 12)`. Invoking Zephyrus at `(11, 12)` with his memorized True Name for **Necrotic Resistance** + the **One-Time Nimbus Cloud (`15m/hex`)** to hop across the dunes to the Sunken Necropolis `(12,16)`.
 * **Session 7: Loop 8 — Slaying Akh-en-Amon & Memorizing the Inversion Rite (Milestone: Level 10!)**
-  * *The Execution Run*: Infiltrating the Necropolis at `(12,16)` and smashing the Canopic Heart in Room 4 to end Akh-en-Amon's rejuvenation for that loop.
+  * *The Execution Run*: Infiltrating the Necropolis at `(12,16)` and smashing the Funerary Sarcophagus Seal in Room 4 to end Akh-en-Amon's rejuvenation for that loop.
   * *Boss Fight*: Burk (Scarab) tanks Mummy Rot; Mirror-Aegis reflects Dread Glare; Sunburst Oil triggers double Fire damage. Akh-en-Amon destroyed!
   * *Payoff*: Reading and **memorizing the Golden Alabaster Tablets**—learning the **Somatic Inversion Touch & Celestial Reversal Chant** (so they never need to return to the desert!) and discovering that the Angel and Devil swapped bodies and "Aurelius" is the Rakshasa Lord Ravana!
   * *Milestone*: **Party reaches Level 10**!
@@ -2096,11 +2110,10 @@ The players must visit **West (`Hex 5, 11`)**, **Southeast (`Hex 14, 13` & `Hex 
 #### Act VI: The Grand Finale & The 12-Hour Route Puzzle (Sessions 12–13)
 * **Session 12: Loop 13 (The Golden Loop, Part 1) — Executing the 12-Hour Route Puzzle**
   * *Events*: With only memories and Level 11 stats persisting, the players solve and execute the **12-Hour Route Puzzle** (Section 12.2):
-    * `06:00–06:15 AM` (`Hex 8,10`): Bind **Lord Ravana** in Cobbler's Lane with `"Ravana-Zul"`; brief Rebecca, Althea, and Elorion.
-    * `06:15–08:15 AM` (`Early-Day Air @ 2 hex/hr` $\rightarrow$ `Hex 5,11`): Unchain **Tempest Lord Otheus** at The Commodore.
-    * `08:15–12:30 PM` (`Early-Day Air @ 2 hex/hr` $\rightarrow$ `Hex 14,13` & `11, 12`): Claim the **Chronomancy Tuning Fork** from Ancient Kaelen at `(14,13)`, then land at **Aerie of the Four Winds `(11, 12)`** at `12:30 PM` just as midday solar turbulence grounds normal flight.
-    * `12:30–15:30 PM` (`Genie Wish + 1-Time Nimbus Cloud @ 15m/hex` $\rightarrow$ `Hex 7,6`): Invoke **Zephyrus** with `"Zephyrus-Al-Mubarak"` for the *Wish of Frozen Heart* + **One-Time Nimbus Cloud**, ride the cloud `10 hexes` (`2.5h`) to **Ash Grove `(7,6)`**, and heal the **True Angel** with the memorized Somatic Inversion Touch!
-    * `15:30–17:30 PM` (`On Foot @ 1 hex/hr` $\rightarrow$ `Hex 6,8`): March `2 hexes` on foot (`2.0h`) to the **Spire of the False Angel `(6,8)`**, arriving at `17:30 PM` sharp!
+    * `06:00–14:00 PM` (**West Gryphon Team — 2 Riders @ 2 hex/hr until 08:00 AM, then Foot**): Fly `1 hex` to **Blazing Farmland `(7,10)`** (`06:00–06:30 AM`) to retrieve the **Burning Book** from the culvert furrow, fly `3 hexes` to **Raider Sea Caves `(4,10)`** by `08:00 AM` to claim the **Abyssal Winch Crank-Key** from Prophet Joshua, walk `1 hex` to **Sunken Reef `(4,11)`** (`08:00–09:00 AM`) for the **Grounding Rod**, walk `1 hex` to **The Commodore `(5,11)`** (`09:00–10:00 AM`) to unchain **Tempest Lord Otheus** (`10:00–11:00 AM`), and march `3 hexes` North on foot (`11:00 AM–14:00 PM`) to unseal the **Spire of the False Angel `(6,8)`** with the Burning Book!
+    * `06:00–06:15 AM` (`Hex 8,10` — **Town Team: Phillipa, Gwen, Grog**): Bind **Lord Ravana** in Cobbler's Lane with `"Ravana-Zul"`; brief Rebecca, Althea, and Elorion.
+    * `06:15–13:30 PM` (**North Envoy — Phillipa On Foot, 5h to Ash Grove + 2h w/ Staff**): Walk North (`8,10 -> 8,9 -> 8,8 -> 8,7 -> 7,6`, `3h` road/verge + `2h` heavy forest) to **Ash Grove `(7,6)`** by `11:15 AM` (beating the `11:30 AM` default druid execution!), heal the **True Angel** with the memorized Somatic Inversion Touch (receiving Faelan's *Weirwood Staff*), and walk `2 hexes` SW (`7,6 -> 7,7 -> 6,8`) to **Spire `(6,8)`** by `13:30 PM`.
+    * `06:15–16:15 PM` (**Southeast Team — Gwen & Grog On Foot @ 1 hex/hr + 1-Time Genie Nimbus Cloud @ 15m/hex**): Walk `4 hexes` to **Aerie `(11,12)`** (`06:15–10:15 AM`, invoke **Zephyrus** with `"Zephyrus-Al-Mubarak"` for *Wish of Frozen Heart* and send his One-Time Cloud to `(14,13)`), walk `3 hexes` to **The Sanctum `(14,13)`** (`10:30 AM–13:30 PM`, claim **Chronomancy Tuning Fork** with Kaelen's cipher & `7-3-9-1`), and ride the **One-Time Nimbus Cloud (`15m/hex` in one continuous move)** `10 hexes` (`2.5h`, `13:45–16:15 PM`) directly to the **Spire `(6,8)`**!
 * **Session 13: Loop 13 (The Golden Loop, Part 2) — The Singing Devil & Breaking the Loop!**
   * *The Storm Arrival (17:30 PM)*: Otheus's Category-5 Hurricane deflects 85% of the solar beam over the Western Sea Cliffs `(6,8)`.
   * *The Final Boss Confrontation*: Level 11 Party + True Angel + bound Ravana vs. **The Singing Devil in the Angel's Body (CR 16)** atop the Spire `(6,8)`.
@@ -2153,7 +2166,7 @@ flowchart TD
 
 #### Step 2: Old Jonas's Prophecy East & Boss 1 (Loops 2–5)
 * **The Investigation**: The party listens carefully to **Old Jonas's Four Corners Prophecy**: *"First east to the ice, then south to the sand, find the path to stop the devil's hand... Slay the white wyrm for his chart, to claim a wish of frozen heart."*
-* **The East Clue**: Snirk the Goblin `(10,9)` and the Dwarves at Dwarvenhold `(15,7)` confirm that **Rimefang (CR 13 White Dragon)** hoards an ancient treasure chart and imprisons an elemental being inside his Glacial Chasm `(17,10)`.
+* **The East Clue**: Snirk the Goblin `(9,10)` and the Dwarves at Dwarvenhold `(15,7)` confirm that **Rimefang (CR 13 White Dragon)** hoards an ancient treasure chart and imprisons an elemental being inside his Glacial Chasm `(17,10)`.
 * **Target Locked**: **Boss 1: Rimefang**.
 
 #### Step 3: Zephyrus's Revelation & Boss 2 (Loops 6–8)
@@ -2227,15 +2240,15 @@ The Beregost region features nine explorable subterranean complexes, fortified l
 
 | Dungeon / Lair Complex | Hex | Boss & Threat Level | Core Campaign Objective / Relic |
 | :--- | :---: | :--- | :--- |
-| **The Sunken Necropolis of Akh-en-Amon** | **(12, 16)** *(via 14, 12)* | Mummy Lord Akh-en-Amon (CR 15) | Inversion Soul-Swap Tablets & Canopic Heart |
+| **The Sunken Necropolis of Akh-en-Amon** | **(12, 16)** *(via 14, 12)* | Mummy Lord Akh-en-Amon (CR 15) | Golden Alabaster Inversion Tablets |
 | **The Glacial Chasm & Rimefang's Frost Vault** | **(17, 10)** | Adult White Dragon Rimefang (CR 13) | Rime-Anchor Harpoon & Freeing Djinni Zephyrus |
-| **The Mirage Pavilion & Illusion Maze** | **(10, 6)** | Lord Ravana / 'Aurelius' (CR 13) | Arcanist's Resonance Ledger & Quartz Lens |
+| **The Mirage Pavilion & Illusion Maze** | **(10, 6)** | Lord Ravana / 'Aurelius' (CR 13) | Arcanist's Resonance Ledger & True Name |
 | **The Beached Caravel 'The Commodore'** | **(5, 11)** | Tempest Lord Otheus (CR 13) | Disarming 09:30 Starfire Bomb & Freeing Otheus |
 | **The South Aqueducts & Cistern Catacombs** | **(8, 13)** | Scribe Vane's Saboteurs (CR 7) | Sluice Gate Control & Civilian Safehouse Haven |
-| **East Quarry & Resonator Foundries** | **(13, 9)** | Haywire Clockworks & Resonator (CR 8) | Saving Artificer Bram & Quartz Crystal Lens |
-| **The Chronomancy Spire (The Sanctum)** | **(14, 13)** | Time Wraiths & Paradox Echoes (CR 10) | Ancient Kaelen's 17:15 Chronomancy Tuning Fork |
-| **Spire of the False Angel & High Belfry** | **(6, 8) / (8, 10)** | The Singing Devil (CR 16 / L11) | Solar Cataclysm Spire & Escapement Gear Loop Terminal |
-| **Ash Grove & The Elder Weirwood** | **(7, 6)** | Horned Fiend / True Angel (CR 11) | Inversion Touch Rite / Averting 11:30 Detonation |
+| **East Quarry & Optical Quartz Caverns** | **(13, 9)** | Haywire Quarry Clockworks (CR 8) | True Seeing Quartz Lens & Gyroscope Stabilizer |
+| **The Chronomancy Spire (The Sanctum)** | **(14, 13)** | Time Wraiths & Paradox Echoes (CR 10) | Ancient Kaelen's Chronomancy Tuning Fork |
+| **Spire of the False Angel & High Belfry** | **(6, 8) / (8, 10)** | The Singing Devil (CR 16 / L11) | Unsealing Spire with Burning Book & Breaking Loop |
+| **Ash Grove & The Elder Weirwood** | **(7, 6)** | Horned Fiend / True Angel (CR 10) | Inversion Touch Rite / Averting 11:30 Detonation |
 
 ### 14.1 💀 The Sunken Necropolis of Akh-en-Amon (Hex 12, 16 via Waystation 14, 12)
 * **Theme**: Subterranean Desert Tomb & Suncophagus Vault
@@ -2244,8 +2257,7 @@ The Beregost region features nine explorable subterranean complexes, fortified l
 * **Overview**: Buried beneath centuries of shifting golden sands in the southern desert dunes (`Hex 12, 16`, guided via Zahir's Sandstone Sluice Waystation at `Hex 14, 12`) lies the subterranean crypt of Akh-en-Amon, high solar priest of the fallen dynasty. Sealed within its granite sarcophagus chamber are the ancient Inversion Swap Tablets that detail the forbidden soul-transference battery used by the corrupt arcanist.
 
 #### Strategic Relics & Campaign Breakthroughs
-- **Inversion Swap Tablets**: Hieroglyphic stone tablets detailing soul-transference magic; proves conclusively that the Angel and Devil had their physical forms swapped in the arcanist's battery.
-- **Canopic Heart of Akh-en-Amon**: Preserved necrotic organ that siphons solar heat; grants the bearer complete immunity to desert solar burn (140°F) while held.
+- **Golden Alabaster Inversion Tablets**: Hieroglyphic stone tablets detailing soul-transference magic and the **Somatic Inversion Touch**; proves conclusively that the Angel and Devil had their physical forms swapped in the arcanist's battery.
 - **Scarab Talisman of Sun-Warding**: Wards against radiant damage (Resistance to Radiant) and allows reading ancient celestial hieroglyphs.
 
 #### Solstice Clockwork Timeline Hazards
@@ -2274,7 +2286,7 @@ The Beregost region features nine explorable subterranean complexes, fortified l
    - *Description*: A massive tiered sanctum dominated by a golden sarcophagus surrounded by four blazing braziers. Ghostly heat ripples distort the air, and necrotic whispers echo from the stone.
    - *Creatures*: 1x Mummy Lord (Akh-en-Amon)
    - *Hazard/Trap*: Solar Fire Braziers: Four braziers feed the Mummy Lord's magic immunity. Extinguishing each brazier (DC 14 Athletics or water spell) strips 25 max HP from the boss.
-   - *Secrets/Loot*: Canopic Heart of Akh-en-Amon: Sits inside the sarcophagus. Absorbing it grants total immunity to extreme heat up to 18:00 PM.
+   - *Secrets/Loot*: ⭐ Funerary Seal of Akh-en-Amon: Smashing the funerary seal inside the sarcophagus ends the Mummy Lord's rejuvenation for the current loop and opens the inner vault housing the **Golden Alabaster Inversion Tablets**!
 
 ---
 ### 14.2 🐉 The Glacial Chasm & Rimefang's Frost Vault (Hex 17, 10)
@@ -2375,8 +2387,8 @@ The Beregost region features nine explorable subterranean complexes, fortified l
 
 #### Solstice Clockwork Timeline Hazards
 - **06:00 – 09:30 AM**: Morning Low Tide. The caravel is surrounded by damp sand flats. Easy approach. Raiders preparing to loot the powder magazine.
-- **09:30 – 09:45 AM**: 🔥 STARFIRE FUSE BURNING! Raiders light the 15-minute fuse to 50 barrels of starfire powder. Party has exactly 15 minutes to reach hold and disarm!
-- **09:45 AM**: 💥 POWDER EXPLOSION (If Not Disarmed). Deals 100d6 fire damage, destroying the ship, killing Otheus, and locking the hurricane boon forever.
+- **09:30 – 09:45 AM**: 🔥 STARFIRE FUSE BURNING! Raiders light the 15-minute fuse to 12 barrels of starfire powder. Party has exactly 15 minutes to reach hold and disarm!
+- **09:45 AM**: 💥 **POWDER EXPLOSION & WRECKAGE AFTERMATH (If Not Disarmed)**. Deals 100d6 fire damage, blowing *The Sea Maiden* in half, killing Vance and Otheus, and collapsing the trench. **If the party arrives after 09:45 AM**, they find burning oak ribs, shattered brass cannons across the boiling flats, and Commodore Vance's scorched **Captain's Logbook** washed ashore alongside a dying Bosun Cord—revealing the `05:45 AM` double-robbery (winged thieves took the pale bone; Silt-Gull bandits took the Winch Key to `Hex 4, 10`) and the `09:30 AM` Starfire fuse attack!
 - **11:00 AM – 14:00 PM**: **Scalding Storm Tides (120°F–140°F)**: The ocean rushes back in an unnatural, boiling storm surge. Water deals 1d6 fire damage per round of immersion without resistance.
 - **15:00 – 17:30 PM**: **Boiling Tempest (150°F+)**: 25-foot boiling swells batter the ship. Steam obscures the horizon.
 
@@ -2387,7 +2399,7 @@ The Beregost region features nine explorable subterranean complexes, fortified l
    - *Hazard/Trap*: Rotting Deck Planks: Stepping on marked spots requires DC 13 Dex save or collapse 15 feet down into the gun deck.
    - *Secrets/Loot*: The Quarterdeck Winch: Inserting the recovered **Abyssal Winch Crank-Key** powers up the steam gear, allowing the party to slacken or haul the underwater cables. Captain's Log on the navigator's table reveals Scribe Vane paid the wreckers 500 gp to scuttle the ship at 09:30 AM sharp.
 2. **Room 2: Flooded Gun Deck & Starfire Powder Hold**
-   - *Description*: Knee-deep seawater sloshes across cannonballs and shattered crates. At the far bulkhead, a hissing white-hot Starfire fuse burns down toward 50 powder kegs!
+   - *Description*: Knee-deep seawater sloshes across cannonballs and shattered crates. At the far bulkhead, a hissing white-hot Starfire fuse burns down toward 12 powder kegs!
    - *Creatures*: 1x Sahuagin Baron & Warband
    - *Hazard/Trap*: 🔥 Ticking Fuse: 15 minutes on the clock! Requires DC 15 Sleight of Hand or water spell to snip/extinguish before detonation.
    - *Secrets/Loot*: Ship's Apothecary Chest: Contains 4 Potions of Water Breathing and 2 Potions of Greater Healing.
@@ -2472,12 +2484,12 @@ flowchart TD
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **05:45** | Belfry locked. Town asleep. | Bandits gallop west with stolen box. Over Hex (7, 10), a **tiny fire** sparks where party dropped the **Burning Book**! (Aerial flight spots furrow). | Smugglers lock Harbor Master in shed. | Bandits arrive at sea caves with box. | Bandits club Vance; steal Relic Box. | Dense predawn sea fog |
 | **06:00** | Reset chime. Full resources. | Hex (7, 10) barleyfield erupts into an impassable blazing wildfire; contained from Beregost by stone canals/firebreaks. Smoke chokes field. | Fishermen stranded; low tide exposed. | Prophet Joshua examines Brass Tuning Fork. | Vance wakes bleeding; discovers winch locked. | Crisp morning chill (50°F) |
-| **06:45** | Old Jonas chants 14-line prophecy. | Thick grey smoke billows from Hex (7, 10) wildfire; searching on foot is impossible. Bandit scout watches dunes. | Smugglers barter stolen Beregost goods. | Joshua strikes tuning fork; ripples spread. | Vance bandages head; rallies skeleton crew. | Mild morning air (65°F) |
-| **07:30** | Tobias worries about missing yeast cart. | Swamp mud dries slightly; safe travel. | Town guards arrive at port; turn back. | Bandits prepare 12 kegs Starfire oil. | Vance fires signal flares; no response. | Distinct warmth (78°F) |
+| **06:45** | Old Jonas chants 8-line prophecy. | Thick grey smoke billows from Hex (7, 10) wildfire; searching on foot is impossible. Bandit scout watches dunes. | Smugglers barter stolen Beregost goods. | Joshua strikes tuning fork; ripples spread. | Vance bandages head; rallies skeleton crew. | Mild morning air (65°F) |
+| **07:30** | Tobias asks party to chop firebreak at `7, 10`. | Party can chop cedar firebreak at `7, 10` & fight 2 Cinder Mephits! | Town guards arrive at port; turn back. | Bandits prepare 12 kegs Starfire oil. | Vance fires signal flares; no response. | Distinct warmth (78°F) |
 | **08:30** | Scribe Vane destroys manifests. | Heavy carts of Starfire oil rolled west. | Smugglers disperse into sand dunes. | Bandits mobilize assault force. | Vance spots raiders advancing across flats. | Warming (90°F) |
 | **09:00** | Well water drops 4 ft. Divine static. | Road empty; heat mirages over grass. | Port piers creak; water tingles with ozone. | Caves abandoned as bandits march to ship. | Vance barricades upper deck; aims swivel guns. | Divine static (105°F) |
 | **09:30** | Scribe Vane forges guard sighting orders. | Marsh peat begins smoldering. | First tidal bore (4-ft white wall) hits port. | Cave entrance begins flooding. | ⚠️ **Raiders assault! Starfire fuse lit!** | Thermal spike (118°F) |
-| **09:45** | Panic begins in town. | Ground trembles from distant shockwaves. | Harbor water rises rapidly. | Caves flooded halfway to ceiling. | 💥 **FUSE DETONATION** (unless defused). | 120°F (Armor DC 12 Con) |
+| **09:45** | Panic begins in town. | Ground trembles from distant shockwaves. | Harbor water rises rapidly. | Caves flooded halfway to ceiling. | 💥 **FUSE DETONATION!** Ship split in two; logbook washes ashore! | 120°F (Armor DC 12 Con) |
 | **10:30** | Sluice gates sabotaged by Vane. | Road too hot for unshoed horses. | Pier pilings submerge under grey foam. | Caves fully submerged under water. | Vance operates winch if saved with key. | 125°F (Smoldering timber) |
 | **11:30** | True Angel Divine Rejection Pulse. | Sinking mud pools boil with sulfur. | Scalding spray drenches port buildings. | Underwater current traps unequipped divers. | Scalding storm tides hit hull (120°F). | 135°F (Scalding water) |
 | **12:00** | **Solar Scorch begins.** Streets empty. | Farmland grass ignites in brushfires. | Fish market sheds catch fire. | Deep ocean current surges at 4 knots. | Party dives trench with Water Breathing. | **140°F (2d6 fire/10m sun)** |
@@ -2567,22 +2579,22 @@ Why is Prophet Joshua risking his life to rob the *Sea Maiden*, rally vicious co
    - *Secrets/Loot*: ⭐ The Solstice Ark: Can house 100 civilians in complete safety from the 18:00 PM wipeout! Tobias, Maya, and Rebecca can be guided here to survive.
 
 ---
-### 14.6 ☀️ East Quarry & Resonator Foundries (Hex 13, 9)
-* **Theme**: Terraced Granite Quarry & Parabolic Brass Foundry
-* **Recommended Level**: Level 7–9 (Artificer Salvation)
-* **Boss Threat**: **Haywire Foundry Automatons & Solar Resonator** (CR 8)
-* **Overview**: Carved into the granite foothills of the eastern mountain range is the East Quarry and high-temperature brass foundries. Here Artificer Bram was sent at 09:00 AM to tune the giant parabolic brass Solar Resonator. At 13:00 PM, the resonator misfires, blasting a 10d10 radiant beam that incinerates the workshop and kills Bram. Recalibrating the mirrors saves Bram and yields the True Seeing Quartz Lens!
+### 14.6 ⛏️ East Quarry & Optical Quartz Caverns (Hex 13, 9)
+* **Theme**: Terraced Granite Quarry, Crystal Grotto & Clockwork Smelting Foundry
+* **Recommended Level**: Level 7–9 (Relic Retrieval)
+* **Boss Threat**: **Haywire Quarry Automatons & Prismatic Basilisks** (CR 8)
+* **Overview**: Carved into the granite foothills of the eastern mountain range is the East Quarry and its deep optical quartz caverns, where Beregost's clockwork parts and precision crystal lenses are mined and smelted. As the solstice heat rises, the foundry's clockwork excavation automatons overheat and go haywire! Delving into the crystal grotto yields the **True Seeing Quartz Lens** and the **Clockwork Gyroscope Stabilizer** for Artificer Bram in Beregost.
 
 #### Strategic Relics & Campaign Breakthroughs
-- **True Seeing Quartz Lens**: Polished optical quartz lens harvested from the quarry caverns; pierces illusions and reveals Rakshasa's true form.
-- **Clockwork Gyroscope Stabilizer**: Essential component required by Bram to repair the Clocktower escapement gear train.
-- **Molten Crucible Tongs**: Enchanted forge tongs that allow handling white-hot Chronocite metal without taking fire damage.
+- **True Seeing Quartz Lens**: Polished optical quartz lens harvested from the quarry caverns; pierces illusions and reveals the Rakshasa's true tiger form.
+- **Clockwork Gyroscope Stabilizer**: Precision chronocite component that can be brought to Artificer Bram in the Beregost Clocktower to earn his Escapement Calibration Code (`7-3-9-1`).
+- **Molten Crucible Tongs**: Enchanted forge tongs that allow handling white-hot metal without taking fire damage.
 
 #### Solstice Clockwork Timeline Hazards
-- **06:00 – 09:00 AM**: Quarry Awake. Stonemasons and artificers cutting quartz slabs. Safe environment. Bram is still in Beregost.
-- **09:00 – 12:45 PM**: Bram at Work. Bram arrives and attempts to calibrate the giant brass parabolic dish. Clockwork automatons begin overheating.
-- **13:00 PM**: 💥 10d10 RADIANT CANYON BLAST! Resonator dish fires stray solar beam across the canyon, vaporizing the workshop and killing Bram!
-- **15:00 – 18:00 PM**: Molten Brass Meltdown. Mirrors liquefy into running pools of 2,000°F brass; lower terraces become impassable lava lakes.
+- **06:00 – 09:00 AM**: Quarry Awake. Stonemasons cutting granite slabs; crystal caverns cool and stable.
+- **09:00 – 12:00 PM**: Overheating Automatons. Ambient divine static causes the clockwork mining servitors to go haywire and patrol the terraces aggressively.
+- **12:00 – 15:00 PM**: Blinding Crystal Refraction. Midday glare refracts through the upper quartz shafts, filling the amphitheater with searing light.
+- **15:00 – 18:00 PM**: Smelting Vat Overflow. Foundry crucibles boil over into running pools of molten brass across the lower floor.
 
 #### Room-by-Room Layout
 1. **Room 1: Granite Amphitheater & Derrick Cranes**
@@ -2594,17 +2606,17 @@ Why is Prophet Joshua risking his life to rob the *Sea Maiden*, rally vicious co
    - *Description*: A subterranean cavern glittering with 6-foot violet and clear optical quartz crystals that reflect torchlight into thousands of rainbows.
    - *Creatures*: 2x Prismatic Basilisk
    - *Hazard/Trap*: Blinding Crystal Glare: Direct radiant or light spells in this room cause a blinding flash (DC 14 Con save or Blinded for 1 minute).
-   - *Secrets/Loot*: ⭐ Flawless Quartz Core: Mining a sample (DC 13 Athletics or stonecunning) yields the True Seeing Quartz Lens!
+   - *Secrets/Loot*: ⭐ Flawless Quartz Core: Mining a sample (DC 13 Athletics or Stonecunning) yields the **True Seeing Quartz Lens**!
 1. **Room 3: Smelting Foundry & Crucible Floor**
    - *Description*: Massive blast furnaces roar with magical fire. Vats of boiling brass and copper bubble violently as clockwork servitors scurry between gantries.
    - *Creatures*: 3x Overheated Clockwork Automatons
    - *Hazard/Trap*: Molten Splash: Stepping off metal gantries deals 5d10 fire damage from bubbling brass pools.
    - *Secrets/Loot*: Artificer's Cooling Wand: Wand of Pyrotechnics with 7 charges, capable of instantly cooling superheated metal.
-1. **Room 4: Solar Resonator Firing Platform**
-   - *Description*: A 40-foot polished parabolic brass mirror aimed at the sky. Giant brass gears tick loudly as the countdown approaches 13:00 PM!
-   - *Creatures*: 1x Greater Air Elemental
-   - *Hazard/Trap*: 13:00 PM Countdown: Disarming the mirror alignment gears requires DC 15 Tinker's Tools or DC 16 Arcana check before 13:00 PM.
-   - *Secrets/Loot*: ⭐ Bram's Gratitude: Saving Bram from the 13:00 explosion earns his absolute loyalty: 'Meet me at the clocktower at 17:00—I'll hold the escapement open!'
+1. **Room 4: Precision Lens Grinding Vault**
+   - *Description*: A subterranean master-artificer chamber housing water-powered diamond grinding wheels and a locked chronocite parts locker.
+   - *Creatures*: 1x Greater Air Elemental (bound to the pneumatic bellows)
+   - *Hazard/Trap*: High-Pressure Steam Valve: Ruptured pipe sprays 30-ft cone of scalding steam (DC 15 Dex save or 4d8 fire damage; DC 14 Tinker's Tools/Athletics to shut valve).
+   - *Secrets/Loot*: ⭐ Clockwork Gyroscope Stabilizer & Blueprint: Contains the spare stabilizer and Bram's notes referencing his **Escapement Calibration Code (`7-3-9-1`)**!
 
 ---
 ### 14.7 🧙 The Chronomancy Spire (The Sanctum) (Hex 14, 13)
@@ -2691,8 +2703,8 @@ Why is Prophet Joshua risking his life to rob the *Sea Maiden*, rally vicious co
 ### 14.9 🌟 Ash Grove & The Elder Weirwood (Hex 7, 6)
 * **Theme**: Sacred Blood-Red Weirwood Grove & Druidic Execution Ring
 * **Recommended Level**: Level 7 (Prelude Boss / Boss 0)
-* **Boss Threat**: **Horned Fiend (The True Angel) & Druid Circle** (CR 11 (Prelude Duel))
-* **Overview**: Deep in the northern briarwood forest stands Ash Grove, a clearing centered around an ancient weeping weirwood tree with bleeding red sap. At 06:00 AM, the True Angel (trapped in the Horned Fiend's body) crash-lands here after escaping the arcanist's battery. Archdruid Faelan and his circle believe it is an archdevil corrupting the forest. At 11:30 AM, their binding execution—or the party's attack with Aurelius's Crucible Charm—triggers a catastrophic soul detonation (70 radiant/fire damage across 300 feet), wiping out the grove!
+* **Boss Threat**: **Horned Fiend (The True Angel) & Druid Circle** (CR 10 (Prelude Duel))
+* **Overview**: Deep in the northern briarwood forest stands Ash Grove, a clearing centered around an ancient weeping weirwood tree with bleeding red sap. At 06:00 AM, the True Angel (trapped in the Horned Fiend's body) crash-lands here after escaping the arcanist's battery. Archdruid Faelan and his circle believe it is an archdevil corrupting the forest. Every loop by default, the druids hunt down and encircle the creature (inviting the party to join if present, or executing it themselves if the party is elsewhere). At **11:30 AM**, their execution—or the party's attack with Aurelius's Crucible Charm—triggers a catastrophic soul detonation (70 radiant/fire damage across 300 feet), wiping out the grove!
 
 #### Strategic Relics & Campaign Breakthroughs
 - **Celestial Tears of the Horned Fiend**: Pure radiant tears wept by the fiend; smells of frankincense and morning ozone, hinting at a deeper mystery, and acts as a Potion of Supreme Healing.
@@ -2782,6 +2794,32 @@ Why is Prophet Joshua risking his life to rob the *Sea Maiden*, rally vicious co
 
 ---
 
+### 14.3 Blazing Farmland Firebreak & Cinder Mephits (CR 1/2)
+* **Encounter Location**: Hex (7, 10) — Blazing Farmland (1 hex West of Beregost).
+* **Narrative Context**: Before dawn (`~05:25 AM`), the party accidentally dropped their **Burning Book** in Old Branden's barleyfield on their walk into town, igniting a massive 600-acre wildfire. While stone irrigation canals protect Beregost, a 60-foot stand of dry cedar windbreak trees threatens to carry flames across the eastern ditch into Baker Tobias's sourdough barley shed. Two **Cinder Mephits** born from the planar book's sparks harass Old Branden and the bucket brigade.
+* **Official D&D 2024 (5.5e) Stat Block (2x Cinder / Magma Mephits)**:
+  - **Size / Type**: Small Elemental, Neutral Evil
+  - **Armor Class**: 12
+  - **Hit Points**: 22 (5d6 + 5) each
+  - **Speed**: 30 ft., fly 30 ft.
+  - **Proficiency Bonus (PB)**: +2
+  - **Ability Scores**: STR 8 (-1), DEX 12 (+1), CON 12 (+1), INT 7 (-2), WIS 10 (+0), CHA 10 (+0)
+  - **Damage Vulnerabilities**: Cold
+  - **Damage Immunities**: Fire, Poison
+  - **Condition Immunities**: Exhaustion, Poisoned
+  - **Senses**: Darkvision 60 ft., Passive Perception 10
+  - **Traits**:
+    - **Death Burst**: When the mephit dies, it explodes in a burst of cinders. Each creature within 5 ft. must make a DC 11 Dexterity saving throw, taking 7 (2d6) Fire damage on a failed save, or half as much on a success.
+  - **Actions (D&D 2024 Format)**:
+    - **Claws**: *Melee Attack Roll*: +3 to hit, reach 5 ft., one target. *Hit*: 3 (1d4 + 1) Slashing damage plus 2 (1d4) Fire damage.
+    - **Fire Breath (Recharge 6)**: *Dexterity Saving Throw*: DC 11, 15-ft. Cone. *Failure*: 7 (2d6) Fire damage. *Success*: Half damage.
+* **Firebreak Containment Mechanics & Clue**:
+  - **Chopping the Containment Line**: Felling the dry cedar windbreak before the fire jumps the ditch requires **three DC 13 Strength (Athletics) checks** using woodaxes (or dealing **30 slashing/force damage** to the windbreak trees, or casting *Create Water* / *Gust of Wind* along the trench).
+  - **Why the Book Cannot Be Found on Foot**: Venturing past the firebreak into the 600-acre burning barleyfield inflicts **3d6 Fire damage per 10 minutes** and **Heavily Obscured** blinding smoke. Old Branden tells the party: *"Whatever glowing relic started this blaze fell right in the middle of the dark furrows before dawn—you'll never find it on foot in 600 acres of smoke, only from the sky before the fire spread!"*
+  - **Reward**: Tobias gifts the party his **Baker's Warmth Loaf** (+5 Temp HP & Cold Resistance) and the **Subterranean Flour-Chute Key**, and reminds them to be back in Beregost by **11:00 AM** for the High Sun Muster!
+
+---
+
 ## 15. Campaign Image & Visual Asset System (Contextual Access Architecture)
 
 The campaign companion website embeds a comprehensive visual asset suite providing **at least one image per NPC, per building, per hex, and per room across all canonical dungeons**, plus marquee hero artworks for the campaign's climactic moments.
@@ -2803,10 +2841,10 @@ The campaign companion website embeds a comprehensive visual asset suite providi
    - *Contextual Placement*: **Tab 6 (Bosses)** Dossier 2, **Tab 5 (Dungeons)** Sunken Necropolis header, and Hex (12, 16).
 5. **Rakshasa Lord Ravana (CR 13)**:
    - *File*: `assets/images/boss_rakshasa.jpg`
-   - *Contextual Placement*: **Tab 6 (Bosses)** Dossier 3, **Tab 5 (Dungeons)** Mirage Pavilion header, and Hex (5, 14).
+   - *Contextual Placement*: **Tab 6 (Bosses)** Dossier 3, **Tab 5 (Dungeons)** Mirage Pavilion header, and Hex (10, 6).
 6. **Storm Giant Tempest Lord Otheus (CR 13)**:
    - *File*: `assets/images/boss_storm_giant.jpg`
-   - *Contextual Placement*: **Tab 6 (Bosses)** Dossier 4, **Tab 5 (Dungeons)** Abyssal Anchorage header, and Hex (1, 8).
+   - *Contextual Placement*: **Tab 6 (Bosses)** Dossier 4, **Tab 5 (Dungeons)** Abyssal Anchorage header, and Hex (5, 11).
 
 ### 15.2 Town Buildings & Beregost Hub Visuals
 - **Beregost Town Square & Ancient Clocktower**: `assets/images/bldg_town_square.jpg` (Hero banner on Hex 8,10 and Town Hub).
@@ -2834,10 +2872,10 @@ When any hex in the 20x19 map grid is selected, `inspectHex(c, r)` renders:
   - *17:30–17:59*: Apocalyptic plasma flare
 - **One-Click Image Modal**: Clicking any landscape banner opens the high-resolution art preview modal with full zoom and caption.
 
-### 15.5 Dungeon Room Chamber Visuals (40 Explorable Rooms)
+### 15.5 Dungeon Room Chamber Visuals (36 Explorable Rooms Across 9 Dungeons)
 In **Tab 5 (Dungeons)**:
-- Each of the 4 canonical dungeons (`dungeon_rimefang`, `dungeon_necropolis`, `dungeon_mirage`, `dungeon_tempest`) features a hero Boss Lair Header banner.
-- **Every single room card (Rooms 1 through 10)** renders a dedicated chamber visual banner illustrating that chamber's architectural details, environmental traps, and creature threats.
+- Each of the 9 canonical dungeons (`dungeon_necropolis`, `dungeon_rimefang`, `dungeon_mirage`, `dungeon_commodore`, `dungeon_aqueducts`, `dungeon_quarry`, `dungeon_chronomancy`, `dungeon_clocktower`, `dungeon_ash_grove`) features a hero Boss Lair Header banner.
+- **Every single room card (Rooms 1 through 4 across all 9 dungeons = 36 explorable rooms)** renders a dedicated chamber visual banner illustrating that chamber's architectural details, environmental traps, and creature threats.
 
 ### 15.6 Global Campaign Art Gallery Modal & Custom Fantasy Art Suite
 - Accessible via the **🎨 Campaign Visual Gallery** button in the top navigation bar and directly within NPC dossiers, hex inspection panels, and town building modals.
@@ -2897,7 +2935,7 @@ Built directly into the companion website (via the **🎵 Soundtracks & Playlist
 * **1-Click YouTube Auto-Playlist**: [Launch Mystery & Ruins Playlist (6 Tracks)](https://www.youtube.com/watch_videos?video_ids=0XTyJsKiYIc,VQKEB10N_m0,PjgYB1jL1WQ,pvpCX9qtyZE,o7pML9YzOYg,3K7zSP87PuA)
 * **Tracklist & Campaign Cues**:
   1. **Corridors of Time** — *Chrono Trigger* (`0XTyJsKiYIc`) — The Bootstrap Paradox (`05:45 AM` / `05:59 AM` Clues), Clocktower Escapement & Temporal Deductions
-  2. **Schala's Theme** — *Chrono Trigger* (`VQKEB10N_m0`) — Lord Ravana ("Aurelius the Radiant") & The Mirage Sanctum (`Hex 8, 4`)
+  2. **Schala's Theme** — *Chrono Trigger* (`VQKEB10N_m0`) — Lord Ravana ("Aurelius the Radiant") & The Mirage Sanctum (`Hex 10, 6`)
   3. **City of Tears (Outside)** — *Hollow Knight* (`PjgYB1jL1WQ`) — West Sector: Commodore's Caravel, Abyssal Trench (`Hex 5, 11`) & Weeping Fiend
   4. **Soul Sanctum** — *Hollow Knight* (`pvpCX9qtyZE`) — South Dungeon: Delving into the Sunken Necropolis of Akh-en-Amon (`Hex 12, 16`)
   5. **Undersea Palace** — *Chrono Trigger* (`o7pML9YzOYg`) — Deciphering the Golden Alabaster Inversion Tablets & Scribe Vane's Vault
