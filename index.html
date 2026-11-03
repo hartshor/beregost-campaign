@@ -27120,7 +27120,7 @@ const CAMPAIGN_IMAGES = {
     aerie_four_winds: "assets/images/loc_aerie_four_winds.jpg",
     dwarvenhold_fortress: "assets/images/loc_dwarvenhold_fortress.jpg",
     sandstone_canyons: "assets/images/loc_sandstone_canyons_camp.jpg",
-    glacial_chasm: "assets/images/loc_glacial_chasm_exterior.jpg",
+    glacial_chasm: "assets/images/biome_tundra_frostpeak.jpg",
     sunken_necropolis: "assets/images/loc_sunken_necropolis_exterior.jpg",
     mirage_pavilion: "assets/images/loc_mirage_pavilion_exterior.jpg",
     beached_caravel: "assets/images/loc_beached_caravel_exterior.jpg",
@@ -27135,7 +27135,7 @@ const CAMPAIGN_IMAGES = {
   dungeon_exteriors: {
     dungeon_clocktower: "assets/images/bldg_clocktower_exterior.jpg",
     dungeon_necropolis: "assets/images/loc_sunken_necropolis_exterior.jpg",
-    dungeon_rimefang: "assets/images/loc_glacial_chasm_exterior.jpg",
+    dungeon_rimefang: "assets/images/biome_tundra_frostpeak.jpg",
     dungeon_mirage: "assets/images/loc_mirage_pavilion_exterior.jpg",
     dungeon_commodore: "assets/images/loc_beached_caravel_exterior.jpg",
     dungeon_aqueducts: "assets/images/loc_south_aqueducts_exterior.jpg",
@@ -27146,17 +27146,17 @@ const CAMPAIGN_IMAGES = {
 
   // Curated Biome Atmospheric Landscapes (100% Pure Landscape Assets — Never NPC Portraits)
   biomes: {
-    glacial: "assets/images/loc_glacial_chasm_exterior.jpg",
+    glacial: "assets/images/biome_tundra_frostpeak.jpg",
     desert: "assets/images/biome_desert_dunes.jpg",
     ocean: "assets/images/biome_deep_ocean.jpg",
     pine: "assets/images/biome_pine_canopy.jpg",
-    crags: "assets/images/loc_dwarvenhold_fortress.jpg",
+    crags: "assets/images/biome_granite_crags.jpg",
     farmland: "assets/images/biome_farmland.jpg",
     swamp: "assets/images/biome_salt_marsh.jpg",
     foothills: "assets/images/biome_rolling_foothills.jpg",
     woods: "assets/images/loc_ash_grove_exterior.jpg",
     quarry: "assets/images/loc_east_quarry_exterior.jpg",
-    wildfire: "assets/images/crypt_tragedy_cellar.jpg"
+    wildfire: "assets/images/biome_farmland_wildfire.jpg"
   },
 
   // Dedicated Monster & Encounter Artwork
@@ -27179,20 +27179,20 @@ const CAMPAIGN_IMAGES = {
     storm_giant_otheus: "assets/images/boss_storm_giant.jpg",
     singing_devil_angel: "assets/images/angel_pulling_sun.jpg",
     horned_fiend_angel: "assets/images/npc_true_angel.jpg",
-    abominable_yeti: "assets/images/room_rimefang_3.jpg",
-    giant_frost_spider: "assets/images/room_rimefang_1.jpg",
-    giant_octopus: "assets/images/room_commodore_3.jpg",
-    giant_scorpion: "assets/images/room_necropolis_1.jpg",
-    treant_guardian: "assets/images/room_ash_grove_1.jpg",
-    stone_giant: "assets/images/room_quarry_1.jpg",
-    dwarven_sentinel: "assets/images/loc_dwarvenhold_fortress.jpg",
-    cinder_mephit: "assets/images/crypt_tragedy_cellar.jpg",
-    fire_elemental: "assets/images/crypt_tragedy_cellar.jpg",
+    abominable_yeti: "assets/images/monster_abominable_yeti.jpg",
+    giant_frost_spider: "assets/images/monster_giant_spider.jpg",
+    giant_octopus: "assets/images/monster_giant_octopus.jpg",
+    giant_scorpion: "assets/images/monster_giant_spider.jpg",
+    treant_guardian: "assets/images/monster_treant_guardian.jpg",
+    stone_giant: "assets/images/monster_stone_giant.jpg",
+    dwarven_sentinel: "assets/images/monster_stone_giant.jpg",
+    cinder_mephit: "assets/images/biome_farmland_wildfire.jpg",
+    fire_elemental: "assets/images/biome_farmland_wildfire.jpg",
     goblin_scout: "assets/images/npc_snirk.jpg",
-    giant_boar: "assets/images/biome_farmland.jpg",
-    scarecrow: "assets/images/biome_farmland.jpg",
-    giant_constrictor_snake: "assets/images/biome_salt_marsh.jpg",
-    dust_mephit: "assets/images/biome_desert_dunes.jpg"
+    giant_boar: "assets/images/monster_giant_boar.jpg",
+    scarecrow: "assets/images/monster_scarecrow.jpg",
+    giant_constrictor_snake: "assets/images/monster_basilisk.jpg",
+    dust_mephit: "assets/images/monster_air_elemental.jpg"
   },
 
   // Town Buildings Architecture (12 Dedicated Architectural Paintings)
@@ -27200,7 +27200,7 @@ const CAMPAIGN_IMAGES = {
     bldg_clocktower: "assets/images/bldg_clocktower_exterior.jpg",
     bldg_well: "assets/images/bldg_well.jpg",
     bldg_well_square: "assets/images/bldg_well.jpg",
-    bldg_bakery: "assets/images/bldg_bakery.jpg",
+    bldg_bakery: "assets/images/npc_tobias.jpg",
     bldg_feldepost: "assets/images/bldg_feldepost.jpg",
     bldg_temple: "assets/images/bldg_morningstar.jpg",
     bldg_morningstar: "assets/images/bldg_morningstar.jpg",
@@ -27325,19 +27325,19 @@ function getEntityPortraitUrl(entityId) {
     singing_devil_angel: CAMPAIGN_IMAGES.angel_pulling_sun,
     horned_fiend_angel: CAMPAIGN_IMAGES.npcs.true_angel,
     air_elemental: "assets/images/monster_air_elemental.jpg",
-    stone_giant: "assets/images/room_quarry_1.jpg",
+    stone_giant: "assets/images/monster_stone_giant.jpg",
     galeb_duhr: "assets/images/monster_galeb_duhr.jpg",
-    dwarven_sentinel: CAMPAIGN_IMAGES.locations.dwarvenhold_fortress,
+    dwarven_sentinel: "assets/images/monster_stone_giant.jpg",
     sahuagin_baron: "assets/images/monster_sahuagin_baron.jpg",
     sea_harpy: "assets/images/monster_sea_harpy.jpg",
-    giant_octopus: "assets/images/room_commodore_3.jpg",
+    giant_octopus: "assets/images/monster_giant_octopus.jpg",
     owlbear: "assets/images/monster_owlbear.jpg",
     displacer_beast: "assets/images/monster_displacer_beast.jpg",
     winter_wolf: "assets/images/monster_winter_wolf.jpg",
-    abominable_yeti: "assets/images/room_rimefang_3.jpg",
-    giant_frost_spider: "assets/images/room_rimefang_1.jpg",
-    giant_scorpion: "assets/images/room_necropolis_1.jpg",
-    dust_mephit: "assets/images/biome_desert_dunes.jpg",
+    abominable_yeti: "assets/images/monster_abominable_yeti.jpg",
+    giant_frost_spider: "assets/images/monster_giant_spider.jpg",
+    giant_scorpion: "assets/images/monster_giant_spider.jpg",
+    dust_mephit: "assets/images/monster_air_elemental.jpg",
     will_o_wisp: "assets/images/monster_will_o_wisp.jpg",
     green_hag: "assets/images/monster_green_hag.jpg",
     mountain_griffon: "assets/images/monster_mountain_griffon.jpg",
@@ -27397,7 +27397,7 @@ function getHexContextualVisual(hex, mins = 360) {
   // 2. Wildfire Farmstead (7, 10)
   if (hex.c === 7 && hex.r === 10) {
     return {
-      url: CAMPAIGN_IMAGES.crypt_tragedy_cellar,
+      url: CAMPAIGN_IMAGES.biomes.wildfire,
       title: "Beregost Wildfire Farmstead (Hex 7, 10)",
       alt: "Wildfire Raging across Beregost Farmstead",
       label: "Wildfire Farmstead Blaze",
@@ -27480,15 +27480,15 @@ function getHexContextualVisual(hex, mins = 360) {
     if (enc.includes('coral') || enc.includes('siphon') || enc.includes('vortex') || enc.includes('riptide') || enc.includes('ocean') || enc.includes('reef') || enc.includes('cage') || enc.includes('anchor') || enc.includes('galleon') || enc.includes('flute') || b.includes('ocean')) {
       hazUrl = "assets/images/room_commodore_1.jpg";
     } else if (enc.includes('ice') || enc.includes('crevasse') || enc.includes('blizzard') || enc.includes('freeze') || enc.includes('frost') || enc.includes('mammoth') || b.includes('glacial') || b.includes('tundra')) {
-      hazUrl = "assets/images/room_rimefang_2.jpg";
+      hazUrl = CAMPAIGN_IMAGES.biomes.glacial;
     } else if (enc.includes('sand') || enc.includes('quicksand') || enc.includes('dune') || enc.includes('sundial') || enc.includes('sphinx') || enc.includes('hieroglyph') || enc.includes('crypt') || enc.includes('pharaoh') || enc.includes('oasis') || b.includes('desert') || b.includes('arid')) {
       hazUrl = "assets/images/room_necropolis_2.jpg";
     } else if (enc.includes('peat') || enc.includes('quag') || enc.includes('marsh') || enc.includes('bog') || enc.includes('acid') || enc.includes('cistern') || b.includes('marsh') || b.includes('swamp')) {
-      hazUrl = "assets/images/room_aqueducts_2.jpg";
+      hazUrl = CAMPAIGN_IMAGES.biomes.swamp;
     } else if (enc.includes('boulder') || enc.includes('rockslide') || enc.includes('scree') || enc.includes('quarry') || enc.includes('quartz') || enc.includes('chimney') || enc.includes('mine') || enc.includes('foundry') || enc.includes('scaffolding') || b.includes('crag') || b.includes('quarry')) {
-      hazUrl = "assets/images/room_quarry_2.jpg";
+      hazUrl = CAMPAIGN_IMAGES.biomes.crags;
     } else if (enc.includes('briar') || enc.includes('thorns') || enc.includes('feybriar') || enc.includes('fungal') || enc.includes('spore') || enc.includes('moonwell') || enc.includes('dolmen') || enc.includes('lumber') || enc.includes('saw') || b.includes('pine') || b.includes('wood') || b.includes('forest')) {
-      hazUrl = "assets/images/room_ash_grove_2.jpg";
+      hazUrl = "assets/images/room_ash_grove_1.jpg";
     }
 
     const challengeTag = hex.challenge_type === 'time_loss' ? '⏳ TIME LOSS OBSTACLE' : '⚠️ HAZARD OBSTACLE';
