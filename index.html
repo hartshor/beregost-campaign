@@ -29057,8 +29057,498 @@ function setClocktowerSubView(mode) {
   }
 }
 
+const DUNGEON_GRID_DATA = {
+  dungeon_rimefang: {
+    title: "Dungeon 1 Tactical Battle Grid — The Glacial Chasm & Rimefang's Frost Vault",
+    subtitle: "Scale: 1 Square = 5 ft (24×14 Grid • 120 ft × 70 ft Total) • Click any Mob Token or Crib Row to view its 5e Stat Block",
+    themeBg: "#0a121d",
+    gridLineColor: "rgba(121, 192, 255, 0.16)",
+    wallStroke: "#58a6ff",
+    rooms: [
+      { num: 1, name: "Room 1: Slick Glissade", col: 1, row: 2, w: 5, h: 11, fill: "rgba(56,139,253,0.10)", labelPos: [3.5, 2.7] },
+      { num: 2, name: "Room 2: Crevasse & Ice Bridge", col: 7, row: 2, w: 5, h: 11, fill: "rgba(13,17,23,0.85)", labelPos: [9.5, 2.7] },
+      { num: 3, name: "Room 3: Frozen Trophy Gallery", col: 13, row: 2, w: 4, h: 11, fill: "rgba(56,139,253,0.12)", labelPos: [15.0, 2.7] },
+      { num: 4, name: "Room 4: Zephyrus Cryo-Vault & Hoard", col: 18, row: 1, w: 6, h: 13, fill: "rgba(88,166,255,0.16)", labelPos: [21.0, 1.7] }
+    ],
+    corridors: [
+      { col: 6, row: 7, w: 1, h: 2, fill: "rgba(121,192,255,0.22)", label: "Arch" },
+      { col: 7, row: 7, w: 4, h: 2, fill: "rgba(165,214,255,0.35)", label: "Icicle Bridge" },
+      { col: 12, row: 7, w: 1, h: 2, fill: "rgba(121,192,255,0.22)", label: "Arch" },
+      { col: 17, row: 7, w: 1, h: 2, fill: "rgba(121,192,255,0.22)", label: "Sanctum Gate" }
+    ],
+    features: [
+      { code: "IN", name: "Glacial Entry Stairs", coords: "A7–A8", col: 1, row: 7, w: 1, h: 2, color: "#3fb950", icon: "🚪", desc: "Party entry point descending into the ice slope." },
+      { code: "HZ1", name: "Slick Ice Slope (DC 13 Acrobatics)", coords: "B4–E11", col: 2, row: 4, w: 4, h: 8, color: "#388bfd", icon: "❄️", isHazardZone: true, desc: "Moving faster than half speed requires DC 13 Acrobatics or slide 30 ft (2d6 bludgeoning)." },
+      { code: "L1", name: "Frozen Mountaineer (3x Cold Potions)", coords: "B3", col: 2, row: 3, w: 1, h: 1, color: "#e3b341", icon: "🧪", desc: "Clutches 3 Potions of Cold Resistance and climber's crampons." },
+      { code: "HZ2", name: "Collapsing Icicle Bridge", coords: "G7–J8", col: 7, row: 7, w: 4, h: 2, color: "#f85149", icon: "🌉", isHazardZone: true, desc: "Spans 200-ft chasm; shatters at 12:00 PM or after 20+ fire damage." },
+      { code: "L2", name: "Chasm Niche (Drake-Bane Censer)", coords: "H5", col: 8, row: 5, w: 1, h: 1, color: "#e3b341", icon: "🏺", desc: "30 ft down chasm wall; holds backup Drake-Bane Censer." },
+      { code: "HZ3", name: "Freezing Mist Geyser (DC 14 Con)", coords: "N7–O8", col: 14, row: 7, w: 2, h: 2, color: "#bc8cff", icon: "💨", isHazardZone: true, desc: "Blasts 20-ft freezing steam every 2 rounds (3d6 cold + Paralyzed 1 rd)." },
+      { code: "L3", name: "Dwarven Runestone ('Khazad-Mor')", coords: "P3", col: 16, row: 3, w: 1, h: 1, color: "#e3b341", icon: "🪨", desc: "Teaches pass-phrase 'Khazad-Mor' to pacify Sentinel at Hex (14,7)." },
+      { code: "ANC", name: "Harpoon / Ballista Grounding Plinth", coords: "R7–R8", col: 18, row: 7, w: 1, h: 2, color: "#79c0ff", icon: "⚓", desc: "Firing Rime-Anchor Harpoon from here pins Rimefang (0 fly speed)." },
+      { code: "ZEP", name: "Chained Djinni Zephyrus (Ice Spire)", coords: "T7–U8", col: 20, row: 7, w: 2, h: 2, color: "#58a6ff", icon: "🧞", desc: "50 Fire dmg or Harpoon shatters ice to free Zephyrus (grants Wish + Nimbus Cloud)." }
+    ],
+    mobs: [
+      { code: "S1", room: 1, name: "Giant Frost Spider #1", monster_id: "giant_frost_spider", coords: "C4–D5", col: 3, row: 4, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🕷️", color: "#f85149", pos_note: "Clinging to north ice stalactites above glissade; drops Frost Web on climbers." },
+      { code: "S2", room: 1, name: "Giant Frost Spider #2", monster_id: "giant_frost_spider", coords: "C10–D11", col: 3, row: 10, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🕷️", color: "#f85149", pos_note: "Clinging to south ice ceiling; ambushes party sliding down slope." },
+      { code: "S3", room: 1, name: "Giant Frost Spider #3", monster_id: "giant_frost_spider", coords: "E7–F8", col: 5, row: 7, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🕷️", color: "#f85149", pos_note: "Webbing the east archway leading to the Room 2 Icicle Bridge." },
+      { code: "W1", room: 2, name: "Winter Wolf Pack Leader #1", monster_id: "winter_wolf", coords: "K5–L6", col: 11, row: 5, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🐺", color: "#ff7b72", pos_note: "Guarding north end of far bridge landing; readies 15-ft Cold Breath." },
+      { code: "W2", room: 2, name: "Winter Wolf Pack Leader #2", monster_id: "winter_wolf", coords: "K9–L10", col: 11, row: 9, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🐺", color: "#ff7b72", pos_note: "Guarding south end of far bridge landing; uses Pack Tactics to knock PCs off bridge." },
+      { code: "Y1", room: 3, name: "Abominable Yeti of Frostpeak", monster_id: "abominable_yeti", coords: "O9–Q11", col: 15, row: 9, w: 3, h: 3, size: "Huge (15×15 ft)", icon: "❄️", color: "#d29922", pos_note: "Lurking behind frozen mammoth statue; charges party with Chilling Gaze & Cold Breath." },
+      { code: "BOSS", room: 4, name: "Adult White Dragon Rimefang (Boss 1)", monster_id: "adult_white_dragon", coords: "V6–X8", col: 22, row: 6, w: 3, h: 3, size: "Huge (15×15 ft)", icon: "🐉", color: "#ffd700", isBoss: true, pos_note: "Hovers +80 ft above hoard spire (V6–X8) regenerating 25 HP/rd until grounded with Harpoon/Ballistas & Drake-Bane Censer!" }
+    ]
+  },
+  dungeon_necropolis: {
+    title: "Dungeon 2 Tactical Battle Grid — The Sunken Necropolis of Akh-en-Amon",
+    subtitle: "Scale: 1 Square = 5 ft (24×14 Grid • 120 ft × 70 ft Total) • Click any Mob Token or Crib Row to view its 5e Stat Block",
+    themeBg: "#161109",
+    gridLineColor: "rgba(227, 179, 65, 0.16)",
+    wallStroke: "#d29922",
+    rooms: [
+      { num: 1, name: "Room 1: Sifting Sand Chute", col: 1, row: 3, w: 5, h: 9, fill: "rgba(210,153,34,0.10)", labelPos: [3.5, 3.7] },
+      { num: 2, name: "Room 2: Hall of Canopic Guardians", col: 7, row: 3, w: 5, h: 9, fill: "rgba(188,140,255,0.08)", labelPos: [9.5, 3.7] },
+      { num: 3, name: "Room 3: Embalming Hall (Tablets)", col: 13, row: 2, w: 4, h: 11, fill: "rgba(210,153,34,0.12)", labelPos: [15.0, 2.7] },
+      { num: 4, name: "Room 4: Suncophagus Vault", col: 18, row: 1, w: 6, h: 13, fill: "rgba(248,81,73,0.12)", labelPos: [21.0, 1.7] }
+    ],
+    corridors: [
+      { col: 6, row: 7, w: 1, h: 2, fill: "rgba(210,153,34,0.22)", label: "Tunnel" },
+      { col: 12, row: 7, w: 1, h: 2, fill: "rgba(210,153,34,0.22)", label: "Bronze Door" },
+      { col: 17, row: 7, w: 1, h: 2, fill: "rgba(210,153,34,0.22)", label: "Vault Seal" }
+    ],
+    features: [
+      { code: "IN", name: "Sunken Alabaster Entry Stair", coords: "A7–A8", col: 1, row: 7, w: 1, h: 2, color: "#3fb950", icon: "🚪", desc: "40-ft sandstone shaft descending from Hex (12,16)." },
+      { code: "HZ1", name: "15-ft Quicksand Pit (DC 14 Str/Dex)", coords: "C6–E8", col: 3, row: 6, w: 3, h: 3, color: "#d29922", icon: "⏳", isHazardZone: true, desc: "Sinks creatures 2 ft/rd; Scorpions ambush grappled targets." },
+      { code: "L1", name: "Cracked Bas-Relief (Soul Prism Lore)", coords: "D3", col: 4, row: 3, w: 1, h: 1, color: "#58a6ff", icon: "📜", desc: "Depicts solar priest splitting twin astral spirits with crystal prism." },
+      { code: "HZ2", name: "Tripwire Scythe Trap (3d8 Slash)", coords: "H6–H9", col: 8, row: 6, w: 1, h: 4, color: "#f85149", icon: "⚔️", isHazardZone: true, desc: "DC 15 Perception to spot; DC 14 Dex save or 3d8 slashing + Mummy Rot save." },
+      { code: "L2", name: "Canopic Urn of Breath", coords: "J3", col: 10, row: 3, w: 1, h: 1, color: "#3fb950", icon: "🏺", desc: "Grants water breathing and immunity to suffocation for 1 hour." },
+      { code: "HZ3", name: "Solar Rune Glyph Dais (4d10 Radiant)", coords: "O6–P9", col: 15, row: 6, w: 2, h: 4, color: "#e3b341", icon: "☀️", isHazardZone: true, desc: "Detonates for 4d10 radiant (DC 15 Dex) if stepped on without speaking solar glyph." },
+      { code: "TAB", name: "⭐ Golden Alabaster Inversion Tablets", coords: "P7–P8", col: 16, row: 7, w: 1, h: 2, color: "#ffd700", icon: "⭐", desc: "Proves Angel & Devil swapped bodies and teaches the Somatic Inversion Touch!" },
+      { code: "HRT", name: "⭐ Canopic Heart Sarcophagus Seal", coords: "W7–W8", col: 23, row: 7, w: 1, h: 2, color: "#bc8cff", icon: "💜", desc: "AC 17, 50 HP. Destroy to prevent Akh-en-Amon's rejuvenation & unseal archive!" }
+    ],
+    mobs: [
+      { code: "SC1", room: 1, name: "Giant Dune Scorpion #1", monster_id: "giant_scorpion", coords: "B4–C5", col: 2, row: 4, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🦂", color: "#f85149", pos_note: "Burrowed under sand drift north of Quicksand Pit; strikes with Blindsight 60 ft." },
+      { code: "SC2", room: 1, name: "Giant Dune Scorpion #2", monster_id: "giant_scorpion", coords: "D10–E11", col: 4, row: 10, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🦂", color: "#f85149", pos_note: "Burrowed south of Quicksand Pit; pincer-grapples anyone skirting the pit." },
+      { code: "DM1", room: 2, name: "Dust Mephit Swarm (×2 North)", monster_id: "dust_mephit", coords: "G4 & I4", col: 7, row: 4, w: 1, h: 1, size: "Small (5×5 ft)", icon: "🌪️", color: "#d29922", pos_note: "Perch atop north jackal pillars (G4, I4); cast Sleep & Blinding Dust Breath." },
+      { code: "DM2", room: 2, name: "Dust Mephit Swarm (×2 South)", monster_id: "dust_mephit", coords: "G11 & I11", col: 7, row: 11, w: 1, h: 1, size: "Small (5×5 ft)", icon: "🌪️", color: "#d29922", pos_note: "Perch atop south jackal pillars (G11, I11); harass party crossing Tripwire Scythes." },
+      { code: "MS1", room: 2, name: "Mummy Sentinel #1 (Hall Guard)", monster_id: "mummy_sentinel", coords: "K6", col: 11, row: 6, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🩹", color: "#ff7b72", pos_note: "Stations north of Room 2 exit door; uses Dreadful Glare & Rotting Fist." },
+      { code: "MS2", room: 2, name: "Mummy Sentinel #2 (Hall Guard)", monster_id: "mummy_sentinel", coords: "K9", col: 11, row: 9, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🩹", color: "#ff7b72", pos_note: "Stations south of Room 2 exit door; vulnerable to Fire (double damage)." },
+      { code: "GD1", room: 3, name: "Galeb Duhr Elder", monster_id: "galeb_duhr", coords: "N7", col: 14, row: 7, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🗿", color: "#e3b341", pos_note: "Disguised as central altar boulder before the Tablet Dais; animates 2 boulders at N5 & N10." },
+      { code: "MS3", room: 4, name: "Sanctum Mummy Sentinel #1", monster_id: "mummy_sentinel", coords: "T5", col: 20, row: 5, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🩹", color: "#ff7b72", pos_note: "Guards north ritual brazier in Boss Vault; vaporized by Scarab of Solar Resurgence." },
+      { code: "MS4", room: 4, name: "Sanctum Mummy Sentinel #2", monster_id: "mummy_sentinel", coords: "T10", col: 20, row: 10, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🩹", color: "#ff7b72", pos_note: "Guards south ritual brazier in Boss Vault; vaporized by Scarab of Solar Resurgence." },
+      { code: "BOSS", room: 4, name: "Mummy Lord Akh-en-Amon (Boss 2)", monster_id: "mummy_lord", coords: "V7–V8", col: 22, row: 7, w: 1, h: 2, size: "Medium on Dais", icon: "💀", color: "#ffd700", isBoss: true, pos_note: "Stands before Canopic Heart Sarcophagus (W7–W8) with 40 Temp HP Solar Ward; shatter ward with Sunburst Oil (12,13) or Mirror-Aegis (11,12)!" }
+    ]
+  },
+  dungeon_mirage: {
+    title: "Dungeon 3 Tactical Battle Grid — The Mirage Pavilion & Illusion Maze",
+    subtitle: "Scale: 1 Square = 5 ft (24×14 Grid • 120 ft × 70 ft Total) • Click any Mob Token or Crib Row to view its 5e Stat Block",
+    themeBg: "#140d1f",
+    gridLineColor: "rgba(188, 140, 255, 0.16)",
+    wallStroke: "#bc8cff",
+    rooms: [
+      { num: 1, name: "Room 1: Shimmering Mirage Boundary", col: 1, row: 3, w: 5, h: 9, fill: "rgba(188,140,255,0.09)", labelPos: [3.5, 3.7] },
+      { num: 2, name: "Room 2: Corridor of Distorted Mirrors", col: 7, row: 2, w: 5, h: 11, fill: "rgba(88,166,255,0.09)", labelPos: [9.5, 2.7] },
+      { num: 3, name: "Room 3: Opulent Silk Divan Salon", col: 13, row: 3, w: 4, h: 9, fill: "rgba(210,153,34,0.11)", labelPos: [15.0, 3.7] },
+      { num: 4, name: "Room 4: Hall of Three Obsidian Mirrors", col: 18, row: 1, w: 6, h: 13, fill: "rgba(248,81,73,0.12)", labelPos: [21.0, 1.7] }
+    ],
+    corridors: [
+      { col: 6, row: 7, w: 1, h: 2, fill: "rgba(188,140,255,0.22)", label: "Silk Veil" },
+      { col: 12, row: 7, w: 1, h: 2, fill: "rgba(188,140,255,0.22)", label: "Mirror Arch" },
+      { col: 17, row: 7, w: 1, h: 2, fill: "rgba(188,140,255,0.22)", label: "Golden Curtain" }
+    ],
+    features: [
+      { code: "IN", name: "Phantom Dawn Reset Veil (DC 16 Inv)", coords: "A7–A8", col: 1, row: 7, w: 1, h: 2, color: "#bc8cff", icon: "🌀", desc: "Triggers telepathic Dawn Monologue illusion; spot 5 Matrix Glitches (DC 16 Investigation)." },
+      { code: "L1", name: "Tiger-Devouring-Sun Silk Banner", coords: "C3", col: 3, row: 3, w: 1, h: 1, color: "#e3b341", icon: "🚩", desc: "Matches heraldry in the Arcanist's ledger." },
+      { code: "HZ1", name: "Backwards-Hand Mirror Walls (DC 16 Wis)", coords: "H3–K3 & H12–K12", col: 8, row: 3, w: 4, h: 1, color: "#58a6ff", icon: "🪞", isHazardZone: true, desc: "Touching a mirror requires DC 16 Wis save or Charmed by Rakshasa for 1 hour." },
+      { code: "L2", name: "Cracked Mirror #3 (Monocle of Truth)", coords: "J2", col: 10, row: 2, w: 1, h: 1, color: "#ffd700", icon: "🧐", desc: "Hidden velvet box behind third mirror holds Inquisitive Monocle of Truth." },
+      { code: "HZ2", name: "Drugged Spiced Wine Banquet (DC 16 Con)", coords: "N6–P9", col: 14, row: 6, w: 3, h: 4, color: "#d29922", icon: "🍷", isHazardZone: true, desc: "Partaking triggers DC 16 Con save or 4-hour magical slumber; Silver Flagon at O7 grants +10 Temp HP." },
+      { code: "M1", name: "Obsidian Mirror #1 (North — AC 15, 30 HP)", coords: "T2", col: 20, row: 2, w: 1, h: 1, color: "#bc8cff", icon: "🪞", desc: "Ravana shatters 1 mirror as reaction to halve 30+ dmg hit & teleport 30 ft." },
+      { code: "M2", name: "Obsidian Mirror #2 (East — AC 15, 30 HP)", coords: "X7", col: 24, row: 7, w: 1, h: 1, color: "#bc8cff", icon: "🪞", desc: "Exposed by Monocle of Piercing Truth (8,6) so party can shatter it directly!" },
+      { code: "M3", name: "Obsidian Mirror #3 (South — AC 15, 30 HP)", coords: "T13", col: 20, row: 13, w: 1, h: 1, color: "#bc8cff", icon: "🪞", desc: "Destroy all 3 mirrors to stop Ravana's damage-halving & Mirror-Shade swaps!" },
+      { code: "CON", name: "Ash Grove Delirium Hex Conduit", coords: "U7–U8", col: 21, row: 7, w: 1, h: 2, color: "#f85149", icon: "🔮", desc: "Projects the Crown of Fiendish Delirium onto the True Angel at Hex (7,6)." }
+    ],
+    mobs: [
+      { code: "DB1", room: 1, name: "Briarwood Displacer Beast #1", monster_id: "displacer_beast", coords: "C5–D6", col: 3, row: 5, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🐆", color: "#f85149", pos_note: "Prowls north oasis colonnade; Displacement imposes Disadvantage until hit." },
+      { code: "DB2", room: 1, name: "Briarwood Displacer Beast #2", monster_id: "displacer_beast", coords: "C9–D10", col: 3, row: 9, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🐆", color: "#f85149", pos_note: "Prowls south oasis colonnade; flanks intruders dazed by the Phantom Dawn Reset." },
+      { code: "MP1", room: 2, name: "Mirror Phantom #1 (Illusory Clone)", monster_id: "rakshasa_ravana", coords: "I6", col: 9, row: 6, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "👤", color: "#bc8cff", pos_note: "Steps out of north silver mirror at I6; copies party attacks at half damage." },
+      { code: "MP2", room: 2, name: "Mirror Phantom #2 (Illusory Clone)", monster_id: "rakshasa_ravana", coords: "J9", col: 10, row: 9, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "👤", color: "#bc8cff", pos_note: "Steps out of south silver mirror at J9; tries to lure PCs into touching mirror glyphs." },
+      { code: "BG1", room: 3, name: "Charmed Elite Bodyguard #1 (NW)", monster_id: "dwarven_sentinel", coords: "M5", col: 13, row: 5, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🛡️", color: "#ff7b72", pos_note: "Mind-controlled guard at NW corner of banquet table; intercepting chargers." },
+      { code: "BG2", room: 3, name: "Charmed Elite Bodyguard #2 (SW)", monster_id: "dwarven_sentinel", coords: "M10", col: 13, row: 10, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🛡️", color: "#ff7b72", pos_note: "Mind-controlled guard at SW corner of banquet table." },
+      { code: "BG3", room: 3, name: "Charmed Elite Bodyguard #3 (NE)", monster_id: "dwarven_sentinel", coords: "Q5", col: 17, row: 5, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🛡️", color: "#ff7b72", pos_note: "Mind-controlled guard guarding NE curtain to Boss Sanctum." },
+      { code: "BG4", room: 3, name: "Charmed Elite Bodyguard #4 (SE)", monster_id: "dwarven_sentinel", coords: "Q10", col: 17, row: 10, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🛡️", color: "#ff7b72", pos_note: "Mind-controlled guard guarding SE curtain to Boss Sanctum." },
+      { code: "BOSS", room: 4, name: "Lord Ravana, the Rakshasa (Boss 3)", monster_id: "rakshasa_ravana", coords: "V7–V8", col: 22, row: 7, w: 1, h: 2, size: "Medium Fiend", icon: "🎭", color: "#ffd700", isBoss: true, pos_note: "Stands behind the Ash Grove Delirium Conduit (U7–U8), swapping between Obsidian Mirrors M1 (T2), M2 (X7), and M3 (T13). Upon defeat, compelled to confess his True Name ('Ravana-Zul') & the Barnacle secret!" }
+    ]
+  },
+  dungeon_commodore: {
+    title: "Dungeon 4 Tactical Battle Grid — The Beached Caravel 'The Sea Maiden'",
+    subtitle: "Scale: 1 Square = 5 ft (24×14 Grid • 120 ft × 70 ft Ship Hull & Pitching Deck) • Click any Mob Token or Crib Row for Stat Block",
+    themeBg: "#081521",
+    gridLineColor: "rgba(88, 166, 255, 0.16)",
+    wallStroke: "#388bfd",
+    rooms: [
+      { num: 1, name: "Room 1: Hull Breach & Forecastle", col: 1, row: 4, w: 5, h: 7, fill: "rgba(56,139,253,0.12)", labelPos: [3.5, 4.7] },
+      { num: 2, name: "Room 2: Flooded Gun Deck (09:30 Fuse)", col: 7, row: 4, w: 5, h: 7, fill: "rgba(248,81,73,0.12)", labelPos: [9.5, 4.7] },
+      { num: 3, name: "Room 3: Mainmast Ballast Chains", col: 13, row: 3, w: 4, h: 9, fill: "rgba(56,139,253,0.14)", labelPos: [15.0, 3.7] },
+      { num: 4, name: "Room 4: Pitching Quarterdeck Arena", col: 18, row: 2, w: 6, h: 11, fill: "rgba(210,153,34,0.14)", labelPos: [21.0, 2.7] }
+    ],
+    corridors: [
+      { col: 6, row: 7, w: 1, h: 2, fill: "rgba(88,166,255,0.25)", label: "Hatch" },
+      { col: 12, row: 7, w: 1, h: 2, fill: "rgba(88,166,255,0.25)", label: "Deck Stair" },
+      { col: 17, row: 7, w: 1, h: 2, fill: "rgba(88,166,255,0.25)", label: "Gangway" }
+    ],
+    features: [
+      { code: "IN", name: "Surf-Shattered Hull Breach", coords: "A7–A8", col: 1, row: 7, w: 1, h: 2, color: "#3fb950", icon: "🚪", desc: "Party boards the 15-degree listing caravel across basalt reef." },
+      { code: "FUS", name: "🔥 09:30 AM Starfire Powder Fuse (50 Barrels)", coords: "J7–K8", col: 10, row: 7, w: 2, h: 2, color: "#f85149", icon: "💣", isHazardZone: true, desc: "Lit at 09:30 AM; detonates at 09:45 AM for 100d6 fire unless cut/doused!" },
+      { code: "WNC", name: "Quarterdeck Capstan (Winch Key & Fork)", coords: "S7", col: 19, row: 7, w: 1, h: 1, color: "#e3b341", icon: "⚙️", desc: "Slot Abyssal Winch Key (4,10) to level the pitching deck & ring Tuning Fork to loosen barnacles!" },
+      { code: "ROD", name: "Grounding Rod Socket (Deck Mast)", coords: "U7", col: 21, row: 7, w: 1, h: 1, color: "#58a6ff", icon: "🔱", desc: "Plant Grounding Rod (4,11) here to absorb deck lightning & fire 10d8 blast to pop a Barnacle Cluster!" }
+    ],
+    mobs: [
+      { code: "SH1", room: 1, name: "Sea Harpy Flight (×3)", monster_id: "sea_harpy", coords: "C5, C9, E5", col: 3, row: 5, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🧜", color: "#bc8cff", pos_note: "Roost in forecastle rigging; sing Luring Song (DC 11 Wis)." },
+      { code: "RM1", room: 1, name: "Coastal Raider Marines (×4)", monster_id: "coastal_raider", coords: "D7–E8", col: 4, row: 7, w: 2, h: 2, size: "Medium Squad", icon: "🏴‍☠️", color: "#f85149", pos_note: "Barricade the lower hatchway with heavy crossbows." },
+      { code: "SB1", room: 2, name: "Sahuagin Baron Saboteur", monster_id: "sahuagin_baron", coords: "I7–J8", col: 9, row: 7, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🔱", color: "#ff7b72", pos_note: "Body-blocks the burning 09:30 AM Starfire powder fuse!" },
+      { code: "VAL", room: 3, name: "Valen Storm-Caller (Chained to Mainmast)", monster_id: "the_commodore", coords: "O7–P8", col: 15, row: 7, w: 2, h: 2, size: "Large Giant-Kin", icon: "⚓", color: "#d29922", pos_note: "Rescued from cold-iron chains, his 4 Cursed Barnacle Clusters drive him into a frenzy!" },
+      { code: "BOSS", room: 4, name: "Herald of Otheus (Pitching Deck Duel)", monster_id: "storm_giant_otheus", coords: "V6–W7", col: 22, row: 6, w: 2, h: 2, size: "Large (10×10 ft)", icon: "⚡", color: "#ffd700", isBoss: true, pos_note: "Battles on slick pitching deck (Difficult Terrain) with arcing wet-plank lightning; blast off all 4 Barnacle Clusters to calm him & summon Otheus!" }
+    ]
+  },
+  dungeon_ash_grove: {
+    title: "Prelude Dungeon Tactical Grid — Ash Grove & The Elder Weirwood",
+    subtitle: "Scale: 1 Square = 5 ft (24×14 Grid • 120 ft × 70 ft Total) • Click any Mob Token or Crib Row for Stat Block",
+    themeBg: "#121610",
+    gridLineColor: "rgba(63, 185, 80, 0.16)",
+    wallStroke: "#3fb950",
+    rooms: [
+      { num: 1, name: "Room 1: Razor Briar Perimeter", col: 1, row: 3, w: 5, h: 9, fill: "rgba(63,185,80,0.10)", labelPos: [3.5, 3.7] },
+      { num: 2, name: "Room 2: Scorched Ozone Crater", col: 7, row: 3, w: 5, h: 9, fill: "rgba(210,153,34,0.10)", labelPos: [9.5, 3.7] },
+      { num: 3, name: "Room 3: Faelan's Binding Circle", col: 13, row: 2, w: 4, h: 11, fill: "rgba(188,140,255,0.10)", labelPos: [15.0, 2.7] },
+      { num: 4, name: "Room 4: Heartwood Crater", col: 18, row: 1, w: 6, h: 13, fill: "rgba(248,81,73,0.14)", labelPos: [21.0, 1.7] }
+    ],
+    corridors: [
+      { col: 6, row: 7, w: 1, h: 2, fill: "rgba(63,185,80,0.25)", label: "Briar Gap" },
+      { col: 12, row: 7, w: 1, h: 2, fill: "rgba(63,185,80,0.25)", label: "Ash Trail" },
+      { col: 17, row: 7, w: 1, h: 2, fill: "rgba(63,185,80,0.25)", label: "Stone Arch" }
+    ],
+    features: [
+      { code: "IN", name: "Whispering Woods Trailhead", coords: "A7–A8", col: 1, row: 7, w: 1, h: 2, color: "#3fb950", icon: "🚪", desc: "Archdruid Faelan warns that the Horned Fiend went berserk at dawn." },
+      { code: "ICH", name: "⭐ Silver Frankincense Celestial Ichor", coords: "I7", col: 9, row: 7, w: 1, h: 1, color: "#ffd700", icon: "💧", desc: "DC 12 Arcana/Religion reveals Solar Angel blood, not fiendish ichor!" }
+    ],
+    mobs: [
+      { code: "DB1", room: 1, name: "Briarwood Displacer Beasts (×2)", monster_id: "displacer_beast", coords: "C5–D6 & C9–D10", col: 3, row: 5, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🐆", color: "#f85149", pos_note: "Guard outer briar wall." },
+      { code: "OW1", room: 2, name: "Elder Redwood Owlbear", monster_id: "owlbear", coords: "I8–J9", col: 9, row: 8, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🦉", color: "#d29922", pos_note: "Spooked by crash crater." },
+      { code: "DR1", room: 3, name: "Druid Circle Channelers (×4)", monster_id: "dwarven_sentinel", coords: "O5, O10, P5, P10", col: 15, row: 5, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🌿", color: "#3fb950", pos_note: "Chanting 11:30 AM execution ritual." },
+      { code: "BOSS", room: 4, name: "The 'Horned Fiend' (Delirious True Angel)", monster_id: "horned_fiend_angel", coords: "V7–W8", col: 22, row: 7, w: 2, h: 2, size: "Large Celestial", icon: "🌟", color: "#ffd700", isBoss: true, pos_note: "Driven mad by Ravana's Delirium Hex; attacks on sight until Boss 3 (10,6) is defeated!" }
+    ]
+  },
+  dungeon_clocktower: {
+    title: "Finale Tactical Grid — Grand Clocktower Belfry Chambers",
+    subtitle: "Scale: 1 Square = 5 ft (24×14 Vertical Ascent Grid) • Click any Mob Token or Crib Row for Stat Block",
+    themeBg: "#14110b",
+    gridLineColor: "rgba(227, 179, 65, 0.16)",
+    wallStroke: "#e3b341",
+    rooms: [
+      { num: 1, name: "Room 1: Bellringer's Workshop", col: 1, row: 3, w: 5, h: 9, fill: "rgba(210,153,34,0.10)", labelPos: [3.5, 3.7] },
+      { num: 2, name: "Room 2: Pendulum Weight Shaft", col: 7, row: 3, w: 5, h: 9, fill: "rgba(88,166,255,0.10)", labelPos: [9.5, 3.7] },
+      { num: 3, name: "Room 3: Smashed Balcony & Gears", col: 13, row: 2, w: 4, h: 11, fill: "rgba(210,153,34,0.14)", labelPos: [15.0, 2.7] },
+      { num: 4, name: "Room 4: Crown Belfry & Bell", col: 18, row: 1, w: 6, h: 13, fill: "rgba(248,81,73,0.14)", labelPos: [21.0, 1.7] }
+    ],
+    corridors: [
+      { col: 6, row: 7, w: 1, h: 2, fill: "rgba(227,179,65,0.25)", label: "Stair" },
+      { col: 12, row: 7, w: 1, h: 2, fill: "rgba(227,179,65,0.25)", label: "Ladder" },
+      { col: 17, row: 7, w: 1, h: 2, fill: "rgba(227,179,65,0.25)", label: "Belfry Hatch" }
+    ],
+    features: [
+      { code: "ESC", name: "⭐ Escapement Gear Slot (05:59 AM Bone)", coords: "P7", col: 16, row: 7, w: 1, h: 1, color: "#ffd700", icon: "🦴", desc: "Where the Chronocite Bone is jammed at 05:59 AM beside the smashed western balcony!" },
+      { code: "BEL", name: "⭐ 10-Ton Solstice Bronze Bell", coords: "U7–V8", col: 21, row: 7, w: 2, h: 2, color: "#e3b341", icon: "🔔", desc: "Strike with Tuning Fork while True Angel chants Inversion Rite at 17:30 PM!" }
+    ],
+    mobs: [
+      { code: "CW1", room: 1, name: "Clockwork Watch Sentinels (×2)", monster_id: "dwarven_sentinel", coords: "D5 & D10", col: 4, row: 5, w: 1, h: 1, size: "Medium (5×5 ft)", icon: "🤖", color: "#58a6ff", pos_note: "Guard ground workshop stairs." },
+      { code: "AE1", room: 2, name: "Greater Air Elemental", monster_id: "air_elemental", coords: "I7–J8", col: 9, row: 7, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🌪️", color: "#79c0ff", pos_note: "Swirls around swinging pendulum." },
+      { code: "CS1", room: 3, name: "Arcane Clockwork Spiders (×3)", monster_id: "giant_frost_spider", coords: "N5, N10, P9", col: 14, row: 5, w: 2, h: 2, size: "Large (10×10 ft)", icon: "🕷️", color: "#d29922", pos_note: "Spin conductive brass webs across escapement gears." },
+      { code: "BOSS", room: 4, name: "The Singing Devil (True Final Boss)", monster_id: "singing_devil_angel", coords: "W7–X8", col: 23, row: 7, w: 2, h: 2, size: "Large Fiend", icon: "👑", color: "#ffd700", isBoss: true, pos_note: "Descends onto Crown Belfry at 17:30 PM when Otheus's storm blocks the solar beam!" }
+    ]
+  }
+};
+
+let dungeonGridZoomState = {};
+let selectedDungeonGridMobCode = {};
+
+function toggleDungeonGridZoom(dungeonId) {
+  dungeonGridZoomState[dungeonId] = !dungeonGridZoomState[dungeonId];
+  const wrap = document.getElementById(`dungeon-grid-svg-wrap-${dungeonId}`);
+  const btn = document.getElementById(`btn-dungeon-grid-zoom-${dungeonId}`);
+  if (wrap) {
+    const svg = wrap.querySelector("svg");
+    if (svg) {
+      svg.style.minWidth = dungeonGridZoomState[dungeonId] ? "1180px" : "100%";
+    }
+  }
+  if (btn) {
+    btn.innerHTML = dungeonGridZoomState[dungeonId] ? "🔍 Fit Grid to Panel (100%)" : "🔍 Enlarge Tactical Grid (150%)";
+  }
+}
+
+function selectDungeonGridMob(dungeonId, mobCode, monsterId) {
+  selectedDungeonGridMobCode[dungeonId] = mobCode;
+  const drawer = document.getElementById(`dungeon-grid-stat-drawer-${dungeonId}`);
+  if (!drawer) return;
+  const gridSpec = DUNGEON_GRID_DATA[dungeonId];
+  const mob = gridSpec && gridSpec.mobs ? gridSpec.mobs.find(m => m.code === mobCode) : null;
+  const monster = (typeof MONSTER_STAT_BLOCKS !== "undefined" && MONSTER_STAT_BLOCKS[monsterId]) ? MONSTER_STAT_BLOCKS[monsterId] : null;
+  if (!monster) return;
+
+  drawer.style.display = "block";
+  drawer.innerHTML = `
+    <div style="background:rgba(210,153,34,0.12); border:1px solid var(--accent-gold); border-radius:8px; padding:10px 12px; margin-top:10px;">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:6px;">
+        <div>
+          <span class="tag tag-gold" style="font-weight:800;">📍 Token [${mob ? mob.code : mobCode}] • Grid ${mob ? mob.coords : ''}</span>
+          <strong style="color:#f0f6fc; font-size:0.9rem; margin-left:6px;">${mob ? mob.name : monster.name} (Room ${mob ? mob.room : ''})</strong>
+        </div>
+        <button class="chip-btn" style="font-size:0.7rem; padding:2px 8px;" onclick="document.getElementById('dungeon-grid-stat-drawer-${dungeonId}').style.display='none'">✕ Close Stat Block</button>
+      </div>
+      ${mob && mob.pos_note ? `<div style="font-size:0.79rem; color:#f2cc60; margin-bottom:6px;"><strong>🎯 Grid Positioning & Tactics:</strong> ${mob.pos_note}</div>` : ''}
+      ${renderInlineMonsterCard(monster)}
+    </div>
+  `;
+  drawer.scrollIntoView({ behavior: "smooth", block: "nearest" });
+}
+
+function renderDungeonGridCard(dungeon) {
+  if (!dungeon || typeof DUNGEON_GRID_DATA === "undefined") return "";
+  const spec = DUNGEON_GRID_DATA[dungeon.id];
+  if (!spec) return "";
+
+  const cols = 24; // A to X
+  const rows = 14; // 1 to 14
+  const cell = 36;
+  const padL = 30;
+  const padT = 28;
+  const padR = 26;
+  const padB = 26;
+  const svgW = padL + cols * cell + padR;
+  const svgH = padT + rows * cell + padB;
+
+  const colLetters = "ABCDEFGHIJKLMNOPQRSTUVWX".split("");
+
+  // Grid lines & coordinate labels
+  let gridLinesSvg = "";
+  for (let c = 0; c <= cols; c++) {
+    const x = padL + c * cell;
+    gridLinesSvg += `<line x1="${x}" y1="${padT}" x2="${x}" y2="${padT + rows * cell}" stroke="${spec.gridLineColor}" stroke-width="1" />`;
+    if (c < cols) {
+      const cx = x + cell / 2;
+      gridLinesSvg += `<text x="${cx}" y="${padT - 9}" font-size="10" font-weight="bold" fill="#8b949e" text-anchor="middle">${colLetters[c]}</text>`;
+      gridLinesSvg += `<text x="${cx}" y="${padT + rows * cell + 16}" font-size="10" font-weight="bold" fill="#8b949e" text-anchor="middle">${colLetters[c]}</text>`;
+    }
+  }
+  for (let r = 0; r <= rows; r++) {
+    const y = padT + r * cell;
+    gridLinesSvg += `<line x1="${padL}" y1="${y}" x2="${padL + cols * cell}" y2="${y}" stroke="${spec.gridLineColor}" stroke-width="1" />`;
+    if (r < rows) {
+      const cy = y + cell / 2 + 3.5;
+      gridLinesSvg += `<text x="${padL - 14}" y="${cy}" font-size="10" font-weight="bold" fill="#8b949e" text-anchor="middle">${r + 1}</text>`;
+      gridLinesSvg += `<text x="${padL + cols * cell + 13}" y="${cy}" font-size="10" font-weight="bold" fill="#8b949e" text-anchor="middle">${r + 1}</text>`;
+    }
+  }
+
+  // Rooms SVG
+  const roomsSvg = (spec.rooms || []).map(rm => {
+    const rx = padL + (rm.col - 1) * cell;
+    const ry = padT + (rm.row - 1) * cell;
+    const rw = rm.w * cell;
+    const rh = rm.h * cell;
+    const lx = padL + (rm.labelPos[0] - 0.5) * cell;
+    const ly = padT + (rm.labelPos[1] - 0.5) * cell;
+    return `
+      <g>
+        <rect x="${rx}" y="${ry}" width="${rw}" height="${rh}" fill="${rm.fill}" stroke="${spec.wallStroke}" stroke-width="2.5" rx="4" />
+        <rect x="${rx + 4}" y="${ry + 4}" width="${rw - 8}" height="18" fill="rgba(13,17,23,0.82)" rx="3" />
+        <text x="${lx}" y="${ry + 16}" font-size="9.5" font-weight="bold" fill="#79c0ff" text-anchor="middle" letter-spacing="0.4">${rm.name.toUpperCase()}</text>
+      </g>
+    `;
+  }).join("");
+
+  // Corridors / Bridges SVG
+  const corridorsSvg = (spec.corridors || []).map(cor => {
+    const cx = padL + (cor.col - 1) * cell;
+    const cy = padT + (cor.row - 1) * cell;
+    const cw = cor.w * cell;
+    const ch = cor.h * cell;
+    return `
+      <g>
+        <rect x="${cx}" y="${cy}" width="${cw}" height="${ch}" fill="${cor.fill}" stroke="${spec.wallStroke}" stroke-width="1.5" stroke-dasharray="4,2" />
+        <text x="${cx + cw / 2}" y="${cy + ch / 2 + 3}" font-size="8.5" font-weight="bold" fill="#e6edf3" text-anchor="middle">${cor.label}</text>
+      </g>
+    `;
+  }).join("");
+
+  // Hazards & Interactive Features SVG
+  const featuresSvg = (spec.features || []).map(ft => {
+    const fx = padL + (ft.col - 1) * cell + 2;
+    const fy = padT + (ft.row - 1) * cell + 2;
+    const fw = ft.w * cell - 4;
+    const fh = ft.h * cell - 4;
+    if (ft.isHazardZone) {
+      return `
+        <g>
+          <rect x="${fx}" y="${fy}" width="${fw}" height="${fh}" fill="${ft.color}22" stroke="${ft.color}" stroke-width="1.5" stroke-dasharray="5,3" rx="4" />
+          <text x="${fx + fw / 2}" y="${fy + fh / 2 - 2}" font-size="9" font-weight="bold" fill="${ft.color}" text-anchor="middle">${ft.icon} ${ft.code}</text>
+          <text x="${fx + fw / 2}" y="${fy + fh / 2 + 9}" font-size="7.5" fill="#e6edf3" text-anchor="middle">${ft.coords}</text>
+          <title>${ft.name} (${ft.coords}): ${ft.desc}</title>
+        </g>
+      `;
+    }
+    return `
+      <g>
+        <rect x="${fx}" y="${fy}" width="${fw}" height="${fh}" fill="rgba(13,17,23,0.88)" stroke="${ft.color}" stroke-width="1.8" rx="5" />
+        <text x="${fx + fw / 2}" y="${fy + fh / 2 + 1}" font-size="10" font-weight="bold" fill="${ft.color}" text-anchor="middle">${ft.icon}${ft.code}</text>
+        <text x="${fx + fw / 2}" y="${fy + fh - 3}" font-size="6.8" fill="#c9d1d9" text-anchor="middle">${ft.coords}</text>
+        <title>${ft.name} (${ft.coords}): ${ft.desc}</title>
+      </g>
+    `;
+  }).join("");
+
+  // Mobs Tokens SVG
+  const mobsSvg = (spec.mobs || []).map(m => {
+    const mx = padL + (m.col - 1) * cell + 3;
+    const my = padT + (m.row - 1) * cell + 3;
+    const mw = m.w * cell - 6;
+    const mh = m.h * cell - 6;
+    const fillBg = m.isBoss ? "rgba(210,153,34,0.32)" : "rgba(248,81,73,0.28)";
+    const strokeW = m.isBoss ? 2.8 : 2;
+    return `
+      <g style="cursor:pointer;" onclick="selectDungeonGridMob('${dungeon.id}', '${m.code}', '${m.monster_id}')">
+        <rect x="${mx}" y="${my}" width="${mw}" height="${mh}" fill="${fillBg}" stroke="${m.color}" stroke-width="${strokeW}" rx="${m.w > 1 ? 8 : 14}" />
+        <rect x="${mx + 2}" y="${my + 2}" width="${mw - 4}" height="13" fill="rgba(13,17,23,0.86)" rx="4" />
+        <text x="${mx + mw / 2}" y="${my + 11.5}" font-size="8.5" font-weight="bold" fill="${m.color}" text-anchor="middle">${m.code}</text>
+        <text x="${mx + mw / 2}" y="${my + mh / 2 + 5}" font-size="${m.w >= 2 ? 15 : 11}" text-anchor="middle">${m.icon}</text>
+        <text x="${mx + mw / 2}" y="${my + mh - 3}" font-size="7.2" font-weight="bold" fill="#ffffff" text-anchor="middle">${m.coords}</text>
+        <title>Click for Stat Block — [${m.code}] ${m.name} (Grid ${m.coords}, ${m.size}): ${m.pos_note}</title>
+      </g>
+    `;
+  }).join("");
+
+  // Quick-switch pills for Dungeons 1, 2, and 3
+  const quickSwitchHtml = `
+    <div style="display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin-bottom:10px; padding-bottom:8px; border-bottom:1px solid var(--border-color);">
+      <span style="font-size:0.72rem; text-transform:uppercase; color:var(--text-muted); font-weight:bold;">Quick-Switch Dungeon Grids:</span>
+      <button class="chip-btn ${dungeon.id === 'dungeon_rimefang' ? 'active' : ''}" style="font-size:0.74rem; padding:3px 9px; border-color:#58a6ff;" onclick="openDungeon('dungeon_rimefang')">🐉 Dungeon 1: Glacial Chasm (17,10)</button>
+      <button class="chip-btn ${dungeon.id === 'dungeon_necropolis' ? 'active' : ''}" style="font-size:0.74rem; padding:3px 9px; border-color:#d29922;" onclick="openDungeon('dungeon_necropolis')">💀 Dungeon 2: Sunken Necropolis (12,16)</button>
+      <button class="chip-btn ${dungeon.id === 'dungeon_mirage' ? 'active' : ''}" style="font-size:0.74rem; padding:3px 9px; border-color:#bc8cff;" onclick="openDungeon('dungeon_mirage')">🎪 Dungeon 3: Mirage Pavilion (10,6)</button>
+      <button class="chip-btn ${dungeon.id === 'dungeon_commodore' ? 'active' : ''}" style="font-size:0.74rem; padding:3px 9px;" onclick="openDungeon('dungeon_commodore')">⚓ Dungeon 4: Beached Caravel (5,11)</button>
+      <button class="chip-btn" id="btn-dungeon-grid-zoom-${dungeon.id}" style="margin-left:auto; font-size:0.73rem; padding:3px 9px; border-color:var(--accent-gold); color:var(--accent-gold);" onclick="toggleDungeonGridZoom('${dungeon.id}')">🔍 Enlarge Tactical Grid (150%)</button>
+    </div>
+  `;
+
+  // Crib Sheet Table for Mob Locations
+  const mobRowsHtml = (spec.mobs || []).map(m => {
+    const st = (typeof MONSTER_STAT_BLOCKS !== "undefined" && MONSTER_STAT_BLOCKS[m.monster_id]) ? MONSTER_STAT_BLOCKS[m.monster_id] : null;
+    const crTxt = st ? `CR ${st.cr}` : "—";
+    const acTxt = st ? `AC ${st.ac}` : "—";
+    const hpTxt = st ? `HP ${st.hp}` : "—";
+    return `
+      <tr style="border-bottom:1px solid rgba(255,255,255,0.06); background:${m.isBoss ? 'rgba(210,153,34,0.10)' : 'transparent'};">
+        <td style="padding:7px 8px; font-weight:800; color:${m.color}; white-space:nowrap;">${m.icon} [${m.code}]</td>
+        <td style="padding:7px 8px; white-space:nowrap;"><span class="tag tag-cyan" style="font-size:0.68rem;">Room ${m.room}</span></td>
+        <td style="padding:7px 8px; font-weight:700; color:#f0f6fc;">${m.name}</td>
+        <td style="padding:7px 8px; font-weight:800; color:var(--accent-gold); white-space:nowrap;">Grid ${m.coords} <span style="font-weight:normal; color:var(--text-muted); font-size:0.7rem;">(${m.size})</span></td>
+        <td style="padding:7px 8px; font-size:0.74rem; color:#c9d1d9; white-space:nowrap;"><strong>${crTxt}</strong> • ${acTxt} • ${hpTxt}</td>
+        <td style="padding:7px 8px; font-size:0.75rem; color:#c9d1d9;">${m.pos_note}</td>
+        <td style="padding:7px 8px; text-align:right; white-space:nowrap;">
+          <button class="chip-btn" style="font-size:0.68rem; padding:2px 8px; border-color:var(--accent-gold); color:var(--accent-gold);" onclick="selectDungeonGridMob('${dungeon.id}', '${m.code}', '${m.monster_id}')">⚔️ Stat Block</button>
+        </td>
+      </tr>
+    `;
+  }).join("");
+
+  // Crib Sheet List for Hazards & Key Relics on Grid
+  const featurePillsHtml = (spec.features || []).map(ft => `
+    <div style="background:var(--bg-primary); border:1px solid ${ft.color}66; border-left:3px solid ${ft.color}; border-radius:6px; padding:6px 9px; font-size:0.75rem;">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:6px;">
+        <strong style="color:${ft.color};">${ft.icon} [${ft.code}] ${ft.name}</strong>
+        <span class="tag" style="font-size:0.66rem; color:#fff; border:1px solid ${ft.color};">Grid ${ft.coords}</span>
+      </div>
+      <div style="color:#c9d1d9; font-size:0.72rem; margin-top:2px;">${ft.desc}</div>
+    </div>
+  `).join("");
+
+  return `
+    <div class="card" style="border: 2px solid var(--accent-cyan); background: linear-gradient(180deg, rgba(22,27,34,0.98) 0%, rgba(13,17,23,0.98) 100%);">
+      <div class="card-header" style="flex-wrap:wrap; gap:8px;">
+        <div>
+          <h4 style="margin:0; font-size:1.05rem; color:var(--accent-gold); display:flex; align-items:center; gap:8px;">
+            <span>🗺️ ${spec.title}</span>
+          </h4>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:2px;">${spec.subtitle}</div>
+        </div>
+        <span class="tag tag-gold">5-Ft Tactical Grid & Mob Crib</span>
+      </div>
+      <div class="card-body">
+        ${quickSwitchHtml}
+
+        <!-- Interactive SVG Battle Grid -->
+        <div id="dungeon-grid-svg-wrap-${dungeon.id}" style="width:100%; overflow-x:auto; background:${spec.themeBg}; border:1.5px solid var(--border-color); border-radius:8px; padding:6px; box-shadow:inset 0 2px 12px rgba(0,0,0,0.7);">
+          <svg viewBox="0 0 ${svgW} ${svgH}" style="width:100%; height:auto; display:block; user-select:none;">
+            <rect x="0" y="0" width="${svgW}" height="${svgH}" fill="${spec.themeBg}" />
+            ${roomsSvg}
+            ${corridorsSvg}
+            ${gridLinesSvg}
+            ${featuresSvg}
+            ${mobsSvg}
+          </svg>
+        </div>
+
+        <!-- Legend Bar -->
+        <div style="display:flex; gap:14px; flex-wrap:wrap; align-items:center; font-size:0.73rem; color:var(--text-muted); margin:8px 0 12px 0; padding:6px 10px; background:rgba(255,255,255,0.03); border-radius:6px;">
+          <span><strong style="color:#ffd700;">👑 Gold Token [BOSS]:</strong> Dungeon Boss</span>
+          <span><strong style="color:#f85149;">⚔️ Red Token [S1/W1/MS1/DB1]:</strong> Chamber Mob (Click for Stat Block)</span>
+          <span><strong style="color:#58a6ff;">⭐ Dashed / Icon Box:</strong> Trap, Hazard, or Key Relic</span>
+          <span style="margin-left:auto; color:var(--accent-cyan);">📐 1 Grid Square = 5 ft × 5 ft (Cols A–X, Rows 1–14)</span>
+        </div>
+
+        <!-- Live Stat Block Drawer when a Grid Token or Crib Row is clicked -->
+        <div id="dungeon-grid-stat-drawer-${dungeon.id}" style="display:none; margin-bottom:12px;"></div>
+
+        <!-- Tactical Mob Location Crib Sheet Table -->
+        <div style="margin-top:8px;">
+          <div style="font-size:0.8rem; text-transform:uppercase; color:var(--accent-gold); font-weight:800; letter-spacing:0.5px; margin-bottom:6px;">
+            📍 Mob Locations Crib Sheet (Grid Coordinates & Tactical Placement)
+          </div>
+          <div style="overflow-x:auto; border:1px solid var(--border-color); border-radius:6px; background:var(--bg-secondary);">
+            <table style="width:100%; border-collapse:collapse; font-size:0.78rem; text-align:left;">
+              <thead>
+                <tr style="background:rgba(255,255,255,0.05); border-bottom:1px solid var(--border-color); color:var(--text-muted); font-size:0.7rem; text-transform:uppercase;">
+                  <th style="padding:7px 8px;">Token</th>
+                  <th style="padding:7px 8px;">Room</th>
+                  <th style="padding:7px 8px;">Creature / Mob</th>
+                  <th style="padding:7px 8px;">Grid Coordinates</th>
+                  <th style="padding:7px 8px;">CR / AC / HP</th>
+                  <th style="padding:7px 8px;">Tactical Position & Behavior</th>
+                  <th style="padding:7px 8px; text-align:right;">5e Stats</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${mobRowsHtml}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Key Hazards & Relics on the Grid -->
+        <div style="margin-top:12px;">
+          <div style="font-size:0.76rem; text-transform:uppercase; color:var(--accent-cyan); font-weight:800; letter-spacing:0.5px; margin-bottom:6px;">
+            🧭 Key Hazards, Traps & Relics Plotted on Grid
+          </div>
+          <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:8px;">
+            ${featurePillsHtml}
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 function renderDungeonCardsHtml(dungeon) {
   if (!dungeon) return "";
+
+  const gridMapHtml = renderDungeonGridCard(dungeon);
 
   // Render Key Relics
   const relicsHtml = dungeon.key_relics ? `
@@ -29069,12 +29559,25 @@ function renderDungeonCardsHtml(dungeon) {
       </div>
       <div class="card-body" style="padding-top:6px;">
         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:10px;">
-          ${dungeon.key_relics.map(r => `
-            <div style="background:var(--bg-tertiary); padding:10px; border-radius:6px; border:1px solid var(--border-color);">
-              <div style="font-weight:bold; font-size:0.84rem; color:var(--accent-gold); margin-bottom:4px;">✨ ${r.name}</div>
-              <div style="font-size:0.78rem; color:#c9d1d9; line-height:1.4;">${r.desc}</div>
-            </div>
-          `).join("")}
+          ${dungeon.key_relics.map(r => {
+            if (typeof r === "string") {
+              const colonIdx = r.indexOf(":");
+              const rTitle = colonIdx > -1 ? r.slice(0, colonIdx) : "Key Discovery";
+              const rDesc = colonIdx > -1 ? r.slice(colonIdx + 1).trim() : r;
+              return `
+                <div style="background:var(--bg-tertiary); padding:10px; border-radius:6px; border:1px solid var(--border-color);">
+                  <div style="font-weight:bold; font-size:0.84rem; color:var(--accent-gold); margin-bottom:4px;">✨ ${rTitle}</div>
+                  <div style="font-size:0.78rem; color:#c9d1d9; line-height:1.4;">${rDesc}</div>
+                </div>
+              `;
+            }
+            return `
+              <div style="background:var(--bg-tertiary); padding:10px; border-radius:6px; border:1px solid var(--border-color);">
+                <div style="font-weight:bold; font-size:0.84rem; color:var(--accent-gold); margin-bottom:4px;">✨ ${r.name}</div>
+                <div style="font-size:0.78rem; color:#c9d1d9; line-height:1.4;">${r.desc}</div>
+              </div>
+            `;
+          }).join("")}
         </div>
       </div>
     </div>
@@ -29244,6 +29747,7 @@ function renderDungeonCardsHtml(dungeon) {
       </div>
     </div>
 
+    ${gridMapHtml}
     ${relicsHtml}
     ${hazardsHtml}
     ${roomsHtml}
