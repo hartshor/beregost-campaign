@@ -2953,6 +2953,7 @@ Built directly into the companion website (via the **🎵 Soundtracks & Playlist
   7. **World Revolution (Battle Against Lavos)** — *Chrono Trigger* (`Q38Tehtg3Q0`) — True Final Boss: The Singing Devil at the West Sea Cliffs Spire (`Hex 6, 8`)
 
 ### 16.5 Soundtrack 5: Solar Scorch, Bunker Panic & Final Hours (`15:00 PM – 17:59 PM Apocalypse`)
+* **Custom 5:30 PM Crypt Tragedy Audio Cue (MP3)**: [`530pm_crypt_tragedy.mp3` (0:53)](530pm_crypt_tragedy.mp3) — Opens with heavy multi-voice coughing, roaring fire, and deep subterranean rumble; *"Daisies"* pierces through unfiltered by `:45` and cuts off right after *"where the sun don't shine"* with a massive **BOOM**.
 * **1-Click YouTube Auto-Playlist**: [Launch Final Hours & Scorch Playlist (4 Tracks)](https://www.youtube.com/watch_videos?video_ids=ZbR5WcyWl18,3DZxNPWpvnk,0laPiOKsTGQ,NSlkW1fFkyo)
 * **Tracklist & Campaign Cues**:
   1. **Final Hours (Extended w/ Earthquake & Bells)** — *The Legend of Zelda: Majora's Mask* (`ZbR5WcyWl18`) — `15:00 PM – 17:59 PM`: The Sun Descends Toward the Western Spire as Beregost Burns
