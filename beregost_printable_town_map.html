@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Township of Beregost — Printable Black & White Town Map</title>
+  <style>
+    @page {
+      size: landscape;
+      margin: 0.2in;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 16px;
+      background: #e6e2d8;
+      font-family: Georgia, "Times New Roman", serif;
+      color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .print-toolbar {
+      width: 100%;
+      max-width: 1350px;
+      background: #161b22;
+      color: #f0f6fc;
+      padding: 12px 20px;
+      border-radius: 8px;
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .btn {
+      background: #e3b341;
+      color: #000;
+      border: 2px solid #e3b341;
+      padding: 8px 14px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 0.85rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #79c0ff;
+      border: 1.5px solid #58a6ff;
+    }
+    .btn-outline.active {
+      background: rgba(88,166,255,0.2);
+      color: #fff;
+      border-color: #79c0ff;
+    }
+    .map-sheet {
+      width: 100%;
+      max-width: 1350px;
+      background: #ffffff;
+      padding: 6px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+      border: 1px solid #000;
+    }
+    .map-sheet img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .print-toolbar {
+        display: none !important;
+      }
+      .map-sheet {
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .map-sheet img {
+        max-height: 98vh;
+        width: auto;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="print-toolbar">
+    <div>
+      <strong style="font-size:1.05rem; color:#e3b341;">🗺️ Township of Beregost — Printable B&amp;W Old-Timey Town Map</strong>
+      <div style="font-size:0.8rem; color:#8b949e; margin-top:2px;">
+        Includes all 12 labeled buildings and the 5 Solstice Carnival Booths ([A]–[E]) laid out at the base of the Song of the Morning Church.
+      </div>
+    </div>
+    <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+      <button id="btn-woodcut" class="btn btn-outline active" onclick="setMapStyle('woodcut')">✒️ 17th-Century Woodcut Engraving</button>
+      <button id="btn-schematic" class="btn btn-outline" onclick="setMapStyle('schematic')">📐 2D Overhead Street Schematic</button>
+      <button class="btn" onclick="window.print()">🖨️ Print Map (B&amp;W)</button>
+      <a id="download-link" class="btn btn-outline" href="beregost_town_map_woodcut_labeled_bw.png" download="beregost_town_map_woodcut_labeled_bw.png">⬇️ Download PNG</a>
+    </div>
+  </div>
+  <div class="map-sheet">
+    <img id="printable-map-img" src="beregost_town_map_woodcut_labeled_bw.png" alt="Township of Beregost Printable Black and White Map" />
+  </div>
+  <script>
+    function setMapStyle(style) {
+      const img = document.getElementById('printable-map-img');
+      const dl = document.getElementById('download-link');
+      const bWood = document.getElementById('btn-woodcut');
+      const bSchem = document.getElementById('btn-schematic');
+      if (style === 'schematic') {
+        img.src = 'beregost_town_map_bw.png';
+        dl.href = 'beregost_town_map_bw.png';
+        dl.download = 'beregost_town_map_bw.png';
+        bSchem.classList.add('active');
+        bWood.classList.remove('active');
+      } else {
+        img.src = 'beregost_town_map_woodcut_labeled_bw.png';
+        dl.href = 'beregost_town_map_woodcut_labeled_bw.png';
+        dl.download = 'beregost_town_map_woodcut_labeled_bw.png';
+        bWood.classList.add('active');
+        bSchem.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>

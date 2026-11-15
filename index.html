@@ -1194,6 +1194,8 @@
           </div>
           <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
             <button class="btn-gold" style="padding:4px 10px; font-size:0.78rem; font-weight:bold; background:linear-gradient(180deg, #d29922 0%, #9e6a03 100%); border-color:#e3b341;" onclick="openSolsticeProphecyModal()">📜 Solstice Prophecy & Codex</button>
+            <button class="chip-btn" style="border-color:#56d364; color:#56d364; font-weight:bold;" onclick="openImagePreviewModal('beregost_town_map_woodcut_labeled_bw.png', 'Township of Beregost — Printable B&W Old-Timey Woodcut Town Map (12 Buildings & 5 Carnival Booths at Base of Church)')">✒️ View B&amp;W Woodcut Map</button>
+            <a href="beregost_printable_town_map.html" target="_blank" class="chip-btn" style="text-decoration:none; border-color:#79c0ff; color:#79c0ff; font-weight:bold;">🖨️ Printable B&amp;W Map Sheet ↗️</a>
             <button class="chip-btn" style="border-color:var(--accent-gold); color:var(--accent-gold);" onclick="switchTab('tab-loop0'); setTimeout(() => { const el = document.getElementById('day0-gossip-card'); if (el) el.scrollIntoView({behavior:'smooth'}); }, 50);">🗣️ Day 0 Tavern Gossip</button>
             <button class="chip-btn" onclick="switchTab('tab-map')">🗺️ View on Hex Map</button>
             <button class="chip-btn" onclick="openDungeon('dungeon_clocktower')">🏛️ Clocktower Dungeon</button>
@@ -3700,6 +3702,13 @@ Led astray by the fiendish ruse.
           <div><strong>12:00 PM (Solar Scorch & Induction):</strong> 140°F. Blinding white overhead glare. <strong>2d6 Fire damage per 10m</strong> in direct sunlight. Metal equipment superheats (Heat Metal disadvantage). Stalls abandoned.</div>
           <div><strong>14:00 PM (Atmospheric Ignition):</strong> Shingles catch fire. Birds drop dead from heat stroke. Captain Rebecca shouts orders to open emergency cellars.</div>
           <div style="color:var(--accent-crimson);"><strong>15:00 PM (Bunker Panic & Conflagration):</strong> Surface air reaches 175°F (<strong>10d6 Fire/round outdoor</strong>). Ground-level buildings take <strong>1d10 Fire/round</strong> as timber ignites. <strong>Deep underground crypts take 0 Fire damage</strong> (safe insulation until 17:30)! Townsfolk scream. Party frantically burns every spell slot trying to triage and cast Create Water as civilians succumb.</div>
+          <div style="background:rgba(88,166,255,0.12); border:1px solid #58a6ff; border-left:4px solid #58a6ff; padding:10px 12px; border-radius:6px; display:flex; flex-direction:column; gap:8px;">
+            <div style="color:#79c0ff;"><strong>17:30 PM (The Crypt Tragedy & The Singing Devil's Taunt):</strong> Convective heat breaches the deep crypts (210°F). Down the 200-ft stone belfry shaft echoes a muffled, cheerful Broadway-swing voice singing <em>"Daisies"</em> over the roaring fire, coughing, and Little Maya's weeping.</div>
+            <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+              <audio controls preload="metadata" src="530pm_crypt_tragedy.mp3" style="height:36px; flex:1; min-width:260px;"></audio>
+              <a href="530pm_crypt_tragedy.mp3" download="530pm_crypt_tragedy.mp3" class="chip-btn" style="text-decoration:none; border-color:#58a6ff; color:#79c0ff; font-weight:bold;">⬇️ Download 530pm_crypt_tragedy.mp3</a>
+            </div>
+          </div>
           <div style="color:#ff0055;"><strong>17:59 PM (Total Solar Detonation):</strong> Incandescent pillar of orbital fire vaporizes Beregost with no saving throw. Everything goes white.</div>
           <div style="color:var(--accent-gold);"><strong>06:00 AM (Loop 1 Reset):</strong> Gears clack. Party snaps awake standing on the <strong>rubbled, destroyed clocktower balcony</strong> as the guard down in the square calls up: <em>"Hey! You got the clock working! Thank you! Happy Solstice!"</em> Tobias cheerfully steps out of the bakery with the exact same warm rolls, completely unharmed. The clock is ticking.</div>
         </div>
@@ -3727,6 +3736,8 @@ Led astray by the fiendish ruse.
           </p>
           <div style="display:flex; gap:10px; flex-wrap:wrap;">
             <button class="chip-btn" style="border-color:#bc8cff; color:#d2a8ff; font-weight:bold;" onclick="openSoundtrackModal()">🎵 Open Floating Soundtrack Jukebox</button>
+            <button class="chip-btn" style="border-color:#56d364; color:#56d364; font-weight:bold;" onclick="openImagePreviewModal('beregost_town_map_woodcut_labeled_bw.png', 'Township of Beregost — Printable B&W Old-Timey Woodcut Town Map (12 Buildings & 5 Carnival Booths at Base of Church)')">✒️ View B&amp;W Woodcut Town Map</button>
+            <a href="beregost_printable_town_map.html" target="_blank" class="chip-btn" style="text-decoration:none; border-color:#79c0ff; color:#79c0ff; font-weight:bold;">🖨️ Open Printable B&amp;W Town Map Sheet ↗️</a>
             <button class="chip-btn" onclick="navigator.clipboard.writeText(document.getElementById('audio-instructions-text').innerText); alert('Audio mixing instructions copied to clipboard!');">📋 Copy Audio Instructions</button>
             <button class="chip-btn" onclick="navigator.clipboard.writeText(document.getElementById('dm-readaloud-prompt').innerText); alert('DM 5:30 PM Read-Aloud Prompt copied to clipboard!');">📜 Copy 5:30 PM DM Prompt</button>
             <button class="chip-btn" onclick="switchTab('tab-loop0')">💔 Jump to Loop 0 Guide</button>
@@ -3776,6 +3787,20 @@ Led astray by the fiendish ruse.
         </div>
         <div id="audio-instructions-text" class="card-body" style="font-size:0.88rem; line-height:1.55;">
           
+          <div style="background:linear-gradient(90deg, rgba(63,185,80,0.18) 0%, rgba(22,27,34,0.95) 100%); border:2px solid #3fb950; padding:14px 16px; border-radius:8px; margin-bottom:16px; box-shadow:0 4px 14px rgba(0,0,0,0.4);">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
+              <strong style="color:#56d364; font-size:0.98rem;">🔊 Ready-to-Play Master Track: <code>530pm_crypt_tragedy.mp3</code> (1:04)</strong>
+              <span class="badge badge-green">Pre-Mixed &amp; Ready for Session 1</span>
+            </div>
+            <p style="margin:0 0 10px 0; color:#c9d1d9; font-size:0.83rem; line-height:1.45;">
+              Your complete 64-second Crypt Tragedy audio mix is already built and ready to play right from the browser or download for your table: featuring <em>"Daisies"</em> (Verse 1 + Chorus) filtered through a 24 dB/oct stone-vault low-pass filter and 200-ft belfry reverb, layered with subterranean fire rumble, crypt weeping, stereo-panned coughing (30% Left / 30% Right), and a +4 dB chorus swell at <code>0:40</code> as the ceiling mortar cracks.
+            </p>
+            <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+              <audio controls preload="metadata" src="530pm_crypt_tragedy.mp3" style="height:40px; flex:1; min-width:280px;"></audio>
+              <a href="530pm_crypt_tragedy.mp3" download="530pm_crypt_tragedy.mp3" class="chip-btn" style="text-decoration:none; border-color:#3fb950; color:#56d364; font-weight:bold; padding:8px 14px;">⬇️ Download MP3 (1.5 MB)</a>
+            </div>
+          </div>
+
           <div style="background:rgba(13,17,23,0.7); border-left:4px solid #58a6ff; padding:14px; border-radius:6px; margin-bottom:16px;">
             <strong style="color:#79c0ff; font-size:0.95rem;">🎭 The Core Dramatic Concept: Two Acoustic Layers</strong>
             <p style="margin:6px 0 0 0; color:#c9d1d9; font-size:0.85rem; line-height:1.5;">
@@ -30460,19 +30485,8 @@ function renderTownSvg(mins, selId, mode = "side") {
       <!-- Town Ground Base -->
       <rect width="660" height="460" fill="#0d1117" rx="8" />
 
-      <!-- Stone Ramparts & Defensive Walls -->
-      <polygon points="330,22 490,48 615,130 635,300 560,420 330,442 120,420 40,300 55,130 180,48" fill="#161b22" stroke="#30363d" stroke-width="8" stroke-linejoin="round" />
-      <polygon points="330,26 484,52 605,132 625,296 552,412 330,434 128,412 48,296 63,132 186,52" fill="#10151c" stroke="#21262d" stroke-width="2" />
-
-      <!-- Watchtowers -->
-      <circle cx="305" cy="50" r="12" fill="#21262d" stroke="#58a6ff" stroke-width="1.5" />
-      <circle cx="395" cy="50" r="12" fill="#21262d" stroke="#58a6ff" stroke-width="1.5" />
-      <circle cx="615" cy="130" r="10" fill="#21262d" stroke="#30363d" stroke-width="1.5" />
-      <circle cx="635" cy="300" r="10" fill="#21262d" stroke="#30363d" stroke-width="1.5" />
-      <circle cx="560" cy="420" r="10" fill="#21262d" stroke="#30363d" stroke-width="1.5" />
-      <circle cx="120" cy="420" r="10" fill="#21262d" stroke="#30363d" stroke-width="1.5" />
-      <circle cx="40" cy="300" r="10" fill="#21262d" stroke="#30363d" stroke-width="1.5" />
-      <circle cx="55" cy="130" r="10" fill="#21262d" stroke="#30363d" stroke-width="1.5" />
+      <!-- Open Rural Town Boundary & Hedgerows (No City Walls) -->
+      <polygon points="330,26 484,52 605,132 625,296 552,412 330,434 128,412 48,296 63,132 186,52" fill="#10151c" stroke="#21262d" stroke-width="1.5" stroke-dasharray="8,5" />
 
       <!-- Cobblestone Roads -->
       <!-- The Coast Way Highway (North-South) -->
