@@ -171,12 +171,15 @@ Restore the angel's form, and set the morning free!
 
 The players do not start with the Complete Codex. On early loops, they hear Old Jonas's 8-line rhyme after the 11:30 AM Ash Grove explosion (*"First east to the ice, then south to the sand, find the path to stop the devil's hand. Blame not the angel for he is confused, led astray by the fiendish ruse"*). Interviewing Beregost citizens confirms *why* they must journey East then South to uncover the unabridged truth:
 
-1. **Old Jonas the Rhymer (Municipal Well Square)**:
+1. **Old Jonas the Rhymer (Municipal Well Square — The Sacrifice of Sanity)**:
    - *Approach*: Offering warm bakery goods from Tobias, mulled cider from Feldepost's, or succeeding on a DC 12 Charisma (Persuasion) or Wisdom (Insight) check.
-   - *Testimony*: Jonas breaks down in tears: *"The verses I shout? Just the warning stanza that survived the sandstorm! The master's ledger... the Golden Alabaster Tablets... the full scripture had six stanzas! It told what the fiendish ruse truly is and why the angel weeps! Scribe Vane in the Town Hall bought my expedition notes when I stumbled back from the southern desert half-dead!"*
-2. **Scribe Vane (Town Hall & Civic Archives)**:
+   - *Testimony & The Mnemonic Branding Sacrifice*: Why is Old Jonas's mind shattered so that he can barely remember his own name, yet recites the 8-line Solstice Chant with clockwork precision? Deep in the Sunken Necropolis (`Hex 12, 16`), the Pharaoh's tomb is warded by the **Curse of the Oblivion Sands**—any mortal who reads the Golden Alabaster Tablets and leaves the crypt has their higher declarative memories wiped clean by dawn so the secret can never leave the desert. Three winters ago, as the sole survivor of the Ulcaster expedition, Brother Jonas realized that if he kept his sanity, the curse would erase the roadmap before he reached Beregost. So he performed a forbidden **Ulcaster Mnemonic Branding Rite**: he **willingly burned out his own higher intellect, his memories of his family, and his own identity** to sear Stanza I into his lower autonomic brain stem like a music box that can only play one song!
+   - *Dialogue*: Jonas breaks down in tears: *"The verses I shout? I burned my own mind to ash so the Pharaoh's sands couldn't steal those eight lines! The rest of me is gone... my mother's voice, my books, all burned away to keep the rhyme! Scribe Vane in the Town Hall bought my scorched expedition satchel when I stumbled back from the southern desert half-dead!"*
+2. **Scribe Vane (Town Hall & Civic Archives — Jonas's Final Coherent Journal Entry)**:
    - *Investigation*: Visiting the Civic Archives and asking about Jonas or ancient regional prophecies.
-   - *Discovery*: Vane confirms Jonas was Brother Jonas, an archivist from the School of Ulcaster who accompanied an expedition into the Southern Desert three winters ago. Vane's municipal lockbox preserves **Leaf 1 (Stanza I)** alongside the **Ulcaster Expedition Manifest**, which records that the unabridged **Golden Alabaster Tablets (Stanzas II–VI)** remain sealed inside the Pharaoh's Suncophagus Chamber in the **Sunken Necropolis (Hex 12, 16)**—guarded by lethal necrotic wards that only the **Eastern Air Genie's Wish** (frozen beneath Rimefang's glacier at **Hex 17, 10**) can withstand!
+   - *Discovery*: Vane confirms Jonas was **Brother Jonas of Ulcaster**, a brilliant chronomantic linguist who accompanied an expedition into the Southern Desert three winters ago. Vane's municipal lockbox preserves **Leaf 1 (Stanza I)** alongside **Jonas's Scorched Last Diary Page**, written in shaking ink right outside the Sunken Necropolis (`Hex 12, 16`):
+     > *"The Pharaoh's ward devours all prose and reason by sunrise. If I remain Brother Jonas, I will forget the path before I reach the road. So I lay my mind upon the coals. I will burn away my mother's face, my scholarship, and my own name, so that only the eight lines remain on my tongue when the heroes wake at the six chimes."*
+   - The manifest also records that the unabridged **Golden Alabaster Tablets (Stanzas II–VI)** remain sealed inside the Pharaoh's Suncophagus Chamber in the **Sunken Necropolis (Hex 12, 16)**—guarded by lethal necrotic wards that only the **Eastern Air Genie's Wish** (frozen beneath Rimefang's glacier at **Hex 17, 10**) can withstand!
 3. **Barnaby Feldepost (Feldepost's Inn & Tavern)**:
    - *Investigation*: Buying Barnaby an ale and asking about Old Jonas's arrival in town.
    - *Testimony*: Barnaby recalls finding Jonas half-delirious on the South Coast Way clutching a scorched brass scroll-tube. Starving, Jonas bartered his brass desert astrolabe and a charcoal tablet rubbing to Garrick the Fence in Shadow Alley for hard cheese and dry wool blankets.
@@ -326,25 +329,30 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
 * **Scene 8: 15:00 PM — Bunker Panic (175°F Outside)**:
   * Outdoor air is an inferno: **10d6 Fire damage per round in the open**! Anyone outside is incinerated. Birds drop dead from the sky.
   * Rebecca, Tobias, Maya, and 50 townsfolk are herded into the deep stone cellars beneath the Temple of Lathander.
-* **Scene 9: The Triage Nightmare**:
+* **Scene 9: The Triage Nightmare, The Blast Door Sacrifice & The 3 Player Self-Sacrifice Stations (15:15 – 17:30 PM)**:
   * Even subterranean stone cellars heat to an oven: **1d10 Fire damage per round indoors** without magical mitigation!
-  * **The Resource Drain**: The party burns every single spell slot, Lay on Hands, Wild Shape, and healing potion:
-    * Tobias chokes on smoke, singing to crying children.
-    * Maya sobs in a corner, her green clover bracelet charring to black ash.
-    * Rebecca strains her bad knee against the iron blast door, her plate armor scorching her skin.
-    * Despite everything, NPCs begin dying of burns and heatstroke. The party feels completely helpless.
+  * **The Broken Outer Latch & Tobias / Rebecca's Self-Sacrifice (`15:15 PM`)**:
+    * At `15:15 PM`, thermal expansion snaps the inner iron locking bar of the Temple Crypt's heavy blast doors! The warped doors groan open an inch, pouring `175°F` superheated air and black smoke into the crowded crypt. The only way to keep the blast doors sealed for the 50 townsfolk and children inside is for someone to **hold the glowing, red-hot iron crossbar shut with their own hands and body weight** (or wedge it from the scorching outer vestibule).
+    * **Captain Rebecca** braces her ruined war-knee (shattered ten years ago when she held up a falling, burning portcullis so a wagon of town children—including toddler Maya—could escape) against the scorching iron door until her plate armor begins welding to her skin.
+    * **Tobias the Baker** shoves forward to take the glowing iron bar in his bare, flour-dusted hands so Rebecca and the children can pull back into the inner vault, smiling through the smoke: *"My hands have worked a 500-degree brick oven for thirty years, Captain—let a baker mind the door! Keep Little Maya's roll warm for me!"*
+    * Meanwhile, **Elorion the Bard** refuses to conserve his breath in the choking smoke—spending his very last lungfuls of oxygen singing a gentle solstice lullaby so the terrified children hear music instead of the roaring fire above.
+  * **The 3 Player Self-Sacrifice Stations (`15:15 – 17:30 PM`)**:
+    * Rather than a passive resource drain, present the players with **three active opportunities to sacrifice themselves** to buy the townsfolk precious minutes of life:
+      1. **Station 1 — Hold the Red-Hot Iron Crossbar**: A PC can step into Tobias's and Rebecca's place at the warping blast door, gripping the glowing iron bar with their own hands/body (`2d10` fire damage per round, searing their flesh to the bone with no save) so Tobias and Rebecca survive into the final minutes.
+      2. **Station 2 — Shield the Belfry Air-Shaft with Their Own Body**: Superheated soot and glowing embers rain down the cracked 200-ft stone belfry ventilation shaft directly onto Little Maya and the huddled orphans. A PC can climb the stonework and wedge their own cloak and body across the scalding grate—voluntarily taking levels of Exhaustion and `1d10` fire/smoke inhalation per round to shield the children, which also places that PC **right beneath the belfry shaft when *"Daisies"* begins echoing down at `17:30 PM`!**
+      3. **Station 3 — Soul-Burn Life Transference at Althea's Altar**: When Sister Althea collapses from heat exhaustion at `15:20 PM`, her consecrated sun-disc flickers out. PCs can pour their remaining **Spell Slots, Lay on Hands, Hit Dice, and current HP** directly into the altar stone to sustain a cool, breathable pocket around the townsfolk until `17:59 PM`.
 * **Scene 9A: 17:30 PM — The Belfry Taunt & The Crypt Audio Mix**:
-  * As the heat reaches lethal thresholds, an eerie, jarring sound drifts down through the stone ceiling vents from the belfry: **a cheerful, mocking Broadway-swing tune** (*"Daisies"* by Black Gryph0n).
-  * The DM triggers the pre-mixed **5:30 PM Crypt Tragedy Audio Track** (muffled singing echoing from the sky layered over immediate coughing, fire rumble, and weeping).
-  * *Table Staging*: Dim the lights to deep amber. Read the 17:30 PM prompt from the companion's **To-Do & Audio Prep Tab** (`tab-todo`), then let the track play in absolute table silence for 45–60 seconds as the chorus hits: *"Pretty soon you'll be pushin' up daisies where the sun don't shine..."*
+  * As the PCs are actively burning and sacrificing themselves at the door, air-shaft, and altar, an eerie, jarring sound drifts down through the stone ceiling vents from the belfry: **a cheerful, mocking Broadway-swing tune** (*"Daisies"* by Black Gryph0n, [`530pm_crypt_tragedy.mp3`](file:///c:/Users/harts/Desktop/Beregost%20Time/530pm_crypt_tragedy.mp3)).
+  * The DM triggers the pre-mixed **5:30 PM Crypt Tragedy Audio Track** (`0:53` — opening with heavy multi-voice smoke coughing, roaring fire, and deep subterranean rumble while *"Daisies"* starts muffled behind stone and pierces through almost completely unfiltered by `:45`, cutting off right after *"where the sun don't shine"* with a massive concussive **BOOM**).
+  * *Table Staging*: Dim the lights to deep amber. Read the 17:30 PM prompt from the companion's **To-Do & Audio Prep Tab** (`tab-todo`), then let the track play in absolute table silence as the chorus pierces through unfiltered at `:45` and detonates on *"where the sun don't shine"*!
   * *See complete mixing settings, EQ filter values, and prep checklist in the Web Companion's **To-Do & Audio Prep Tab** and [sound_design_530pm_crypt_mix.md](file:///c:/Users/harts/Desktop/Beregost%20Time/sound_design_530pm_crypt_mix.md).*
 
 #### Act 5: The Orbital Obliteration & The Time Loop Twist (17:59 – 18:00 PM)
 * **Scene 10: The Whiteout (17:59 PM)**:
-  * The crypt ceiling cracks with blinding white brilliance. Stone turns molten.
+  * Right as the **BOOM** at the end of `530pm_crypt_tragedy.mp3` hits, the crypt ceiling cracks with blinding white brilliance. Stone turns molten.
   * An orbital beam of 5000°F solar plasma crashes straight through the earth.
   * **100d10 Radiant/Fire damage**. Total obliteration. No save.
-  * Describe each PC vaporizing while holding the hands of Maya, Tobias, or their allies.
+  * Describe each PC vaporizing *in the middle of their sacrificial act*—hands welded to the blast door bar alongside Tobias, shielding Little Maya beneath the air shaft, or pouring their last life-force into the altar.
   * *Absolute blackness. Complete silence.*
 * **Scene 11: The Groundhog Reveal (06:00 AM Reset)**:
   * In the silence, the gears sound: *Tick. Tick. CLACK.*
@@ -439,10 +447,10 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
   - **Protective Instincts**: Spends reactions shielding fleeing young druids or woodland animals from falling burning timber and stray arrows.
   - **Sensory Incongruities**: Smells of sanctified frankincense, myrrh, and crisp morning ozone rather than sulfur or brimstone; weeps molten golden tears from burning red fiend eyes.
   - **Celestial Whispers**: Murmurs prayers in archaic Celestial (*"Forgive them, Father of Dawn... they see only the horns and not the sun..."*).
-* **The 11:30 AM Map-Wide Cataclysmic Explosion (Happens Every Loop by Default)**:
+* **The 11:30 AM Map-Wide Cataclysmic Explosion (The Angel's Sacrificial Detonation)**:
   - Archdruid Faelan's druids hunt and corner the horned creature every loop, inviting the party to join the execution if they are in the northern woods, and executing it themselves at **11:30 AM** even if the party never goes north.
-  - Upon physical death (from the druids' binding rite or the party's attack / Crucible Charm), the trapped celestial soul violently ruptures in a **Soul Detonation (70 radiant/fire damage)**.
-  - The blast completely incinerates the Ash Grove, slays all surrounding druids, and leaves a smoldering crater.
+  - **Why the True Angel Detonates at 11:30 AM (Self-Sacrifice)**: Why doesn't the True Angel simply fly away at dawn or slaughter the druids to save herself? Because the Singing Devil on the Western Spire (`Hex 6, 8`) is using their inverted soul-link as a planar conduit to pull the sun down *by noon*. Every loop at **11:30 AM**, bound in burning thorns and pierced by silver arrows, the True Angel **willingly shatters her own heart and vessel** (or allows the druids' binding rite to pierce her core) to sever the noon solar siphon—sacrificing her life in agony every single morning to buy the valley six more hours (`12:00 – 17:59 PM`) for a hero to uncover the truth!
+  - Upon physical death, the trapped celestial soul violently ruptures in a **Soul Detonation (70 radiant/fire damage)**, incinerating the Ash Grove, slaying all surrounding druids, and leaving a smoldering crater.
   - **Audible Region-Wide**: The explosion is so violently loud that it is **heard clearly from wherever the party is across the entire hex map**. Ground rumbles, windows rattle in Beregost, and birds scatter from the distant mountains as a pillar of white-crimson smoke rises to the north.
 * **The Grand Revelation & Inverted Strategy**:
   - The party does not learn that the bodies were swapped until much later! It is only after recovering the **Inversion Swap Tablets** from Boss 2's desert crypt, and unmasking the **Tiger-Headed Rakshasa (Boss 3)**, that the horrifying truth dawns: *The tiger-headed deceiver was playing them the whole time, and the horned creature was the TRUE ANGEL!*
@@ -486,6 +494,13 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
 
 ### Boss 2: Mummy Lord — *Akh-en-Amon* (South Desert Sunken Crypt — Hex 12,16 via Waystation 14,12)
 * **CR / Target Level**: CR 15 (XP 13,000; PB +5) Medium Undead, Lawful Evil | Level 8–9 Party.
+* **Thematic Foil — The Man Who Refused Self-Sacrifice**:
+  - A thousand years ago, the Southern Sector was a lush, fertile river valley. When a primordial Solar Convergence threatened to scorch the land, High Solar Priest Akh-en-Amon was duty-bound to perform the **Rite of the Sun-Bearer**—willingly offering his own mortal heart into the temple's solar crucible to cool the sun and save his kingdom.
+  - **The Refusal & The Creation of the Desert**: Terrified of death, Akh-en-Amon **refused to sacrifice himself**. Instead, he engineered the forbidden **Inversion Soul-Swap** (inscribed upon the Golden Alabaster Tablets)—inverting the sacred rite so that instead of the shepherd dying for the flock, **he drained the souls and vitality of 1,000 of his own devoted citizens and temple acolytes** into four Solar Fire Braziers to weld his own spirit into undying Mummy Lord immortality while the unchecked sun vitrified his fertile river valley into the **Southern Desert Dunes**!
+  - **Environmental Implications Across the Southern Desert**:
+    - *In the Dunes (`Hex 14, 12`, `Hex 13, 14`, `Hex 12, 16`)*: Protruding from the shifting sand around the Necropolis are dozens of wind-eroded, vitrified sandstone-and-glass statues of ancient citizens—all kneeling and facing *inward* toward the sealed temple doors with hands outstretched in trust, flash-petrified at the moment their High Priest locked them outside in the solar flare.
+    - *At the Tomb Threshold (Dark Mirror of the Beregost Crypt)*: Just outside the inner **Suncophagus Vault (Room 4)**, the heavy bronze blast doors are deeply clawed and scorched *from the outside*. Skeletons of ancient parents and temple guards lie slumped against the exterior of the doors shielding children's bones in the exact postures the party saw in the Beregost crypt on Loop 0—except here, Akh-en-Amon barred the door *from the inside* to save only himself.
+    - *In the Boss Fight (The 4 Acolyte Braziers)*: The **4 Solar Fire Braziers** that fuel Akh-en-Amon's magic immunity and ward burn with the trapped, wailing souls of the four junior acolytes he forced onto the altar in his place. In combat, Akh-en-Amon mocks the party's heroism: *"Fools! Why burn for the herd when the herd can burn for you?!"*
 * **Official D&D 2024 (5.5e) Stat Block**:
   - **AC**: 17 (Natural Armor) | **HP**: 135 (18d8 + 54) | **Speed**: 20 ft.
   - **Ability Scores**: STR 18 (+4), DEX 10 (+0), CON 17 (+3), INT 16 (+3), WIS 18 (+4), CHA 16 (+3)
@@ -572,8 +587,9 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
   - **Air Genie Wish**: Party invokes Zephyrus via his memorized True Name for **Lightning & Thunder Resistance**, halving all electrical damage.
   - **Grounding Rod of the Deep Trench (`Hex 4, 11`)**: Absorbs 100% of lightning damage, grants 40 ft swim speed and water breathing, and discharges a 10d8 lightning beam to sunder the Abyssal Chains.
   - **Abyssal Winch Crank-Key (`Hex 4, 10`) & Memorized Steam-Valve Sequence**: Recovered from Prophet Joshua (or triggered via memorized steam-winch sequence on the Final Loop) so Commodore Vance can slacken the 4 underwater chains.
-* **Thematic Resolution**:
-  - Otheus is bound by abyssal anchor chains. Freeing him turns him into a supreme ally and teaches the party the **Storm-Caller's Harmonic Cadence**!
+* **Thematic Resolution & Otheus's Voluntary Self-Sacrifice**:
+  - **Why Otheus Is Chained in the Abyss**: Otheus was not defeated or imprisoned by mortal conquerors—centuries ago, when a catastrophic subsea volcanic rift threatened to boil the Sea of Swords and destroy the coastal fisheries, Otheus **voluntarily chained himself** to the abyssal basalt monolith at `Hex (5, 11)` so his immortal storm-heart could continuously cool and suppress the tectonic fault line! Now, the Singing Devil's solar beam is superheating those very adamantine chains, boiling Otheus alive inside the prison he chose for the coast's sake, while his Huge Herald (**Valen Storm-Caller**) has been driven mad on the caravel deck above by the Rakshasa's 4 Cursed Mind-Barnacles.
+  - Freeing Otheus's Herald from the cursed barnacles so he sounds the Abyssal Storm-Conch awakens Otheus as a supreme ally and teaches the party the **Storm-Caller's Harmonic Cadence**!
   - At **17:30 PM**, Otheus summons a **Category-5 Supercell Thunderstorm** directly over the Western Sea Cliffs (`Hex 6, 8`) and Beregost, deflecting 85% of the orbital solar beam and allowing the party to battle the Singing Devil on fair terms to break the loop!
 
 ---
@@ -1072,9 +1088,9 @@ To slay a Capstone Boss on its dedicated boss loop, the party uses the **2-Rider
   * **11:00 AM**: Taps the High Sun Muster cider casks; shocked to find the municipal well water dropped 4 feet and begins hauling emergency water barrels.
   * **12:05 PM (The Crisis)**: Charmed arsonists slip into the granary and ignite his flour storage bins!
   * **13:30 PM**: Evacuates with surviving loaves and his grandmother's recipe ledger into the Temple of Lathander Crypts.
-  * **15:00 – 17:30 PM (Bunker Panic)**: Choking on smoke inside the sweltering Temple Crypts, singing to crying children and offering Little Maya his last loaf of sourdough bread as the Singing Devil's voice echoes at 17:30 PM.
-  * **17:59 PM**: Obliterated in the solar detonation.
-* **Default Loop 0 Tragedy**: Perishes with the refugees in the Temple of Lathander Crypts during the 17:59 PM solar detonation (after losing his bakery to arson at 12:05 PM).
+  * **15:00 – 17:30 PM (Bunker Panic & The Blast Door Sacrifice)**: When thermal expansion snaps the inner iron crossbar of the Temple Crypt blast door at `15:15 PM`, Tobias shoves forward to grip the glowing, red-hot iron bar in his bare, flour-dusted hands so Captain Rebecca and the 50 townsfolk can pull back into the inner sanctuary: *"My hands have worked a 500-degree brick oven for thirty years, Captain—let a baker mind the door! Keep Little Maya's roll warm for me!"*
+  * **17:59 PM**: Obliterated holding the crypt blast door (unless a PC steps into his place at **Self-Sacrifice Station #1**).
+* **Default Loop 0 Tragedy**: Sacrifices himself holding the red-hot iron crossbar of the Temple Crypt blast door shut from `15:15 PM` onward to buy the townsfolk and Little Maya precious breathable air before the `17:59 PM` solar detonation.
 * **Intervention Window**:
   * *07:15–10:30 AM*: Head 1 hex West to `Hex (7, 10)` and chop down the dry cedar windbreak containment line (DC 13 Athletics) to protect his western grain shed from the farmland fire.
   * *12:05 PM*: Ambush the charmed arsonists behind the granary before they toss the starfire vial.
@@ -1102,7 +1118,7 @@ To slay a Capstone Boss on its dedicated boss loop, the party uses the **2-Rider
 ---
 
 #### 3. Captain Rebecca Thorne — Town Guard Captain (Municipal Barracks)
-* **Visual & Demeanor**: A weathered half-orc soldier with steel-grey braided hair, a severe scowl, and an old war-knee brace.
+* **Visual & Demeanor**: A weathered half-orc soldier with steel-grey braided hair, a severe scowl, and an old war-knee brace (her knee was shattered ten years ago when she held up a falling, burning gatehouse portcullis on her own shoulders so a wagon of Beregost children—including a toddler Little Maya—could roll to safety).
 * **Clockwork Schedule**:
   * **06:00 AM**: Reviewing morning watch rotations at her desk; rubbing wintermint salve into her aching knee.
   * **07:00 AM**: Inspecting the North Gate sentries and greeting merchant caravans.
@@ -1110,9 +1126,9 @@ To slay a Capstone Boss on its dedicated boss loop, the party uses the **2-Rider
   * **10:15 AM (The Sabotage)**: Scribe Vane delivers forged council dispatches ordering her to pull guards away from the granary out to the quarry.
   * **12:00 PM**: Sounding the brass alarm bells as townspeople panic from the *Heat Metal* solar scorch.
   * **13:30 PM**: Coordinates the emergency evacuation of townsfolk into the Temple of Lathander Crypts.
-  * **15:00 PM (Bunker Panic)**: Bracing her bad knee against the Temple Crypt iron blast door, her plate armor scorching her skin as she holds the door shut against the 175°F inferno outside.
+  * **15:00 PM (Bunker Panic & Second Portcullis Stand)**: Bracing that same ruined knee against the warping Temple Crypt iron blast door alongside Baker Tobias, her plate armor scorching and welding to her skin as she holds the door shut against the `175°F` inferno outside.
   * **17:59 PM**: Incinerated standing at her post in the Temple Crypts.
-* **Default Loop 0 Tragedy**: Suffers severe burns holding the Temple Crypt blast door at 15:30 PM before perishing in the 17:59 PM solar detonation.
+* **Default Loop 0 Tragedy**: Suffers severe burns holding the warping Temple Crypt blast door alongside Tobias at `15:15–17:30 PM` before perishing in the `17:59 PM` solar detonation.
 * **Intervention Window**:
   * *10:15 AM*: Intercept the forged dispatches before she signs them, or expose Scribe Vane's enchantment aura (*Detect Magic*).
 * **Persistent Loop Boon**: Gives the party the **Municipal Armory Master Key** (access to 20 silvered crossbow bolts, heavy shields, and potion locker) and assigns veteran guard escorts to move civilians into deep cellars before 11:00 AM.
@@ -1158,10 +1174,10 @@ To slay a Capstone Boss on its dedicated boss loop, the party uses the **2-Rider
   * **06:30 – 08:30 AM**: Cheerfully hosts the **Solstice Rhyme Duel & Baton Knife-Catch** carnival game for festival-goers.
   * **09:30 AM**: Pauses between songs, tilting his head toward the western sea cliffs; remarks with cheerful curiosity that the morning breeze carries a strange musical overtone in F-sharp, and begins improvising a bright counter-harmony to match it.
   * **11:00 AM**: Leads the High Sun festival sing-along in the square before the midday heat drives the crowd indoors.
-  * **13:00 PM**: Retreats into the Jovial Juggler taproom cellar, cheerfully playing lively ballads to keep frightened children calm as the heat rises.
-  * **15:00 PM**: Choked by smoke as the inn's roof ignites above the cellar.
+  * **13:00 PM**: Retreats into the cellar / Temple Crypts, cheerfully playing lively ballads to keep frightened children calm as the heat rises.
+  * **15:00 – 17:30 PM (The Last Lullaby Sacrifice)**: As black smoke fills the vault, rather than conserving his own oxygen, Elorion spends his very last lungfuls of breath singing a gentle solstice lullaby and strumming a counter-melody against *"Daisies"* so the huddled children hear music instead of the roaring flames above.
   * **17:59 PM**: Consumed in the reset.
-* **Default Loop 0 Tragedy**: Perishes in the Jovial Juggler cellar fire at 15:45 PM while still strumming his mandolin to comfort the townsfolk.
+* **Default Loop 0 Tragedy**: Sacrifices his last breath singing to comfort the terrified children in the smoke-filled cellar/crypts at `15:45–17:30 PM` before the `17:59 PM` reset.
 * **Intervention Window**:
   * *06:30 – 11:30 AM*: Win his **Solstice Rhyme Duel** on stage (DC 13 Performance/Acrobatics) or tell him about the Singing Devil's choral resonance from the western cliffs so he can finish composing his counter-melody.
 * **Persistent Loop Boon**: Teaches the party the memorized **Hymn of the Shattered Choir (Counter-Harmony of the Morning)**: when sung or played during the confrontation with the Singing Devil, it counters the fiend's choral dirge, granting the entire party Advantage on saving throws against fiendish charm, fear, and psychic/thunder dirges!
@@ -1252,17 +1268,18 @@ To slay a Capstone Boss on its dedicated boss loop, the party uses the **2-Rider
 
 ---
 
-#### 12. Young Kaelen — Apprentice Chronomancer (Feldepost Room #4)
-* **Visual & Demeanor**: A pale, freckled teenage human boy with ink-stained fingers, surrounded by whirling brass armillary spheres and hourglasses.
+#### 12. Young Kaelen (Feldepost Room #4) & Ancient Kaelen (The Sanctum — Hex 14,13)
+* **Visual & Demeanor**: A pale, freckled 26-year-old human apprentice chronomancer with ink-stained fingers, surrounded by whirling brass armillary spheres—and his 86-year-old future self in the Southeastern Sandstone Bluffs (`Hex 14, 13`), who **voluntarily sacrificed 60 years of his youth and life in solitary exile** inside a mountain temporal dilation rift so that he could finish hand-calibrating the **Chronomancy Tuning Fork** in time to hand it to the party at `17:15 PM` on the Solstice!
 * **Clockwork Schedule**:
   * **06:00 AM**: Staring in bewilderment at his chronomancy dials spinning in reverse.
   * **07:30 AM**: Standing on his room's balcony measuring tachyonic temporal waves pulsing from the clocktower.
   * **09:00 AM**: Taking ambient dimensional readings in the town square; notices time dilation ripples around the party!
-  * **11:30 AM**: Terrified: his blank arcane journal begins spontaneously filling with handwriting from his 80-year-old future self!
-  * **13:00 PM**: Frantically casting a localized temporal stasis ward in the inn cellar.
-  * **15:00 PM**: Ward shatters under 175°F convective heat; collapses from magical feedback.
+  * **11:30 AM**: Terrified: his blank arcane journal begins spontaneously filling with handwriting from his 86-year-old future self—explaining that because a 12-hour loop is too short to forge the **Chronomancy Tuning Fork**, he must step through a one-way temporal rift into 60 years of solitary mountain exile!
+  * **13:00 PM**: Frantically casting a localized temporal stasis ward in the inn cellar / Temple Crypts.
+  * **15:00 PM**: Sheltering in the Temple Crypts clutching his chronometer and notes while at `Hex (14, 13)`, 86-year-old Ancient Kaelen hammers the final harmonic tines of his 60-year life's work.
+  * **17:15 – 17:30 PM**: Ancient Kaelen (`Hex 14, 13`) completes the **Chronomancy Tuning Fork** after 60 years of solitary sacrifice, ready to hand it to the party!
   * **17:59 PM**: Obliterated.
-* **Default Loop 0 Tragedy**: Temporal containment ward collapses at 15:15; mind burns out from paradox feedback.
+* **Default Loop 0 Tragedy**: Temporal containment ward collapses at 15:45; perishes in the crypts while his 86-year-old self dies alone in his mountain cave waiting for heroes who never arrive.
 * **Intervention Window**:
   * *Before 10:00 AM*: Share the temporal notes and tuning fork schematics memorized from Ancient Kaelen at the Sanctum (Hex 14,13).
 * **Memorized Loop Knowledge**: Deciphers the **Tachyonic Calibration Cipher**—a memorized mathematical passphrase that allows the party to bypass the temporal fog at **The Sanctum (`Hex 14, 13`)** and convinces **Ancient Kaelen** to accelerate his forging of the **Chronomancy Tuning Fork** the moment the party arrives!
@@ -2226,10 +2243,13 @@ After the party defeats the **Rakshasa (Boss 3)** and heals the **True Angel** a
 3. **`05:45–05:59 AM` — Breakneck Flight, Aerial Discovery of the Burning Book & Crashing Into the Clocktower Belfry (`Hex 8, 10`)**:
    * **⭐ Aerial Breakthrough over Hex (7, 10) — The Tiny Fire & The Lost Burning Book**: As the party and the True Angel hurtle eastbound across the western sky at `05:45 AM`, they gaze down over the dark farmlands of **`Hex (7, 10)`**. Down below, the field is **not** yet engulfed in the vast wildfire that chokes it during the day! Instead, they spot a **tiny fire**—a single isolated spark flickering in the twilight where their earlier selves dropped the **Burning Book** twenty minutes earlier on their way into town! From their aerial vantage point, they clearly spot the exact furrow beside the dry stone irrigation culvert where the book landed. Armed with this visual memory, the party can retrieve the Burning Book on any loop—an essential relic required to unseal the warded gates of the **Spire of the Angel (`Hex 6, 8`)**!
    * **The Belfry Crash**: Carried by the True Angel in a frantic sprint east to reach Beregost before `06:00 AM`, they come in way too fast at **`05:58–05:59 AM`** and **crash straight through the stone balcony of the Clocktower Belfry**, smashing it into the exact pile of rubble they saw on Loop 0!
-4. **`05:59 AM` — Jamming the Bone & Sticking the Clock at `05:59`**:
-   * Scrambling out of the balcony rubble, they jam the **Chronocite Bone** into the Grand Escapement Gear at **`05:59 AM`**, causing the clock and the time loop to lock at `05:59 AM`—which their `06:00 AM` selves are then tasked with climbing up and retrieving at the start of every loop!
-5. **Why Only Memories & Level-Ups Persist**:
-   * Because the loop resets to `06:00 AM` the moment their `06:00 AM` selves pull the bone from the gears, only the party's **memories** and **milestone level-ups** carry across the reset boundary!
+4. **`05:59 AM` — The Dual Self-Sacrifice in the Clocktower Belfry & Locking the Loop**:
+   * Scrambling out of the smashed balcony rubble at **`05:59 AM`**, the party and the True Angel face a harrowing truth: a raw fossilized bone cannot freeze a planar solar convergence on its own, and the `06:00 AM` temporal reset wave will wipe every mind in the valley unless anchored by a living sacrifice.
+   * **The Angel's Sacrifice (Why She Forgets & Crashes in the Ash Grove)**: As the `06:00 AM` temporal wave surges through the belfry, **only one set of minds can be shielded across the reset boundary**. The True Angel throws her wings around the 5 PCs, pouring **100% of her divine grace and memory-warding into their souls** so *they* will retain their memories and milestone levels across every reset—at the cost of **her own memory and restoration**! The temporal backlash hurls her backwards out of the belfry into the northern forest (`Hex 7, 6`), resetting her into the wounded, agonizing Horned Fiend who must be hunted and killed at `11:30 AM` loop after loop until the party saves her.
+   * **The Party's Sacrifice in the Gears**: Simultaneously, to weld the **Chronocite Bone** into the Grand Escapement Gear at `05:59 AM` before the bell strikes, **a PC must thrust their own arm directly into the crushing, white-hot bronze gear teeth** to wedge the bone in place—sacrificing their own flesh and life-force as the clock locks at `05:59 AM` and flashes white into Loop 0! *(When the party wakes at `06:00 AM` holding the dissolving bone, a faint pale scar or phantom ache lingers on that PC's wrist as an eternal echo of the sacrifice that forged the loop.)*
+5. **The Final Showdown (`17:30 PM` at `Hex 6, 8`) — Being the Living "Silver Bridge"**:
+   * Recall Stanza IV of the Codex: *"When the celestial and the fiend are bound within the twin crucibles, the spirit flits across the silver bridge..."*
+   * In the final battle atop the **Spire of the False Angel (`Hex 6, 8`)**, to execute the **Somatic Inversion Touch** and force the Singing Devil out of the Angel's body, **one or more PCs must act as the living "Silver Bridge"**—physically touching both the True Angel and the Singing Devil in the heart of the solar beam so the searing soul-swap passes *through their own mortal bodies* (splitting `8d10` radiant/necrotic feedback across the bridging PCs) to restore the True Angel's form and break the loop forever!
 
 
 ---
@@ -2251,10 +2271,10 @@ The Beregost region features nine explorable subterranean complexes, fortified l
 | **Ash Grove & The Elder Weirwood** | **(7, 6)** | Horned Fiend / True Angel (CR 10) | Inversion Touch Rite / Averting 11:30 Detonation |
 
 ### 14.1 💀 The Sunken Necropolis of Akh-en-Amon (Hex 12, 16 via Waystation 14, 12)
-* **Theme**: Subterranean Desert Tomb & Suncophagus Vault
+* **Theme**: Subterranean Desert Tomb, Suncophagus Vault & The Refusal of Self-Sacrifice
 * **Recommended Level**: Level 8–9 (Boss 2 Milestone)
 * **Boss Threat**: **Mummy Lord (Akh-en-Amon)** (CR 15)
-* **Overview**: Buried beneath centuries of shifting golden sands in the southern desert dunes (`Hex 12, 16`, guided via Zahir's Sandstone Sluice Waystation at `Hex 14, 12`) lies the subterranean crypt of Akh-en-Amon, high solar priest of the fallen dynasty. Sealed within its granite sarcophagus chamber are the ancient Inversion Swap Tablets that detail the forbidden soul-transference battery used by the corrupt arcanist.
+* **Overview**: Buried beneath centuries of shifting golden sands in the southern desert dunes (`Hex 12, 16`, guided via Zahir's Sandstone Sluice Waystation at `Hex 14, 12`) lies the subterranean crypt of Akh-en-Amon, high solar priest of the fallen dynasty. A thousand years ago, when his lush river valley faced a Solar Convergence, Akh-en-Amon **refused to sacrifice himself** in the sacred *Rite of the Sun-Bearer*. Instead, he invented the **Inversion Soul-Swap** (carved on the Golden Alabaster Tablets) to drain the souls of 1,000 of his own citizens into four Solar Braziers—becoming an undying Mummy Lord while the sun vitrified his fertile kingdom into the Southern Desert Dunes. Outside in the sand protrude dozens of vitrified, kneeling citizen statues facing the sealed temple doors with hands outstretched in betrayed trust.
 
 #### Strategic Relics & Campaign Breakthroughs
 - **Golden Alabaster Inversion Tablets**: Hieroglyphic stone tablets detailing soul-transference magic and the **Somatic Inversion Touch**; proves conclusively that the Angel and Devil had their physical forms swapped in the arcanist's battery.
@@ -2268,24 +2288,24 @@ The Beregost region features nine explorable subterranean complexes, fortified l
 
 #### Room-by-Room Layout
 1. **Room 1: The Sifting Sand Descent & Chute**
-   - *Description*: A narrow sandstone shaft drops 40 feet into a cool, shadowed antechamber. Piles of fine, dry sand spill from ceiling vents like continuous hourglasses.
+   - *Description*: A narrow sandstone shaft drops 40 feet into a cool, shadowed antechamber surrounded outside by vitrified statues of kneeling citizens. Piles of fine, dry sand spill from ceiling vents like continuous hourglasses.
    - *Creatures*: 2x Giant Dune Scorpion
    - *Hazard/Trap*: Quicksand Pit: A 15-foot wide depression in the center. Creatures stepping into it sink 2 feet per round (DC 14 Str/Dex check to pull free).
-   - *Secrets/Loot*: Cracked Bas-Relief: A glyph-carved wall depicts a solar priest separating two twin astral spirits with a crystal prism—early foreshadowing of the arcanist's soul battery.
-1. **Room 2: Hall of Canopic Guardians & Scarab Pit**
-   - *Description*: Flanked by eight imposing jackal-headed pillars, this vaulted hallway is lined with alcoves containing clay urns filled with dried bitumen and scarab husks.
+   - *Secrets/Loot*: Cracked Bas-Relief: A glyph-carved wall depicts High Priest Akh-en-Amon shattering his own sacrificial blade at the solar altar and instead siphoning the lifelines of his weeping citizens into his golden sarcophagus—while separating two twin astral spirits with a crystal prism.
+1. **Room 2: Hall of Canopic Guardians & The Betrayed Threshold**
+   - *Description*: Flanked by eight imposing jackal-headed pillars, this vaulted hallway leads toward heavy bronze blast doors that are deeply clawed and scorched *from the outside*. Skeletons of ancient parents and temple guards lie slumped against the exterior of the doors shielding children's bones in the exact postures the party saw in the Beregost crypt on Loop 0—except here, Akh-en-Amon barred the door *from the inside* to save only himself.
    - *Creatures*: 4x Dust Mephit Swarm, 2x Mummy Sentinels
    - *Hazard/Trap*: Tripwire Scythe Trap: DC 15 Perception to spot; DC 14 Dex save or takes 3d8 slashing and DC 13 Con save against mummy rot infection.
    - *Secrets/Loot*: Canopic Urn of Breath: Contains a preserved lung that grants water breathing and immunity to suffocation for 1 hour when inhaled.
-1. **Room 3: Embalming Hall of the Solar Priest (Tablet Archive)**
-   - *Description*: A stone embalming table stained with ancient unguents sits beneath a vaulted ceiling carved with astrological alignments. Stone pedestals hold bronze-bound slate tablets.
+1. **Room 3: Embalming Hall of the Solar Priest & The Curse of Oblivion (Tablet Archive)**
+   - *Description*: A stone embalming table stained with ancient unguents sits beneath a vaulted ceiling carved with astrological alignments and the **Curse of the Oblivion Sands** (which forced Brother Jonas of Ulcaster to burn out his own sanity three years ago so he could carry Stanza I back to Beregost). Stone pedestals hold bronze-bound golden alabaster tablets.
    - *Creatures*: 1x Galeb Duhr Elder
    - *Hazard/Trap*: Solar Rune Glyph: Stepping on the dais without speaking the glyph triggers a 4d10 radiant detonation (DC 15 Dex save for half).
    - *Secrets/Loot*: ⭐ Inversion Swap Tablets: Discovered here! Translating the runes reveals: 'When the celestial and the fiend are bound within the twin crucibles, the spirit flits across the silver bridge—the angel wears the horned crown, while the fiend weeps behind the halo.' This is the party's critical breakthrough!
 1. **Room 4: The Suncophagus Vault of Akh-en-Amon**
-   - *Description*: A massive tiered sanctum dominated by a golden sarcophagus surrounded by four blazing braziers. Ghostly heat ripples distort the air, and necrotic whispers echo from the stone.
+   - *Description*: A massive tiered sanctum dominated by a golden sarcophagus surrounded by four blazing braziers that burn with the trapped, wailing souls of the four junior acolytes Akh-en-Amon forced onto the sacrificial altar in his stead.
    - *Creatures*: 1x Mummy Lord (Akh-en-Amon)
-   - *Hazard/Trap*: Solar Fire Braziers: Four braziers feed the Mummy Lord's magic immunity. Extinguishing each brazier (DC 14 Athletics or water spell) strips 25 max HP from the boss.
+   - *Hazard/Trap*: Solar Fire Braziers (The 4 Sacrificed Acolytes): Four braziers feed the Mummy Lord's magic immunity. Extinguishing each brazier (DC 14 Athletics or water spell) frees an acolyte's spirit and strips 25 max HP from the boss.
    - *Secrets/Loot*: ⭐ Funerary Seal of Akh-en-Amon: Smashing the funerary seal inside the sarcophagus ends the Mummy Lord's rejuvenation for the current loop and opens the inner vault housing the **Golden Alabaster Inversion Tablets**!
 
 ---
@@ -2311,7 +2331,7 @@ The Beregost region features nine explorable subterranean complexes, fortified l
    - *Description*: A steep slope of sheer blue ice descends 60 feet into the mountain's frozen belly. Howling winds funnel freezing mist through the entrance.
    - *Creatures*: 3x Giant Frost Spider
    - *Hazard/Trap*: Slick Surface: Moving faster than half speed requires DC 13 Acrobatics or slip and slide 30 feet down the slope, taking 2d6 bludgeoning.
-   - *Secrets/Loot*: Frozen Mountaineer: An adventurer frozen in the wall clutches 3 vials of Potion of Cold Resistance and climber's crampons.
+   - *Secrets/Loot*: Frozen Dwarvenhold Sapper: Sapper Brom of Dwarvenhold, who triggered a runic avalanche from the *dragon's side* of the pass to seal Rimefang away from Dwarvenhold's nursery halls. Even as he froze solid in the ice wall, he deliberately held his stiff arms outward to offer his **3 vials of Potion of Cold Resistance and climber's crampons** to whoever came after him to slay the wyrm!
 1. **Room 2: The Bottomless Crevasse & Icicle Bridge**
    - *Description*: A sheer 200-foot fissure spans the cavern floor. A single arch of jagged ice bridges the gap, suspended over howling black depths.
    - *Creatures*: 2x Winter Wolf Pack Leader
