@@ -870,6 +870,27 @@
     font-weight: bold;
   }
 
+  /* Clean Black & White Printing when printing the Day 1 Cheat Sheet Tab */
+  @media print {
+    body { background: #ffffff !important; color: #111111 !important; }
+    header, nav, .timeline-bar, .no-print, .modal-overlay { display: none !important; }
+    main { padding: 0 !important; margin: 0 !important; max-width: 100% !important; }
+    #tab-day1.active { display: block !important; }
+    #tab-day1 .card, #tab-day1 .day1-rhyme-box {
+      background: #ffffff !important;
+      color: #111111 !important;
+      border: 1.5px solid #222222 !important;
+      box-shadow: none !important;
+      break-inside: avoid;
+    }
+    #tab-day1 h2, #tab-day1 h3, #tab-day1 strong, #tab-day1 td, #tab-day1 th, #tab-day1 p, #tab-day1 li, #tab-day1 span {
+      color: #111111 !important;
+    }
+    #tab-day1 table { border-collapse: collapse !important; width: 100% !important; font-size: 9.5pt !important; }
+    #tab-day1 th { background: #e9e9e9 !important; border: 1px solid #333333 !important; }
+    #tab-day1 td { background: #ffffff !important; border: 1px solid #444444 !important; }
+  }
+
 </style>
 </head>
 <body>
@@ -899,6 +920,7 @@
   <button class="nav-tab" id="nav-btn-timeline" onclick="switchTab('tab-timeline')">⏳ 12-Hour Timeline</button>
   <button class="nav-tab" id="nav-btn-dungeons" onclick="switchTab('tab-dungeons')">🏰 Dungeons & Lairs</button>
   <button class="nav-tab" id="nav-btn-notebook" onclick="switchTab('tab-notebook')">📔 Majora's Mask Notebook</button>
+  <button class="nav-tab" id="nav-btn-day1" onclick="switchTab('tab-day1')">📋 Day 1 Cheat Sheet</button>
   <button class="nav-tab" id="nav-btn-notes" onclick="switchTab('tab-notes')">📜 Campaign Notes</button>
   <button class="nav-tab" id="nav-btn-misc" onclick="switchTab('tab-misc')">📚 Misc</button>
 </nav>
@@ -1417,6 +1439,263 @@
           <div class="card-body" id="dossier-body">
             <!-- Dynamic Dossier Content -->
           </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- TAB: DAY 1 (LOOP 0) PRINTABLE DM CHEAT SHEET -->
+  <div id="tab-day1" class="tab-pane">
+    <div style="display:flex; flex-direction:column; gap:16px;">
+
+      <!-- Header & Print Actions -->
+      <div class="card" style="border: 2px solid var(--accent-gold); background: linear-gradient(180deg, rgba(210,153,34,0.14) 0%, rgba(22,27,34,1) 100%);">
+        <div class="card-header" style="border-bottom: 1px solid rgba(210,153,34,0.3); padding-bottom: 10px; flex-wrap:wrap; gap:10px;">
+          <div>
+            <h2 style="color:var(--accent-gold); margin:0 0 4px 0; font-size:1.3rem;">📋 Beregost Day 1 (Loop 0) — Printable DM Cheat Sheet</h2>
+            <span class="tag tag-gold">Small Morning Quests • Carnival Games &amp; Rewards • Key True/False Rumors • Old Jonas's Rhyme &amp; Hooks</span>
+          </div>
+          <div class="no-print" style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+            <a href="beregost_day1_cheatsheet_printable.html" target="_blank" class="btn-gold" style="text-decoration:none; background:linear-gradient(180deg, #238636 0%, #196127 100%); border:1px solid #3fb950; color:#fff; padding:7px 14px; border-radius:6px; font-weight:bold; font-size:0.84rem;">🖨️ Open B&amp;W 2-Page Print Sheet ↗️</a>
+            <button class="chip-btn" style="border-color:var(--accent-gold); color:var(--accent-gold); font-weight:bold; padding:7px 12px;" onclick="window.print()">🖨️ Print This Tab</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 1: SMALL FIRST DAY QUESTS & REWARDS -->
+      <div class="card" style="border-left: 4px solid #3fb950;">
+        <div class="card-header">
+          <h3 style="color:#56d364; margin:0;">⚔️ 1. First Day Small Quests &amp; Rewards (05:59 – 11:00 AM)</h3>
+          <span class="tag">Return by 11:00 AM High Sun Muster</span>
+        </div>
+        <div class="card-body" style="padding:12px;">
+          <p style="font-size:0.83rem; color:var(--text-muted); margin:0 0 10px 0;">
+            <strong>Morning Hook:</strong> Bram, Tobias, and Captain Rebecca all remind the party to return to Feldepost Square by <strong>11:00 AM sharp</strong> for the High Sun Muster &amp; 250 gp payout.
+          </p>
+          <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; font-size:0.83rem; text-align:left;">
+              <thead>
+                <tr style="border-bottom:2px solid var(--border-color); background:rgba(0,0,0,0.25); color:var(--text-muted); font-size:0.74rem; text-transform:uppercase;">
+                  <th style="padding:8px;">Quest &amp; Giver</th>
+                  <th style="padding:8px;">When / Where</th>
+                  <th style="padding:8px;">Objective &amp; Quick Stats / DCs</th>
+                  <th style="padding:8px;">Rewards &amp; Clue Seeded</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom:1px solid rgba(48,54,61,0.6);">
+                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>Unjam the Belfry Clock</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Artificer Bram Copperwheel</span></td>
+                  <td style="padding:8px; white-space:nowrap;"><strong>05:59 AM</strong><br/>Clocktower (8,10)</td>
+                  <td style="padding:8px;">Pull the pale <strong>Chronocite Bone</strong> out of the Grand Escapement Gear amid the freshly smashed western balcony rubble so the 06:00 AM bell can ring.</td>
+                  <td style="padding:8px;"><strong>25 gp each</strong> immediately + invited to <strong>11:00 AM Muster</strong> for <strong>250 gp Council Commendation</strong>.<br/><em style="color:var(--accent-cyan);">Clue:</em> Smashed western balcony (Bootstrap Clue #1).</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(48,54,61,0.6);">
+                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>Little Maya's Wooden Thrush</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Little Maya (Age 8)</span></td>
+                  <td style="padding:8px; white-space:nowrap;"><strong>07:15 AM</strong><br/>Municipal Well</td>
+                  <td style="padding:8px;">Maya bumps the bucket and drops her carved wooden thrush 40 ft down the well. Recover via <em>Mage Hand</em>, rope/climb (<strong>DC 10 Athletics</strong>), or diving.</td>
+                  <td style="padding:8px;"><strong>Braided Green Clover Bracelet</strong> (<em>"Don't take it off until the stars come out!"</em>).<br/><em style="color:var(--accent-cyan);">Clue:</em> Whispers golden man at North Gate cast <strong>no shadow</strong> &amp; had backward thumbs.</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(48,54,61,0.6);">
+                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>West: Barleyfield Firebreak</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Tobias Miller (Baker)</span></td>
+                  <td style="padding:8px; white-space:nowrap;"><strong>07:30–10:30 AM</strong><br/>Hex (7, 10) • 1 hr W</td>
+                  <td style="padding:8px;">Help Old Farmer Branden stop the wildfire from jumping into Tobias's grain shed: defeat <strong>2× Cinder Mephits</strong> (CR 1/2, AC 12, HP 22) &amp; chop 60-ft cedar windbreak (<strong>3× DC 13 Athletics</strong>, 30 dmg, or <em>Create Water</em>).</td>
+                  <td style="padding:8px;"><strong>Baker's Warmth Loaf</strong> (+5 Temp HP &amp; Cold Resistance) + <strong>Subterranean Flour-Chute Key</strong> (plus free morning rolls: +5 Temp HP).<br/><em style="color:var(--accent-cyan);">Clue:</em> Blaze began at 05:25 AM from a dropped glowing book.</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(48,54,61,0.6);">
+                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>South: Cornfield Scarecrow</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Farmer Bran / Capt. Rebecca</span></td>
+                  <td style="padding:8px; white-space:nowrap;"><strong>07:30–10:30 AM</strong><br/>Hex (8, 11) • 1 hr S</td>
+                  <td style="padding:8px;">Rescue 16-year-old apprentice Young Tom trapped in a wicker crib by an animated <strong>Cornfield Scarecrow</strong> (CR 1, AC 11, HP 36, <strong>Vulnerable to Fire</strong>, DC 11 Wis save vs paralyzing claws).</td>
+                  <td style="padding:8px;"><strong>Ivory-Carved Cornucopia Whistle</strong> + wheel of smoked solstice cheddar.<br/><em style="color:var(--accent-cyan);">Clue:</em> Scarecrow twitched alive at dawn after a sulfurous chime from the Southern Desert.</td>
+                </tr>
+                <tr>
+                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>East: Highway Patrol &amp; Snirk</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Captain Rebecca Thorne</span></td>
+                  <td style="padding:8px; white-space:nowrap;"><strong>08:30–10:30 AM</strong><br/>Hex (9, 10) • 1 hr E</td>
+                  <td style="padding:8px;">Check on Corporal Harek's 3-guard patrol holding <strong>Snirk the Goblin Scout</strong> (CR 1/4, AC 15, HP 7) dangling upside-down in a boar snare. Interrogate via <strong>DC 10 Persuasion/Intimidation</strong> or pastry bribe.</td>
+                  <td style="padding:8px;"><strong>Flask of Spiced Dwarven Apple Cider</strong> + militia voucher (plus Rebecca's Jovial Juggler lodging vouchers).<br/><em style="color:var(--accent-cyan);">Clue:</em> Snirk's clan fled because <strong>White Dragon Rimefang</strong> woke on Frostpeak (Hex 17, 10)!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 2: EARLY MORNING CARNIVAL GAMES & REWARDS -->
+      <div class="card" style="border-left: 4px solid var(--accent-gold);">
+        <div class="card-header">
+          <h3 style="color:var(--accent-gold); margin:0;">🎪 2. Early Morning Solstice Carnival Games &amp; Rewards (06:30 – 08:30 AM)</h3>
+          <span class="tag tag-gold">Base of Church &amp; Juggler Plaza • Open to All PCs</span>
+        </div>
+        <div class="card-body" style="padding:12px;">
+          <div style="overflow-x:auto;">
+            <table style="width:100%; border-collapse:collapse; font-size:0.83rem; text-align:left;">
+              <thead>
+                <tr style="border-bottom:2px solid var(--border-color); background:rgba(0,0,0,0.25); color:var(--text-muted); font-size:0.74rem; text-transform:uppercase;">
+                  <th style="padding:8px;">Carnival Booth &amp; Host</th>
+                  <th style="padding:8px;">Location</th>
+                  <th style="padding:8px;">Challenge &amp; Skill Check</th>
+                  <th style="padding:8px;">Prize / Mechanical Reward</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom:1px solid rgba(48,54,61,0.6);">
+                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>Solar Bullseye of Lathander</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Sister Althea</span></td>
+                  <td style="padding:8px;">Temple Garden (Base of Church)</td>
+                  <td style="padding:8px;">Shoot blunted sun-crested arrows at a swinging brass medallion 40 ft away: <strong>DC 13 Ranged Attack or Dexterity</strong>.</td>
+                  <td style="padding:8px;"><strong>Ribbon of the Morninglord</strong> — +1 bonus to one Death Saving Throw or Radiant damage/save check.</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(48,54,61,0.6);">
+                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>Blindfold Herb Tasting</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Old Granny Morwen</span></td>
+                  <td style="padding:8px;">Herb Stall (Base of Church)</td>
+                  <td style="padding:8px;">Identify mountain thyme, frost-root bark, and sun-blossom blindfolded by scent &amp; pinch-taste: <strong>DC 13 Medicine or Nature</strong>.</td>
+                  <td style="padding:8px;"><strong>Tin of Morwen's Mint &amp; Lavender Lozenges</strong> — Restores 1d4 HP &amp; grants Advantage on 1 Con save vs Heat Exhaustion.</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(48,54,61,0.6);">
+                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>Anvil-Ringer Sledgehammer</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Taerom Thunderhammer</span></td>
+                  <td style="padding:8px;">Smithy Courtyard</td>
+                  <td style="padding:8px;">Swing a 30-lb iron sledge onto a steel rocker piston to ring the Great Forge Bell 25 ft up: <strong>DC 14 Strength (Athletics)</strong>.</td>
+                  <td style="padding:8px;"><strong>Thunderhammer Whetstone</strong> — Grants +1 bonus damage on the first weapon strike after honing.</td>
+                </tr>
+                <tr style="border-bottom:1px solid rgba(48,54,61,0.6);">
+                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>Honey-Currant Pie Sprint</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Tobias Miller</span></td>
+                  <td style="padding:8px;">Bakery Pavilion</td>
+                  <td style="padding:8px;">Slalom through cheering festival-goers balancing a scorching hot platter of 6 glazed buns: <strong>DC 12 Con Save or DC 13 Acrobatics/Sleight of Hand</strong>.</td>
+                  <td style="padding:8px;"><strong>Baker's Apron Pin &amp; Warm Currant Buns</strong> — Restores +2 HP on a Short Rest (and earns cheers from the town children).</td>
+                </tr>
+                <tr>
+                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>Solstice Rhyme Duel &amp; Baton Catch</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Elorion the Bard &amp; Pip</span></td>
+                  <td style="padding:8px;">Jovial Juggler Plaza Stage</td>
+                  <td style="padding:8px;">Trade rapid-fire festival couplets while catching spinning wooden batons in tempo: <strong>DC 13 Performance or Acrobatics</strong>.</td>
+                  <td style="padding:8px;"><strong>Bardic Solstice Token</strong> (1× +1d6 Bardic Inspiration to any d20 roll) + <strong>Counter-Harmony of the Morning</strong> sheet music.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECTION 3: KEY RUMORS (TRUE & FALSE) + OLD JONAS'S RHYME & HOOKS -->
+      <div class="card" style="border-left: 4px solid #bc8cff;">
+        <div class="card-header">
+          <h3 style="color:#d2a8ff; margin:0;">🗣️ 3. Key Rumors to Seed (True &amp; False) + Old Jonas's 8-Line Rhyme</h3>
+          <span class="tag tag-purple">6 True • 4 False • Old Jonas Hooks</span>
+        </div>
+        <div class="card-body" style="padding:12px; display:flex; flex-direction:column; gap:14px;">
+
+          <!-- Old Jonas's Rhyme & Trigger Hooks -->
+          <div class="day1-rhyme-box" style="background:linear-gradient(90deg, rgba(210,153,34,0.16) 0%, rgba(22,27,34,0.96) 100%); border:2px solid var(--accent-gold); border-radius:8px; padding:14px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:10px;">
+              <strong style="color:var(--accent-gold); font-size:0.96rem;"><input type="checkbox" class="no-print" style="margin-right:6px;">📜 OLD JONAS THE RHYMER — THE 8-LINE SOLSTICE CHANT &amp; TRIGGER HOOKS</strong>
+              <span class="badge badge-gold">Must-Hear Clue</span>
+            </div>
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:16px; align-items:start;">
+              <div style="font-family:Georgia, serif; font-style:italic; font-size:0.94rem; line-height:1.6; color:#ffffff; border-left:3px solid var(--accent-gold); padding:8px 12px; background:rgba(0,0,0,0.3); border-radius:4px;">
+                "With six chimes the belfry wakes,<br/>
+                But doom is coming with no escape.<br/>
+                Only one narrow path can provide salvation,<br/>
+                Threading this needle stops the devil's elation.<br/><br/>
+                First east to the ice, then south to the sand,<br/>
+                Find the path to stop the devil's hand.<br/>
+                Blame not the angel for he is confused,<br/>
+                Led astray by the fiendish ruse."
+              </div>
+              <div style="font-size:0.83rem; color:#c9d1d9; line-height:1.5;">
+                <strong style="color:var(--accent-gold); display:block; margin-bottom:6px;">3 Natural Hooks for WHEN the Party Hears the Rhyme:</strong>
+                <ul style="margin:0; padding-left:18px; display:flex; flex-direction:column; gap:6px;">
+                  <li><strong>Hook A — 07:30 AM at Tobias's Bakery Porch (Recommended):</strong> While the party grabs warm honey-currant rolls from Tobias, haggard Old Jonas shuffles up shivering in his patched quilt. Tobias gently hands him a free roll; Jonas weeps into the bread and recites all 8 lines straight to the party while Tobias sighs (<em>"Poor fellow—never quite right since he wandered back from the southern desert"</em>).</li>
+                  <li><strong>Hook B — 07:15 AM at the Municipal Well (Right After Maya's Thrush):</strong> As Little Maya ties the green clover bracelet onto a PC's wrist, Old Jonas (slumped against the stone well rim) catches the hem of a PC's cloak, stares wide-eyed up at the clocktower, and chants all 8 lines in a cracked singsong voice.</li>
+                  <li><strong>Hook C — 11:00–11:30 AM at the High Sun Muster (Failsafe):</strong> If the party missed him all morning, the instant the <strong>11:30 AM northern explosion</strong> rattles Beregost's windows, Jonas scrambles onto the stone well rim pointing north and shouts the 8 lines over the panicked square!</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- True Rumors -->
+          <div>
+            <h4 style="color:#56d364; margin:0 0 8px 0; font-size:0.95rem;">✅ A. Key True Rumors (Make Sure the Party Hears These)</h4>
+            <div style="overflow-x:auto;">
+              <table style="width:100%; border-collapse:collapse; font-size:0.82rem; text-align:left;">
+                <thead>
+                  <tr style="border-bottom:2px solid var(--border-color); background:rgba(0,0,0,0.25); color:var(--text-muted); font-size:0.73rem; text-transform:uppercase;">
+                    <th style="padding:7px; width:23%;">Rumor &amp; Speaker</th>
+                    <th style="padding:7px; width:49%;">What Townsfolk Say (Read-Aloud / Delivery)</th>
+                    <th style="padding:7px; width:28%;">Secret DM Truth / Hook</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom:1px solid rgba(48,54,61,0.5);">
+                    <td style="padding:7px;"><input type="checkbox" class="no-print" style="margin-right:5px;"><span class="tag" style="border-color:#3fb950; color:#56d364;">TRUE</span> <strong>Frostpeak Wyrm &amp; Djinn's Wish</strong><br/><span style="color:var(--text-muted); font-size:0.75rem;">Taerom / Barnaby</span></td>
+                    <td style="padding:7px;">"Feel that icy draft off the Cloud Peaks? Thane Torvald sent word at dawn that <strong>Rimefang</strong>—the great white dragon—has woken on Frostpeak! Legend says frozen under his hoard lies a Netherese vault bound to <strong>Zephyrus, Prince of the Djinn</strong>, whose <strong>Wish</strong> can freeze fate itself."</td>
+                    <td style="padding:7px;">Points to <strong>Boss 1: Rimefang</strong> at Hex (17, 10) &amp; Djinni Zephyrus's Wish / Nimbus Cloud.</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(48,54,61,0.5);">
+                    <td style="padding:7px;"><input type="checkbox" class="no-print" style="margin-right:5px;"><span class="tag" style="border-color:#3fb950; color:#56d364;">TRUE</span> <strong>05:45 AM Caravel Bone Heist</strong><br/><span style="color:var(--text-muted); font-size:0.75rem;">Tobias Miller</span></td>
+                    <td style="padding:7px;">"A terrified fish-carter fled up the west road swearing that at <strong>5:45 AM</strong> in the sea fog, flying thieves with a <strong>'hulking winged figure'</strong> dropped onto the Commodore's beached caravel, snatched a strange pale bone from his lockbox, and rocketed straight east toward Beregost!"</td>
+                    <td style="padding:7px;"><strong>Early Bootstrap Clue #2!</strong> Those 05:45 AM winged thieves were the future party &amp; True Angel! Also points to Hex (5, 11).</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(48,54,61,0.5);">
+                    <td style="padding:7px;"><input type="checkbox" class="no-print" style="margin-right:5px;"><span class="tag" style="border-color:#3fb950; color:#56d364;">TRUE</span> <strong>Weeping Weirwood in the Briars</strong><br/><span style="color:var(--text-muted); font-size:0.75rem;">Woodcutter Torben</span></td>
+                    <td style="padding:7px;">"Don't walk north to the Ash Grove today! A huntsman saw a massive <strong>horned fiend</strong> fall from the sky at daybreak like a dying star. The druids sealed the trails—and the sacred Great Weirwood started weeping red sap smelling of <strong>temple frankincense and roses</strong>."</td>
+                    <td style="padding:7px;">Points to the <strong>True Angel</strong> (in the fiend's body) at Ash Grove Hex (7, 6) &amp; seeds the holy scent clue.</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(48,54,61,0.5);">
+                    <td style="padding:7px;"><input type="checkbox" class="no-print" style="margin-right:5px;"><span class="tag" style="border-color:#3fb950; color:#56d364;">TRUE</span> <strong>The Shadowless Arch-Mage</strong><br/><span style="color:var(--text-muted); font-size:0.75rem;">Constable Renwick</span></td>
+                    <td style="padding:7px;">"A fine noble rode through the North Gate just after six calling himself <strong>'Lord Aurelius the Radiant'</strong> in spun-gold robes smelling of cinnamon—yet when he stepped into direct morning glare, his boots <strong>didn't cast a single speck of shadow</strong>."</td>
+                    <td style="padding:7px;"><strong>Rakshasa Tell #1!</strong> Lord Ravana's celestial illusion fails physical optics (no shadow).</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(48,54,61,0.5);">
+                    <td style="padding:7px;"><input type="checkbox" class="no-print" style="margin-right:5px;"><span class="tag" style="border-color:#3fb950; color:#56d364;">TRUE</span> <strong>Sunken Dunes &amp; Kneeling Statues</strong><br/><span style="color:var(--text-muted); font-size:0.75rem;">Zahir / South Gate</span></td>
+                    <td style="padding:7px;">"The south winds carry ash and old incense. Shifting dunes receded overnight uncovering alabaster obelisks and a sunken necropolis ringed by <strong>kneeling sandstone statues</strong> facing the sealed doors—no scorpion or fox dares near it."</td>
+                    <td style="padding:7px;">Points to <strong>Boss 2: Mummy Lord Akh-en-Amon</strong> at Hex (12, 16) &amp; his betrayal of self-sacrifice.</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:7px;"><input type="checkbox" class="no-print" style="margin-right:5px;"><span class="tag" style="border-color:#3fb950; color:#56d364;">TRUE</span> <strong>Scalding Tides &amp; Iron Chains</strong><br/><span style="color:var(--text-muted); font-size:0.75rem;">Salty Hal (Feldepost's)</span></td>
+                    <td style="padding:7px;">"Pulled my crab pots off the western cliffs at dawn—the sea water was warm as bath water and tasted like lightning sparks! Deep beneath the keel, you could hear miles of sunken <strong>iron anchor chains</strong> groaning against the reef."</td>
+                    <td style="padding:7px;">Points to <strong>Boss 4: Storm Giant Otheus</strong> bound beneath the western sea at Hex (5, 11).</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- False Rumors -->
+          <div>
+            <h4 style="color:#ff7b72; margin:0 0 8px 0; font-size:0.95rem;">🎭 B. Key False Rumors / Tall Tales (With Secret Breadcrumbs for Later Loops)</h4>
+            <div style="overflow-x:auto;">
+              <table style="width:100%; border-collapse:collapse; font-size:0.82rem; text-align:left;">
+                <thead>
+                  <tr style="border-bottom:2px solid var(--border-color); background:rgba(0,0,0,0.25); color:var(--text-muted); font-size:0.73rem; text-transform:uppercase;">
+                    <th style="padding:7px; width:23%;">Tall Tale &amp; Speaker</th>
+                    <th style="padding:7px; width:45%;">What Townsfolk Claim (False!)</th>
+                    <th style="padding:7px; width:32%;">Why It's False + Hidden Kernel of Truth</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="border-bottom:1px solid rgba(48,54,61,0.5);">
+                    <td style="padding:7px;"><input type="checkbox" class="no-print" style="margin-right:5px;"><span class="tag" style="border-color:#f85149; color:#ff7b72;">FALSE</span> <strong>Sun God's Golden Egg &amp; Smashed Balcony</strong><br/><span style="color:var(--text-muted); font-size:0.75rem;">Pip the Urchin</span></td>
+                    <td style="padding:7px;">"Look at that freshly smashed Clocktower balcony! My cousin swears at <strong>5:59 AM</strong> Lathander's giant celestial rooster crashed through the stone rail and laid a solid gold egg in the gears—touch it at noon for demigod strength!"</td>
+                    <td style="padding:7px;"><strong>False:</strong> No rooster or egg (touching gears at noon deals 2d6 fire).<br/><strong>Truth (Bootstrap Clue #1):</strong> What crashed into the balcony at 05:59 AM was the future party &amp; True Angel!</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(48,54,61,0.5);">
+                    <td style="padding:7px;"><input type="checkbox" class="no-print" style="margin-right:5px;"><span class="tag" style="border-color:#f85149; color:#ff7b72;">FALSE</span> <strong>Dragon-Tamer's Silver Whistle</strong><br/><span style="color:var(--text-muted); font-size:0.75rem;">Old Gorm (Red Sheaf)</span></td>
+                    <td style="padding:7px;">"Hidden behind the vintage casks in the Red Sheaf wine cellar is founder Menas's silver whistle. Blow three shrill notes and any Cloud Peaks dragon must land and kneel!"</td>
+                    <td style="padding:7px;"><strong>False:</strong> White dragons cannot be tamed by whistles.<br/><strong>Truth:</strong> DC 13 Investigation behind casks finds a smuggler wall hiding <em>Dragon-Fire Brandy</em> (Potion of Fire Resistance) &amp; a secret mountain chimney map.</td>
+                  </tr>
+                  <tr style="border-bottom:1px solid rgba(48,54,61,0.5);">
+                    <td style="padding:7px;"><input type="checkbox" class="no-print" style="margin-right:5px;"><span class="tag" style="border-color:#f85149; color:#ff7b72;">FALSE</span> <strong>Witch of the Southern Oasis</strong><br/><span style="color:var(--text-muted); font-size:0.75rem;">Selim (South Gate)</span></td>
+                    <td style="padding:7px;">"Bring a bouquet of fresh Temple sun-lilies to an immortal sorceress by an azure pool in the southern dunes before noon and she'll grant you an elixir of youth and three wishes!"</td>
+                    <td style="padding:7px;"><strong>False:</strong> No witch or azure pool—just a heat mirage.<br/><strong>Truth:</strong> Fresh Temple sun-lilies carried south align their golden pollen like a compass pointing straight to the Sunken Necropolis (Hex 12, 16).</td>
+                  </tr>
+                  <tr>
+                    <td style="padding:7px;"><input type="checkbox" class="no-print" style="margin-right:5px;"><span class="tag" style="border-color:#f85149; color:#ff7b72;">FALSE</span> <strong>Siren Song of the Western Cliffs</strong><br/><span style="color:var(--text-muted); font-size:0.75rem;">Turlough (West Gate)</span></td>
+                    <td style="padding:7px;">"Every solstice evening, a romantic sea siren perches on the western cliffs singing so sweetly that sailors leap from their decks into the surf!"</td>
+                    <td style="padding:7px;"><strong>False:</strong> Not a siren—it is the <strong>Singing Devil</strong> atop Spire (Hex 6, 8) pulling down the sun.<br/><strong>Truth:</strong> Mentioning "cliff singing" to Elorion inspires his <em>Counter-Harmonic Chime</em>.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -2852,6 +3131,21 @@
             <button class="chip-btn" onclick="openSolsticeProphecyModal();">📜 Open Solstice Prophecy Modal</button>
             <button class="chip-btn" onclick="switchTab('tab-timeline');">⏳ Jump to 12-Hour Timeline</button>
             <button class="chip-btn" onclick="switchTab('tab-map');">🗺️ Jump to Wilderness Map</button>
+          </div>
+          <!-- 2-Host Session 1 DM Study Podcast Player -->
+          <div style="margin-top:14px; background:linear-gradient(90deg, rgba(137,87,229,0.18) 0%, rgba(22,27,34,0.95) 100%); border:2px solid #bc8cff; border-left:5px solid #d2a8ff; border-radius:8px; padding:12px 14px; box-shadow:0 4px 14px rgba(0,0,0,0.4);">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:6px;">
+              <div>
+                <strong style="color:#d2a8ff; font-size:0.95rem;">🎙️ Session 1 (Loop 0) Two-Host DM Prep Podcast: <code>Session_1_DM_Prep_Podcast.mp3</code> (20:26)</strong>
+                <div style="font-size:0.76rem; color:var(--text-muted); margin-top:2px;">NotebookLM-Style Deep Dive • Covers Town Motivation, All 15+ NPCs, Initial Quests, Mysteries, Heat Escalation, Evacuations &amp; Crypt Self-Sacrifice</div>
+              </div>
+              <span class="badge badge-gold">2-Host Audio Deep Dive</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-top:8px;">
+              <audio controls preload="metadata" src="Session_1_DM_Prep_Podcast.mp3" style="height:38px; flex:1; min-width:260px;"></audio>
+              <a href="Session_1_DM_Prep_Podcast.mp3" download="Session_1_DM_Prep_Podcast.mp3" class="chip-btn" style="text-decoration:none; border-color:#bc8cff; color:#d2a8ff; font-weight:bold; padding:7px 12px;">⬇️ Download Podcast MP3 (18.7 MB)</a>
+              <a href="Session_1_DM_Study_Guide.md" target="_blank" class="chip-btn" style="text-decoration:none; border-color:#58a6ff; color:#79c0ff; font-weight:bold; padding:7px 12px;">📖 Open Study Guide (.md)</a>
+            </div>
           </div>
         </div>
       </div>
@@ -8903,9 +9197,9 @@ function switchTab(tabId) {
     return;
   }
 
-  // Timeline slider visibility management: hidden strictly on Campaign Notes
+  // Timeline slider visibility management: hidden strictly on Campaign Notes & Day 1 Cheat Sheet
   const timelineBar = document.querySelector('.timeline-bar');
-  if (timelineBar) timelineBar.style.display = (tabId === 'tab-notes') ? 'none' : '';
+  if (timelineBar) timelineBar.style.display = (tabId === 'tab-notes' || tabId === 'tab-day1') ? 'none' : '';
   if (typeof document !== 'undefined' && document.body && document.body.classList) {
     document.body.classList.toggle('notes-active', tabId === 'tab-notes');
   }
@@ -8944,6 +9238,7 @@ function switchTab(tabId) {
     "tab-timeline": "nav-btn-timeline",
     "tab-dungeons": "nav-btn-dungeons",
     "tab-notebook": "nav-btn-notebook",
+    "tab-day1": "nav-btn-day1",
     "tab-notes": "nav-btn-notes",
     "tab-misc": "nav-btn-misc"
   };
@@ -31836,6 +32131,19 @@ function buildSoundtrackDeckHTML(contextPrefix) {
 
   const showCryptCard = activeSoundtrackFilter === "all" || activeSoundtrackFilter === "crypt" || activeSoundtrackFilter === "apocalypse";
   const cryptFeatureCardHtml = showCryptCard ? `
+    <div style="background:linear-gradient(90deg, rgba(137,87,229,0.16) 0%, rgba(22,27,34,0.96) 100%); border:2px solid #bc8cff; border-left:5px solid #d2a8ff; border-radius:8px; padding:14px 16px; margin-bottom:14px; box-shadow:0 4px 16px rgba(0,0,0,0.45);">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:6px;">
+        <div>
+          <strong style="color:#d2a8ff; font-size:0.98rem;">🎙️ DM Prep Audio Overview Podcast: <code>Session_1_DM_Prep_Podcast.mp3</code> (20:26)</strong>
+          <div style="font-size:0.75rem; color:var(--text-muted); margin-top:2px;">Two-Host Deep Dive Discussion • Beregost Motivation, NPCs, Initial Quests, Heat Escalation, Evacuations &amp; Crypt Self-Sacrifice</div>
+        </div>
+        <span class="badge badge-gold">2-Host DM Study Podcast</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-top:8px;">
+        <audio controls preload="metadata" src="Session_1_DM_Prep_Podcast.mp3" style="height:38px; flex:1; min-width:260px;"></audio>
+        <a href="Session_1_DM_Prep_Podcast.mp3" download="Session_1_DM_Prep_Podcast.mp3" class="chip-btn" style="text-decoration:none; border-color:#bc8cff; color:#d2a8ff; font-weight:bold; padding:7px 12px;">⬇️ Download Podcast MP3 (18.7 MB)</a>
+      </div>
+    </div>
     <div style="background:linear-gradient(90deg, rgba(248,81,73,0.16) 0%, rgba(22,27,34,0.96) 100%); border:2px solid #f85149; border-left:5px solid #ff7b72; border-radius:8px; padding:14px 16px; margin-bottom:16px; box-shadow:0 4px 16px rgba(0,0,0,0.45);">
       <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:8px;">
         <div>

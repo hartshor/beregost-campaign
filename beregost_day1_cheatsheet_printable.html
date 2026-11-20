@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beregost Day 1 (Loop 0) Printable DM Cheat Sheet</title>
+  <style>
+    @page {
+      size: letter portrait;
+      margin: 0.45in;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #111;
+      background: #f4f1ea;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.38;
+      font-size: 10.2pt;
+    }
+    .sheet {
+      max-width: 8.2in;
+      margin: 0 auto;
+      background: #fff;
+      padding: 0.4in 0.45in;
+      border: 2px solid #222;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+    }
+    .toolbar {
+      max-width: 8.2in;
+      margin: 0 auto 14px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .btn {
+      background: #111;
+      color: #fff;
+      border: 1px solid #111;
+      padding: 8px 16px;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .btn-outline {
+      background: #fff;
+      color: #111;
+    }
+    header {
+      border-bottom: 3px double #111;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 16pt;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      font-style: italic;
+      font-size: 9.5pt;
+      color: #333;
+    }
+    h2 {
+      font-size: 11.8pt;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      border-bottom: 1.5px solid #111;
+      padding-bottom: 3px;
+      margin: 14px 0 8px 0;
+      page-break-after: avoid;
+    }
+    h3 {
+      font-size: 10.3pt;
+      margin: 10px 0 5px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      page-break-after: avoid;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+      font-size: 9.4pt;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 5px 7px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      background: #eaeaea;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 8.2pt;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+    .chk {
+      display: inline-block;
+      width: 11px;
+      height: 11px;
+      border: 1.4px solid #111;
+      margin-right: 4px;
+      vertical-align: -1px;
+    }
+    .tag {
+      display: inline-block;
+      border: 1px solid #222;
+      padding: 0 4px;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 2px;
+      margin-right: 4px;
+    }
+    .tag-false {
+      background: #eee;
+      border-style: dashed;
+    }
+    .rhyme-box {
+      border: 2px solid #111;
+      padding: 10px 14px;
+      margin-top: 10px;
+      background: #fafafa;
+      page-break-inside: avoid;
+    }
+    .rhyme-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.25fr;
+      gap: 14px;
+      align-items: start;
+      margin-top: 6px;
+    }
+    .poem {
+      font-style: italic;
+      font-size: 10pt;
+      line-height: 1.5;
+      border-left: 3px solid #111;
+      padding-left: 10px;
+      margin: 0;
+    }
+    .hooks {
+      margin: 0;
+      padding-left: 16px;
+      font-size: 9.2pt;
+    }
+    .hooks li {
+      margin-bottom: 5px;
+    }
+    .page-break {
+      page-break-before: always;
+    }
+    .small-note {
+      font-size: 8.6pt;
+      color: #333;
+      margin: 0 0 6px 0;
+    }
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .toolbar { display: none; }
+      .sheet {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <a href="index.html" class="btn btn-outline">← Back to Campaign Companion</a>
+    <div>
+      <button class="btn" onclick="window.print()">🖨️ Print Day 1 Cheat Sheet</button>
+    </div>
+  </div>
+
+  <div class="sheet">
+    <header>
+      <h1>Beregost Day 1 (Loop 0) — DM Table Cheat Sheet</h1>
+      <div class="subtitle">Small Morning Quests • Carnival Games &amp; Rewards • Key Rumors &amp; Old Jonas's Rhyme</div>
+    </header>
+
+    <!-- SECTION 1: SMALL DAY 1 QUESTS -->
+    <h2>1. First Day Small Quests &amp; Rewards (05:59 – 11:00 AM)</h2>
+    <p class="small-note"><strong>Town Hook:</strong> Bram, Tobias, and Captain Rebecca all remind the party to return to Feldepost Square by <strong>11:00 AM sharp</strong> for the High Sun Muster &amp; 250 gp payout.</p>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:22%;">Quest &amp; Giver</th>
+          <th style="width:14%;">When / Where</th>
+          <th style="width:36%;">Objective &amp; Quick Stats / DCs</th>
+          <th style="width:28%;">Rewards &amp; Clue Seeded</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="chk"></span><strong>Unjam the Belfry Clock</strong><br/><em>Artificer Bram Copperwheel</em></td>
+          <td><strong>05:59 AM</strong><br/>Clocktower Belfry (Hex 8,10)</td>
+          <td>Pull the pale <strong>Chronocite Bone</strong> out of the Grand Escapement Gear amid the freshly smashed western balcony rubble so the 06:00 AM bell can ring.</td>
+          <td><strong>25 gp each</strong> immediately + invited to <strong>11:00 AM High Sun Muster</strong> for <strong>250 gp Council Commendation</strong>.<br/><em>Clue:</em> Smashed western balcony (Bootstrap Clue #1).</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>Little Maya's Wooden Thrush</strong><br/><em>Little Maya (Age 8)</em></td>
+          <td><strong>07:15 AM</strong><br/>Municipal Well (Feldepost Sq.)</td>
+          <td>Maya bumps the bucket and drops her carved wooden thrush 40 ft down the well. Recover via <em>Mage Hand</em>, rope/climb (<strong>DC 10 Athletics</strong>), or diving.</td>
+          <td><strong>Braided Green Clover Bracelet</strong> (<em>"Don't take it off until the stars come out!"</em>).<br/><em>Clue:</em> Whispers the golden man at the North Gate cast <strong>no shadow</strong> &amp; had backward thumbs.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>West: Barleyfield Firebreak</strong><br/><em>Tobias Miller (Baker)</em></td>
+          <td><strong>07:30–10:30 AM</strong><br/>Hex (7, 10)<br/><em>1 hr West</em></td>
+          <td>Help Old Farmer Branden stop the wildfire from jumping the ditch into Tobias's grain shed: defeat <strong>2× Cinder Mephits</strong> (CR 1/2, AC 12, HP 22) &amp; chop 60-ft cedar windbreak (<strong>3× DC 13 Athletics</strong>, 30 dmg, or <em>Create Water</em>).</td>
+          <td><strong>Baker's Warmth Loaf</strong> (+5 Temp HP &amp; Cold Resistance) + <strong>Subterranean Flour-Chute Key</strong> (plus free morning rolls: +5 Temp HP).<br/><em>Clue:</em> Blaze began at 05:25 AM from a dropped glowing book.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>South: Cornfield Scarecrow</strong><br/><em>Farmer Bran / Capt. Rebecca</em></td>
+          <td><strong>07:30–10:30 AM</strong><br/>Hex (8, 11)<br/><em>1 hr South</em></td>
+          <td>Rescue 16-year-old apprentice Young Tom trapped in a wicker crib by an animated <strong>Cornfield Scarecrow</strong> (CR 1, AC 11, HP 36, <strong>Vulnerable to Fire</strong>, DC 11 Wis save vs paralyzing claws).</td>
+          <td><strong>Ivory-Carved Cornucopia Whistle</strong> + wheel of smoked solstice cheddar.<br/><em>Clue:</em> Scarecrow twitched alive at dawn after a sulfurous chime echoed from the Southern Desert.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>East: Highway Patrol &amp; Snirk</strong><br/><em>Captain Rebecca Thorne</em></td>
+          <td><strong>08:30–10:30 AM</strong><br/>Hex (9, 10)<br/><em>1 hr East</em></td>
+          <td>Check on Corporal Harek's 3-guard patrol holding <strong>Snirk the Goblin Scout</strong> (CR 1/4, AC 15, HP 7) dangling upside-down in a boar snare. Interrogate via <strong>DC 10 Persuasion/Intimidation</strong> or a pastry bribe.</td>
+          <td><strong>Flask of Spiced Dwarven Apple Cider</strong> + signed militia voucher (plus Rebecca's Jovial Juggler lodging vouchers).<br/><em>Clue:</em> Snirk's clan fled because <strong>White Dragon Rimefang</strong> woke on Frostpeak (Hex 17, 10)!</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SECTION 2: EARLY MORNING CARNIVAL GAMES -->
+    <h2>2. Early Morning Solstice Carnival Games &amp; Rewards (06:30 – 08:30 AM)</h2>
+    <p class="small-note">Set up on the lawn at the base of the Temple of Lathander and Jovial Juggler Plaza; open to every PC.</p>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:24%;">Carnival Booth &amp; Host</th>
+          <th style="width:17%;">Location</th>
+          <th style="width:29%;">Challenge &amp; Skill Check</th>
+          <th style="width:30%;">Prize / Mechanical Reward</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="chk"></span><strong>Solar Bullseye of Lathander</strong><br/><em>Sister Althea</em></td>
+          <td>Temple Garden (Base of Church)</td>
+          <td>Shoot blunted sun-crested arrows at a swinging brass medallion 40 ft away: <strong>DC 13 Ranged Attack or Dexterity</strong>.</td>
+          <td><strong>Ribbon of the Morninglord</strong> — +1 bonus to one Death Saving Throw or Radiant damage/save check.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>Blindfold Herb Tasting</strong><br/><em>Old Granny Morwen</em></td>
+          <td>Herb Stall (Base of Church)</td>
+          <td>Identify mountain thyme, frost-root bark, and sun-blossom blindfolded by scent &amp; pinch-taste: <strong>DC 13 Medicine or Nature</strong>.</td>
+          <td><strong>Tin of Morwen's Mint &amp; Lavender Lozenges</strong> — Restores 1d4 HP &amp; grants Advantage on 1 Con save vs Heat Exhaustion.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>Anvil-Ringer Sledgehammer</strong><br/><em>Taerom Thunderhammer</em></td>
+          <td>Smithy Courtyard</td>
+          <td>Swing a 30-lb iron sledge onto a steel rocker piston to ring the Great Forge Bell 25 ft up: <strong>DC 14 Strength (Athletics)</strong>.</td>
+          <td><strong>Thunderhammer Whetstone</strong> — Grants +1 bonus damage on the first weapon strike after honing.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>Honey-Currant Pie Sprint</strong><br/><em>Tobias Miller</em></td>
+          <td>Bakery Pavilion</td>
+          <td>Slalom through cheering festival-goers balancing a scorching hot platter of 6 glazed buns: <strong>DC 12 Con Save or DC 13 Acrobatics/Sleight of Hand</strong>.</td>
+          <td><strong>Baker's Apron Pin &amp; Warm Currant Buns</strong> — Restores +2 HP on a Short Rest (and earns cheers from the town children).</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>Solstice Rhyme Duel &amp; Baton Catch</strong><br/><em>Elorion the Bard &amp; Pip</em></td>
+          <td>Jovial Juggler Plaza Stage</td>
+          <td>Trade rapid-fire festival couplets while catching spinning wooden batons in tempo: <strong>DC 13 Performance or Acrobatics</strong>.</td>
+          <td><strong>Bardic Solstice Token</strong> (1× +1d6 Bardic Inspiration to any d20 roll) + <strong>Counter-Harmony of the Morning</strong> sheet music.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SECTION 3: KEY RUMORS & OLD JONAS'S RHYME -->
+    <h2 class="page-break">3. Key Rumors to Seed (True &amp; False) + Old Jonas's Rhyme</h2>
+
+    <h3>A. Key True Rumors (Make Sure the Party Hears These)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:23%;">Rumor &amp; Speaker</th>
+          <th style="width:49%;">What the Townsfolk Say (Table Delivery)</th>
+          <th style="width:28%;">Secret DM Truth / Hook</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="chk"></span><span class="tag">True</span><strong>Frostpeak Wyrm &amp; Djinn's Wish</strong><br/><em>Taerom / Barnaby</em></td>
+          <td>"Feel that icy draft off the Cloud Peaks? Thane Torvald sent word at dawn that <strong>Rimefang</strong>—the great white dragon—has woken on Frostpeak! Legend says frozen under his hoard lies a Netherese vault bound to <strong>Zephyrus, Prince of the Djinn</strong>, whose <strong>Wish</strong> can freeze fate itself."</td>
+          <td>Points to <strong>Boss 1: Rimefang</strong> at Hex (17, 10) &amp; Djinni Zephyrus's Wish / Nimbus Cloud.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><span class="tag">True</span><strong>05:45 AM Caravel Bone Heist</strong><br/><em>Tobias Miller</em></td>
+          <td>"A terrified fish-carter fled up the west road swearing that at <strong>5:45 AM</strong> in the sea fog, flying thieves with a <strong>'hulking winged figure'</strong> dropped onto the Commodore's beached caravel, snatched a strange pale bone from his lockbox, and rocketed straight east toward Beregost!"</td>
+          <td><strong>Early Bootstrap Clue #2!</strong> Those 05:45 AM winged thieves were the future party &amp; True Angel! Also points to Hex (5, 11).</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><span class="tag">True</span><strong>Weeping Weirwood in the Briars</strong><br/><em>Woodcutter Torben</em></td>
+          <td>"Don't walk north to the Ash Grove today! A huntsman saw a massive <strong>horned fiend</strong> fall from the sky at daybreak like a dying star. The druids sealed the trails—and the sacred Great Weirwood started weeping red sap smelling of <strong>temple frankincense and roses</strong>."</td>
+          <td>Points to the <strong>True Angel</strong> (in the fiend's body) at Ash Grove Hex (7, 6) &amp; seeds the holy scent clue.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><span class="tag">True</span><strong>The Shadowless Arch-Mage</strong><br/><em>Constable Renwick</em></td>
+          <td>"A fine noble rode through the North Gate just after six calling himself <strong>'Lord Aurelius the Radiant'</strong> in spun-gold robes smelling of cinnamon—yet when he stepped into direct morning glare, his boots <strong>didn't cast a single speck of shadow</strong>."</td>
+          <td><strong>Rakshasa Tell #1!</strong> Lord Ravana's celestial illusion fails physical optics (no shadow).</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><span class="tag">True</span><strong>Sunken Dunes &amp; Kneeling Statues</strong><br/><em>Zahir / South Gate</em></td>
+          <td>"The south winds carry ash and old incense. Shifting dunes receded overnight uncovering alabaster obelisks and a sunken necropolis ringed by <strong>kneeling sandstone statues</strong> facing the sealed doors—no scorpion or fox dares near it."</td>
+          <td>Points to <strong>Boss 2: Mummy Lord Akh-en-Amon</strong> at Hex (12, 16) &amp; his betrayal of self-sacrifice.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><span class="tag">True</span><strong>Scalding Tides &amp; Iron Chains</strong><br/><em>Salty Hal (Feldepost's)</em></td>
+          <td>"Pulled my crab pots off the western cliffs at dawn—the sea water was warm as bath water and tasted like lightning sparks! Deep beneath the keel, you could hear miles of sunken <strong>iron anchor chains</strong> groaning against the reef."</td>
+          <td>Points to <strong>Boss 4: Storm Giant Otheus</strong> bound beneath the western sea at Hex (5, 11).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>B. Key False Rumors / Tall Tales (With Secret Breadcrumbs for Later Loops)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:23%;">Tall Tale &amp; Speaker</th>
+          <th style="width:45%;">What Townsfolk Claim (False!)</th>
+          <th style="width:32%;">Why It's False + Hidden Kernel of Truth</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="chk"></span><span class="tag tag-false">False</span><strong>Sun God's Golden Egg &amp; Smashed Balcony</strong><br/><em>Pip the Urchin</em></td>
+          <td>"Look at that freshly smashed Clocktower balcony! My cousin swears at <strong>5:59 AM</strong> Lathander's giant celestial rooster crashed through the stone rail and laid a solid gold egg in the gears—touch it at noon for demigod strength!"</td>
+          <td><strong>False:</strong> No rooster or egg (touching gears at noon deals 2d6 fire).<br/><strong>Truth (Bootstrap Clue #1):</strong> What crashed into the balcony at 05:59 AM was the future party &amp; True Angel!</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><span class="tag tag-false">False</span><strong>Dragon-Tamer's Silver Whistle</strong><br/><em>Old Gorm (Red Sheaf)</em></td>
+          <td>"Hidden behind the vintage casks in the Red Sheaf wine cellar is founder Menas's silver whistle. Blow three shrill notes and any Cloud Peaks dragon must land and kneel!"</td>
+          <td><strong>False:</strong> White dragons cannot be tamed by whistles.<br/><strong>Truth:</strong> DC 13 Investigation behind the casks finds a smuggler wall hiding <em>Dragon-Fire Brandy</em> (Potion of Fire Resistance) &amp; a secret mountain chimney map.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><span class="tag tag-false">False</span><strong>Witch of the Southern Oasis</strong><br/><em>Selim (South Gate)</em></td>
+          <td>"Bring a bouquet of fresh Temple sun-lilies to an immortal sorceress by an azure pool in the southern dunes before noon and she'll grant you an elixir of youth and three wishes!"</td>
+          <td><strong>False:</strong> No witch or azure pool—just a heat mirage.<br/><strong>Truth:</strong> Fresh Temple sun-lilies carried south align their golden pollen like a compass pointing straight to the Sunken Necropolis (Hex 12, 16).</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><span class="tag tag-false">False</span><strong>Siren Song of the Western Cliffs</strong><br/><em>Turlough (West Gate)</em></td>
+          <td>"Every solstice evening, a romantic sea siren perches on the western cliffs singing so sweetly that sailors leap from their decks into the surf!"</td>
+          <td><strong>False:</strong> Not a siren—it is the <strong>Singing Devil</strong> atop Spire (Hex 6, 8) pulling down the sun.<br/><strong>Truth:</strong> Mentioning "cliff singing" to Elorion inspires his <em>Counter-Harmonic Chime</em>.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- OLD JONAS'S RHYME & HOOKS -->
+    <div class="rhyme-box">
+      <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;">
+        <strong><span class="chk"></span>📜 OLD JONAS THE RHYMER — THE 8-LINE SOLSTICE CHANT &amp; TRIGGER HOOKS</strong>
+        <span class="tag">Must-Hear Clue</span>
+      </div>
+      <div class="rhyme-grid">
+        <p class="poem">
+          "With six chimes the belfry wakes,<br/>
+          But doom is coming with no escape.<br/>
+          Only one narrow path can provide salvation,<br/>
+          Threading this needle stops the devil's elation.<br/><br/>
+          First east to the ice, then south to the sand,<br/>
+          Find the path to stop the devil's hand.<br/>
+          Blame not the angel for he is confused,<br/>
+          Led astray by the fiendish ruse."
+        </p>
+        <div>
+          <strong style="font-size:9pt; text-transform:uppercase;">3 Natural Hooks for When the Party Hears the Rhyme:</strong>
+          <ul class="hooks">
+            <li><strong>Hook A — 07:30 AM at Tobias's Bakery Porch (Recommended):</strong> While the party accepts warm honey-currant rolls from Tobias, haggard Old Jonas shuffles up shivering in his patched quilt. Tobias gently hands him a free roll; Jonas weeps into the bread and recites all 8 lines straight to the party while Tobias chuckles sadly (<em>"Poor fellow—never quite right since he wandered back from the southern desert"</em>).</li>
+            <li><strong>Hook B — 07:15 AM at the Municipal Well (After Maya's Thrush):</strong> Right as Little Maya ties the green clover bracelet onto a PC's wrist, Old Jonas (slumped against the stone well rim) catches the hem of a PC's cloak, stares wide-eyed at the clocktower above, and chants all 8 lines in a cracked singsong voice.</li>
+            <li><strong>Hook C — 11:00–11:30 AM at the High Sun Muster (Failsafe):</strong> If the party bypassed him all morning, the instant the <strong>11:30 AM northern explosion</strong> rattles Beregost's windows, Jonas scrambles onto the stone rim of the well pointing north and shouts the 8 lines over the startled square!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
