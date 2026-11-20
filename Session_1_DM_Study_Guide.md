@@ -157,56 +157,36 @@ Here is the exact chronological escalation showing how the town responds as the 
 
 ```mermaid
 flowchart TD
-    A["09:00 AM (95°F): Thermal Spike & Divine Static\nWells drop 4 ft; metal hums; townsfolk still think it's a Solstice blessing"] --> B["10:15–10:30 AM (120°F): Bleached Glare & Hidden Sabotage\nArmor DC 12 Con save; Morwen mugged (10:15); Vane locks water sluices (10:45)"]
-    B --> C["11:00 AM (125°F): High Sun Muster in Feldepost Square\n250 gp paid; Morwen & Taerom report thefts; 11:30 AM Deafening Northern Explosion!"]
-    C --> D["12:00 PM (140°F): Solar Scorch & First Shelter Opening\n2d6 Fire/10m in sun; Heat Metal; Althea opens Temple Crypts; 12:05 Granary Arson"]
-    D --> E["13:00–14:30 PM (150°F): Roofs Ignite & Mass Evacuation to Temple Crypts\nRebecca leads 50+ citizens into Temple Crypts; Durlag & Vane lock themselves in private vaults"]
-    E --> F["15:00–17:25 PM (175°F): Bunker Panic & The Blast Door Self-Sacrifice\n10d6 Fire/rd outside; Crypt latch snaps at 15:15! Tobias & Rebecca hold red-hot bar; 3 Player Stations"]
-    F --> G["17:30–18:00 PM (210°F → 5000°F): 'Daisies' Audio Cue, BOOM & 06:00 AM Reset\nPlay 530pm_crypt_tragedy.mp3 -> Unfiltered by :45 -> BOOM -> Whiteout -> Wake on Clocktower Balcony!"]
+    A["10:00 AM (85–95°F): Abnormally Warm Solstice Day\nTownsfolk happy ('Lathander's blessing!'); NO heat damage yet; NO gryphon flight after 10 AM"] --> B["11:00–11:30 AM (95–100°F): High Sun Muster & North Boom\n250 gp paid; Morwen & Taerom report thefts; 11:30 AM Deafening Northern Explosion!"]
+    B --> C["12:00 PM (105°F): Growing Unusually Hot & Granary Arson\nWells dip; faint static in metal; 12:05 Granary Arson (still no lethal sun damage yet)"]
+    C --> D["1:00–2:45 PM (120–135°F): Sweltering Heat & Cathedral Evacuation\nArmor DC 12 Con save; Althea opens Cathedral Crypts (1:00 PM); Rebecca evacuates 50+ citizens; Durlag refuses & locks himself in vault"]
+    D --> E["3:00–5:25 PM (175°F): MUST BE UNDERGROUND TO AVOID DAMAGE!\n10d6 Fire/rd outside; Crypt latch snaps at 3:15 PM! Tobias & Rebecca hold bar; 3 Player Self-Sacrifice Stations"]
+    E --> F["5:30–6:00 PM (210°F → 5000°F): 'Daisies' Audio Cue, BOOM & 6:00 AM Reset\nPlay 530pm_crypt_tragedy.mp3 -> Unfiltered by :45 -> BOOM -> Whiteout -> Wake on Clocktower Balcony!"]
 ```
 
-### Phase 1: The Unnatural Warmth (`09:00 – 10:45 AM`)
-* **`09:00 AM` (`95°F` — Thermal Spike & Divine Static)**:
-  * **Environment**: Temperature jumps 20 degrees in minutes. The municipal well drops 4 feet. A faint, high-pitched divine hum vibrates through metal baking pans, anvils, and weapons.
-  * **How People Respond**: Townsfolk wipe their brows and laugh it off as *"Lathander's Solstice warmth."* Dogs pant in the shade; ale goes warm. **Taerom** discovers his Masterwork Tempering Oil was stolen from his back yard at `08:45 AM` and blames festival pranksters.
-* **`10:15 – 10:45 AM` (`120°F` — Bleached-White Sky & Sabotage)**:
-  * **Environment**: The blue sky bleaches into a harsh, cloudless chalk-white glare. Characters in medium/heavy armor must make a **`DC 12 Con save`** or take 1 level of Exhaustion unless cooled.
-  * **How People Respond**: Elderly citizens retreat onto shaded porches; **Granny Morwen** hands out cooling mint draughts before getting mugged in Cobbler's Lane at `10:15 AM`. Behind the scenes, charmed **Scribe Vane** delivers forged guard dispatches (`10:15 AM`) and locks the subterranean aqueduct sluice wheels (`10:45 AM`) so the town cannot flood its cooling canals.
-
-### Phase 2: The High Sun Muster & The Northern Blast (`11:00 – 11:30 AM`)
-* **`11:00 AM` (`125°F` — The High Sun Muster in Feldepost Square)**:
-  * **How People Respond**: Crowds gather in the shade of the Clocktower. **Bram and Captain Rebecca** award the party their **250 gp commendation**, and **Tobias** taps the cold cider casks.
+### Phase 1: Abnormally Warm Morning (`10:00 AM – 12:59 PM`)
+* **`10:00 AM` (`85–95°F` — Abnormally Warm Solstice Day | Townsfolk Happy! | No Gryphon Flight)**:
+  * **Environment**: Turns into an abnormally warm, bright, sunny Solstice day—**no heat damage or armor exhaustion yet!** However, violent high-altitude thermal updrafts make **gryphon flight forbidden after ~10:00 AM**.
+  * **How People Respond**: **Townsfolk are happy!** They shed cloaks, wipe their brows with a smile, and laugh that Lathander is blessing Beregost with a glorious warm festival day. (At `10:15 AM`, **Granny Morwen** is mugged in Cobbler's Lane, and charmed **Scribe Vane** delivers forged guard dispatches & locks the aqueduct sluice wheels at `10:45 AM`).
+* **`11:00 AM` (`95°F` — The High Sun Muster in Feldepost Square)**:
+  * **How People Respond**: Crowds gather happily in the shade of the Clocktower. **Bram and Captain Rebecca** award the party their **250 gp commendation**, and **Tobias** taps the cold cider casks.
   * **Public Mystery Hooks**: **Granny Morwen** arrives with a bruised forehead (reporting her `10:15 AM` mugging in Cobbler's Lane) and **Taerom** loudly complains about the `08:45 AM` smithy thief—giving the players two clear mysteries to stake out on Loop 1. (At `11:15 AM`, charmed thugs ambush **Garrick the Fence** in Cobbler's Lane).
 * **`11:30 AM` (The Deafening Northern Thunderclap)**:
   * **What Happens**: Four miles north in the Ash Grove (`Hex 7, 6`), the True Angel willingly shatters her own heart as the druids strike (`70` radiant/fire dmg) to sever the Singing Devil's noon solar siphon.
-  * **How People Respond**: A concussive **BOOM** shakes Beregost, rattling windows and scattering crows as a pillar of white-crimson smoke rises over the northern forest. Inside the Temple of Lathander, the consecrated stained-glass windows crack and shatter from thermal pressure. **Sister Althea** drops to her knees in horror: *"That is not the Morninglord's light... the sun is poisoned!"*
+  * **How People Respond**: A concussive **BOOM** shakes Beregost, rattling windows and scattering crows as a pillar of white-crimson smoke rises over the northern forest. By **`12:00 PM`** (`105°F`), wells dip and metal begins humming faintly; at `12:05 PM`, charmed arsonists ignite Tobias's granary—still no lethal sun damage outdoors yet!
 
-### Phase 3: Solar Scorch & The Two-Wave Evacuation (`12:00 – 14:30 PM`)
-* **`12:00 – 12:30 PM` (`140°F` — Solar Scorch, Granary Arson & First Shelter Opening)**:
-  * **Environment**: Direct sunlight becomes lethal, dealing **`2d6` Fire damage per 10 minutes** in the open. Metal armor and weapons become scalding hot (*Heat Metal* disadvantage). Canvas festival banners spontaneously ignite; road tar melts.
-  * **How People Respond (Wave 1 Evacuation Begins)**:
-    * Festival stalls are abandoned in panic.
-    * **Sister Althea** throws open the heavy iron blast doors to the deep stone **Temple of Lathander Crypts** at `12:00 PM` as an emergency shelter for children and the elderly (**Little Maya** is escorted down at `12:30 PM`).
-    * At `12:05 PM`, charmed arsonists ignite **Tobias's granary**; the party helps Tobias and bucket brigades fight the flames with *Create Water* / *Ray of Frost*.
-    * At `12:30 – 13:00 PM`, the Clocktower's bronze gears glow cherry-red and warp the upper iron ladder, forcing **Artificer Bram** to grab his blueprints and retreat down to the street.
-* **`13:00 – 14:30 PM` (`150°F` — Rooftop Fires & General Town Evacuation)**:
-  * **Environment**: Direct sun deals **`1d6` Fire damage per minute**. Dry cedar shingle roofs spontaneously ignite across Cobbler's Lane and Feldepost Square.
-  * **Who Evacuates Where (Wave 2 — Full Town Evacuation)**:
-    * **To the Temple of Lathander Crypts (`13:30 – 14:30 PM`)**: **Captain Rebecca** rings the brass emergency bells and leads the main evacuation column of 50+ citizens down into the consecrated Temple Crypts, joined by:
-      * **Tobias Miller** (`13:30 PM`, hauling his remaining sacks of bread and water)
-      * **Old Granny Morwen** (`13:30 PM`, wheeling her handcart of burn salves)
-      * **Young Kaelen** (`13:30 PM`, sneaking down from Feldepost's Room #4 clutching his chronometer)
-      * **Taerom Thunderhammer** (`14:00 PM`, carrying heavy cold-iron wedges to shore up the crypt archways)
-      * **Corin the Swift** (`14:00 PM`, slipping down through a secret ossuary grate to hold Little Maya's hand)
-      * **Constable Renwick** (`14:00 PM`, carried down with heat exhaustion from the North Gate)
-      * **Artificer Bram**, **Barnaby Feldepost** (hauling tavern water casks), and **Elorion the Bard** (`14:30 PM`, playing soothing melodies on his lute to keep the children calm).
-    * **Who Locks Themselves in Private Traps (Selfish Foil)**:
-      * **Alderman Durlag Stonecrest** (`13:00 PM`) refuses to share his manor shelter and locks himself inside his private granite vault—where thermal expansion welds the vault door shut and he suffocates clutching melted gold at `15:30 PM`.
-      * **Scribe Vane** (`13:30–15:00 PM`) either evacuates with the town charters or, if still charmed, locks himself in the Town Hall archive vault.
+### Phase 2: Sweltering Heat & Cathedral Evacuation (`1:00 PM – 2:45 PM`)
+* **`1:00 PM` (`120–135°F` — Sweltering Heat & Evacuation to the Cathedral Begins)**:
+  * **Environment**: At **1:00 PM (`13:00`)**, the air finally turns truly **sweltering**! The sky bleaches into a harsh glare; medium/heavy armor wearers make a **`DC 12 Con save`** or take 1 level of Exhaustion unless cooled; dry shingle roofs begin smoking by `2:00 PM` and the Clocktower's upper iron stairs warp.
+  * **When & How People Evacuate to the Cathedral (`1:00 – 2:45 PM`)**:
+    * At **`1:00 PM`**, the Cathedral stained glass cracks and **Sister Althea** realizes the sun is poisoned—she immediately throws open the heavy iron blast doors to the deep stone **Cathedral (Temple of Lathander) Crypts**!
+    * Between **`1:30 PM` and `2:45 PM`**, **Captain Rebecca** rings the brass evacuation bells and leads 50+ citizens down into the Cathedral Crypts, joined by **Tobias Miller** (hauling bread sacks), **Little Maya**, **Old Granny Morwen** (wheeling her herb cart), **Young Kaelen**, **Taerom Thunderhammer** (carrying iron reinforcing wedges), **Corin the Swift**, **Constable Renwick**, **Artificer Bram**, **Barnaby Feldepost** (hauling water casks), and **Elorion the Bard**.
+  * **Seeing People Refuse to Evacuate (The Greedy Foil)**:
+    * As the party helps herd families toward the Cathedral, they see **Alderman Durlag Stonecrest** (`1:30 PM`) slam his manor gates on desperate neighbors, hoarding his ice and gold inside his private granite vault—where thermal expansion welds the vault door shut and he suffocates at `3:30 PM`. Charmed **Scribe Vane** also refuses to leave the Town Hall archive vault unless freed.
 
-### Phase 4: Bunker Panic, The Blast Door Sacrifice & *"Daisies"* (`15:00 – 18:00 PM`)
-* **`15:00 – 17:25 PM` (`175°F` Surface — The Crypt Blast Door Sacrifice & 3 Player Stations)**:
-  * **Environment**: Surface air is a `175°F` furnace (**`10d6` Fire damage per round outdoors**; birds drop dead from the sky). Even underground, convective heat begins seeping into the Temple Crypts (**`1d10` Fire damage per round** unless mitigated).
+### Phase 3: Must Be Underground & The Blast Door Sacrifice (`3:00 PM – 6:00 PM`)
+* **`3:00 PM` (`175°F` Surface — MUST BE UNDERGROUND TO AVOID DAMAGE!)**:
+  * **Environment**: By **3:00 PM (`15:00`)**, the surface is a lethal furnace (**`10d6` Fire damage per round outdoors**, **`1d10` Fire/rd in ground-level wooden buildings**; birds drop dead from the sky)—**everyone MUST be underground to avoid damage**! Deep Cathedral sub-crypts stay insulated (`0` damage) until `5:30 PM`, except when the upper blast doors begin failing at `3:15 PM`!
   * **The `15:15 PM` Crisis (The Snapped Crossbar)**: Thermal expansion snaps the inner iron locking bar of the Temple Crypt's heavy blast doors! The warped iron doors groan open an inch, pouring `175°F` superheated air and black smoke into the crowded crypt.
   * **How the Townsfolk Respond (Heroic Self-Sacrifice)**:
     * **Captain Rebecca** braces her ruined war-knee against the scorching iron door until her plate armor begins welding to her skin.

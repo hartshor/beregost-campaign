@@ -302,33 +302,26 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
     * *The Interrogation & Lore Clue*: Interrogating Snirk (DC 10 Persuasion/Intimidation or offering a pastry) yields panic: *"Snirk clan ran from Cloud Peaks! White blizzard dragon Rimefang woke shivering with rage! Cold mountain winds creeping down!"* This is the party's very first organic in-game clue pointing to the Adult White Dragon at Hex (17, 10)!
     * *Reward*: Corporal Harek gives the party a flask of spiced dwarven apple cider and a signed militia voucher, urging them: *"Head back through the East Gate now—Captain Rebecca is ringing the 11:00 AM Muster Bell soon!"*
 
-#### Act 2: The Unnatural Thermal Creep (09:00 AM – 12:00 PM)
-* **Scene 3: 09:00 AM — The Thermal Spike (95°F)**:
-  * Air surges to 95°F. Wells drop 4 feet. A faint high-pitched divine hum vibrates through metal blades and armor.
-  * Townsfolk laugh it off as an odd summer scorch, but dogs pant and beer goes warm.
-* **Scene 4: 10:30 AM — Severe Heat (120°F)**:
-  * Sky turns an unnatural, blinding bleached-white glare. No clouds.
-  * DC 12 Con save for medium/heavy armor wearers or gain 1 level of exhaustion unless cooled.
-  * Party uses utility spells (*Create Water*, *Prestidigitation*) to help elderly townsfolk.
-* **Scene 5: 11:30 AM — The Northern Thunderclap (Happens Every Loop by Default — Audible Region-Wide)**:
+#### Act 2: The Abnormally Warm Morning & Northern Blast (10:00 AM – 12:59 PM)
+* **Scene 3: 10:00 AM — Abnormally Warm Solstice Day (85–95°F — Townsfolk Happy! | No Gryphon Flight)**:
+  * Starting around **10:00 AM**, it becomes an unusually warm, bright, sunny summer day (`85–95°F`). **No heat damage or armor exhaustion yet!**
+  * **Townsfolk are happy!** Citizens laugh, shed cloaks, and praise Lathander for a glorious warm Solstice blessing.
+  * **Gryphon Flight Forbidden After 10:00 AM**: Violent high-altitude thermal updrafts and divine static in the upper sky make aerial gryphon flight impossible after ~10:00 AM even while ground level feels pleasantly warm.
+* **Scene 4: 11:30 AM — The Northern Thunderclap (Happens Every Loop by Default — Audible Region-Wide)**:
   * By default on every loop, Archdruid Faelan's circle hunts down and executes the Horned Fiend (True Angel) in the northern Ash Grove (`Hex 7, 6`) at **11:30 AM** (whether the party is there or not!).
   * A deafening, concussive **BOOM** rumbles from the northern forest! Windows rattle across town; crows scatter in panic. A towering column of white-crimson smoke rises in the north.
-  * Townsfolk murmur in confusion: *"Thunder on a cloudless sky?"*
-* **Scene 6: 12:00 PM — Solar Scorch (140°F)**:
-  * Direct sunlight deals **2d6 Fire damage per 10 minutes** in the open.
-  * Metal armor and weapons become scalding hot (*Heat Metal* effect).
-  * Canvas festival banners ignite; road tar melts. The festival collapses into panic.
+  * Townsfolk murmur in confusion: *"Thunder on a cloudless sky?"* By `12:00 PM`, wells dip and metal begins faintly humming (`100–105°F`, still no heat damage yet).
 
-#### Act 3: The Afternoon Conflagration (13:00 – 15:00 PM)
-* **Scene 7: Rooftop Fires & Town Evacuation**:
-  * Shingle roofs spontaneously ignite across Cobbler's Lane and Feldepost Square.
-  * Tobias's bakery catches fire. The party coordinates bucket brigades and evacuations, burning low-level spell slots (*Create Water*, *Ray of Frost*).
-  * The party realizes: *This is not weather—the sun itself is weaponized.*
+#### Act 3: Sweltering Heat & Cathedral Evacuation (13:00 – 14:59 PM)
+* **Scene 5: 13:00 PM (1:00 PM) — Sweltering Heat (120–135°F) & Cathedral Evacuation Begins**:
+  * At **1:00 PM**, things finally turn truly **sweltering** (`120–135°F`). The sky bleaches into a harsh glare; medium/heavy armor wearers make a `DC 12 Con save` or gain 1 level of Exhaustion unless cooled; dry shingles begin smoking by `2:00 PM`.
+  * **Evacuation to the Cathedral (Song of the Morning / Temple of Lathander Crypts)**: At **1:00 PM**, Sister Althea throws open the deep stone Cathedral Crypts, and Captain Rebecca sounds the alarm bells to evacuate 50+ townsfolk underground between **1:30 PM and 2:45 PM** so everyone is safely below ground before 3:00 PM!
+  * **Who Refuses to Evacuate (The Greedy Foil)**: While families hurry to the Cathedral, the party sees **Alderman Durlag Stonecrest** slam his iron manor gates on desperate neighbors, hoarding his ice and gold inside his private granite vault (`1:30 PM`, where the door thermal-welds shut and he suffocates at `3:30 PM`). Charmed **Scribe Vane** also retreats into the Town Hall vault unless freed.
 
-#### Act 4: The Crypt Triage (15:00 – 17:59 PM)
-* **Scene 8: 15:00 PM — Bunker Panic (175°F Outside)**:
-  * Outdoor air is an inferno: **10d6 Fire damage per round in the open**! Anyone outside is incinerated. Birds drop dead from the sky.
-  * Rebecca, Tobias, Maya, and 50 townsfolk are herded into the deep stone cellars beneath the Temple of Lathander.
+#### Act 4: Must Be Underground & The Crypt Self-Sacrifice (15:00 – 17:59 PM)
+* **Scene 8: 15:00 PM (3:00 PM) — MUST BE UNDERGROUND TO AVOID DAMAGE (175°F Outside)**:
+  * By **3:00 PM**, the surface is a lethal furnace (**`10d6` Fire damage per round outdoors**, **`1d10` Fire/rd ground-level**)—**everyone MUST be underground to avoid damage**! Birds drop dead from the sky.
+  * Rebecca, Tobias, Maya, and 50+ townsfolk shelter in the deep stone crypts beneath the Cathedral (Temple of Lathander), pushing further down into the sub-crypts as the upper blast doors begin to fail.
 * **Scene 9: The Triage Nightmare, The Blast Door Sacrifice & The 3 Player Self-Sacrifice Stations (15:15 – 17:30 PM)**:
   * Even subterranean stone cellars heat to an oven: **1d10 Fire damage per round indoors** without magical mitigation!
   * **The Broken Outer Latch & Tobias / Rebecca's Self-Sacrifice (`15:15 PM`)**:
@@ -379,22 +372,17 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
    * *The Token*: Rebecca salutes with genuine respect, offering them free lodging at the Jovial Juggler.
 
 ### The Thermal Escalation Timeline (Loop 0)
-* **06:00 AM**: Crisp, cool morning air. Smoke curls from chimneys; carts rattle over cobblestones; birds sing in the eaves.
-* **09:00 AM (The Thermal Spike & Divine Static)**:
-  * Ambient heat jumps significantly. Wells drop 4 feet unexpectedly.
-  * A faint, high-pitched divine hum vibrates through metal weapons and armor.
-* **12:00 PM (Solar Scorch & Induction)**:
-  * Extreme noon heat. The sun is an unnatural, piercing white glare directly overhead.
-  * **Direct Sunlight**: Deals **2d6 Fire damage every 10 minutes**.
-  * **Thermal Induction (Heat Metal)**: Metal armor and weapons become scalding to the touch; characters suffer disadvantage on attack rolls and ability checks while wearing metal armor without magical cooling.
-  * Stalls are abandoned; townsfolk retreat to stone cellars in confusion.
-* **15:00 PM (Bunker Panic & Conflagration)**:
-  * Lethal convective heat. Direct sun deals **10d6 Fire damage per round**.
-  * Shingle roofs ignite. Birds drop dead from the sky.
-  * Even inside stone cellars, convective heat deals **1d10 Fire damage per round** without magical insulation.
-  * **The Triage Crisis**: The party rushes to the temple and town cellars to find screaming townsfolk. Tobias is choking on smoke behind his burning bakery; Little Maya is sobbing in the overcrowded crypt, her clover bracelet scorched to charcoal; Captain Rebecca is burned to the bone holding the basement blast door shut. The party frantically burns every spell slot (*Create Water*, *Lesser Restoration*, *Protection from Energy*, lay on hands) trying to keep civilians alive as the heat overwhelms them.
+* **06:00 AM – 09:59 AM**: Crisp, cool, pleasant morning air (`55–75°F`). Smoke curls from chimneys; carts rattle over cobblestones; birds sing in the eaves. Normal travel and gryphon flight.
+* **10:00 AM – 12:59 PM (Abnormally Warm Day — Townsfolk Happy! | No Gryphon Flight)**:
+  * Temperature climbs to an unusually warm, sunny **`85–95°F`** (reaching `~105°F` by noon with wells dipping and faint metallic static). **Townsfolk are happy** and praise Lathander's warm Solstice blessing—**no heat damage yet!**
+  * **Gryphon flight is forbidden after ~10:00 AM** due to violent upper-sky thermal updrafts.
+* **13:00 PM – 14:59 PM (1:00 PM — Sweltering Heat & Cathedral Evacuation)**:
+  * Heat turns truly **sweltering (`120–135°F`)** with a bleached-white overhead glare; medium/heavy armor requires a `DC 12 Con save` vs Exhaustion; dry shingles begin smoking by `2:00 PM`.
+  * **Cathedral Evacuation (`1:00 – 2:45 PM`)**: Sister Althea throws open the deep **Cathedral (Temple of Lathander) Crypts** at `1:00 PM`, and Captain Rebecca leads 50+ townsfolk underground (`1:30–2:45 PM`)—while greedy **Alderman Durlag Stonecrest** refuses to evacuate and locks himself inside his granite vault.
+* **15:00 PM – 17:29 PM (3:00 PM — MUST BE UNDERGROUND TO AVOID DAMAGE)**:
+  * Lethal convective surface heat (`175°F`): direct sun deals **`10d6` Fire damage per round**; ground-level buildings ignite (`1d10` Fire/rd); **deep underground crypts stay safe (0 dmg)** until the upper blast door latch snaps at `3:15 PM`, triggering Tobias & Rebecca's stand and the **3 Player Self-Sacrifice Stations** while evacuating folks further down!
 * **17:59 PM (Total Solar Detonation)**:
-  * An incandescent pillar of orbital fire strikes Beregost. 100d10 radiant/fire damage across the entire region. No saving throw.
+  * An incandescent pillar of orbital fire strikes Beregost. `100d10` radiant/fire damage across the entire region. No saving throw.
 * **06:00 AM (Loop 1 Reset)**:
   * Clack of gears. The party snaps awake in the crisp, cool morning air standing on the **rubbled, destroyed clocktower balcony**, clutching the sulfur bone as the guard down in the square calls up: *"Hey! You got the clock working! Thank you! Happy Solstice!"*
   * Tobias cheerfully steps out of the bakery with the exact same tray of warm honey rolls, perfectly unburned. Maya is skipping toward the well. Only the party remembers the burning flesh and the desperate prayers.
