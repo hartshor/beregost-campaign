@@ -322,11 +322,12 @@
   <div class="toolbar">
     <div class="toolbar-group">
       <a href="index.html" class="btn btn-outline">← Campaign Companion</a>
-      <span style="font-size:0.8rem; color:#8b949e;">4 Clean Portrait Pages (2 Sheets Double-Sided • B&amp;W Town Map on Page 4)</span>
+      <span style="font-size:0.8rem; color:#8b949e;">Pages 1–3: DM Sheet • Page 4: Player-Safe B&amp;W Town Map Handout</span>
     </div>
     <div class="toolbar-group">
-      <button id="btn-map-woodcut" class="btn btn-outline active" onclick="setCheatMap('woodcut')">✒️ Woodcut Map</button>
-      <button id="btn-map-schematic" class="btn btn-outline" onclick="setCheatMap('schematic')">📐 2D Schematic</button>
+      <button id="btn-map-player" class="btn btn-outline active" onclick="setCheatMap('player')">🗺️ Player Map (Hand-Inked B&amp;W)</button>
+      <button id="btn-map-vector" class="btn btn-outline" onclick="setCheatMap('vector')">📐 Clean Vector</button>
+      <button id="btn-map-woodcut" class="btn btn-outline" onclick="setCheatMap('woodcut')">✒️ DM Woodcut</button>
       <button class="btn" onclick="window.print()">🖨️ Print 4-Page Cheat Sheet</button>
     </div>
   </div>
@@ -675,31 +676,30 @@
   </section>
 
   <!-- =========================================================
-       PAGE 4: PRINTABLE BLACK & WHITE TOWN MAP
+       PAGE 4: PLAYER-SAFE PRINTABLE BLACK & WHITE TOWN MAP
        ========================================================= -->
   <section class="print-page map-page">
-    <span class="page-badge">Page 4 of 4 • Printable B&amp;W Town Map</span>
+    <span class="page-badge">Page 4 of 4 • Player-Safe B&amp;W Town Map Handout</span>
     <div class="map-header">
-      <h2>6. Township of Beregost — Printable Black &amp; White Town Map</h2>
-      <span class="subtitle">Open Unwalled Festival Town • 12 Labeled Buildings • 5 Carnival Booths ([A]–[E])</span>
+      <h2>Township of Beregost — Town Map</h2>
+      <span class="subtitle">Summer Solstice Festival • Player Handout</span>
     </div>
     <div class="map-frame">
-      <img id="cheatsheet-town-map" src="beregost_town_map_woodcut_labeled_bw.png" alt="Beregost Printable Black and White Town Map" />
+      <img id="cheatsheet-town-map" src="beregost_town_map_player_bw.jpg" alt="Township of Beregost Player Handout Black and White Map" />
     </div>
-    <div class="rhyme-box" style="margin-top:8px; padding:6px 10px;">
-      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; font-size:8pt; line-height:1.3;">
+    <div class="rhyme-box" style="margin-top:8px; padding:7px 10px;">
+      <div style="display:grid; grid-template-columns: 1.05fr 1fr; gap:14px; font-size:8.2pt; line-height:1.38;">
         <div>
-          <strong>🧭 Outskirts Roads (1 Hex = 1 Hr on Foot):</strong><br/>
-          • <strong>West Road:</strong> Barleyfield Firebreak (Hex 7, 10) → Coast<br/>
-          • <strong>South Road:</strong> Cornfield Scarecrow (Hex 8, 11) → Dunes<br/>
-          • <strong>East Road:</strong> Highway Patrol &amp; Snirk (Hex 9, 10) → Ice<br/>
-          • <strong>North Road:</strong> Wayside Shrine &amp; Ash Grove (Hex 7, 6)
+          <strong style="text-transform:uppercase; font-size:8pt;">Solstice Carnival Booths (Base of Cathedral):</strong><br/>
+          <strong>[A]</strong> Solar Bullseye Archery &nbsp;•&nbsp; <strong>[B]</strong> Blindfold Herb Tasting<br/>
+          <strong>[C]</strong> Anvil-Ringer Striker &nbsp;•&nbsp; <strong>[D]</strong> Honey-Currant Pie Sprint<br/>
+          <strong>[E]</strong> Solstice Rhyme Duel &nbsp;<em>(High Sun Muster: 11:00 AM at Feldepost Square)</em>
         </div>
         <div>
-          <strong>🔥 Afternoon Evacuation &amp; Key Spots (1:00–3:00 PM):</strong><br/>
-          • <strong>Cathedral Shelter (1:00–2:45 PM):</strong> Song of the Morning Crypts<br/>
-          • <strong>Refuse to Evacuate:</strong> Stonecrest Manor (Durlag) &amp; Town Hall (Vane)<br/>
-          • <strong>Loop 1 Stakeouts:</strong> Smithy Coal-Yard (8:45 AM) • Cobbler's Ln (10:15 / 11:15 AM)
+          <strong style="text-transform:uppercase; font-size:8pt;">Town Notes &amp; People Met:</strong>
+          <div style="border-bottom:1px solid #999; height:14px;"></div>
+          <div style="border-bottom:1px solid #999; height:14px;"></div>
+          <div style="border-bottom:1px solid #999; height:14px;"></div>
         </div>
       </div>
     </div>
@@ -708,16 +708,19 @@
   <script>
     function setCheatMap(style) {
       const img = document.getElementById('cheatsheet-town-map');
+      const bPlayer = document.getElementById('btn-map-player');
+      const bVector = document.getElementById('btn-map-vector');
       const bWood = document.getElementById('btn-map-woodcut');
-      const bSchem = document.getElementById('btn-map-schematic');
-      if (style === 'schematic') {
-        img.src = 'beregost_town_map_bw.png';
-        bSchem.classList.add('active');
-        bWood.classList.remove('active');
-      } else {
+      [bPlayer, bVector, bWood].forEach(b => b && b.classList.remove('active'));
+      if (style === 'woodcut') {
         img.src = 'beregost_town_map_woodcut_labeled_bw.png';
         bWood.classList.add('active');
-        bSchem.classList.remove('active');
+      } else if (style === 'vector') {
+        img.src = 'beregost_town_map_player_bw.svg';
+        bVector.classList.add('active');
+      } else {
+        img.src = 'beregost_town_map_player_bw.jpg';
+        bPlayer.classList.add('active');
       }
     }
   </script>

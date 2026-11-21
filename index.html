@@ -1848,36 +1848,36 @@
         </div>
       </div>
 
-      <!-- SECTION 6: PRINTABLE BLACK & WHITE TOWN MAP -->
+      <!-- SECTION 6: PLAYER-SAFE PRINTABLE BLACK & WHITE TOWN MAP -->
       <div class="card day1-page-break" style="border-left: 4px solid #e6edf3;">
         <div class="card-header" style="flex-wrap:wrap; gap:8px;">
           <div>
-            <h3 style="color:#f0f6fc; margin:0;">🗺️ 6. Township of Beregost — Printable Black &amp; White Town Map</h3>
-            <span class="tag">Open Unwalled Festival Town • 12 Labeled Buildings • 5 Carnival Booths ([A]–[E])</span>
+            <h3 style="color:#f0f6fc; margin:0;">🗺️ 6. Township of Beregost — Player-Safe Printable B&amp;W Town Map</h3>
+            <span class="tag">Spoiler-Free Player Handout • Building Names Only • Includes Stonecrest Manor</span>
           </div>
           <div class="no-print" style="display:flex; gap:6px; flex-wrap:wrap; align-items:center;">
-            <button id="btn-day1-map-woodcut" class="chip-btn active" style="font-size:0.76rem; cursor:pointer;" onclick="document.getElementById('day1-tab-bw-map').src='beregost_town_map_woodcut_labeled_bw.png'; this.classList.add('active'); document.getElementById('btn-day1-map-schematic').classList.remove('active');">✒️ 17th-Century Woodcut</button>
-            <button id="btn-day1-map-schematic" class="chip-btn" style="font-size:0.76rem; cursor:pointer;" onclick="document.getElementById('day1-tab-bw-map').src='beregost_town_map_bw.png'; this.classList.add('active'); document.getElementById('btn-day1-map-woodcut').classList.remove('active');">📐 2D Schematic</button>
+            <button id="btn-day1-map-player" class="chip-btn active" style="font-size:0.76rem; cursor:pointer;" onclick="document.getElementById('day1-tab-bw-map').src='beregost_town_map_player_bw.jpg'; this.classList.add('active'); document.getElementById('btn-day1-map-vector').classList.remove('active'); document.getElementById('btn-day1-map-woodcut').classList.remove('active');">🗺️ Player Map (Hand-Inked B&amp;W)</button>
+            <button id="btn-day1-map-vector" class="chip-btn" style="font-size:0.76rem; cursor:pointer;" onclick="document.getElementById('day1-tab-bw-map').src='beregost_town_map_player_bw.svg'; this.classList.add('active'); document.getElementById('btn-day1-map-player').classList.remove('active'); document.getElementById('btn-day1-map-woodcut').classList.remove('active');">📐 Clean Vector</button>
+            <button id="btn-day1-map-woodcut" class="chip-btn" style="font-size:0.76rem; cursor:pointer;" onclick="document.getElementById('day1-tab-bw-map').src='beregost_town_map_woodcut_labeled_bw.png'; this.classList.add('active'); document.getElementById('btn-day1-map-player').classList.remove('active'); document.getElementById('btn-day1-map-vector').classList.remove('active');">✒️ DM Woodcut</button>
           </div>
         </div>
         <div class="card-body" style="padding:12px; display:flex; flex-direction:column; gap:10px;">
           <div style="background:#ffffff; border:2px solid #222; border-radius:6px; padding:6px; text-align:center;">
-            <img id="day1-tab-bw-map" class="day1-print-map" src="beregost_town_map_woodcut_labeled_bw.png" alt="Township of Beregost Printable Black and White Map" style="width:100%; max-width:860px; height:auto; display:block; margin:0 auto;" />
+            <img id="day1-tab-bw-map" class="day1-print-map" src="beregost_town_map_player_bw.jpg" alt="Township of Beregost Player Handout Black and White Map" style="width:100%; max-width:860px; height:auto; display:block; margin:0 auto;" />
           </div>
           <div class="day1-rhyme-box" style="background:rgba(255,255,255,0.04); border:1.5px solid var(--border-color); border-radius:6px; padding:10px 12px;">
             <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:12px; font-size:0.81rem; color:#c9d1d9; line-height:1.45;">
               <div>
-                <strong style="color:var(--accent-gold);">🧭 Outskirts Roads (1 Hex = 1 Hr on Foot):</strong><br/>
-                • <strong>West Road:</strong> Barleyfield Firebreak (Hex 7, 10) → Coast<br/>
-                • <strong>South Road:</strong> Cornfield Scarecrow (Hex 8, 11) → Dunes<br/>
-                • <strong>East Road:</strong> Highway Patrol &amp; Snirk (Hex 9, 10) → Ice<br/>
-                • <strong>North Road:</strong> Wayside Shrine &amp; Ash Grove (Hex 7, 6)
+                <strong style="color:var(--accent-gold);">🎪 Solstice Carnival Booths (Base of Cathedral):</strong><br/>
+                <strong>[A]</strong> Solar Bullseye Archery &nbsp;•&nbsp; <strong>[B]</strong> Blindfold Herb Tasting<br/>
+                <strong>[C]</strong> Anvil-Ringer Striker &nbsp;•&nbsp; <strong>[D]</strong> Honey-Currant Pie Sprint<br/>
+                <strong>[E]</strong> Solstice Rhyme Duel &nbsp;<em>(High Sun Muster: 11:00 AM at Feldepost Square)</em>
               </div>
               <div>
-                <strong style="color:#ff7b72;">🔥 Afternoon Evacuation &amp; Key Spots (1:00–3:00 PM):</strong><br/>
-                • <strong>Cathedral Shelter (1:00–2:45 PM):</strong> Song of the Morning Crypts<br/>
-                • <strong>Refuse to Evacuate:</strong> Stonecrest Manor (Durlag) &amp; Town Hall (Vane)<br/>
-                • <strong>Loop 1 Stakeouts:</strong> Smithy Coal-Yard (8:45 AM) • Cobbler's Ln (10:15 / 11:15 AM)
+                <strong style="color:#c9d1d9;">📝 Town Notes &amp; People Met:</strong>
+                <div style="border-bottom:1px solid #666; height:16px;"></div>
+                <div style="border-bottom:1px solid #666; height:16px;"></div>
+                <div style="border-bottom:1px solid #666; height:16px;"></div>
               </div>
             </div>
           </div>

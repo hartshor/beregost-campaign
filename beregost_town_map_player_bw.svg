@@ -1,0 +1,558 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 940" width="1100" height="940" role="img" aria-label="Township of Beregost — Player Handout Town Map">
+  <defs>
+    <!-- Subtle roof hatch pattern (right/south shaded slope) -->
+    <pattern id="roofHatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="6" stroke="#444" stroke-width="1" />
+    </pattern>
+    <!-- Very light cross-hatch for cathedral/manor stone roofs -->
+    <pattern id="stoneRoof" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#333" stroke-width="1.1" />
+      <line x1="0" y1="0" x2="7" y2="0" stroke="#777" stroke-width="0.6" />
+    </pattern>
+    <!-- Subtle stipple for roads & plaza -->
+    <pattern id="cobbleDots" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="2.5" r="0.7" fill="#777" />
+      <circle cx="7.5" cy="7" r="0.65" fill="#888" />
+      <circle cx="7.5" cy="2" r="0.45" fill="#aaa" />
+    </pattern>
+    <!-- Light furrow lines for western barley field -->
+    <pattern id="cropRows" width="12" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
+      <line x1="0" y1="5" x2="12" y2="5" stroke="#999" stroke-width="0.9" stroke-dasharray="6,3" />
+    </pattern>
+    <!-- Soft grass lawn dots for festival grounds -->
+    <pattern id="lawnDots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="4" r="0.6" fill="#999" />
+      <circle cx="10" cy="11" r="0.6" fill="#999" />
+    </pattern>
+
+    <!-- Reusable utilitarian top-down tree symbol (light classic ink touch) -->
+    <g id="tree-lg">
+      <circle cx="2" cy="2" r="18" fill="#ddd" />
+      <path d="M 0,-18 C 6,-19 12,-14 15,-9 C 19,-4 19,4 15,10 C 11,16 4,19 -3,18 C -10,17 -16,12 -18,5 C -19,-2 -16,-10 -10,-14 C -7,-17 -3,-18 0,-18 Z"
+            fill="#fff" stroke="#222" stroke-width="1.4" />
+      <path d="M 6,-10 C 11,-5 12,4 7,10 C 3,14 -3,15 -8,12" fill="none" stroke="#666" stroke-width="0.9" stroke-linecap="round" />
+      <circle cx="0" cy="0" r="1.6" fill="#222" />
+    </g>
+    <g id="tree-sm">
+      <circle cx="1.5" cy="1.5" r="12" fill="#e2e2e2" />
+      <path d="M 0,-12 C 5,-13 9,-9 11,-5 C 13,-1 12,5 9,9 C 6,12 1,13 -4,12 C -9,10 -12,6 -12,1 C -13,-4 -9,-10 -4,-11 Z"
+            fill="#fff" stroke="#222" stroke-width="1.25" />
+      <path d="M 4,-6 C 7,-2 7,4 4,7" fill="none" stroke="#666" stroke-width="0.8" stroke-linecap="round" />
+      <circle cx="0" cy="0" r="1.3" fill="#222" />
+    </g>
+    <!-- Subtle grass tuft -->
+    <g id="tuft">
+      <path d="M -5,2 L -3,-3 M 0,2 L 0,-5 M 5,2 L 3,-3" stroke="#888" stroke-width="0.9" stroke-linecap="round" />
+    </g>
+    <!-- Carnival Tent top (octagonal striped canopy) -->
+    <g id="tent">
+      <polygon points="0,-19 13,-13 19,0 13,13 0,19 -13,13 -19,0 -13,-13" fill="#fff" stroke="#111" stroke-width="1.5" />
+      <line x1="0" y1="-19" x2="0" y2="19" stroke="#555" stroke-width="0.8" />
+      <line x1="-19" y1="0" x2="19" y2="0" stroke="#555" stroke-width="0.8" />
+      <line x1="-13" y1="-13" x2="13" y2="13" stroke="#555" stroke-width="0.8" />
+      <line x1="13" y1="-13" x2="-13" y2="13" stroke="#555" stroke-width="0.8" />
+      <circle cx="0" cy="0" r="9.5" fill="#fff" stroke="#111" stroke-width="1.3" />
+    </g>
+
+    <style>
+      .title-main { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: 21px; letter-spacing: 1.4px; fill: #111; }
+      .title-sub  { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 11.5px; fill: #444; }
+      .bldg-label { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: 12.2px; fill: #111; text-anchor: middle; }
+      .sub-label  { font-family: Georgia, "Times New Roman", serif; font-style: italic; font-size: 10.2px; fill: #444; text-anchor: middle; }
+      .road-label { font-family: system-ui, -apple-system, sans-serif; font-weight: 700; font-size: 10.5px; letter-spacing: 0.9px; fill: #111; text-anchor: middle; }
+      .tent-letter{ font-family: system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 11px; fill: #111; text-anchor: middle; dominant-baseline: central; }
+      .compass-lbl{ font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: 12px; fill: #111; text-anchor: middle; }
+      .scale-lbl  { font-family: system-ui, -apple-system, sans-serif; font-size: 9.5px; font-weight: 600; fill: #222; text-anchor: middle; }
+      .label-bg   { fill: #ffffff; fill-opacity: 0.93; stroke: #222222; stroke-width: 0.85; rx: 3; ry: 3; }
+      .road-pill  { fill: #ffffff; stroke: #111111; stroke-width: 1.2; rx: 3; ry: 3; }
+    </style>
+  </defs>
+
+  <!-- Crisp White Paper Background -->
+  <rect x="0" y="0" width="1100" height="940" fill="#ffffff" />
+
+  <!-- =========================================================
+       SUBTLE TERRAIN, FIELDS & CONTOURS (UTILITARIAN TOUCH)
+       ========================================================= -->
+  <!-- Western Barley Field (North of West Road) -->
+  <path d="M 38,295 L 170,295 L 170,412 L 38,412 Z" fill="url(#cropRows)" stroke="#777" stroke-width="1" stroke-dasharray="4,3" />
+  <text x="104" y="357" class="sub-label" style="fill:#555;">Barley Field</text>
+
+  <!-- Eastern Meadow / Farmland border (East of Cathedral) -->
+  <path d="M 1030,520 Q 1055,580 1035,660" fill="none" stroke="#bbb" stroke-width="1" stroke-dasharray="6,4" />
+  <!-- Gentle Southern Meadow Contour Arcs (NO South Road!) -->
+  <path d="M 285,845 Q 460,820 630,850" fill="none" stroke="#bbb" stroke-width="1" stroke-dasharray="8,5" />
+  <path d="M 330,875 Q 500,852 670,882" fill="none" stroke="#ccc" stroke-width="0.9" stroke-dasharray="6,5" />
+  <text x="485" y="888" class="sub-label" style="fill:#666;">Open Meadows &amp; Southern Farmland</text>
+
+  <!-- Subtle Grass Tufts -->
+  <use href="#tuft" x="230" y="170" />
+  <use href="#tuft" x="645" y="135" />
+  <use href="#tuft" x="955" y="210" />
+  <use href="#tuft" x="105" y="618" />
+  <use href="#tuft" x="395" y="790" />
+  <use href="#tuft" x="620" y="810" />
+  <use href="#tuft" x="995" y="710" />
+  <use href="#tuft" x="245" y="845" />
+
+  <!-- =========================================================
+       ROAD NETWORK: 1 WEST ROAD, 1 EAST ROAD, 1 NORTH DIRT PATH
+       (NO SOUTH ROAD!)
+       ========================================================= -->
+  <!-- Solstice Festival Grounds Lawn (Base of Cathedral) -->
+  <ellipse cx="735" cy="500" rx="95" ry="78" fill="url(#lawnDots)" stroke="#666" stroke-width="1.2" stroke-dasharray="5,3" />
+
+  <!-- 1. NORTH DIRT PATH (Narrower, organic dashed trail exiting NORTH only) -->
+  <path d="M 465,382 C 455,325 450,270 462,205 C 470,155 462,90 464,24"
+        fill="none" stroke="#f5f5f5" stroke-width="20" stroke-linecap="butt" />
+  <path d="M 455,382 C 445,325 440,270 452,205 C 460,155 452,90 454,24"
+        fill="none" stroke="#333" stroke-width="1.4" stroke-dasharray="7,4" />
+  <path d="M 475,382 C 465,325 460,270 472,205 C 480,155 472,90 474,24"
+        fill="none" stroke="#333" stroke-width="1.4" stroke-dasharray="7,4" />
+  <!-- Light footpath center dots -->
+  <path d="M 465,370 C 455,320 450,268 462,205 C 470,155 462,90 464,30"
+        fill="none" stroke="#888" stroke-width="1.1" stroke-dasharray="1.5,7" />
+
+  <!-- 2. INTERNAL VILLAGE LANES (Stay strictly inside town — NO exit south!) -->
+  <!-- Southwest Lane to Watch Barracks & Jovial Juggler Inn -->
+  <path d="M 442,512 C 410,555 375,585 330,615 C 285,645 245,675 215,698"
+        fill="none" stroke="#111" stroke-width="22" stroke-linecap="round" />
+  <path d="M 442,512 C 410,555 375,585 330,615 C 285,645 245,675 215,698"
+        fill="none" stroke="#f7f7f7" stroke-width="19" stroke-linecap="round" />
+  <!-- South Civic Lane terminating at Town Hall steps -->
+  <path d="M 518,528 L 524,630" fill="none" stroke="#111" stroke-width="24" />
+  <path d="M 518,528 L 524,630" fill="none" stroke="#f7f7f7" stroke-width="21" />
+  <!-- Southeast Drive terminating cleanly at Stonecrest Manor Iron Gate -->
+  <path d="M 592,512 C 640,565 695,618 738,668"
+        fill="none" stroke="#111" stroke-width="20" stroke-linecap="round" />
+  <path d="M 592,512 C 640,565 695,618 738,668"
+        fill="none" stroke="#f7f7f7" stroke-width="17" stroke-linecap="round" />
+  <!-- Short spur from East Road to Thunderhammer Smithy -->
+  <path d="M 790,348 L 820,250" fill="none" stroke="#222" stroke-width="16" />
+  <path d="M 790,348 L 820,250" fill="none" stroke="#f7f7f7" stroke-width="13.5" />
+  <!-- Short spur from Feldepost Square to Feldepost's Inn -->
+  <path d="M 455,390 C 425,355 405,322 390,295" fill="none" stroke="#222" stroke-width="16" />
+  <path d="M 455,390 C 425,355 405,322 390,295" fill="none" stroke="#f7f7f7" stroke-width="13.5" />
+  <!-- Short alley (Cobbler's Lane) running north off West Road between row-houses -->
+  <path d="M 232,445 L 232,312 L 292,288" fill="none" stroke="#222" stroke-width="14" stroke-linejoin="round" />
+  <path d="M 232,445 L 232,312 L 292,288" fill="none" stroke="#eeeeee" stroke-width="11.5" stroke-linejoin="round" />
+
+  <!-- 3. SINGLE WEST ROAD (Left border -> Feldepost Square) -->
+  <path d="M 24,455 C 150,455 270,458 418,455"
+        fill="none" stroke="#111" stroke-width="34" />
+  <path d="M 24,455 C 150,455 270,458 418,455"
+        fill="none" stroke="#fafafa" stroke-width="30" />
+  <path d="M 24,455 C 150,455 270,458 418,455"
+        fill="none" stroke="url(#cobbleDots)" stroke-width="26" />
+
+  <!-- 4. SINGLE EAST ROAD (Feldepost Square -> North of Cathedral -> Right border) -->
+  <path d="M 605,442 C 675,420 735,360 825,342 C 915,326 995,332 1076,332"
+        fill="none" stroke="#111" stroke-width="34" />
+  <path d="M 605,442 C 675,420 735,360 825,342 C 915,326 995,332 1076,332"
+        fill="none" stroke="#fafafa" stroke-width="30" />
+  <path d="M 605,442 C 675,420 735,360 825,342 C 915,326 995,332 1076,332"
+        fill="none" stroke="url(#cobbleDots)" stroke-width="26" />
+
+  <!-- Connector walk from Feldepost Square directly east into Carnival Grounds & Cathedral Steps -->
+  <path d="M 610,480 L 648,492" fill="none" stroke="#222" stroke-width="18" />
+  <path d="M 610,480 L 648,492" fill="none" stroke="#fafafa" stroke-width="15" />
+
+  <!-- =========================================================
+       CENTRAL PLAZA: FELDEPOST SQUARE & MUNICIPAL WELL
+       ========================================================= -->
+  <ellipse cx="515" cy="455" rx="102" ry="76" fill="#ffffff" stroke="#111" stroke-width="2.2" />
+  <ellipse cx="515" cy="455" rx="95" ry="69" fill="url(#cobbleDots)" stroke="#777" stroke-width="0.9" stroke-dasharray="4,3" />
+  <ellipse cx="515" cy="455" rx="46" ry="34" fill="none" stroke="#999" stroke-width="0.8" />
+  <!-- Municipal Well Icon -->
+  <circle cx="515" cy="448" r="15" fill="#fff" stroke="#111" stroke-width="2" />
+  <circle cx="515" cy="448" r="9" fill="#222" />
+  <line x1="498" y1="448" x2="532" y2="448" stroke="#111" stroke-width="2.2" />
+  <circle cx="515" cy="448" r="3" fill="#fff" />
+
+  <!-- =========================================================
+       BUILDINGS (CLEAN OVERHEAD ARCHITECTURAL ROOFS)
+       ========================================================= -->
+
+  <!-- 1. NORTH WATCH POST (Beside North Dirt Path) -->
+  <g id="bldg-watchpost">
+    <rect x="502" y="108" width="58" height="40" fill="#fff" stroke="#111" stroke-width="1.8" />
+    <rect x="502" y="128" width="58" height="20" fill="url(#roofHatch)" />
+    <line x1="502" y1="128" x2="560" y2="128" stroke="#111" stroke-width="1.4" />
+    <line x1="502" y1="108" x2="514" y2="128" stroke="#111" stroke-width="1" />
+    <line x1="560" y1="108" x2="548" y2="128" stroke="#111" stroke-width="1" />
+    <line x1="502" y1="148" x2="514" y2="128" stroke="#111" stroke-width="1" />
+    <line x1="560" y1="148" x2="548" y2="128" stroke="#111" stroke-width="1" />
+  </g>
+
+  <!-- 2. GRAND CLOCKTOWER & BELFRY -->
+  <g id="bldg-clocktower">
+    <!-- Stone base shadow -->
+    <rect x="501" y="274" width="66" height="66" fill="#ddd" />
+    <!-- Outer tower walls -->
+    <rect x="497" y="270" width="66" height="66" fill="#fff" stroke="#111" stroke-width="2.4" />
+    <!-- Hip roof diagonals + shaded quadrants -->
+    <polygon points="497,336 530,303 563,336" fill="url(#stoneRoof)" />
+    <polygon points="563,270 530,303 563,336" fill="url(#roofHatch)" />
+    <line x1="497" y1="270" x2="563" y2="336" stroke="#111" stroke-width="1.3" />
+    <line x1="563" y1="270" x2="497" y2="336" stroke="#111" stroke-width="1.3" />
+    <!-- Central Belfry Cupola & Clock Symbol -->
+    <polygon points="530,285 543,290 548,303 543,316 530,321 517,316 512,303 517,290" fill="#fff" stroke="#111" stroke-width="1.8" />
+    <circle cx="530" cy="303" r="10" fill="#fff" stroke="#111" stroke-width="1.2" />
+    <line x1="530" y1="303" x2="530" y2="296" stroke="#111" stroke-width="1.5" />
+    <line x1="530" y1="303" x2="535" y2="305" stroke="#111" stroke-width="1.3" />
+  </g>
+
+  <!-- 3. APOTHECARY & HERB SHOP -->
+  <g id="bldg-apothecary">
+    <!-- Small herb garden beds behind shop -->
+    <rect x="637" y="218" width="70" height="30" fill="#fff" stroke="#666" stroke-width="1" stroke-dasharray="3,2" />
+    <line x1="647" y1="226" x2="697" y2="226" stroke="#888" stroke-width="1" stroke-dasharray="4,2" />
+    <line x1="647" y1="234" x2="697" y2="234" stroke="#888" stroke-width="1" stroke-dasharray="4,2" />
+    <line x1="647" y1="242" x2="697" y2="242" stroke="#888" stroke-width="1" stroke-dasharray="4,2" />
+    <!-- Main shop roof -->
+    <rect x="629" y="254" width="88" height="50" fill="#ddd" />
+    <rect x="626" y="250" width="88" height="50" fill="#fff" stroke="#111" stroke-width="2" />
+    <rect x="626" y="275" width="88" height="25" fill="url(#roofHatch)" />
+    <line x1="626" y1="275" x2="714" y2="275" stroke="#111" stroke-width="1.6" />
+  </g>
+
+  <!-- 4. THUNDERHAMMER SMITHY & COAL-YARD -->
+  <g id="bldg-smithy">
+    <!-- Fenced Back Coal-Yard -->
+    <rect x="778" y="122" width="112" height="50" fill="#fafafa" stroke="#444" stroke-width="1.3" stroke-dasharray="6,3" />
+    <text x="834" y="150" class="sub-label" style="fill:#555;">Coal-Yard</text>
+    <!-- Forge Building -->
+    <rect x="772" y="176" width="124" height="68" fill="#ddd" />
+    <rect x="768" y="172" width="124" height="68" fill="#fff" stroke="#111" stroke-width="2.1" />
+    <rect x="768" y="206" width="124" height="34" fill="url(#roofHatch)" />
+    <line x1="768" y1="206" x2="892" y2="206" stroke="#111" stroke-width="1.8" />
+    <!-- Great Forge Chimney -->
+    <rect x="852" y="182" width="20" height="20" fill="#222" stroke="#111" stroke-width="1.2" />
+    <rect x="856" y="186" width="12" height="12" fill="#fff" />
+  </g>
+
+  <!-- 5. FELDEPOST'S INN & TAVERN -->
+  <g id="bldg-feldepost">
+    <!-- Main L-wing Coaching Inn -->
+    <path d="M 276,208 L 412,208 L 412,262 L 368,262 L 368,292 L 276,292 Z" fill="#ddd" transform="translate(3,3)" />
+    <path d="M 276,208 L 412,208 L 412,262 L 368,262 L 368,292 L 276,292 Z" fill="#fff" stroke="#111" stroke-width="2.1" />
+    <!-- Roof ridges & shaded slopes -->
+    <rect x="276" y="235" width="136" height="27" fill="url(#roofHatch)" />
+    <rect x="322" y="262" width="46" height="30" fill="url(#roofHatch)" />
+    <line x1="276" y1="235" x2="412" y2="235" stroke="#111" stroke-width="1.7" />
+    <line x1="322" y1="235" x2="322" y2="292" stroke="#111" stroke-width="1.7" />
+    <path d="M 276,208 L 412,208 L 412,262 L 368,262 L 368,292 L 276,292 Z" fill="none" stroke="#111" stroke-width="2.1" />
+  </g>
+
+  <!-- 6. COBBLER'S LANE (Flanking Row-Houses along Narrow Alley) -->
+  <g id="bldg-cobblers">
+    <!-- West Row-House -->
+    <rect x="180" y="328" width="42" height="84" fill="#ddd" transform="translate(2,2)" />
+    <rect x="180" y="328" width="42" height="84" fill="#fff" stroke="#111" stroke-width="1.8" />
+    <rect x="201" y="328" width="21" height="84" fill="url(#roofHatch)" />
+    <line x1="201" y1="328" x2="201" y2="412" stroke="#111" stroke-width="1.4" />
+    <!-- East Row-House -->
+    <rect x="242" y="336" width="38" height="76" fill="#ddd" transform="translate(2,2)" />
+    <rect x="242" y="336" width="38" height="76" fill="#fff" stroke="#111" stroke-width="1.8" />
+    <rect x="261" y="336" width="19" height="76" fill="url(#roofHatch)" />
+    <line x1="261" y1="336" x2="261" y2="412" stroke="#111" stroke-width="1.4" />
+  </g>
+
+  <!-- 7. MILLER'S HEARTH BAKERY (+ Western Grain Shed) -->
+  <g id="bldg-bakery">
+    <rect x="316" y="330" width="84" height="58" fill="#ddd" transform="translate(3,3)" />
+    <rect x="316" y="330" width="84" height="58" fill="#fff" stroke="#111" stroke-width="2" />
+    <rect x="316" y="359" width="84" height="29" fill="url(#roofHatch)" />
+    <line x1="316" y1="359" x2="400" y2="359" stroke="#111" stroke-width="1.6" />
+    <!-- Brick Bakery Oven Chimney -->
+    <circle cx="384" cy="344" r="7" fill="#333" stroke="#111" stroke-width="1.2" />
+    <circle cx="384" cy="344" r="3" fill="#fff" />
+  </g>
+  <g id="bldg-grainshed">
+    <rect x="86" y="504" width="84" height="46" fill="#ddd" transform="translate(2,2)" />
+    <rect x="86" y="504" width="84" height="46" fill="#fff" stroke="#111" stroke-width="1.8" />
+    <rect x="86" y="527" width="84" height="23" fill="url(#roofHatch)" />
+    <line x1="86" y1="527" x2="170" y2="527" stroke="#111" stroke-width="1.4" />
+  </g>
+
+  <!-- 8. SONG OF THE MORNING CATHEDRAL (Grand Cruciform Temple) -->
+  <g id="bldg-cathedral">
+    <!-- Broad Western Stone Entrance Steps -->
+    <rect x="826" y="476" width="22" height="56" fill="#fff" stroke="#111" stroke-width="1.4" />
+    <line x1="832" y1="476" x2="832" y2="532" stroke="#555" stroke-width="1" />
+    <line x1="838" y1="476" x2="838" y2="532" stroke="#555" stroke-width="1" />
+    <line x1="843" y1="476" x2="843" y2="532" stroke="#555" stroke-width="1" />
+    <!-- Cruciform Shadow -->
+    <path d="M 852,470 L 926,470 L 926,428 L 976,428 L 976,470 L 1018,470 A 34,34 0 0 1 1018,538 L 976,538 L 976,580 L 926,580 L 926,538 L 852,538 Z"
+          fill="#d8d8d8" transform="translate(4,4)" />
+    <!-- Cruciform Main Nave & Transept -->
+    <path d="M 852,470 L 926,470 L 926,428 L 976,428 L 976,470 L 1018,470 A 34,34 0 0 1 1018,538 L 976,538 L 976,580 L 926,580 L 926,538 L 852,538 Z"
+          fill="#fff" stroke="#111" stroke-width="2.4" />
+    <!-- Shaded lower/east roof slopes -->
+    <path d="M 852,504 L 1052,504 A 34,34 0 0 1 1018,538 L 976,538 L 976,580 L 951,580 L 951,504 Z" fill="url(#stoneRoof)" />
+    <rect x="951" y="428" width="25" height="76" fill="url(#roofHatch)" />
+    <!-- Main roof ridge cross -->
+    <line x1="852" y1="504" x2="1032" y2="504" stroke="#111" stroke-width="2" />
+    <line x1="951" y1="428" x2="951" y2="580" stroke="#111" stroke-width="2" />
+    <!-- Re-stroke crisp outline -->
+    <path d="M 852,470 L 926,470 L 926,428 L 976,428 L 976,470 L 1018,470 A 34,34 0 0 1 1018,538 L 976,538 L 976,580 L 926,580 L 926,538 L 852,538 Z"
+          fill="none" stroke="#111" stroke-width="2.4" />
+    <!-- Twin West Bell Towers -->
+    <rect x="846" y="446" width="32" height="32" fill="#fff" stroke="#111" stroke-width="2" />
+    <line x1="846" y1="446" x2="878" y2="478" stroke="#111" stroke-width="1.2" />
+    <line x1="878" y1="446" x2="846" y2="478" stroke="#111" stroke-width="1.2" />
+    <rect x="846" y="530" width="32" height="32" fill="#fff" stroke="#111" stroke-width="2" />
+    <line x1="846" y1="530" x2="878" y2="562" stroke="#111" stroke-width="1.2" />
+    <line x1="878" y1="530" x2="846" y2="562" stroke="#111" stroke-width="1.2" />
+    <!-- Central Sun Rose / Crossing Lantern -->
+    <circle cx="951" cy="504" r="11" fill="#fff" stroke="#111" stroke-width="1.6" />
+    <circle cx="951" cy="504" r="4" fill="#111" />
+  </g>
+
+  <!-- 9. SOLSTICE CARNIVAL BOOTHS [A]-[E] (At Base of Cathedral) -->
+  <g id="carnival-tents">
+    <g transform="translate(772, 452)"><use href="#tent" /><text x="0" y="0" class="tent-letter">A</text></g>
+    <g transform="translate(696, 466)"><use href="#tent" /><text x="0" y="0" class="tent-letter">B</text></g>
+    <g transform="translate(746, 504)"><use href="#tent" /><text x="0" y="0" class="tent-letter">C</text></g>
+    <g transform="translate(694, 542)"><use href="#tent" /><text x="0" y="0" class="tent-letter">D</text></g>
+    <g transform="translate(772, 554)"><use href="#tent" /><text x="0" y="0" class="tent-letter">E</text></g>
+  </g>
+
+  <!-- 10. TOWN WATCH BARRACKS & MUSTER YARD -->
+  <g id="bldg-barracks">
+    <!-- Fenced Muster Yard -->
+    <rect x="276" y="556" width="98" height="46" fill="#fafafa" stroke="#444" stroke-width="1.2" stroke-dasharray="5,3" />
+    <text x="325" y="583" class="sub-label" style="fill:#555;">Muster Yard</text>
+    <!-- Barracks Hall -->
+    <rect x="274" y="606" width="114" height="62" fill="#ddd" transform="translate(3,3)" />
+    <rect x="274" y="606" width="114" height="62" fill="#fff" stroke="#111" stroke-width="2.1" />
+    <rect x="274" y="637" width="114" height="31" fill="url(#roofHatch)" />
+    <line x1="274" y1="637" x2="388" y2="637" stroke="#111" stroke-width="1.7" />
+  </g>
+
+  <!-- 11. THE JOVIAL JUGGLER INN -->
+  <g id="bldg-juggler">
+    <!-- Outdoor Festival Stage Deck -->
+    <rect x="148" y="672" width="58" height="22" fill="#fff" stroke="#333" stroke-width="1.3" />
+    <text x="177" y="686" class="sub-label" style="font-size:9px;">Stage</text>
+    <!-- Inn Building -->
+    <rect x="114" y="698" width="128" height="68" fill="#ddd" transform="translate(3,3)" />
+    <rect x="114" y="698" width="128" height="68" fill="#fff" stroke="#111" stroke-width="2.1" />
+    <rect x="114" y="732" width="128" height="34" fill="url(#roofHatch)" />
+    <line x1="114" y1="732" x2="242" y2="732" stroke="#111" stroke-width="1.7" />
+  </g>
+
+  <!-- 12. TOWN HALL & ARCHIVES -->
+  <g id="bldg-townhall">
+    <!-- Front Columned Portico Steps -->
+    <rect x="492" y="622" width="66" height="14" fill="#fff" stroke="#111" stroke-width="1.4" />
+    <circle cx="502" cy="628" r="2.2" fill="#111" />
+    <circle cx="517" cy="628" r="2.2" fill="#111" />
+    <circle cx="533" cy="628" r="2.2" fill="#111" />
+    <circle cx="548" cy="628" r="2.2" fill="#111" />
+    <!-- Main Hall -->
+    <rect x="456" y="636" width="138" height="74" fill="#ddd" transform="translate(3,3)" />
+    <rect x="456" y="636" width="138" height="74" fill="#fff" stroke="#111" stroke-width="2.2" />
+    <rect x="456" y="673" width="138" height="37" fill="url(#stoneRoof)" />
+    <line x1="456" y1="673" x2="594" y2="673" stroke="#111" stroke-width="1.8" />
+    <line x1="456" y1="636" x2="474" y2="673" stroke="#111" stroke-width="1.1" />
+    <line x1="594" y1="636" x2="576" y2="673" stroke="#111" stroke-width="1.1" />
+    <line x1="456" y1="710" x2="474" y2="673" stroke="#111" stroke-width="1.1" />
+    <line x1="594" y1="710" x2="576" y2="673" stroke="#111" stroke-width="1.1" />
+  </g>
+
+  <!-- 13. STONECREST MANOR (Prominent Private Walled Estate in SE Quarter) -->
+  <g id="bldg-stonecrest">
+    <!-- Private Grounds Subtle Fill -->
+    <rect x="698" y="668" width="256" height="172" fill="#fbfbfb" />
+    <!-- Heavy Stone Estate Perimeter Wall (with Iron Gate gap on NW side) -->
+    <path d="M 722,668 L 698,668 L 698,840 L 954,840 L 954,668 L 762,668"
+          fill="none" stroke="#111" stroke-width="4.5" stroke-linejoin="miter" />
+    <path d="M 722,668 L 698,668 L 698,840 L 954,840 L 954,668 L 762,668"
+          fill="none" stroke="#fff" stroke-width="1.5" stroke-linejoin="miter" />
+    <!-- Stone Wall Corner & Gate Piers -->
+    <rect x="693" y="663" width="10" height="10" fill="#111" />
+    <rect x="949" y="663" width="10" height="10" fill="#111" />
+    <rect x="693" y="835" width="10" height="10" fill="#111" />
+    <rect x="949" y="835" width="10" height="10" fill="#111" />
+    <rect x="719" y="663" width="8" height="10" fill="#111" />
+    <rect x="757" y="663" width="8" height="10" fill="#111" />
+    <!-- Wrought-Iron Gate Bars across Entrance -->
+    <line x1="727" y1="668" x2="757" y2="668" stroke="#111" stroke-width="2" stroke-dasharray="4,2" />
+    <text x="742" y="657" class="sub-label" style="font-size:9.5px; fill:#333;">Iron Gate</text>
+
+    <!-- Gravel Courtyard Turnaround & Ornamental Fountain -->
+    <path d="M 742,670 L 742,742 L 778,742" fill="none" stroke="#888" stroke-width="10" stroke-linecap="round" />
+    <path d="M 742,670 L 742,742 L 778,742" fill="none" stroke="#f5f5f5" stroke-width="8" stroke-linecap="round" />
+    <circle cx="740" cy="788" r="13" fill="#fff" stroke="#444" stroke-width="1.2" />
+    <circle cx="740" cy="788" r="5" fill="#ddd" stroke="#444" stroke-width="0.9" />
+
+    <!-- Grand Winged Stone Manor House (U/H-shaped architecture) -->
+    <path d="M 780,702 L 926,702 L 926,808 L 882,808 L 882,778 L 824,778 L 824,808 L 780,808 Z"
+          fill="#d8d8d8" transform="translate(3,3)" />
+    <path d="M 780,702 L 926,702 L 926,808 L 882,808 L 882,778 L 824,778 L 824,808 L 780,808 Z"
+          fill="#fff" stroke="#111" stroke-width="2.2" />
+    <!-- Manor Roof Ridges & Stone Slate Hatching -->
+    <rect x="780" y="740" width="146" height="38" fill="url(#stoneRoof)" />
+    <rect x="802" y="778" width="22" height="30" fill="url(#stoneRoof)" />
+    <rect x="904" y="778" width="22" height="30" fill="url(#stoneRoof)" />
+    <line x1="780" y1="740" x2="926" y2="740" stroke="#111" stroke-width="1.8" />
+    <line x1="802" y1="740" x2="802" y2="808" stroke="#111" stroke-width="1.6" />
+    <line x1="904" y1="740" x2="904" y2="808" stroke="#111" stroke-width="1.6" />
+    <path d="M 780,702 L 926,702 L 926,808 L 882,808 L 882,778 L 824,778 L 824,808 L 780,808 Z"
+          fill="none" stroke="#111" stroke-width="2.2" />
+  </g>
+
+  <!-- =========================================================
+       LIGHT SCATTERING OF CLASSIC TOP-DOWN TREES (OUTSKIRTS)
+       ========================================================= -->
+  <!-- North Woods Edge -->
+  <use href="#tree-lg" x="392" y="78" />
+  <use href="#tree-sm" x="422" y="102" />
+  <use href="#tree-lg" x="540" y="64" />
+  <use href="#tree-sm" x="625" y="92" />
+  <use href="#tree-lg" x="720" y="84" />
+  <use href="#tree-sm" x="752" y="96" />
+  <!-- West & Northwest Edge -->
+  <use href="#tree-lg" x="125" y="198" />
+  <use href="#tree-sm" x="155" y="216" />
+  <use href="#tree-sm" x="78" y="242" />
+  <use href="#tree-lg" x="68" y="675" />
+  <use href="#tree-sm" x="92" y="795" />
+  <!-- East Edge -->
+  <use href="#tree-lg" x="965" y="222" />
+  <use href="#tree-sm" x="1028" y="255" />
+  <use href="#tree-lg" x="1026" y="630" />
+  <use href="#tree-sm" x="1008" y="762" />
+  <!-- South Open Perimeter -->
+  <use href="#tree-sm" x="315" y="810" />
+  <use href="#tree-lg" x="635" y="782" />
+  <use href="#tree-sm" x="985" y="845" />
+
+  <!-- =========================================================
+       CLEAN, PLAYER-SAFE LABELS (BUILDING NAMES ONLY — NO SPOILERS)
+       ========================================================= -->
+  <!-- Road Direction Pills (Exactly 1 West, 1 East, 1 North Dirt Path!) -->
+  <g>
+    <rect x="40" y="443" width="118" height="24" class="road-pill" />
+    <text x="99" y="459" class="road-label">◄ WEST ROAD</text>
+  </g>
+  <g>
+    <rect x="940" y="320" width="118" height="24" class="road-pill" />
+    <text x="999" y="336" class="road-label">EAST ROAD ►</text>
+  </g>
+  <g>
+    <rect x="386" y="40" width="156" height="24" class="road-pill" />
+    <text x="464" y="56" class="road-label">▲ NORTH DIRT PATH</text>
+  </g>
+
+  <!-- Building Labels (Crisp White Pills so Every Word Is Effortless to Read) -->
+  <!-- 1. North Watch Post -->
+  <rect x="568" y="117" width="128" height="22" class="label-bg" />
+  <text x="632" y="132" class="bldg-label">North Watch Post</text>
+
+  <!-- 2. Grand Clocktower & Belfry -->
+  <rect x="444" y="242" width="174" height="22" class="label-bg" />
+  <text x="531" y="257" class="bldg-label">Grand Clocktower &amp; Belfry</text>
+
+  <!-- 3. Feldepost Square & Well -->
+  <rect x="431" y="476" width="168" height="22" class="label-bg" />
+  <text x="515" y="491" class="bldg-label">Feldepost Square &amp; Well</text>
+
+  <!-- 4. Apothecary & Herb Shop -->
+  <rect x="588" y="188" width="166" height="22" class="label-bg" />
+  <text x="671" y="203" class="bldg-label">Apothecary &amp; Herb Shop</text>
+
+  <!-- 5. Thunderhammer Smithy -->
+  <rect x="752" y="248" width="160" height="22" class="label-bg" />
+  <text x="832" y="263" class="bldg-label">Thunderhammer Smithy</text>
+
+  <!-- 6. Feldepost's Inn & Tavern -->
+  <rect x="262" y="180" width="164" height="22" class="label-bg" />
+  <text x="344" y="195" class="bldg-label">Feldepost's Inn &amp; Tavern</text>
+
+  <!-- 7. Cobbler's Lane -->
+  <rect x="172" y="297" width="108" height="21" class="label-bg" />
+  <text x="226" y="311" class="bldg-label">Cobbler's Lane</text>
+
+  <!-- 8. Miller's Hearth Bakery -->
+  <rect x="288" y="394" width="150" height="22" class="label-bg" />
+  <text x="363" y="409" class="bldg-label">Miller's Hearth Bakery</text>
+
+  <!-- 8b. Grain Shed -->
+  <rect x="85" y="556" width="86" height="21" class="label-bg" />
+  <text x="128" y="570" class="bldg-label">Grain Shed</text>
+
+  <!-- 9. Solstice Carnival Grounds -->
+  <rect x="650" y="402" width="170" height="22" class="label-bg" />
+  <text x="735" y="417" class="bldg-label">Solstice Carnival Grounds</text>
+
+  <!-- 10. Song of the Morning Cathedral -->
+  <rect x="844" y="588" width="198" height="22" class="label-bg" />
+  <text x="943" y="603" class="bldg-label">Song of the Morning Cathedral</text>
+
+  <!-- 11. Town Watch Barracks -->
+  <rect x="256" y="675" width="150" height="22" class="label-bg" />
+  <text x="331" y="690" class="bldg-label">Town Watch Barracks</text>
+
+  <!-- 12. The Jovial Juggler Inn -->
+  <rect x="102" y="772" width="154" height="22" class="label-bg" />
+  <text x="179" y="787" class="bldg-label">The Jovial Juggler Inn</text>
+
+  <!-- 13. Town Hall & Archives -->
+  <rect x="452" y="718" width="148" height="22" class="label-bg" />
+  <text x="526" y="733" class="bldg-label">Town Hall &amp; Archives</text>
+
+  <!-- 14. Stonecrest Manor -->
+  <rect x="760" y="848" width="134" height="23" class="label-bg" />
+  <text x="827" y="864" class="bldg-label">Stonecrest Manor</text>
+
+  <!-- =========================================================
+       CARTOGRAPHIC TITLE BLOCK, COMPASS ROSE, SCALE BAR & BORDER
+       ========================================================= -->
+  <!-- Title Cartouche (Top-Left) -->
+  <g id="title-box">
+    <rect x="40" y="38" width="318" height="68" fill="#ffffff" stroke="#111" stroke-width="2.2" />
+    <rect x="45" y="43" width="308" height="58" fill="none" stroke="#111" stroke-width="0.9" />
+    <text x="199" y="68" class="title-main" text-anchor="middle">TOWNSHIP OF BEREGOST</text>
+    <line x1="75" y1="76" x2="323" y2="76" stroke="#444" stroke-width="0.9" />
+    <text x="199" y="92" class="title-sub" text-anchor="middle">Summer Solstice Festival — Town Map</text>
+  </g>
+
+  <!-- Classic Compass Rose (Top-Right) -->
+  <g id="compass" transform="translate(1006, 94)">
+    <circle cx="0" cy="0" r="36" fill="#fff" stroke="#111" stroke-width="1.6" />
+    <circle cx="0" cy="0" r="31" fill="none" stroke="#666" stroke-width="0.7" />
+    <!-- Diagonal minor points -->
+    <polygon points="0,-20 5,-5 20,0 5,5 0,20 -5,5 -20,0 -5,-5" fill="#eee" stroke="#444" stroke-width="0.8" transform="rotate(45)" />
+    <!-- Cardinal star -->
+    <polygon points="0,-32 6,-6 0,0" fill="#111" />
+    <polygon points="0,-32 -6,-6 0,0" fill="#fff" stroke="#111" stroke-width="1" />
+    <polygon points="0,32 6,6 0,0" fill="#fff" stroke="#111" stroke-width="1" />
+    <polygon points="0,32 -6,6 0,0" fill="#111" />
+    <polygon points="32,0 6,6 0,0" fill="#111" />
+    <polygon points="32,0 6,-6 0,0" fill="#fff" stroke="#111" stroke-width="1" />
+    <polygon points="-32,0 -6,-6 0,0" fill="#111" />
+    <polygon points="-32,0 -6,6 0,0" fill="#fff" stroke="#111" stroke-width="1" />
+    <circle cx="0" cy="0" r="3" fill="#fff" stroke="#111" stroke-width="1" />
+    <text x="0" y="-41" class="compass-lbl">N</text>
+    <text x="0" y="51" class="compass-lbl">S</text>
+    <text x="45" y="4" class="compass-lbl">E</text>
+    <text x="-46" y="4" class="compass-lbl">W</text>
+  </g>
+
+  <!-- Scale Bar (Bottom-Left) -->
+  <g id="scale-bar" transform="translate(46, 868)">
+    <rect x="0" y="10" width="160" height="8" fill="#fff" stroke="#111" stroke-width="1.2" />
+    <rect x="0" y="10" width="40" height="8" fill="#111" />
+    <rect x="80" y="10" width="40" height="8" fill="#111" />
+    <text x="0" y="6" class="scale-lbl">0</text>
+    <text x="80" y="6" class="scale-lbl">100</text>
+    <text x="160" y="6" class="scale-lbl">200 ft</text>
+    <text x="80" y="30" class="sub-label" style="font-size:9.5px;">Approximate Scale</text>
+  </g>
+
+  <!-- Double-Ruled Outer Cartographic Frame -->
+  <rect x="16" y="16" width="1068" height="908" fill="none" stroke="#111" stroke-width="3" />
+  <rect x="24" y="24" width="1052" height="892" fill="none" stroke="#111" stroke-width="1.2" />
+</svg>
