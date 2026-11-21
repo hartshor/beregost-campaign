@@ -7,198 +7,341 @@
   <style>
     @page {
       size: letter portrait;
-      margin: 0.45in;
+      margin: 0.35in 0.38in;
     }
     * { box-sizing: border-box; }
     body {
       font-family: Georgia, "Times New Roman", serif;
       color: #111;
-      background: #f4f1ea;
+      background: #e9e5dc;
       margin: 0;
-      padding: 20px;
-      line-height: 1.38;
-      font-size: 10.2pt;
-    }
-    .sheet {
-      max-width: 8.2in;
-      margin: 0 auto;
-      background: #fff;
-      padding: 0.4in 0.45in;
-      border: 2px solid #222;
-      box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+      padding: 18px 16px 36px 16px;
+      line-height: 1.3;
+      font-size: 9.2pt;
     }
     .toolbar {
-      max-width: 8.2in;
+      max-width: 8.5in;
       margin: 0 auto 14px auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
       font-family: system-ui, -apple-system, sans-serif;
+      background: #161b22;
+      color: #f0f6fc;
+      padding: 10px 14px;
+      border-radius: 8px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    }
+    .toolbar-group {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      flex-wrap: wrap;
     }
     .btn {
-      background: #111;
-      color: #fff;
-      border: 1px solid #111;
-      padding: 8px 16px;
+      background: #e3b341;
+      color: #111;
+      border: 1.5px solid #e3b341;
+      padding: 6px 12px;
       border-radius: 5px;
       font-weight: 700;
       cursor: pointer;
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.82rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
     }
     .btn-outline {
-      background: #fff;
-      color: #111;
+      background: transparent;
+      color: #e6edf3;
+      border: 1px solid #6e7681;
+      font-weight: 600;
     }
+    .btn-outline.active {
+      background: rgba(227, 179, 65, 0.22);
+      border-color: #e3b341;
+      color: #e3b341;
+    }
+
+    /* Visual Page Cards on Screen -> Exact Print Pages */
+    .print-page {
+      max-width: 8.5in;
+      margin: 0 auto 20px auto;
+      background: #fff;
+      padding: 0.35in 0.4in;
+      border: 1.5px solid #333;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.14);
+      position: relative;
+    }
+    .print-page.map-page {
+      max-width: 8.5in;
+      padding: 0.35in 0.38in;
+    }
+    .page-badge {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 7.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #666;
+      background: #f2f2f2;
+      border: 1px solid #ccc;
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+
     header {
       border-bottom: 3px double #111;
-      padding-bottom: 8px;
-      margin-bottom: 12px;
+      padding-bottom: 6px;
+      margin-bottom: 10px;
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       flex-wrap: wrap;
-      gap: 6px;
+      gap: 4px;
     }
     h1 {
       margin: 0;
-      font-size: 16pt;
-      letter-spacing: 0.4px;
+      font-size: 14.5pt;
+      letter-spacing: 0.35px;
       text-transform: uppercase;
     }
     .subtitle {
       font-style: italic;
-      font-size: 9.5pt;
+      font-size: 8.6pt;
       color: #333;
     }
     h2 {
-      font-size: 11.8pt;
+      font-size: 10.6pt;
       text-transform: uppercase;
-      letter-spacing: 0.6px;
+      letter-spacing: 0.5px;
       border-bottom: 1.5px solid #111;
-      padding-bottom: 3px;
-      margin: 14px 0 8px 0;
+      padding-bottom: 2px;
+      margin: 10px 0 6px 0;
+      break-after: avoid;
       page-break-after: avoid;
     }
+    h2.first-heading {
+      margin-top: 2px;
+    }
     h3 {
-      font-size: 10.3pt;
-      margin: 10px 0 5px 0;
+      font-size: 9.2pt;
+      margin: 7px 0 4px 0;
       text-transform: uppercase;
       letter-spacing: 0.3px;
+      break-after: avoid;
       page-break-after: avoid;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 10px;
-      font-size: 9.4pt;
+      margin-bottom: 8px;
+      font-size: 8.4pt;
+    }
+    thead {
+      display: table-header-group;
+    }
+    tr {
+      break-inside: avoid;
+      page-break-inside: avoid;
     }
     th, td {
       border: 1px solid #444;
-      padding: 5px 7px;
+      padding: 3.5px 5.5px;
       vertical-align: top;
       text-align: left;
     }
     th {
       background: #eaeaea;
       font-family: system-ui, -apple-system, sans-serif;
-      font-size: 8.2pt;
+      font-size: 7.4pt;
       text-transform: uppercase;
-      letter-spacing: 0.4px;
+      letter-spacing: 0.35px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .compact-table {
+      font-size: 8pt;
+      line-height: 1.24;
+    }
+    .compact-table th, .compact-table td {
+      padding: 2.8px 5px;
     }
     .chk {
       display: inline-block;
-      width: 11px;
-      height: 11px;
-      border: 1.4px solid #111;
+      width: 9.5px;
+      height: 9.5px;
+      border: 1.3px solid #111;
       margin-right: 4px;
       vertical-align: -1px;
     }
     .tag {
       display: inline-block;
       border: 1px solid #222;
-      padding: 0 4px;
+      padding: 0 3.5px;
       font-family: system-ui, -apple-system, sans-serif;
-      font-size: 7.5pt;
+      font-size: 6.8pt;
       font-weight: 700;
       text-transform: uppercase;
       border-radius: 2px;
-      margin-right: 4px;
+      margin-right: 3px;
     }
     .tag-false {
       background: #eee;
       border-style: dashed;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
     .rhyme-box {
-      border: 2px solid #111;
-      padding: 10px 14px;
-      margin-top: 10px;
+      border: 1.8px solid #111;
+      padding: 7px 10px;
+      margin-top: 6px;
       background: #fafafa;
+      break-inside: avoid;
       page-break-inside: avoid;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
     }
     .rhyme-grid {
       display: grid;
-      grid-template-columns: 1fr 1.25fr;
-      gap: 14px;
+      grid-template-columns: 0.92fr 1.35fr;
+      gap: 12px;
       align-items: start;
-      margin-top: 6px;
+      margin-top: 4px;
     }
     .poem {
       font-style: italic;
-      font-size: 10pt;
-      line-height: 1.5;
-      border-left: 3px solid #111;
-      padding-left: 10px;
+      font-size: 8.8pt;
+      line-height: 1.42;
+      border-left: 2.5px solid #111;
+      padding-left: 8px;
       margin: 0;
     }
     .hooks {
       margin: 0;
-      padding-left: 16px;
-      font-size: 9.2pt;
+      padding-left: 15px;
+      font-size: 8.1pt;
+      line-height: 1.28;
     }
     .hooks li {
-      margin-bottom: 5px;
+      margin-bottom: 3.5px;
     }
-    .page-break {
-      page-break-before: always;
+    .hooks li:last-child {
+      margin-bottom: 0;
     }
     .small-note {
-      font-size: 8.6pt;
+      font-size: 8pt;
       color: #333;
-      margin: 0 0 6px 0;
+      margin: 0 0 5px 0;
     }
+
+    /* Map Page Styling */
+    .map-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 2px solid #111;
+      padding-bottom: 4px;
+      margin-bottom: 6px;
+      gap: 8px;
+    }
+    .map-header h2 {
+      border: none;
+      margin: 0;
+      padding: 0;
+      font-size: 11.5pt;
+    }
+    .map-frame {
+      border: 1.5px solid #111;
+      padding: 4px;
+      background: #fff;
+      text-align: center;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .map-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .map-legend {
+      margin-top: 5px;
+      font-size: 7.8pt;
+      color: #222;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 6px;
+      border-top: 1px solid #999;
+      padding-top: 4px;
+    }
+
     @media print {
       body {
         background: #fff;
         padding: 0;
+        margin: 0;
       }
-      .toolbar { display: none; }
-      .sheet {
+      .toolbar, .page-badge {
+        display: none !important;
+      }
+      .print-page {
         border: none;
         box-shadow: none;
         padding: 0;
+        margin: 0;
         max-width: 100%;
+      }
+      .page-break {
+        break-before: page;
+        page-break-before: always;
+      }
+      .print-page.map-page {
+        break-before: page;
+        page-break-before: always;
+        max-width: 100%;
+        padding: 0;
+      }
+      .map-frame img {
+        max-height: 8.6in;
+        width: 100%;
+        height: auto;
+        object-fit: contain;
       }
     }
   </style>
 </head>
 <body>
   <div class="toolbar">
-    <a href="index.html" class="btn btn-outline">← Back to Campaign Companion</a>
-    <div>
-      <button class="btn" onclick="window.print()">🖨️ Print Day 1 Cheat Sheet</button>
+    <div class="toolbar-group">
+      <a href="index.html" class="btn btn-outline">← Campaign Companion</a>
+      <span style="font-size:0.8rem; color:#8b949e;">4 Clean Portrait Pages (2 Sheets Double-Sided • B&amp;W Town Map on Page 4)</span>
+    </div>
+    <div class="toolbar-group">
+      <button id="btn-map-woodcut" class="btn btn-outline active" onclick="setCheatMap('woodcut')">✒️ Woodcut Map</button>
+      <button id="btn-map-schematic" class="btn btn-outline" onclick="setCheatMap('schematic')">📐 2D Schematic</button>
+      <button class="btn" onclick="window.print()">🖨️ Print 4-Page Cheat Sheet</button>
     </div>
   </div>
 
-  <div class="sheet">
+  <!-- =========================================================
+       PAGE 1: MORNING QUESTS & SOLSTICE CARNIVAL GAMES
+       ========================================================= -->
+  <section class="print-page">
+    <span class="page-badge">Page 1 of 4 • Morning Quests &amp; Carnival</span>
     <header>
       <h1>Beregost Day 1 (Loop 0) — DM Table Cheat Sheet</h1>
-      <div class="subtitle">Small Morning Quests • Carnival Games &amp; Rewards • Key Rumors &amp; Old Jonas's Rhyme • Evacuation &amp; Self-Sacrifice</div>
+      <div class="subtitle">Quests &amp; Carnival • Townsfolk Motivations • Afternoon Evacuation &amp; Self-Sacrifice • Rumors &amp; Rhyme • B&amp;W Town Map</div>
     </header>
 
-    <!-- SECTION 1: SMALL DAY 1 QUESTS -->
-    <h2>1. First Day Small Quests &amp; Rewards (05:59 – 11:00 AM)</h2>
+    <h2 class="first-heading">1. First Day Small Quests &amp; Rewards (05:59 – 11:00 AM)</h2>
     <p class="small-note"><strong>Town Hook:</strong> Bram, Tobias, and Captain Rebecca all remind the party to return to Feldepost Square by <strong>11:00 AM sharp</strong> for the High Sun Muster &amp; 250 gp payout.</p>
     <table>
       <thead>
@@ -220,7 +363,7 @@
           <td><span class="chk"></span><strong>Little Maya's Wooden Thrush</strong><br/><em>Little Maya (Age 8)</em></td>
           <td><strong>07:15 AM</strong><br/>Municipal Well (Feldepost Sq.)</td>
           <td>Maya bumps the bucket and drops her carved wooden thrush 40 ft down the well. Recover via <em>Mage Hand</em>, rope/climb (<strong>DC 10 Athletics</strong>), or diving.</td>
-          <td><strong>Braided Green Clover Bracelet</strong> (<em>"Don't take it off until the stars come out!"</em>).<br/><em>Clue:</em> Whispers the golden man at the North Gate cast <strong>no shadow</strong> &amp; had backward thumbs.</td>
+          <td><strong>Braided Green Clover Bracelet</strong> (<em>"Don't take it off until the stars come out!"</em>).<br/><em>Clue:</em> Whispers golden man at North Gate cast <strong>no shadow</strong> &amp; had backward thumbs.</td>
         </tr>
         <tr>
           <td><span class="chk"></span><strong>West: Barleyfield Firebreak</strong><br/><em>Tobias Miller (Baker)</em></td>
@@ -243,9 +386,8 @@
       </tbody>
     </table>
 
-    <!-- SECTION 2: EARLY MORNING CARNIVAL GAMES -->
     <h2>2. Early Morning Solstice Carnival Games &amp; Rewards (06:30 – 08:30 AM)</h2>
-    <p class="small-note">Set up on the lawn at the base of the Temple of Lathander and Jovial Juggler Plaza; open to every PC.</p>
+    <p class="small-note">Set up on the lawn at the base of the Song of the Morning Church (Booths [A]–[E] on the Page 4 Map) and Jovial Juggler Plaza; open to every PC.</p>
     <table>
       <thead>
         <tr>
@@ -257,43 +399,179 @@
       </thead>
       <tbody>
         <tr>
-          <td><span class="chk"></span><strong>Solar Bullseye of Lathander</strong><br/><em>Sister Althea</em></td>
+          <td><span class="chk"></span><strong>[A] Solar Bullseye of Lathander</strong><br/><em>Sister Althea</em></td>
           <td>Temple Garden (Base of Church)</td>
           <td>Shoot blunted sun-crested arrows at a swinging brass medallion 40 ft away: <strong>DC 13 Ranged Attack or Dexterity</strong>.</td>
           <td><strong>Ribbon of the Morninglord</strong> — +1 bonus to one Death Saving Throw or Radiant damage/save check.</td>
         </tr>
         <tr>
-          <td><span class="chk"></span><strong>Blindfold Herb Tasting</strong><br/><em>Old Granny Morwen</em></td>
+          <td><span class="chk"></span><strong>[B] Blindfold Herb Tasting</strong><br/><em>Old Granny Morwen</em></td>
           <td>Herb Stall (Base of Church)</td>
           <td>Identify mountain thyme, frost-root bark, and sun-blossom blindfolded by scent &amp; pinch-taste: <strong>DC 13 Medicine or Nature</strong>.</td>
           <td><strong>Tin of Morwen's Mint &amp; Lavender Lozenges</strong> — Restores 1d4 HP &amp; grants Advantage on 1 Con save vs Heat Exhaustion.</td>
         </tr>
         <tr>
-          <td><span class="chk"></span><strong>Anvil-Ringer Sledgehammer</strong><br/><em>Taerom Thunderhammer</em></td>
-          <td>Smithy Courtyard</td>
+          <td><span class="chk"></span><strong>[C] Anvil-Ringer Sledgehammer</strong><br/><em>Taerom Thunderhammer</em></td>
+          <td>Smithy / Church Lawn</td>
           <td>Swing a 30-lb iron sledge onto a steel rocker piston to ring the Great Forge Bell 25 ft up: <strong>DC 14 Strength (Athletics)</strong>.</td>
           <td><strong>Thunderhammer Whetstone</strong> — Grants +1 bonus damage on the first weapon strike after honing.</td>
         </tr>
         <tr>
-          <td><span class="chk"></span><strong>Honey-Currant Pie Sprint</strong><br/><em>Tobias Miller</em></td>
-          <td>Bakery Pavilion</td>
+          <td><span class="chk"></span><strong>[D] Honey-Currant Pie Sprint</strong><br/><em>Tobias Miller</em></td>
+          <td>Bakery Pavilion (Base of Church)</td>
           <td>Slalom through cheering festival-goers balancing a scorching hot platter of 6 glazed buns: <strong>DC 12 Con Save or DC 13 Acrobatics/Sleight of Hand</strong>.</td>
           <td><strong>Baker's Apron Pin &amp; Warm Currant Buns</strong> — Restores +2 HP on a Short Rest (and earns cheers from the town children).</td>
         </tr>
         <tr>
-          <td><span class="chk"></span><strong>Solstice Rhyme Duel &amp; Baton Catch</strong><br/><em>Elorion the Bard &amp; Pip</em></td>
+          <td><span class="chk"></span><strong>[E] Solstice Rhyme Duel</strong><br/><em>Elorion the Bard &amp; Pip</em></td>
           <td>Jovial Juggler Plaza Stage</td>
           <td>Trade rapid-fire festival couplets while catching spinning wooden batons in tempo: <strong>DC 13 Performance or Acrobatics</strong>.</td>
           <td><strong>Bardic Solstice Token</strong> (1× +1d6 Bardic Inspiration to any d20 roll) + <strong>Counter-Harmony of the Morning</strong> sheet music.</td>
         </tr>
       </tbody>
     </table>
+  </section>
 
-    <!-- SECTION 3: KEY RUMORS & OLD JONAS'S RHYME -->
-    <h2 class="page-break">3. Key Rumors to Seed (True &amp; False) + Old Jonas's Rhyme</h2>
+  <!-- =========================================================
+       PAGE 2: TOWNSFOLK & MOTIVATIONS + EVACUATION & SELF-SACRIFICE
+       ========================================================= -->
+  <section class="print-page page-break">
+    <span class="page-badge">Page 2 of 4 • Townsfolk Motivations &amp; Afternoon Evacuation</span>
+
+    <h2 class="first-heading">3. Key Beregost Townsfolk &amp; Their Motivations (Quick Persona Guide)</h2>
+    <table class="compact-table">
+      <thead>
+        <tr>
+          <th style="width:21%;">Townsfolk &amp; Location</th>
+          <th style="width:31%;">Core Motivation</th>
+          <th style="width:24%;">Voice / Roleplay Cue</th>
+          <th style="width:24%;">Key Clue / Afternoon Beat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Artificer Bram Copperwheel</strong><br/><em>Clocktower Belfry</em></td>
+          <td>Keep the 150-ft Solstice Clocktower chiming on time &amp; learn who smashed his western rail at 5:58 AM.</td>
+          <td>Breathless rock gnome; brass goggles, grease-stained knuckles.</td>
+          <td>Pays 25 gp + 11 AM Muster hook; holds Escapement Code <code>7-3-9-1</code>.</td>
+        </tr>
+        <tr>
+          <td><strong>Tobias Miller</strong><br/><em>Miller's Hearth Bakery</em></td>
+          <td>Feed every citizen warm honey-currant rolls, save his western grain shed, &amp; look out for orphan Maya.</td>
+          <td>Booming, warm, flour on cheeks; treats strangers like family.</td>
+          <td>Gives West Firebreak quest; holds red-hot crypt bar at 3:15 PM.</td>
+        </tr>
+        <tr>
+          <td><strong>Little Maya (Age 8)</strong><br/><em>Municipal Well / Square</em></td>
+          <td>Rescue her dropped wooden thrush from the well &amp; weave lucky green clover bracelets for her heroes.</td>
+          <td>Bright-eyed, scraped knees, patched green smock; sniffling at 7:15 AM.</td>
+          <td>Saw "Lord Aurelius" cast <strong>no shadow</strong> with backward thumbs.</td>
+        </tr>
+        <tr>
+          <td><strong>Captain Rebecca Thorne</strong><br/><em>Guard Barracks / Gates</em></td>
+          <td>Keep Solstice peace, check outskirts patrols before noon, &amp; protect the children she once bled for.</td>
+          <td>Gruff half-orc vet rubbing mint salve into her ruined war-knee brace.</td>
+          <td>Rings 1:30 PM evacuation bells; braces burning crypt door at 3:15 PM.</td>
+        </tr>
+        <tr>
+          <td><strong>Old Jonas the Rhymer</strong><br/><em>Municipal Well / Bakery</em></td>
+          <td>Recite his 8-line Solstice Chant until heroes understand it (burned his own mind via Ulcaster rite to save it).</td>
+          <td>Haggard, shivering in patched quilt; bursts into clear singsong rhyme.</td>
+          <td>Weeping if given warm food; reveals Scribe Vane bought his desert satchel.</td>
+        </tr>
+        <tr>
+          <td><strong>Sister Althea</strong><br/><em>Song of the Morning Temple</em></td>
+          <td>Celebrate Lathander's dawn until the sun turns cruel—then shelter every soul in the deep Cathedral Crypts.</td>
+          <td>Radiant, calm priestess in saffron robes; fiercely decisive in crisis.</td>
+          <td>Notices Aurelius refuses hallowed steps (7:30 AM); opens Crypts at 1:00 PM.</td>
+        </tr>
+        <tr>
+          <td><strong>Old Granny Morwen</strong><br/><em>Apothecary &amp; Herb Stall</em></td>
+          <td>Brew cooling mountain-lichen salves &amp; deliver her prized <em>Moon-Dew &amp; Sun-Orchid</em> basket before noon.</td>
+          <td>Blind, sharp-nosed herbalist; gentle teasing, razor-sharp intuition.</td>
+          <td>Smells roses/incense from northern woods; mugged 10:15 AM (Cobbler's Ln).</td>
+        </tr>
+        <tr>
+          <td><strong>Taerom Thunderhammer</strong><br/><em>Thunderhammer Smithy</em></td>
+          <td>Forge cold-iron ballista tips for Dwarvenhold cousins &amp; test festival visitors' strength at the anvil.</td>
+          <td>Barrel-chested, soot-bearded smith; laughs loud, curses louder when robbed.</td>
+          <td>Reports Rimefang awake; robbed at 8:45 AM by charmed courier Vex.</td>
+        </tr>
+        <tr>
+          <td><strong>Elorion the Solstice Bard</strong><br/><em>Jovial Juggler Stage</em></td>
+          <td>Keep Beregost's spirits lifted with song &amp; decipher the eerie F-sharp hum drifting from the west cliffs.</td>
+          <td>Silver-tongued elven minstrel; playful couplets &amp; bright lute chords.</td>
+          <td>Gives <em>Counter-Harmony</em> sheet music; sings lullaby in crypt smoke until the end.</td>
+        </tr>
+        <tr>
+          <td><strong>Young Kaelen</strong><br/><em>Feldepost's Inn, Room #4</em></td>
+          <td>Figure out why his brass chronomancy gyroscopes are spinning backward on the morning of Solstice.</td>
+          <td>26-yr-old ink-stained mage; intense, bewildered, clutching a blank journal.</td>
+          <td>Journal fills with 86-yr-old future self's notes at 11:30 AM (sacrifices 60 yrs).</td>
+        </tr>
+        <tr>
+          <td><strong>Barnaby Feldepost &amp; Renwick</strong><br/><em>Feldepost's Inn / N. Gate</em></td>
+          <td>Barnaby keeps the taproom flowing &amp; knows old cellar passages; Constable Renwick logs every gate arrival.</td>
+          <td>Barnaby: gruff, gossipy innkeeper. Renwick: meticulous ledger-keeper.</td>
+          <td>Barnaby knows Rimefang/Djinn lore; Renwick's 7 AM log notes "no shadow."</td>
+        </tr>
+        <tr>
+          <td><strong>Alderman Durlag &amp; Scribe Vane</strong><br/><em>Stonecrest Manor / Town Hall</em></td>
+          <td><strong>Durlag (Greedy Foil):</strong> Hoard cold-iron, ice, &amp; gold for himself. <strong>Vane:</strong> Nervous clerk dominated by Aurelius at 7:45 AM.</td>
+          <td>Durlag: pompous, sneering, clutching vault keys. Vane: sweating, glassy-eyed.</td>
+          <td><strong>Both refuse to evacuate!</strong> Durlag welds himself in his vault (dies 3:30 PM).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>4. Afternoon Heat, Cathedral Evacuation &amp; Self-Sacrifice (10:00 AM – 5:59 PM)</h2>
+    <table class="compact-table">
+      <thead>
+        <tr>
+          <th style="width:17%;">Time &amp; Heat</th>
+          <th style="width:43%;">What Happens &amp; When to Evacuate to the Cathedral</th>
+          <th style="width:40%;">Townsfolk Response / Who Refuses to Evacuate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="chk"></span><strong>10:00 AM – 12:59 PM</strong><br/><em>Abnormally Warm (85–95°F)</em></td>
+          <td>Sunny, abnormally warm Solstice day—<strong>no heat damage yet</strong>. <strong>No gryphon flight after 10:00 AM</strong> (violent upper-sky updrafts). <em>11:30 AM:</em> Northern Ash Grove boom rattles windows.</td>
+          <td><strong>Townsfolk are happy!</strong> They laugh and praise Lathander for a glorious warm Solstice blessing (brushing off Old Jonas's warnings).</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>1:00 PM – 2:45 PM</strong><br/><em>Sweltering (120–135°F)</em></td>
+          <td>Heat turns truly <strong>sweltering</strong> (harsh glare; heavy/medium armor <strong>DC 12 Con save</strong> vs Exhaustion; shingles smoke by 2:00 PM). <strong>EVACUATION WINDOW:</strong> At <strong>1:00 PM</strong>, Sister Althea throws open the deep <strong>Cathedral (Temple of Lathander) Crypts</strong>; Captain Rebecca rings alarm bells and herds 50+ townsfolk underground from <strong>1:30–2:45 PM</strong>!</td>
+          <td><strong>Seeing People Refuse to Evacuate (The Greedy Foil):</strong> While families rush to the Cathedral, the party sees <strong>Alderman Durlag Stonecrest</strong> slam his iron manor gates on begging neighbors, hoarding ice and gold inside his granite vault (<em>door thermal-welds shut; suffocates at 3:30 PM</em>). Charmed <strong>Scribe Vane</strong> hides in the Town Hall vault unless freed.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>3:00 PM – 5:25 PM</strong><br/><em>Lethal Surface (175°F)</em></td>
+          <td><strong>MUST BE UNDERGROUND TO AVOID DAMAGE!</strong> Surface air deals <strong>10d6 Fire/rd outdoors</strong> (1d10/rd in ground-level buildings); deep Cathedral sub-crypts stay insulated (0 dmg) until 5:30 PM—but at <strong>3:15 PM</strong>, thermal expansion snaps the upper crypt blast door crossbar!</td>
+          <td><strong>Tobias &amp; Rebecca's Stand:</strong> Rebecca braces her ruined war-knee against the scorching blast door while Tobias grips the red-hot iron bar in bare hands (<em>"My hands know a 500° oven—let a baker mind the door!"</em>) so families can move further down. <strong>Elorion</strong> spends his last breath singing a lullaby in the smoke.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="rhyme-box">
+      <strong style="font-size:8.6pt;"><span class="chk"></span>🔥 OPPORTUNITIES FOR PLAYER SELF-SACRIFICE WHILE EVACUATING FOLKS FURTHER DOWN (2:30 – 5:30 PM)</strong>
+      <ul class="hooks" style="margin-top:4px;">
+        <li><strong>1. Hold the Snapped, Red-Hot Cathedral Blast Door (3:15 PM):</strong> Step into Tobias &amp; Rebecca's place holding the glowing iron crossbar (<strong>2d10 Fire/rd, no save</strong>) so Tobias, Rebecca, and the last stragglers can push further down into the deep sub-crypts alive.</li>
+        <li><strong>2. Dash Back for Stragglers &amp; Shield the Cracked Belfry Air-Shaft:</strong> Run back into the scorching upper nave (2:45–3:00 PM) to carry fallen townsfolk down—or climb the stonework and wedge your cloak &amp; body over the ember-raining belfry air-shaft above <strong>Little Maya</strong> &amp; the orphans (voluntarily taking Exhaustion &amp; 1d10 smoke/fire dmg/rd), placing that PC <em>right beneath the shaft when "Daisies" plays at 5:30 PM!</em></li>
+        <li><strong>3. Soul-Burn Life Transference at Sister Althea's Altar:</strong> When Sister Althea collapses moving refugees deeper down, pour remaining <strong>Spell Slots, Lay on Hands, Hit Dice, &amp; HP</strong> into her sun-disc to sustain a cool pocket until <strong>5:30 PM</strong> (play <code>530pm_crypt_tragedy.mp3</code> → BOOM → 5:59 PM Whiteout → 6:00 AM Reset!).</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 3: KEY RUMORS (TRUE & FALSE) + OLD JONAS'S RHYME
+       ========================================================= -->
+  <section class="print-page page-break">
+    <span class="page-badge">Page 3 of 4 • Key Rumors &amp; Old Jonas's Rhyme</span>
+
+    <h2 class="first-heading">5. Key Rumors to Seed (6 True &amp; 4 False) + Old Jonas's Rhyme</h2>
 
     <h3>A. Key True Rumors (Make Sure the Party Hears These)</h3>
-    <table>
+    <table class="compact-table">
       <thead>
         <tr>
           <th style="width:23%;">Rumor &amp; Speaker</th>
@@ -336,7 +614,7 @@
     </table>
 
     <h3>B. Key False Rumors / Tall Tales (With Secret Breadcrumbs for Later Loops)</h3>
-    <table>
+    <table class="compact-table">
       <thead>
         <tr>
           <th style="width:23%;">Tall Tale &amp; Speaker</th>
@@ -353,7 +631,7 @@
         <tr>
           <td><span class="chk"></span><span class="tag tag-false">False</span><strong>Dragon-Tamer's Silver Whistle</strong><br/><em>Old Gorm (Red Sheaf)</em></td>
           <td>"Hidden behind the vintage casks in the Red Sheaf wine cellar is founder Menas's silver whistle. Blow three shrill notes and any Cloud Peaks dragon must land and kneel!"</td>
-          <td><strong>False:</strong> White dragons cannot be tamed by whistles.<br/><strong>Truth:</strong> DC 13 Investigation behind the casks finds a smuggler wall hiding <em>Dragon-Fire Brandy</em> (Potion of Fire Resistance) &amp; a secret mountain chimney map.</td>
+          <td><strong>False:</strong> White dragons cannot be tamed by whistles.<br/><strong>Truth:</strong> DC 13 Investigation behind casks finds a smuggler wall hiding <em>Dragon-Fire Brandy</em> (Potion of Fire Resistance) &amp; a secret mountain chimney map.</td>
         </tr>
         <tr>
           <td><span class="chk"></span><span class="tag tag-false">False</span><strong>Witch of the Southern Oasis</strong><br/><em>Selim (South Gate)</em></td>
@@ -368,10 +646,9 @@
       </tbody>
     </table>
 
-    <!-- OLD JONAS'S RHYME & HOOKS -->
     <div class="rhyme-box">
       <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;">
-        <strong><span class="chk"></span>📜 OLD JONAS THE RHYMER — THE 8-LINE SOLSTICE CHANT &amp; TRIGGER HOOKS</strong>
+        <strong style="font-size:8.8pt;"><span class="chk"></span>📜 OLD JONAS THE RHYMER — THE 8-LINE SOLSTICE CHANT &amp; TRIGGER HOOKS</strong>
         <span class="tag">Must-Hear Clue</span>
       </div>
       <div class="rhyme-grid">
@@ -386,53 +663,63 @@
           Led astray by the fiendish ruse."
         </p>
         <div>
-          <strong style="font-size:9pt; text-transform:uppercase;">3 Natural Hooks for When the Party Hears the Rhyme:</strong>
-          <ul class="hooks">
-            <li><strong>Hook A — 07:30 AM at Tobias's Bakery Porch (Recommended):</strong> While the party accepts warm honey-currant rolls from Tobias, haggard Old Jonas shuffles up shivering in his patched quilt. Tobias gently hands him a free roll; Jonas weeps into the bread and recites all 8 lines straight to the party while Tobias chuckles sadly (<em>"Poor fellow—never quite right since he wandered back from the southern desert"</em>).</li>
+          <strong style="font-size:8.2pt; text-transform:uppercase;">3 Natural Hooks for When the Party Hears the Rhyme:</strong>
+          <ul class="hooks" style="margin-top:3px;">
+            <li><strong>Hook A — 07:30 AM at Tobias's Bakery Porch (Recommended):</strong> While the party accepts warm honey-currant rolls from Tobias, haggard Old Jonas shuffles up shivering in his patched quilt. Tobias gently hands him a free roll; Jonas weeps into the bread and recites all 8 lines straight to the party while Tobias sighs (<em>"Poor fellow—never quite right since he wandered back from the southern desert"</em>).</li>
             <li><strong>Hook B — 07:15 AM at the Municipal Well (After Maya's Thrush):</strong> Right as Little Maya ties the green clover bracelet onto a PC's wrist, Old Jonas (slumped against the stone well rim) catches the hem of a PC's cloak, stares wide-eyed at the clocktower above, and chants all 8 lines in a cracked singsong voice.</li>
             <li><strong>Hook C — 11:00–11:30 AM at the High Sun Muster (Failsafe):</strong> If the party bypassed him all morning, the instant the <strong>11:30 AM northern explosion</strong> rattles Beregost's windows, Jonas scrambles onto the stone rim of the well pointing north and shouts the 8 lines over the startled square!</li>
           </ul>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- SECTION 4: AFTERNOON HEAT, CATHEDRAL EVACUATION & SELF-SACRIFICE -->
-    <h2>4. Afternoon Heat, Cathedral Evacuation &amp; Self-Sacrifice (10:00 AM – 5:59 PM)</h2>
-    <table>
-      <thead>
-        <tr>
-          <th style="width:16%;">Time &amp; Heat</th>
-          <th style="width:44%;">What Happens &amp; When to Evacuate to the Cathedral</th>
-          <th style="width:40%;">Townsfolk Response / Who Refuses to Evacuate</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><span class="chk"></span><strong>10:00 AM – 12:59 PM</strong><br/><em>Abnormally Warm (85–95°F)</em></td>
-          <td>Sunny, abnormally warm Solstice day—<strong>no heat damage yet</strong>. <strong>No gryphon flight after 10:00 AM</strong> (violent upper-sky thermal updrafts). <em>11:30 AM:</em> Northern Ash Grove boom rattles windows.</td>
-          <td><strong>Townsfolk are happy!</strong> They laugh and praise Lathander for a glorious warm Solstice blessing (ignoring Old Jonas's warnings).</td>
-        </tr>
-        <tr>
-          <td><span class="chk"></span><strong>1:00 PM – 2:45 PM</strong><br/><em>Sweltering (120–135°F)</em></td>
-          <td>Heat suddenly turns <strong>sweltering</strong> (harsh glare; heavy/medium armor <strong>DC 12 Con save</strong> vs Exhaustion; shingles smoke by 2:00 PM). <strong>EVACUATION WINDOW:</strong> At <strong>1:00 PM</strong>, Sister Althea throws open the deep <strong>Cathedral (Temple of Lathander) Crypts</strong>; Captain Rebecca rings the alarm bells and herds 50+ townsfolk underground from <strong>1:30–2:45 PM</strong>!</td>
-          <td><strong>Seeing People Refuse to Evacuate (The Greedy Foil):</strong> While families rush to the Cathedral, the party sees <strong>Alderman Durlag Stonecrest</strong> slam his iron manor gates on begging neighbors, hoarding his ice and gold inside his private granite vault (<em>the door welds shut and he suffocates at 3:30 PM</em>). Charmed <strong>Scribe Vane</strong> also refuses to leave the Town Hall vault unless freed.</td>
-        </tr>
-        <tr>
-          <td><span class="chk"></span><strong>3:00 PM – 5:25 PM</strong><br/><em>Lethal Surface (175°F)</em></td>
-          <td><strong>MUST BE UNDERGROUND TO AVOID DAMAGE!</strong> Surface air deals <strong>10d6 Fire/rd outdoors</strong> (1d10/rd in ground-level buildings); deep Cathedral sub-crypts stay insulated (0 dmg) until 5:30 PM—but at <strong>3:15 PM</strong>, thermal expansion snaps the upper crypt blast door crossbar!</td>
-          <td><strong>Tobias &amp; Rebecca's Stand:</strong> Rebecca braces her ruined war-knee against the scorching blast door while Tobias grabs the red-hot iron bar in his bare hands (<em>"My hands know a 500° oven—let a baker mind the door!"</em>) so families can move further down. <strong>Elorion</strong> spends his last breath singing a lullaby in the smoke.</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="rhyme-box" style="margin-top:6px;">
-      <strong><span class="chk"></span>🔥 OPPORTUNITIES FOR PLAYER SELF-SACRIFICE WHILE EVACUATING FOLKS FURTHER DOWN (2:30 – 5:30 PM)</strong>
-      <ul class="hooks" style="margin-top:5px;">
-        <li><strong>1. Hold the Snapped, Red-Hot Cathedral Blast Door (3:15 PM):</strong> Step into Tobias &amp; Rebecca's place holding the glowing iron crossbar (<strong>2d10 Fire/rd, no save</strong>) so Tobias, Rebecca, and the last stragglers can push further down into the deep sub-crypts alive.</li>
-        <li><strong>2. Dash Back for Stragglers &amp; Shield the Cracked Belfry Air-Shaft:</strong> Run back into the scorching upper nave (2:45–3:00 PM) to carry fallen townsfolk down—or climb the stonework and wedge your cloak &amp; body over the ember-raining belfry air-shaft above <strong>Little Maya</strong> &amp; the orphans (voluntarily taking Exhaustion &amp; 1d10 smoke/fire dmg/rd), placing that PC <em>right beneath the shaft when "Daisies" plays at 5:30 PM!</em></li>
-        <li><strong>3. Soul-Burn Life Transference at Sister Althea's Altar:</strong> When Sister Althea collapses moving refugees deeper down, pour remaining <strong>Spell Slots, Lay on Hands, Hit Dice, &amp; HP</strong> into her sun-disc to sustain a cool pocket until <strong>5:30 PM</strong> (play <code>530pm_crypt_tragedy.mp3</code> → BOOM → 5:59 PM Whiteout → 6:00 AM Reset!).</li>
-      </ul>
+  <!-- =========================================================
+       PAGE 4: PRINTABLE BLACK & WHITE TOWN MAP
+       ========================================================= -->
+  <section class="print-page map-page">
+    <span class="page-badge">Page 4 of 4 • Printable B&amp;W Town Map</span>
+    <div class="map-header">
+      <h2>6. Township of Beregost — Printable Black &amp; White Town Map</h2>
+      <span class="subtitle">Open Unwalled Festival Town • 12 Labeled Buildings • 5 Carnival Booths ([A]–[E])</span>
     </div>
-  </div>
+    <div class="map-frame">
+      <img id="cheatsheet-town-map" src="beregost_town_map_woodcut_labeled_bw.png" alt="Beregost Printable Black and White Town Map" />
+    </div>
+    <div class="rhyme-box" style="margin-top:8px; padding:6px 10px;">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:10px; font-size:8pt; line-height:1.3;">
+        <div>
+          <strong>🧭 Outskirts Roads (1 Hex = 1 Hr on Foot):</strong><br/>
+          • <strong>West Road:</strong> Barleyfield Firebreak (Hex 7, 10) → Coast<br/>
+          • <strong>South Road:</strong> Cornfield Scarecrow (Hex 8, 11) → Dunes<br/>
+          • <strong>East Road:</strong> Highway Patrol &amp; Snirk (Hex 9, 10) → Ice<br/>
+          • <strong>North Road:</strong> Wayside Shrine &amp; Ash Grove (Hex 7, 6)
+        </div>
+        <div>
+          <strong>🔥 Afternoon Evacuation &amp; Key Spots (1:00–3:00 PM):</strong><br/>
+          • <strong>Cathedral Shelter (1:00–2:45 PM):</strong> Song of the Morning Crypts<br/>
+          • <strong>Refuse to Evacuate:</strong> Stonecrest Manor (Durlag) &amp; Town Hall (Vane)<br/>
+          • <strong>Loop 1 Stakeouts:</strong> Smithy Coal-Yard (8:45 AM) • Cobbler's Ln (10:15 / 11:15 AM)
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function setCheatMap(style) {
+      const img = document.getElementById('cheatsheet-town-map');
+      const bWood = document.getElementById('btn-map-woodcut');
+      const bSchem = document.getElementById('btn-map-schematic');
+      if (style === 'schematic') {
+        img.src = 'beregost_town_map_bw.png';
+        bSchem.classList.add('active');
+        bWood.classList.remove('active');
+      } else {
+        img.src = 'beregost_town_map_woodcut_labeled_bw.png';
+        bWood.classList.add('active');
+        bSchem.classList.remove('active');
+      }
+    }
+  </script>
 </body>
 </html>
