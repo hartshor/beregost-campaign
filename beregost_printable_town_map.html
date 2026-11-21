@@ -100,39 +100,54 @@
 <body>
   <div class="print-toolbar">
     <div>
-      <strong style="font-size:1.05rem; color:#e3b341;">🗺️ Township of Beregost — Printable B&amp;W Old-Timey Town Map</strong>
+      <strong style="font-size:1.05rem; color:#e3b341;">🗺️ Township of Beregost — Printable B&amp;W Town Map</strong>
       <div style="font-size:0.8rem; color:#8b949e; margin-top:2px;">
-        Includes all 12 labeled buildings and the 5 Solstice Carnival Booths ([A]–[E]) laid out at the base of the Song of the Morning Church.
+        Default: Spoiler-Free Hand-Inked Player Handout Map (Building Names Only, Stonecrest Manor, 1 West / 1 East / 1 North Dirt Path).
       </div>
     </div>
     <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
-      <button id="btn-woodcut" class="btn btn-outline active" onclick="setMapStyle('woodcut')">✒️ 17th-Century Woodcut Engraving</button>
-      <button id="btn-schematic" class="btn btn-outline" onclick="setMapStyle('schematic')">📐 2D Overhead Street Schematic</button>
+      <button id="btn-player" class="btn btn-outline active" onclick="setMapStyle('player')">🗺️ Player Map (Hand-Inked)</button>
+      <button id="btn-vector" class="btn btn-outline" onclick="setMapStyle('vector')">📐 Clean Vector</button>
+      <button id="btn-woodcut" class="btn btn-outline" onclick="setMapStyle('woodcut')">✒️ DM Woodcut</button>
+      <button id="btn-schematic" class="btn btn-outline" onclick="setMapStyle('schematic')">📋 DM Schematic</button>
       <button class="btn" onclick="window.print()">🖨️ Print Map (B&amp;W)</button>
-      <a id="download-link" class="btn btn-outline" href="beregost_town_map_woodcut_labeled_bw.png" download="beregost_town_map_woodcut_labeled_bw.png">⬇️ Download PNG</a>
+      <a id="download-link" class="btn btn-outline" href="beregost_town_map_player_bw.jpg" download="beregost_town_map_player_bw.jpg">⬇️ Download Map</a>
     </div>
   </div>
   <div class="map-sheet">
-    <img id="printable-map-img" src="beregost_town_map_woodcut_labeled_bw.png" alt="Township of Beregost Printable Black and White Map" />
+    <img id="printable-map-img" src="beregost_town_map_player_bw.jpg?v=3" alt="Township of Beregost Printable Black and White Player Map" />
   </div>
   <script>
     function setMapStyle(style) {
       const img = document.getElementById('printable-map-img');
       const dl = document.getElementById('download-link');
-      const bWood = document.getElementById('btn-woodcut');
-      const bSchem = document.getElementById('btn-schematic');
-      if (style === 'schematic') {
-        img.src = 'beregost_town_map_bw.png';
-        dl.href = 'beregost_town_map_bw.png';
-        dl.download = 'beregost_town_map_bw.png';
-        bSchem.classList.add('active');
-        bWood.classList.remove('active');
-      } else {
+      const btns = {
+        player: document.getElementById('btn-player'),
+        vector: document.getElementById('btn-vector'),
+        woodcut: document.getElementById('btn-woodcut'),
+        schematic: document.getElementById('btn-schematic')
+      };
+      Object.values(btns).forEach(b => b && b.classList.remove('active'));
+      if (style === 'vector') {
+        img.src = 'beregost_town_map_player_bw.svg?v=3';
+        dl.href = 'beregost_town_map_player_bw.svg';
+        dl.download = 'beregost_town_map_player_bw.svg';
+        btns.vector.classList.add('active');
+      } else if (style === 'woodcut') {
         img.src = 'beregost_town_map_woodcut_labeled_bw.png';
         dl.href = 'beregost_town_map_woodcut_labeled_bw.png';
         dl.download = 'beregost_town_map_woodcut_labeled_bw.png';
-        bWood.classList.add('active');
-        bSchem.classList.remove('active');
+        btns.woodcut.classList.add('active');
+      } else if (style === 'schematic') {
+        img.src = 'beregost_town_map_bw.png';
+        dl.href = 'beregost_town_map_bw.png';
+        dl.download = 'beregost_town_map_bw.png';
+        btns.schematic.classList.add('active');
+      } else {
+        img.src = 'beregost_town_map_player_bw.jpg?v=3';
+        dl.href = 'beregost_town_map_player_bw.jpg';
+        dl.download = 'beregost_town_map_player_bw.jpg';
+        btns.player.classList.add('active');
       }
     }
   </script>
