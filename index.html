@@ -4506,7 +4506,7 @@ It is cheerful. It is theatrical. It is a jaunty, mocking tune sung by a golden-
             <button class="chip-btn active" id="tab-gallery-filter-all" onclick="filterGalleryCategory('all')">🌟 All Art (95+)</button>
             <button class="chip-btn" id="tab-gallery-filter-bosses" onclick="filterGalleryCategory('bosses')">👑 Bosses & Cataclysm (6)</button>
             <button class="chip-btn" id="tab-gallery-filter-buildings" onclick="filterGalleryCategory('buildings')">🏘️ Town Architecture (12)</button>
-            <button class="chip-btn" id="tab-gallery-filter-npcs" onclick="filterGalleryCategory('npcs')">👥 NPC Portraits (28)</button>
+            <button class="chip-btn" id="tab-gallery-filter-npcs" onclick="filterGalleryCategory('npcs')">👥 NPC Portraits (30)</button>
             <button class="chip-btn" id="tab-gallery-filter-dungeons" onclick="filterGalleryCategory('dungeons')">🏛️ Dungeon Chambers (40)</button>
             <button class="chip-btn" id="tab-gallery-filter-biomes" onclick="filterGalleryCategory('biomes')">🌲 Hex Biomes & POIs (9)</button>
           </div>
@@ -27485,6 +27485,8 @@ const CAMPAIGN_IMAGES = {
     mummy_lord: "assets/images/boss_mummy_lord.jpg",
     mummy_sentinel: "assets/images/monster_mummy_sentinel.jpg",
     rakshasa_ravana: "assets/images/boss_rakshasa.jpg",
+    aurelius_citizen: "assets/images/npc_aurelius_citizen.jpg",
+    aurelius_angel: "assets/images/npc_aurelius_angel.jpg",
     mirror_evil_twin: "assets/images/room_mirage_2_freestanding.jpg?v=20261108",
     ravana_simulacrum: "assets/images/boss_rakshasa.jpg",
     storm_giant_otheus: "assets/images/room_commodore_2_deck_herald.jpg?v=20261108",
@@ -27580,6 +27582,8 @@ const CAMPAIGN_IMAGES = {
     the_commodore: "assets/images/npc_commodore.jpg",
     tempest_lord_otheus: "assets/images/boss_storm_giant.jpg",
     rakshasa_ravana: "assets/images/boss_rakshasa.jpg",
+    aurelius_citizen: "assets/images/npc_aurelius_citizen.jpg",
+    aurelius_angel: "assets/images/npc_aurelius_angel.jpg",
     mirror_evil_twin: "assets/images/room_mirage_2_freestanding.jpg?v=20261108",
     ravana_simulacrum: "assets/images/boss_rakshasa.jpg",
     jonas_prophet: "assets/images/npc_jonas.jpg",
@@ -28068,7 +28072,29 @@ function getAllCampaignGalleryItems() {
     });
   }
 
-  // 3. NPC Portraits (28 items)
+  // 3. NPC Portraits (30 items)
+  items.push({
+    id: "aurelius_citizen_portrait",
+    catKey: "npcs",
+    cat: "NPC Portrait",
+    badge: "Player-Safe Disguise • North Gate",
+    url: CAMPAIGN_IMAGES.npcs.aurelius_citizen,
+    title: "☀️ Lord Aurelius the Radiant (Citizen / Noble Envoy Form)",
+    desc: "Mortal disguise at Beregost's North Gate (06:45–07:15 AM) in ivory-and-gold sunburst robes. Subtle tell: casts zero shadow on the sunlit cobblestones.",
+    jumpAction: "openNPCFromTown('rakshasa_ravana')",
+    jumpLabel: "Notebook Dossier ➔"
+  });
+  items.push({
+    id: "aurelius_angel_portrait",
+    catKey: "npcs",
+    cat: "NPC Portrait",
+    badge: "Player-Safe Disguise • Deva Form",
+    url: CAMPAIGN_IMAGES.npcs.aurelius_angel,
+    title: "🕊️ Lord Aurelius the Radiant (Angel / Celestial Deva Form)",
+    desc: "Golden-winged Deva illusion offering the glowing sunburst Crucible Charm on the North Road (Hex 8,9) to trick the party into slaying the True Angel.",
+    jumpAction: "openNPCFromTown('rakshasa_ravana')",
+    jumpLabel: "Notebook Dossier ➔"
+  });
   if (typeof MASTER_NPC_DATA !== "undefined") {
     MASTER_NPC_DATA.forEach(n => {
       const url = (CAMPAIGN_IMAGES.npcs && CAMPAIGN_IMAGES.npcs[n.id]) || CAMPAIGN_IMAGES.beregost_map;
@@ -32783,7 +32809,7 @@ window.addEventListener('scroll', () => {
           <button class="chip-btn active" id="gallery-filter-all" onclick="filterGalleryCategory('all')">🌟 All Art (95)</button>
           <button class="chip-btn" id="gallery-filter-bosses" onclick="filterGalleryCategory('bosses')">👑 Bosses & Cataclysm (6)</button>
           <button class="chip-btn" id="gallery-filter-buildings" onclick="filterGalleryCategory('buildings')">🏘️ Town Architecture (12)</button>
-          <button class="chip-btn" id="gallery-filter-npcs" onclick="filterGalleryCategory('npcs')">👥 NPC Portraits (28)</button>
+          <button class="chip-btn" id="gallery-filter-npcs" onclick="filterGalleryCategory('npcs')">👥 NPC Portraits (30)</button>
           <button class="chip-btn" id="gallery-filter-dungeons" onclick="filterGalleryCategory('dungeons')">🏛️ Dungeon Chambers (40)</button>
           <button class="chip-btn" id="gallery-filter-biomes" onclick="filterGalleryCategory('biomes')">🌲 Hex Biomes & POIs (9)</button>
         </div>
