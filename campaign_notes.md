@@ -127,13 +127,17 @@ Find the path to stop the devil's hand.
 Blame not the angel for he is confused,
 Led astray by the fiendish ruse.
 
-[STANZA II: THE GREAT DECEPTION & THE UNMASKING OF AURELIUS]
+[STANZA II: THE GREAT DECEPTION & THE UNMASKING OF THE DECEIVER]
 The "devil's ruse" is woven in gold,
 By a striped deceiver, cruel and bold.
 Lord Ravana struts in the saint's attire,
 Posing as "Aurelius," born of fire!
+No mortal spell, no scrying eye, can pierce his veil or strip the lie—
+His fiendish flesh drinks magic dry; all common spells pass harmless by.
+To tear his golden mask apart, let blessed steel or a Bless'd dart
+Draw crimson blood and pierce his skin—to bare the tiger's fangs within!
 Look not to golden feathers for a righteous heart,
-Nor slay the weeping horned beast that bleeds apart.
+Nor slay the weeping horned beast that bleeds apart:
 The angel's weeping soul inside the fiend is bound,
 While devil's malice struts upon the holy ground!
 If mortal blades should strike the weeping beast in dread,
@@ -151,11 +155,15 @@ Two traded souls an alabaster touch must heal.
 Within the pharaoh’s crypt the ancient scrolls impart:
 The sacred word that severs flesh and swaps the heart.
 
-[STANZA V: THE NORTHERN MASQUERADE & THE TIGER'S MOCKERY]
-North: pierce the striped fiend’s radiant and holy guise,
-His secret name commanded binds his web of lies.
-The Rakshasa shall urge you on to slay the beast—
-Beware his gilded tongue before the solstice feast!
+[STANZA V: THE NORTHERN MASQUERADE & THE HIDDEN PAVILION]
+North-east of ash, where twin crags split the sky,
+Three sun-bleached stones cradle a basin dry.
+No mortal gaze nor spell can spy his silken hall—
+The Pavilion sleeps unseen behind an empty wall.
+Yet spill a blessed drop, or cast a Bless'd word,
+And speak: "Unveil the gilded mesh, O striped lord!"
+Then crimson silk shall bloom from barren stone,
+To bare the hidden Mirage and the deceiver's throne!
 
 [STANZA VI: THE WESTERN HURRICANE & BREAKING THE CYCLE]
 West: break the deep-sea giant’s abyssal iron chain,
@@ -190,7 +198,7 @@ The players do not start with the Complete Codex. On early loops, they hear Old 
    - *Investigation*: Presenting Jonas's verses to Sister Althea at the Morning Temple.
    - *Theological Insight*: Althea identifies the meter as the forbidden *Hymn of the Sundered Halos*, noting that ancient Netherese solar priests in the Southern Desert recorded rites capable of severing a spirit from its true vessel—and urges the party to follow Jonas's path (*East to the Ice, then South to the Sand*) to recover the complete liturgy.
 6. **The Sunken Necropolis Archive (Hex 12, 16 — Boss 2 Reward)**:
-   - *Exploration*: After defeating Rimefang (`Hex 17, 10`) and using Djinni Zephyrus's Wish for Necrotic Resistance to conquer the **Sunken Necropolis (`Hex 12, 16`)**, the party claims the **Golden Alabaster Tablets** containing **Stanzas II, IV, V, and VI**—delivering the mid-campaign bombshell that the Angel and Devil swapped bodies and that "Lord Aurelius" is the Tiger-Headed Rakshasa!
+   - *Exploration*: After defeating Rimefang (`Hex 17, 10`) and using Djinni Zephyrus's Wish for Necrotic Resistance to conquer the **Sunken Necropolis (`Hex 12, 16`)**, the party claims the **Golden Alabaster Tablets** containing **Stanzas II, IV, V, and VI**—delivering the mid-campaign bombshell that the Angel and Devil swapped bodies, that **"Lord Aurelius" is an un-scryable deceiver who can ONLY be unmasked by piercing his skin with a blessed weapon (or under a *Bless* spell)** (no normal spell works!), and revealing the exact **Unveiling Rite** needed to make the otherwise invisible **Mirage Pavilion (`Hex 10, 6`)** appear!
 
 ---
 
@@ -544,9 +552,10 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
     - *Misdirection:* Trigger: Targeted by an attack within 30 ft. Response: Redirects attack to charmed pawn within 5 ft.
 * **Environment**: Illusory hedge maze, psychic confusion fog, charmed civilian body-shields.
 * **Essential Counters**:
-  - **Monocle of Piercing Truth (`Hex 8, 6`) / True Seeing Quartz Lens (`Hex 13, 9`)**: Pierces the celestial illusion and mirror clones.
-  - **Circlet of Mind Sanctity (`Hex 9, 7`)**: Immune to mental domination and detects shapechangers within 120 ft.
-  - **Quiver of the Just Stalker (`Hex 7, 4`)**: Blessed piercing arrows wielded by a good-aligned attacker deal double damage and bypass *Limited Magic Immunity*.
+  - **The Blessed Skin-Piercing Test (Southern Prophecy Stanza II)**: No normal divination or spell of 6th level or lower can unmask Ravana—only **piercing his skin with a blessed weapon (or an attack made under the effects of a *Bless* spell)** shatters his golden glamour and exposes his tiger-headed fiendish form (and sends crimson ripples flashing back along his 3 Obsidian Mirror tethers!).
+  - **Vial of Consecrated Dawn Oil (`Hex 8, 6`)**: Anoints up to 3 piercing weapons for 8 hours as **blessed piercing weapons**—capable of piercing Ravana's skin to shatter his golden glamour and trigger his double Piercing vulnerability.
+  - **Circlet of Mind Sanctity (`Hex 9, 7`)**: Immune to *Dominate Person*, charm effects, and *Detect Thoughts* (blocks Ravana's Table-Talk Mind Reading).
+  - **Quiver of the Just Stalker (`Hex 7, 4`)**: Blessed piercing arrows wielded by a good-aligned attacker deal double damage, shatter his glamour on hit, and bypass *Limited Magic Immunity*.
 * **Reward (Level 11 Milestone & Memorized Infernal True Name)**:
   - Defeating Ravana and reading the Arcanist's Resonance Ledger in his Mirage Pavilion (`Hex 10, 6`) reveals his **Infernal True Name (`"Ravana-Zul"`)** and his `06:15 AM` Cobbler's Lane prep schedule—allowing the party on the Final Loop to bind him in Beregost at `06:15 AM` (0 hexes traveled!) using his True Name!
 
@@ -608,8 +617,8 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
   2. *Theological Stumbles*: Aurelius hesitates and recites memorized, archaic phrases when asked about planar hierarchies.
   3. *Enchantment Auras*: Detect Magic reveals guards and druids inciting the hunt bear subtle Enchantment auras matching Aurelius.
 * **Phase 3: Hard Clues (Loops 5+)**:
-  1. *True Seeing*: Quartz lens reveals the tiger-headed fiend beneath the Deva illusion.
-  2. *Sunken Scripture*: Mummy Lord's tomb tablets prove the soul swap occurred.
+  1. *The Blessed Skin-Piercing Test (Southern Prophecy Stanza II)*: No normal spell can unmask him—piercing his skin with a blessed weapon (or under the effects of a *Bless* spell) shatters his golden Deva glamour and forces his tiger-headed fiendish face into the open!
+  2. *Sunken Scripture & Pavilion Key*: Mummy Lord's Golden Alabaster Tablets prove the soul swap occurred AND reveal the Unveiling Rite to expose his otherwise invisible Mirage Pavilion at `Hex (10, 6)`.
   3. *06:15–06:45 AM Ambush*: Catching Aurelius in Cobbler's Lane (`Hex 8, 10`) or at the North Road Shrine (`Hex 8, 9`) and binding him with his memorized True Name (*"Ravana-Zul"*).
 
 ### 4.1 Lord Ravana ("Aurelius the Radiant") — 12-Hour Wilderness Itinerary & Intercept Encounter
@@ -620,7 +629,7 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
   - **06:45 – 08:30 (Coast Way Wayside Shrine Intercept - Hex 8,9)**: Intercepts the party as they leave town heading north along the Coast Way. Offers the Crucible Charm: *"A foul fiend infests the northern woods—corrupted by the fallen arcanist! Slay it before noon to cleanse the celestial light!"*
   - **08:30 – 10:30 (Hermit's Lookout Ridge - Hex 8,7)**: Perches on rocky bluffs overlooking the Weirwood entrance. Urges the party into the forest while telepathically egging on the Circle of the Green Wreath druids to corner the "horned beast".
   - **10:30 – 11:30 (Ash Grove Perimeter Canopy - Hex 7,6)**: Lurks invisible among the high weirwood branches. Gloats as the druids encircle the True Angel (horned fiend). At 11:30 AM, witnesses the soul detonation that wipes out the grove, smiles coldly, and slips away via *Plane Shift*.
-  - **12:00 – 15:30 (The Mirage Pavilion - Hex 10,6)**: Retires to an opulent extradimensional silk pavilion pitched among hidden northern bluffs. While the rest of the valley swelters in the midday thermal scorch, Ravana relaxes in magical climate control, sipping chilled spiced wine and reviewing the corrupt arcanist's battery notes. *Players who discover this lair can confront him off-guard!*
+  - **12:00 – 15:30 (The Mirage Pavilion - Hex 10,6 — Invisible Without the Southern Prophecy!)**: Retires to an opulent extradimensional silk pavilion hidden between the Twin Crags of the northern badlands. **Completely invisible & unfindable** by normal sight or spells (*Detect Magic*, *See Invisibility*, Perception all reveal only barren shale and three sun-bleached stones around a dry stone basin) until players perform the **Southern Prophecy's Unveiling Rite** (Stanza V: spill a drop of blessed/holy water or cast *Bless* into the dry basin and speak *"Unveil the gilded mesh, O striped lord!"*). Once unveiled, players can confront him off-guard!
   - **15:30 – 18:00 (Brimstone Ridge Overlook - Hex 9,8)**: Stands on high northern ridge looking down at Beregost burning in the solar fires with detachment, anticipating the 18:00 wipeout and time reset.
 ### 4.2 The Mind-Bending Boss Encounter: Meta-Game Illusions & Tabletop Deception Mechanics
 
@@ -645,7 +654,7 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
   1. *The Shadow Test*: The Rakshasa **casts no shadow**, even under blazing magical chandeliers. The True Angel casts a radiant golden shadow. An observant PC (Passive Perception 14+ or an action to inspect) spots the shadowless fiend.
   2. *Scent & Ozone*: The Rakshasa smells of sweet cinnamon pastry and dried sulfur/blood. The Angel smells of morning rain, ozone, and frankincense.
   3. *Limited Magic Immunity*: Spells of 6th level or lower bounce harmlessly off the real Rakshasa, but affect the Angel normally.
-  4. *The Inquisitive Monocle of Truth / True Seeing*: Looking through the quartz monocle permanently pierces the glamour for that character.
+  4. *The Blessed Skin-Piercing Test (Southern Prophecy Stanza II)*: Piercing Ravana's skin with a blessed piercing weapon (or any piercing attack under a *Bless* spell) instantly shatters his golden glamour for the entire party, exposing his striped tiger face and sending crimson light flashing back along his mirror tethers!
   5. *Investigation Action*: An action spent making a DC 18 Intelligence (Investigation) check breaks the illusion for that individual character.
 
 ---
@@ -666,7 +675,7 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
   4. *Counter-Clockwise Sun*: Looking up at the sky reveals the sun is slowly creeping west-to-east, or the clock's brass pendulum is frozen mid-arc.
   5. *Missing Scribe Vane*: Scribe Vane is not hurrying toward the records hall as he always does at 06:10 AM.
 * **Shattering the Mirage**:
-  - Any player who investigates a glitch, casts *Dispel Magic* (DC 18), looks through the Monocle, or states *"I slap myself, this is an illusion!"* makes a DC 16 Investigation/Wisdom check.
+  - Any player who investigates a glitch, casts *Dispel Magic* (DC 18), invokes a *Bless* prayer while touching the fake silk stone, or states *"I slap myself, this is an illusion!"* makes a DC 16 Investigation/Wisdom check.
   - On a success, the sky tears open like shredded silk. The town square evaporates into purple smoke. The party finds themselves standing inside the opulent velvet salon of the Mirage Pavilion, where **Lord Ravana** lounges on a gilded divan sipping chilled wine:  
     > *"Such delightful terror in your minds... You cling so pathetically to the dawn. Did you truly believe the morning belonged to you? Every minute you spent dreaming of your baker's buns was another minute closer to your ash."*
 
@@ -731,7 +740,7 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
 [MEMORIZE GOLDEN TABLETS (INVERSION RITE)]                                              │
        │                                                                                │
        ▼                                                                                │
-[Infiltrate Mirage Pavilion (10,6) with Monocle]                                        │
+[Unveil & Infiltrate Mirage Pavilion (10,6) via Stanza V Rite]                          │
        │                                                                                │
        ▼                                                                                │
 [Slay Rakshasa & MEMORIZE TRUE NAME ('Ravana-Zul')]                                     │
@@ -826,7 +835,7 @@ In addition to the overarching valley matrix, the campaign provides detailed, ho
 | **06:00** | Reset chime. Taerom stokes Great Forge. | 🐾 Snirk the Goblin snared in boar trap (`9, 10`)! | Spare clockwork stabilizers locked in safe. | Forge-Master Brenda checks ballista winches.| Permafrost slab intact over Djinni vault. | Sub-zero mountain gale |
 | **06:45** | Taerom finishes 4 cold-iron ballista tips.| Party can rescue Snirk (reveals dragon waking).| Quarry miners inspect violet quartz seams. | Brenda discovers cold-iron tips are missing! | Rimefang stirs; glacial blue eyes open. | Bitter cold winds |
 | **07:15** | Guard scouts depart East Gate with supply cart.| Corporal Harek's patrol secures Snirk at `9, 10`. | Smelting kilns stoked in lower foundry. | Torvald sounds muster horn; dragons spotted. | Rimefang shifts mass, cracking outer ice. | Crisp morning chill (45°F) |
-| **07:30** | Tobias checks flour reserves. | Scouts confirm goblin warbands fled dragon. | Optical quartz lenses cut in grotto. | Ballistas loaded with mundane iron bolts. | Rimefang yawns; frost breath chills canyon. | Distinct warming |
+| **07:30** | Tobias checks flour reserves. | Scouts confirm goblin warbands fled dragon. | Chronocite quartz cores cut in grotto. | Ballistas loaded with mundane iron bolts. | Rimefang yawns; frost breath chills canyon. | Distinct warming |
 | **08:30** | East gate barred to civilian carts. | Road empty; high-altitude shadows wheel. | Prismatic basilisks stir in crystal cave. | Brenda looks west for Taerom's cold-iron tips. | 🐉 **Rimefang takes flight! Circles summit.** | Alpine updrafts form |
 | **09:00** | Divine static hums in smithy anvil. | Farmers retreat inside stone barns. | Clockwork quarry automatons overheat. | Brenda scans western pass for Taerom's tips. | Dragon dives pass; hunts mountain goats. | Mountain pass warming (70°F) |
 | **09:30** | Panic spreads as well drops 4 ft. | Heat mirages shimmer over barley fields. | Haywire automatons patrol quarry terraces. | Brenda fires test bolt; Rimefang strafes walls. | Ice chasms groan under thermal expansion. | High-altitude glare |
@@ -1036,7 +1045,7 @@ To slay a Capstone Boss on its dedicated boss loop, the party uses the **2-Rider
    * **Walking Main Body (3 PCs)**: Walk `3 hexes` SE `(8,10)` $\rightarrow$ Aerie of the Four Winds `(11,12)` (`06:00–09:00 AM`), claim the *Golden Mirror-Aegis*, and wait for the Vanguard at `11:15 AM`. Together they invoke Zephyrus (`"Zephyrus-Al-Mubarak"`) for **Necrotic Resistance** + the **One-Time Nimbus Cloud (`15m/hex`)**, riding the cloud `4 hexes` (`1.0h`) straight to the **Sunken Necropolis `(12,16)`** by **12:30 PM**!
 
 3. **Boss 3: The Rakshasa (*Lord Ravana*, Hex 10, 6 Mirage Pavilion)**
-   * **Gryphon Vanguard (2 PCs)**: Fly North `06:00–08:00 AM` (`4 hexes`) to North Ridge `(8,6)` (*Monocle*, `08:00 AM`), walk `2 hexes` to Pine Hollow `(7,4)` (*Blessed Quiver*, `10:15 AM`), and walk `3 hexes` under the shaded forest canopy to Mirage Pavilion `(10,6)` by **13:15 PM**.
+   * **Gryphon Vanguard (2 PCs)**: Fly North `06:00–08:00 AM` (`4 hexes`) to North Ridge `(8,6)` (*Consecrated Dawn Oil*, `08:00 AM`), walk `2 hexes` to Pine Hollow `(7,4)` (*Blessed Quiver*, `10:15 AM`), and walk `3 hexes` under the shaded forest canopy to unveil the Mirage Pavilion `(10,6)` via Stanza V by **13:15 PM**.
    * **Walking Main Body (3 PCs)**: Walk North `(8,10)` $\rightarrow$ Standing Stones `(9,7)` (`3 hexes`, `09:00 AM`, *Circlet of Mind Sanctity*) $\rightarrow$ Ash Grove `(7,6)` (`2 hexes`, `11:00 AM`, heal **True Angel** before the 11:30 AM detonation!) $\rightarrow$ Mirage Pavilion `(10,6)` (`3 hexes`, **14:00 PM**), ambushing Ravana during his midday siesta!
 
 4. **Boss 4: Storm Giant (*Tempest Lord Otheus*, Hex 5, 11)**
@@ -1490,9 +1499,9 @@ To conquer the four high-CR capstone bosses within the 12-hour operational windo
 | **4** | **Scarab of Solar Resurgence** | `(13, 14)` | Sunken Desert (Sun Obelisk) | **Boss 2: Mummy Lord** | 2 Swirling Air Elementals | Complete immunity to Necrotic damage and Max HP reduction (negates Mummy Rot). Advantage on saving throws vs. Paralysis and Dread Glare. |
 | **5** | **Phial of Sunburst Oil** | `(12, 13)` | Sandstone Sluice Ruins | **Boss 2: Mummy Lord** | Dust Mephits & Quicksand Pit | Thrown flask (range 20/60). Deals 4d6 fire damage and ignites target (2d6 fire/turn, triggering Mummy Lord Fire Vulnerability). Suppresses Legendary Actions for 1 round! |
 | **6** | **Golden Mirror-Aegis** | `(11, 12)` | Aerie of the Four Winds (Alabaster Terrace) | **Boss 2: Mummy Lord** | Sand Elemental & Mummy Sentries | +2 Shield. When targeted by Dread Glare or a spell attack, reaction allows reflection back at caster (attacker must make DC 17 Wis save or suffer their own paralysis!). |
-| **7** | **Monocle of Piercing Truth** | `(8, 6)` | North Ridge Watchtower (Signal Spire) | **Boss 3: The Rakshasa** | Basilisk Nest in Quartz Crevice | Grants Truesight 60 ft for 10 minutes (1/day). Instantly pierces Rakshasa *Disguise Self*, illusionary clones, and invisible stalkers. |
-| **8** | **Quiver of the Just Stalker** | `(7, 4)` | Deep Northern Pine Hollow | **Boss 3: The Rakshasa** | Enraged Owlbear in Redwood Hollow | Contains 12 blessed piercing arrows/bolts. Wielded by good-aligned character, deals double damage against fiends and pierces Rakshasa *Limited Magic Immunity*. |
-| **9** | **Circlet of Mind Sanctity** | `(9, 7)` | Ancient Standing Stones | **Boss 3: The Rakshasa** | Displacer Beast Pack in Briars | Wearer is immune to *Dominate Person*, charm effects, and *Detect Thoughts*. Passively detects the presence and direction of any shapechanger within 120 ft. |
+| **7** | **Vial of Consecrated Dawn Oil** | `(8, 6)` | North Ridge Watchtower (Signal Spire) | **Boss 3: The Rakshasa** | Basilisk Nest in Quartz Crevice | Anoints up to 3 piercing weapons for 8 hours so they count as blessed piercing weapons. Piercing the Rakshasa's skin with a blessed weapon (or under a *Bless* spell) shatters his golden glamour, exposes his mirror tethers, and deals double Piercing vulnerability damage! |
+| **8** | **Quiver of the Just Stalker** | `(7, 4)` | Deep Northern Pine Hollow | **Boss 3: The Rakshasa** | Enraged Owlbear in Redwood Hollow | Contains 12 blessed piercing arrows/bolts. Wielded by good-aligned character, shatters the Rakshasa's golden glamour on hit, deals double damage against fiends, and pierces Rakshasa *Limited Magic Immunity*. |
+| **9** | **Circlet of Mind Sanctity** | `(9, 7)` | Ancient Standing Stones | **Boss 3: The Rakshasa** | Displacer Beast Pack in Briars | Wearer is immune to *Dominate Person*, charm effects, and *Detect Thoughts* (shielding thoughts from Ravana's Table-Talk Mind Reading). |
 | **10** | **Grounding Rod of the Deep Trench** | `(4, 11)` | Coastal Sea Caves / Sunken Reef | **Boss 4: Storm Giant** | Sahuagin Baron & 2 Giant Octopuses | Absorbs all Lightning damage (wearer takes 0 damage). Grants 40ft swim speed and water breathing. Reaction: Discharge absorbed energy as a 60ft line of 10d8 lightning! |
 
 ---
@@ -1565,7 +1574,7 @@ To conquer the four high-CR capstone bosses within the 12-hour operational windo
 |---|---|---|---|
 | **Boss 1: Adult White Dragon** `(17, 10)` | **Phillipa** (Ordered Chance) & **Pike** (Long Arm of the Law) | Item 1 (Harpoon) + Item 2 (Boots) + Item 3 (Censer) | Ground dragon immediately with Item 1 or Brenda's ballistas. Deploy Item 3 Censer to negate Frightful Presence. Burk & Phillipa lock dragon in melee; dragon cannot take flight or exploit 80ft aerial breath cones. |
 | **Boss 2: Mummy Lord** `(12, 16)` | **Burk** (Chaos Wineskin Monk) & **Gwen** (Druid Fire/Web) | Item 4 (Scarab) + Item 5 (Sunburst Oil) + Item 6 (Mirror-Aegis) | Burk equips Item 4 (immune to Mummy Rot & max HP reduction). Throw Item 5 Oil round 1 to trigger Mummy Lord Fire Vulnerability (double damage) and strip Legendary Actions. Reflect Dread Glare using Item 6 Mirror-Aegis. |
-| **Boss 3: The Rakshasa** `(8, 10) / (10, 6)` | **Grog** (Elven Rogue) & **Gwen** (Spider Druid) | Item 7 (Monocle) + Item 8 (Blessed Quiver) + Item 9 (Circlet) | Equip Item 9 Circlet to detect shapechangers within 120ft and block mental domination. Grog (Elven Rogue) dons Item 7 Monocle to pierce illusions and fires blessed piercing arrows from Item 8, dealing double Sneak Attack damage and bypassing Rakshasa Limited Magic Immunity! |
+| **Boss 3: The Rakshasa** `(8, 10) / (10, 6)` | **Grog** (Elven Rogue) & **Gwen** (Spider Druid) | Item 7 (Consecrated Dawn Oil) + Item 8 (Blessed Quiver) + Item 9 (Circlet) + Stanza V Unveiling Rite | Use the Southern Prophecy (Stanza V) to unveil the invisible Mirage Pavilion at `(10, 6)`. Equip Item 9 Circlet to block mental domination and mind-reading. Anoint melee blades with Item 7 Dawn Oil (or cast *Bless*) and have Grog fire blessed piercing arrows from Item 8—piercing Ravana's skin shatters his golden glamour, exposes his mirror tethers, and deals double Sneak Attack damage bypassing *Limited Magic Immunity*! |
 | **Boss 4: Storm Giant** `(5, 11)` | **Burk** & **Phillipa** & **Pike** | Item 10 (Grounding Rod) + Djinni Wish (Lightning Res.) | Equip Item 10 Grounding Rod to absorb 100% of lightning strikes and recharge a 10d8 discharge beam. Use Djinni Zephyrus's Wish for full party Thunder/Lightning resistance. Unchain giant or shatter abyssal bindings before 10:00 AM to trigger the loop-breaking supercell! |
 
 
@@ -1763,7 +1772,7 @@ flowchart TD
     end
 
     subgraph ItemRoute3 ["Phase 2: Forest Relic Run & Saving the Angel (06:00 - 12:30)"]
-        I7["Gryphon Riders Fly 2h (4 hexes) to North Ridge Watchtower (8,6) by 08:00 AM<br/>Blind Basilisks using Cloak of Mirror Array<br/>Retrieve Monocle of Piercing Truth (Truesight 60ft)"]
+        I7["Gryphon Riders Fly 2h (4 hexes) to North Ridge Watchtower (8,6) by 08:00 AM<br/>Blind Basilisks using Cloak of Mirror Array<br/>Retrieve Vial of Consecrated Dawn Oil (Blesses 3 Piercing Weapons)"]
         I8["Riders Walk 2h to Deep Pine Redwood (7,4) by 10:00 AM<br/>Pike tames mother Owlbear with whistle<br/>Retrieve Quiver of the Just Stalker (Blessed Piercing)"]
         I9["3 Walkers Walk 3h to Ancient Standing Stones (9,7) by 09:00 AM<br/>Retrieve Circlet of Mind Sanctity (100% IMMUNE to Dominate Person!)"]
         ANG["Walkers Walk 2h to Ash Grove (7,6) by 11:00 AM (Beats 11:30 Detonation!)<br/>Perform Somatic Inversion Touch (from Boss 2 Tablets)<br/>True Angel saved & allies with party!"]
@@ -1775,9 +1784,9 @@ flowchart TD
     end
 
     subgraph BossFight3 ["Phase 3: Cornering & Slaying Ravana at Mirage Pavilion (12:30 - 14:00)"]
-        BF1["Riders & Walkers unite at Mirage Pavilion (10,6) at 12:30 PM during Ravana's Siesta"]
-        BF2["Item 9 (Circlet) absorbs Dominate Person with zero effect"]
-        BF3["Grog uses Item 7 (Monocle) to pierce Mirage Veil, mirror clones & invisibility"]
+        BF1["Riders & Walkers unite at Twin Crags (10,6) at 12:30 PM & perform Stanza V Rite to unveil the invisible Pavilion"]
+        BF2["Item 9 (Circlet) absorbs Dominate Person & blocks Table-Talk Mind Reading"]
+        BF3["Blessed steel (Item 7 Oil / Item 8 Quiver / Bless spell) pierces Ravana's skin—shattering his glamour & exposing mirror tethers!"]
         BF4["Grog fires Item 8 (Blessed Piercing Arrows)<br/>Double Vulnerability Damage (65+ dmg/hit) ignores Limited Magic Immunity!"]
         BF5["Burk & Phillipa lock melee; Ravana slain before teleport!"]
     end
@@ -1891,7 +1900,7 @@ To preserve the tension and high-stakes puzzle nature of the time loop, **nothin
 * The party learns and memorizes the ancient secret formulas to command planar beings. Once memorized, players never need to re-fight the original boss to invoke them on later loops:
   * **From Boss 1 (`Rimefang`, `Hex 17, 10`)**: The party memorizes **Djinni Zephyrus's True Name (`"Zephyrus-Al-Mubarak"`)** and his 3-note wind cadence. Speaking his True Name at the **Aerie of the Four Winds (`Hex 11, 12`)** compels him by ancient elemental law to grant **1 Elemental Wish** + **1 One-Time Nimbus Cloud move (`15 min/hex` in one move only)** without re-fighting Rimefang!
   * **From Boss 2 (`Akh-en-Amon`, `Hex 12, 16`)**: The party memorizes the **Somatic Inversion Touch & Celestial Reversal Chant** from the Golden Alabaster Tablets. They can perform this somatic/vocal rite directly at **Ash Grove (`Hex 7, 6`)** to heal and recruit the True Angel without ever returning to the southern desert!
-  * **From Boss 3 (`Lord Ravana`, `Hex 10, 6`) & Town Clues (`Maya` / `Corin`)**: The party memorizes **Lord Ravana's Infernal True Name (`"Ravana-Zul"`)** and his `06:15–06:45 AM` Cobbler's Lane disguise schedule. On the Final Loop, they ambush and bind him right in **Beregost (`Hex 8, 10`) at `06:15 AM` (0 hexes traveled!)**, forcing him to surrender his *Blessed Piercing Quiver & Monocle*, cancel Scribe Vane's sabotage, and aid the party at the Spire (`Hex 6, 8`) at `17:30 PM`!
+  * **From Boss 3 (`Lord Ravana`, `Hex 10, 6`) & Town Clues (`Maya` / `Corin`)**: The party memorizes **Lord Ravana's Infernal True Name (`"Ravana-Zul"`)** and his `06:15–06:45 AM` Cobbler's Lane disguise schedule. On the Final Loop, they ambush and bind him right in **Beregost (`Hex 8, 10`) at `06:15 AM` (0 hexes traveled!)**, forcing him to surrender his *Blessed Piercing Quiver & Resonance Ledger*, cancel Scribe Vane's sabotage, and aid the party at the Spire (`Hex 6, 8`) at `17:30 PM`!
 
 #### 2. Milestone Level Progression (Levels 7 $\rightarrow$ 11)
 * **Boss 1 Defeated (Adult White Dragon)** $\rightarrow$ **Level 8**:
@@ -1976,7 +1985,7 @@ To survive the `17:30 PM` confrontation at `Hex (6, 8)`, the party needs **Six V
    * *The Origin & Mystery*: The party carried the **Burning Book** (a living solar grimoire) on their initial predawn arrival into Beregost before Loop 0, but dropped it in the dark barleyfields of **`Hex (7, 10)`**. The dropped book ignited a vast wildfire. While Beregost is protected by stone irrigation ditches and plowed firebreaks, traversing or searching the burning field on foot is impossible (3d6 fire damage / 10m, blinding smoke).
    * *The 05:45 AM Aerial Breakthrough*: During the predawn **`05:45 AM`** causal flight with the True Angel, the party flies over `Hex (7, 10)` before the fire has spread. Looking down in the twilight, they spot a **tiny fire**—a single campfire-sized spark where the book first struck the stone furrow! Spotting this exact aerial landmark allows the party to pinpoint and retrieve the **Burning Book** on subsequent loops, which unlocks the Spire gates!
 1. **Lord Ravana Bound & Town Evacuated (`Hex 8, 10`)**:
-   * *How Memory Solves It in `15 Mins` (`0 Hexes`)*: From Maya, Corin, and Boss 3's Resonance Ledger, the players know "Aurelius" is **Lord Ravana**, that he prepares his disguise in **Cobbler's Lane (`Hex 8, 10`) at `06:15 AM`**, and that his Infernal True Name is **`"Ravana-Zul"`**. The party ambushes him right in Beregost at `06:15 AM` and speaks his True Name—binding him without a lengthy wilderness chase, forcing him to surrender his *Blessed Piercing Quiver & Monocle*, cancel Scribe Vane's sabotage, refrain from inciting Archdruid Faelan, and report to the **Spire (`Hex 6, 8`)** at `17:30 PM`! Simultaneously, the party gives **Captain Rebecca**, **Sister Althea**, and **Elorion** the vault code (`12-44-09`) and counter-melody.
+   * *How Memory Solves It in `15 Mins` (`0 Hexes`)*: From Maya, Corin, and Boss 3's Resonance Ledger, the players know "Aurelius" is **Lord Ravana**, that he prepares his disguise in **Cobbler's Lane (`Hex 8, 10`) at `06:15 AM`**, and that his Infernal True Name is **`"Ravana-Zul"`**. The party ambushes him right in Beregost at `06:15 AM` and speaks his True Name—binding him without a lengthy wilderness chase, forcing him to surrender his *Blessed Piercing Quiver*, cancel Scribe Vane's sabotage, refrain from inciting Archdruid Faelan, and report to the **Spire (`Hex 6, 8`)** at `17:30 PM`! Simultaneously, the party gives **Captain Rebecca**, **Sister Althea**, and **Elorion** the vault code (`12-44-09`) and counter-melody.
 2. **Tempest Lord Otheus Unchained (`Hex 5, 11` via `Hex 4, 10`)**:
    * *Why They Must Visit*: Otheus is physically chained underwater at `Hex (5, 11)`. Without him, the `17:30 PM` orbital solar beam deals `100d10` unavoidable radiant damage.
 3. **Ancient Kaelen's Chronomancy Tuning Fork (`Hex 14, 13`)**:
@@ -2002,7 +2011,7 @@ The players must clear **Five External Stops**—**The Burning Book (`Hex 7, 10`
 | **`08:00 – 10:00 AM`** | **West Gryphon Team (2 PCs)**<br>(`2.0h` **On Foot** @ `1 hex/hr`, `2 hexes`) | `(4, 10)` $\rightarrow$ **Sunken Reef `(4, 11)`** $\rightarrow$ **The Commodore `(5, 11)`** | Walk `1 hex` South to **Sunken Reef `(4, 11)`** (`08:00–09:00 AM`) to claim the **Grounding Rod of the Deep Trench**, then walk `1 hex` East to **The Commodore `(5, 11)`** (`09:00–10:00 AM`), arriving at `09:15–09:30 AM` to stop the Starfire bomb! |
 | **`10:00 – 11:00 AM`** | **West Gryphon Team (2 PCs)**<br>(`1.0h` In-Hex Action) | **The Commodore `(5, 11)`** | Unlock Commodore Vance's steam winch with the Crank-Key, slacken the 4 chains, and sunder them with the *Grounding Rod*. **Tempest Lord Otheus** is freed and pledges the `17:30 PM` Category-5 Hurricane! |
 | **`11:00 AM – 14:00 PM`** | **West Gryphon Team (2 PCs)**<br>(`3.0h` **On Foot** @ `1 hex/hr`, `3 hexes`) | `(5, 11)` $\rightarrow$ `(5, 10)` $\rightarrow$ `(6, 9)` $\rightarrow$ **Spire `(6, 8)`** | Walk `3 hexes` North along the coastal cliffs to the **Spire of the False Angel `(6, 8)`**, arriving at **`14:00 PM`** and presenting the **Burning Book** to unseal the Spire's solar-adamantine portal gates! |
-| **`06:00 – 06:15 AM`** | **Town Team (3 PCs: Phillipa, Gwen, Grog)**<br>(`0.25h` In Town) | **Beregost Hub `(8, 10)`** | Ambush **Lord Ravana** in Cobbler's Lane (`8,10`) using his memorized True Name (**`"Ravana-Zul"`**). He surrenders his *Blessed Quiver & Monocle*, cancels Vane's sabotage, and is bound to report to Spire `(6,8)` at `17:30 PM`. Brief **Rebecca**, **Althea**, and **Elorion** (`12-44-09`). |
+| **`06:00 – 06:15 AM`** | **Town Team (3 PCs: Phillipa, Gwen, Grog)**<br>(`0.25h` In Town) | **Beregost Hub `(8, 10)`** | Ambush **Lord Ravana** in Cobbler's Lane (`8,10`) using his memorized True Name (**`"Ravana-Zul"`**). He surrenders his *Blessed Quiver*, cancels Vane's sabotage, and is bound to report to Spire `(6,8)` at `17:30 PM`. Brief **Rebecca**, **Althea**, and **Elorion** (`12-44-09`). |
 | **`06:15 – 11:30 AM`** | **North Envoy (1 PC: Phillipa)**<br>(`5.0h` **On Foot**: `3h` via `8,9`–`8,7` + `2h` Difficult Forest into `7,6`) | `(8, 10)` $\rightarrow$ `(8, 9)` $\rightarrow$ `(8, 8)` $\rightarrow$ `(8, 7)` $\rightarrow$ **Ash Grove `(7, 6)`** | Walk North (passing `8,7` at `09:15 AM` to save Sylvan and pushing `2h` through the heavy forest of `7,6`), arriving at **`11:15 AM`—15 minutes before the `11:30 AM` default druid execution**! Perform the memorized **Somatic Inversion Touch & Celestial Chant** (from Boss 2's Tablets) to halt Faelan's ritual (receiving his *Weirwood Staff*) and heal the **True Angel**! |
 | **`11:30 AM – 13:30 PM`** | **North Envoy + True Angel**<br>(`2.0h` **On Foot** @ `1 hex/hr` w/ *Weirwood Staff*, `2 hexes`) | `(7, 6)` $\rightarrow$ `(7, 7)` $\rightarrow$ **Spire `(6, 8)`** | Walk `2 hexes` SW from Ash Grove `(7, 6)` (using Faelan's *Weirwood Staff* to negate forest difficult terrain at `7,6` and `7,7`) to the **Spire `(6, 8)`**, arriving at **`13:30 PM`** and joining Pike & Burk at `14:00 PM`! |
 | **`06:15 – 10:30 AM`** | **Southeast Team (2 PCs: Gwen & Grog)**<br>(`4.0h` **On Foot** @ `1 hex/hr`, `4 hexes` + `0.25h` Action) | `(8, 10)` $\rightarrow$ `(9, 10)` $\rightarrow$ `(10, 10)` $\rightarrow$ `(11, 11)` $\rightarrow$ **Aerie `(11, 12)`** | Walk `4 hexes` SE to **Aerie of the Four Winds `(11, 12)`** (`06:15–10:15 AM`). Speak Zephyrus's memorized True Name (**`"Zephyrus-Al-Mubarak"`**) to activate the *Wish of Frozen Heart* (party-wide afternoon heat immunity) and direct his **One-Time Nimbus Cloud** to meet them at `The Sanctum (14, 13)`! |
@@ -2095,10 +2104,10 @@ The players must clear **Five External Stops**—**The Burning Book (`Hex 7, 10`
 
 #### Act IV: The Unmasking of the Rakshasa, Saving the True Angel & Creating the Time Loop (Sessions 8–9)
 * **Session 8: Loop 9 — Stabilizing the True Angel & Hunting the Mirage Relics**
-  * *Events*: Using the memorized **Somatic Inversion Touch** at Ash Grove `(7,6)` to halt the 11:30 AM explosion and heal the True Angel. Retrieving the *Monocle of Piercing Truth* `(8,6)`, *Quiver of the Just Stalker* `(7,4)`, and *Circlet of Mind Sanctity* `(9,7)`.
-* **Session 9: Loop 10 — Slaying Lord Ravana & Creating the Causal Time Loop (Milestone: Level 11!)**
-  * *The Confrontation*: Ambushing Lord Ravana in his Mirage Pavilion `(10,6)` during his midday siesta (12:00–15:30 PM).
-  * *Boss Fight*: Circlet blocks domination; Monocle pierces mirror clones; Grog's Blessed Piercing arrows deal double vulnerability damage, bypassing *Limited Magic Immunity*.
+  * *Events*: Using the memorized **Somatic Inversion Touch** at Ash Grove `(7,6)` to halt the 11:30 AM explosion and heal the True Angel. Retrieving the *Vial of Consecrated Dawn Oil* `(8,6)`, *Quiver of the Just Stalker* `(7,4)`, and *Circlet of Mind Sanctity* `(9,7)`.
+* **Session 9: Loop 10 — Unveiling the Mirage Pavilion, Slaying Lord Ravana & Creating the Causal Time Loop (Milestone: Level 11!)**
+  * *The Confrontation*: Performing the **Southern Prophecy's Stanza V Unveiling Rite** at the Twin Crags `(10,6)` (pouring blessed water or casting *Bless* into the dry three-stone basin and speaking *"Unveil the gilded mesh, O striped lord!"*) to make the otherwise invisible Mirage Pavilion appear during his midday siesta (12:00–15:30 PM).
+  * *Boss Fight*: Circlet blocks domination & mind-reading; piercing Ravana's skin with blessed steel (Item 7 Oil / Item 8 Quiver / *Bless* spell) shatters his golden glamour, exposes his mirror tethers, and deals double vulnerability damage bypassing *Limited Magic Immunity*.
   * *Payoff*: Reading the Arcanist's Resonance Ledger and **memorizing Ravana's Infernal True Name (`"Ravana-Zul"`)** plus his `06:15 AM` Cobbler's Lane prep schedule—allowing the party on the Final Loop to bind him in Beregost at `06:15 AM` (`0 hexes` traveled)!
   * *The Causal Bootstrap (Post-Rakshasa / Pre-Storm Giant)*: **After defeating the Rakshasa and restoring the True Angel, but BEFORE unchaining the Storm Giant, the party and the True Angel work together to actually create the 12-hour time loop!**
     * They travel back in time to **`05:30 AM`**, raid **The Commodore's caravel (`Hex 5, 11`) at `05:45 AM`** to steal the **Chronocite Bone**, fly east at breakneck speed, **crash straight through the western balcony of the Beregost Clocktower Belfry (`Hex 8, 10`)**, and **jam the bone into the Grand Escapement Gear at `05:59 AM`**—causing the clock to stick at `05:59 AM` so their `06:00 AM` Loop 0 selves are tasked with pulling it out!
@@ -2253,7 +2262,7 @@ The Beregost region features nine explorable subterranean complexes, fortified l
 | **The Mirage Pavilion & Illusion Maze** | **(10, 6)** | Lord Ravana / 'Aurelius' (CR 13) | Arcanist's Resonance Ledger & True Name |
 | **The Beached Caravel 'The Commodore'** | **(5, 11)** | Tempest Lord Otheus (CR 13) | Disarming 09:30 Starfire Bomb & Freeing Otheus |
 | **The South Aqueducts & Cistern Catacombs** | **(8, 13)** | Scribe Vane's Saboteurs (CR 7) | Sluice Gate Control & Civilian Safehouse Haven |
-| **East Quarry & Optical Quartz Caverns** | **(13, 9)** | Haywire Quarry Clockworks (CR 8) | True Seeing Quartz Lens & Gyroscope Stabilizer |
+| **East Quarry & Optical Quartz Caverns** | **(13, 9)** | Haywire Quarry Clockworks (CR 8) | Clockwork Gyroscope Stabilizer & Molten Crucible Tongs |
 | **The Chronomancy Spire (The Sanctum)** | **(14, 13)** | Time Wraiths & Paradox Echoes (CR 10) | Ancient Kaelen's Chronomancy Tuning Fork |
 | **Spire of the False Angel & High Belfry** | **(6, 8) / (8, 10)** | The Singing Devil (CR 16 / L11) | Unsealing Spire with Burning Book & Breaking Loop |
 | **Ash Grove & The Elder Weirwood** | **(7, 6)** | Horned Fiend / True Angel (CR 10) | Inversion Touch Rite / Averting 11:30 Detonation |
@@ -2338,33 +2347,33 @@ The Beregost region features nine explorable subterranean complexes, fortified l
 
 ---
 ### 14.3 🎪 The Mirage Pavilion & Illusion Maze (Hex 10, 6)
-* **Theme**: Extradimensional Silk Palace & Illusion Labyrinth
+* **Theme**: Invisible Extradimensional Silk Palace & Illusion Labyrinth
 * **Recommended Level**: Level 10 (Boss 3 Milestone)
 * **Boss Threat**: **Lord Ravana / 'Aurelius the Radiant'** (CR 13)
-* **Overview**: Hidden within the jagged northern bluffs behind shimmering heat mirages sits the opulent extradimensional silk pavilion of Lord Ravana, the tiger-headed Rakshasa. While the valley swelters, Ravana reclines in magical luxury, sipping chilled wine and reviewing the corrupt arcanist's battery notes.
+* **Overview & How to Reveal It (INVISIBLE WITHOUT THE SOUTHERN PROPHECY!)**: Hidden between the Twin Crags of the northern badlands (`Hex 10, 6`) sits the opulent extradimensional silk pavilion of Lord Ravana, the tiger-headed Rakshasa. **Without the Southern Prophecy (Stanza V of the Golden Alabaster Tablets from Hex 12, 16), the Pavilion is completely invisible and unfindable**—no Perception check, *Detect Magic*, or *See Invisibility* reveals anything here except empty, sun-baked shale and **three sun-bleached stones cradling a dry stone basin**. To unveil the Pavilion, the party must perform the **Stanza V Unveiling Rite**: spill a drop of blessed/holy water (or cast *Bless*) into the dry stone basin and speak **`"Unveil the gilded mesh, O striped lord!"`**—causing crimson silk and floating golden domes to shimmer into reality out of thin air!
 
 #### Strategic Relics & Campaign Breakthroughs
 - **The Arcanist's Resonance Ledger**: Written in cipher; details the exact resonance frequencies of the Clocktower battery and proves Aurelius orchestrated the loop.
-- **Blessed Quiver of Radiant Piercing**: Arrows fired from this quiver ignore the Rakshasa's Limited Magic Immunity and deal an extra 2d8 radiant damage.
-- **Inquisitive Monocle of Truth**: Pierces the Rakshasa's Deva disguise and reveals his true tiger face, backwards hands, and illusions.
+- **Blessed Quiver of Radiant Piercing**: Arrows fired from this quiver pierce Ravana's skin to shatter his golden glamour, ignore his *Limited Magic Immunity*, and deal an extra 2d8 radiant damage.
+- **Blessed Silver Dirk & Vial of Holy Water**: Tucked inside Room 2's rosewood box—gives unprepared parties a blessed piercing blade to shatter Ravana's glamour.
 
 #### Solstice Clockwork Timeline Hazards
-- **06:00 – 11:30 AM**: The Grand Masquerade. Aurelius is away roaming the valley in Deva form deceiving travelers. Pavilion is sealed by a DC 20 illusion veil.
+- **06:00 – 11:30 AM**: The Grand Masquerade. Aurelius is away roaming the valley in Deva form deceiving travelers. Pavilion remains completely veiled until revealed via the Stanza V Unveiling Rite.
 - **12:00 – 15:30 PM**: The Extradimensional Siesta. Ravana rests inside the pavilion with his charmed retinue. The illusion maze is fully active.
 - **15:30 – 17:00 PM**: Contingency Evacuation. Ravana packs the pavilion and teleports toward the clocktower to oversee the sunset cataclysm.
 - **17:00 – 18:00 PM**: Abandoned Illusion Husk. The pavilion collapses into an arcane vortex, dealing 8d8 force damage to anyone inside.
 
 #### Room-by-Room Layout
 1. **Room 1: The Shimmering Mirage Boundary**
-   - *Description*: A curtain of wavering heat and rippling silk obscures the entrance. Stepping through feels like plunging through warm liquid glass into an impossibly cool oasis.
+   - *Description*: Once unveiled via the Stanza V Rite, a curtain of wavering heat and rippling silk marks the entrance. Stepping through triggers the **Phantom Dawn Reset** illusion, feeling like plunging through warm liquid glass back onto Beregost's 06:00 AM Clocktower balcony.
    - *Creatures*: 2x Briarwood Displacer Beast
-   - *Hazard/Trap*: Phantasmal Veil: DC 18 Investigation check or True Seeing required to find the true entrance; failure causes party to wander in circles for 30 minutes.
+   - *Hazard/Trap*: Phantasmal Veil: Spot any of the 5 Matrix Glitches (DC 16 Investigation/Wisdom) or cast *Dispel Magic* (DC 18) on the room to tear open the fake morning sky; failure causes party to waste 30 minutes wandering inside the mirage.
    - *Secrets/Loot*: Silk Banner: Embroidered with a tiger devouring a fallen sun; matches the heraldry in the Arcanist's ledger.
 1. **Room 2: Corridor of Distorted Mirrors & Backwards Shadows**
    - *Description*: Polished silver mirrors line this winding corridor. Reflections don't match the viewer: characters see themselves with backwards hands and hollow glowing eyes.
    - *Creatures*: 2x Mirror Phantoms
    - *Hazard/Trap*: Backwards-Hand Glyph: Touching a mirror triggers DC 16 Wis save or becomes Charmed by the Rakshasa for 1 hour, believing he is a benevolent archangel.
-   - *Secrets/Loot*: Cracked Mirror Niche: Behind the third mirror lies the Inquisitive Monocle of Truth in a velvet-lined rosewood box.
+   - *Secrets/Loot*: Cracked Mirror Niche: Behind the third mirror lies a **Blessed Silver Dirk & Vial of Holy Water** in a velvet-lined rosewood box.
 1. **Room 3: The Opulent Silk Divan & Feasting Salon**
    - *Description*: Plush crimson velvet carpets, gold-embroidered silk cushions, and tables groaning with iced grapes, spiced roast lamb, and chilled wine.
    - *Creatures*: 4x Charmed Elite Bodyguards
@@ -2591,12 +2600,12 @@ Why is Prophet Joshua risking his life to rob the *Sea Maiden*, rally vicious co
 * **Theme**: Terraced Granite Quarry, Crystal Grotto & Clockwork Smelting Foundry
 * **Recommended Level**: Level 7–9 (Relic Retrieval)
 * **Boss Threat**: **Haywire Quarry Automatons & Prismatic Basilisks** (CR 8)
-* **Overview**: Carved into the granite foothills of the eastern mountain range is the East Quarry and its deep optical quartz caverns, where Beregost's clockwork parts and precision crystal lenses are mined and smelted. As the solstice heat rises, the foundry's clockwork excavation automatons overheat and go haywire! Delving into the crystal grotto yields the **True Seeing Quartz Lens** and the **Clockwork Gyroscope Stabilizer** for Artificer Bram in Beregost.
+* **Overview**: Carved into the granite foothills of the eastern mountain range is the East Quarry and its deep optical quartz caverns, where Beregost's clockwork parts and precision crystal gears are mined and smelted. As the solstice heat rises, the foundry's clockwork excavation automatons overheat and go haywire! Delving into the crystal grotto yields the **Clockwork Gyroscope Stabilizer** for Artificer Bram in Beregost and **Molten Crucible Tongs**.
 
 #### Strategic Relics & Campaign Breakthroughs
-- **True Seeing Quartz Lens**: Polished optical quartz lens harvested from the quarry caverns; pierces illusions and reveals the Rakshasa's true tiger form.
 - **Clockwork Gyroscope Stabilizer**: Precision chronocite component that can be brought to Artificer Bram in the Beregost Clocktower to earn his Escapement Calibration Code (`7-3-9-1`).
 - **Molten Crucible Tongs**: Enchanted forge tongs that allow handling white-hot metal without taking fire damage.
+- **Flawless Violet Quartz Core**: Industrial chronocite-grade crystal worth 350 gp (can also serve as a component for Kaelen's calibration).
 
 #### Solstice Clockwork Timeline Hazards
 - **06:00 – 09:00 AM**: Quarry Awake. Stonemasons cutting granite slabs; crystal caverns cool and stable.
@@ -2614,7 +2623,7 @@ Why is Prophet Joshua risking his life to rob the *Sea Maiden*, rally vicious co
    - *Description*: A subterranean cavern glittering with 6-foot violet and clear optical quartz crystals that reflect torchlight into thousands of rainbows.
    - *Creatures*: 2x Prismatic Basilisk
    - *Hazard/Trap*: Blinding Crystal Glare: Direct radiant or light spells in this room cause a blinding flash (DC 14 Con save or Blinded for 1 minute).
-   - *Secrets/Loot*: ⭐ Flawless Quartz Core: Mining a sample (DC 13 Athletics or Stonecunning) yields the **True Seeing Quartz Lens**!
+   - *Secrets/Loot*: ⭐ Flawless Quartz Core: Mining a sample (DC 13 Athletics or Stonecunning) yields a **350 gp Flawless Chronocite-Grade Quartz Core** (speeds up Bram's or Kaelen's calibration)!
 1. **Room 3: Smelting Foundry & Crucible Floor**
    - *Description*: Massive blast furnaces roar with magical fire. Vats of boiling brass and copper bubble violently as clockwork servitors scurry between gantries.
    - *Creatures*: 3x Overheated Clockwork Automatons
