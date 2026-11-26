@@ -927,7 +927,8 @@
   <button class="nav-tab" id="nav-btn-timeline" onclick="switchTab('tab-timeline')">⏳ 12-Hour Timeline</button>
   <button class="nav-tab" id="nav-btn-dungeons" onclick="switchTab('tab-dungeons')">🏰 Dungeons & Lairs</button>
   <button class="nav-tab" id="nav-btn-notebook" onclick="switchTab('tab-notebook')">📔 Majora's Mask Notebook</button>
-  <button class="nav-tab" id="nav-btn-day1" onclick="switchTab('tab-day1')">📋 Day 1 Cheat Sheet</button>
+  <button class="nav-tab" id="nav-btn-day1" onclick="switchTab('tab-day1')">📋 Day 1 &amp; S2 Sheets</button>
+  <button class="nav-tab" id="nav-btn-history" onclick="switchTab('tab-history')">🕰️ Session History</button>
   <button class="nav-tab" id="nav-btn-notes" onclick="switchTab('tab-notes')">📜 Campaign Notes</button>
   <button class="nav-tab" id="nav-btn-misc" onclick="switchTab('tab-misc')">📚 Misc</button>
 </nav>
@@ -1463,7 +1464,8 @@
             <span class="tag tag-gold">Quests &amp; Carnival • Townsfolk Motivations • Evacuation &amp; Self-Sacrifice • Rumors &amp; Rhyme • B&amp;W Town Map</span>
           </div>
           <div class="no-print" style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
-            <a href="beregost_day1_cheatsheet_printable.html?v=3" target="_blank" class="btn-gold" style="text-decoration:none; background:linear-gradient(180deg, #238636 0%, #196127 100%); border:1px solid #3fb950; color:#fff; padding:7px 14px; border-radius:6px; font-weight:bold; font-size:0.84rem;">🖨️ Open B&amp;W 4-Page Print Sheet ↗️</a>
+            <a href="beregost_day1_cheatsheet_printable.html?v=4" target="_blank" class="btn-gold" style="text-decoration:none; background:linear-gradient(180deg, #238636 0%, #196127 100%); border:1px solid #3fb950; color:#fff; padding:7px 14px; border-radius:6px; font-weight:bold; font-size:0.84rem;">🖨️ Day 1 Print Sheet (4p) ↗️</a>
+            <a href="beregost_session2_cheatsheet_printable.html" target="_blank" class="btn-gold" style="text-decoration:none; background:linear-gradient(180deg, #8957e5 0%, #6e40c9 100%); border:1px solid #bc8cff; color:#fff; padding:7px 14px; border-radius:6px; font-weight:bold; font-size:0.84rem;">🖨️ Session 2 (Loop 2) Cheat Sheet (2p) ↗️</a>
             <button class="chip-btn" style="border-color:var(--accent-gold); color:var(--accent-gold); font-weight:bold; padding:7px 12px;" onclick="window.print()">🖨️ Print This Tab</button>
           </div>
         </div>
@@ -1509,9 +1511,9 @@
                   <td style="padding:8px;"><strong>Baker's Warmth Loaf</strong> (+5 Temp HP &amp; Cold Resistance) + <strong>Subterranean Flour-Chute Key</strong> (plus free morning rolls: +5 Temp HP).<br/><em style="color:var(--accent-cyan);">Clue:</em> Blaze began at 05:25 AM from a dropped glowing book.</td>
                 </tr>
                 <tr style="border-bottom:1px solid rgba(48,54,61,0.6);">
-                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>South: Cornfield Scarecrow</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Farmer Bran / Capt. Rebecca</span></td>
-                  <td style="padding:8px; white-space:nowrap;"><strong>07:30–10:30 AM</strong><br/>Hex (8, 11) • 1 hr S</td>
-                  <td style="padding:8px;">Rescue 16-year-old apprentice Young Tom trapped in a wicker crib by an animated <strong>Cornfield Scarecrow</strong> (CR 1, AC 11, HP 36, <strong>Vulnerable to Fire</strong>, DC 11 Wis save vs paralyzing claws).</td>
+                  <td style="padding:8px;"><input type="checkbox" class="no-print" style="margin-right:6px;"><strong>South: Cornfield Scarecrow</strong><br/><span style="color:var(--text-muted); font-size:0.76rem;">Tobias Miller (Baker) / Capt. Rebecca</span></td>
+                  <td style="padding:8px; white-space:nowrap;"><strong>07:30–11:00 AM</strong><br/>Hex (8, 11) • 1 hr S</td>
+                  <td style="padding:8px;">Rescue Tobias's 16-year-old apprentice <strong>Young Tom</strong> trapped in a wicker crib by an animated <strong>Cornfield Scarecrow</strong> (CR 1, AC 11, HP 36, <strong>Vulnerable to Fire</strong>, DC 11 Wis save vs paralyzing claws).</td>
                   <td style="padding:8px;"><strong>Ivory-Carved Cornucopia Whistle</strong> + wheel of smoked solstice cheddar.<br/><em style="color:var(--accent-cyan);">Clue:</em> Scarecrow twitched alive at dawn after a sulfurous chime from the Southern Desert.</td>
                 </tr>
                 <tr>
@@ -1529,7 +1531,7 @@
       <!-- SECTION 2: EARLY MORNING CARNIVAL GAMES & REWARDS -->
       <div class="card" style="border-left: 4px solid var(--accent-gold);">
         <div class="card-header">
-          <h3 style="color:var(--accent-gold); margin:0;">🎪 2. Early Morning Solstice Carnival Games &amp; Rewards (06:30 – 08:30 AM)</h3>
+          <h3 style="color:var(--accent-gold); margin:0;">🎪 2. Solstice Carnival Games &amp; Rewards (10:00 – 11:30 AM)</h3>
           <span class="tag tag-gold">Base of Church &amp; Juggler Plaza • Open to All PCs</span>
         </div>
         <div class="card-body" style="padding:12px;">
@@ -1884,6 +1886,32 @@
         </div>
       </div>
 
+    </div>
+  </div>
+
+  <!-- TAB: SESSION HISTORY, PLAYER SUMMARIES & FULL TRANSCRIPTS -->
+  <div id="tab-history" class="tab-pane">
+    <div style="display:flex; flex-direction:column; gap:16px;">
+      <!-- Header & Session Selector -->
+      <div class="card" style="border: 2px solid #bc8cff; background: linear-gradient(180deg, rgba(188,140,255,0.14) 0%, rgba(22,27,34,1) 100%);">
+        <div class="card-header" style="border-bottom: 1px solid rgba(188,140,255,0.3); padding-bottom: 10px; flex-wrap:wrap; gap:10px;">
+          <div>
+            <h2 style="color:#d2a8ff; margin:0 0 4px 0; font-size:1.3rem;">🕰️ Campaign Session History, Recaps &amp; Transcripts</h2>
+            <span class="tag tag-purple">Spoiler-Free Player Summaries • DM Canon Lock-Ins • Searchable Verbatim Transcripts</span>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center;">
+            <a href="beregost_session2_cheatsheet_printable.html" target="_blank" class="btn-gold" style="text-decoration:none; background:linear-gradient(180deg, #8957e5 0%, #6e40c9 100%); border:1px solid #bc8cff; color:#fff; padding:7px 14px; border-radius:6px; font-weight:bold; font-size:0.84rem;">🖨️ Open Session 2 (Loop 2) Cheat Sheet ↗️</a>
+          </div>
+        </div>
+        <div id="history-session-pills" style="display:flex; gap:8px; flex-wrap:wrap; padding:10px 14px 4px 14px;">
+          <!-- Populated by renderSessionHistoryTab() -->
+        </div>
+      </div>
+
+      <!-- Dynamic Session Content Container -->
+      <div id="history-session-content" style="display:flex; flex-direction:column; gap:16px;">
+        <!-- Populated by renderSessionHistoryTab() -->
+      </div>
     </div>
   </div>
 
@@ -3890,7 +3918,7 @@ Led astray by the fiendish ruse.
       <div id="carnival-games-card" class="card" style="border: 2px solid #58a6ff; background: linear-gradient(180deg, rgba(56,139,253,0.1) 0%, rgba(22,27,34,1) 100%);">
         <div class="card-header" style="border-bottom: 1px solid rgba(56,139,253,0.3); padding-bottom: 10px;">
           <div>
-            <h3 style="color:#79c0ff; margin:0 0 4px 0;">🎪 Beregost Solstice Carnival Games & NPC Skill Challenges (06:30 – 08:30 AM)</h3>
+            <h3 style="color:#79c0ff; margin:0 0 4px 0;">🎪 Beregost Solstice Carnival Games & NPC Skill Challenges (10:00 – 11:30 AM)</h3>
             <span class="tag tag-cyan">Interactive Festival Booths | Meeting Town NPCs Through Heroic Skill Checks</span>
           </div>
           <span class="badge badge-gold">5 Canonical NPC Booths</span>
@@ -4076,7 +4104,7 @@ Led astray by the fiendish ruse.
                 <span class="tag tag-cyan">CR 1 Combat | 1h South</span>
               </div>
               <p style="font-size:0.82rem; color:#c9d1d9; line-height:1.45; margin-bottom:8px;">
-                <strong>The Hook (07:30 AM):</strong> Farmer Old Bran rushes to the south gate panicked: his 16-year-old apprentice, <em>Young Tom</em>, walked out into the sweetcorn fields at sunrise to gather festival ears and never returned. Distant crying was heard from the center maze.
+                <strong>The Hook (07:30 / 10:30 AM):</strong> Baker Tobias Miller (and Farmer Old Bran) report that Tobias's 16-year-old apprentice, <em>Young Tom</em>, walked south into the sweetcorn fields at sunrise to gather festival ears and cornmeal and never returned. Distant crying was heard from the center maze.
               </p>
               <div style="background:rgba(248,81,73,0.1); border-left:3px solid #f85149; padding:8px; border-radius:3px; font-size:0.8rem; color:#f0f6fc; margin-bottom:8px;">
                 <strong>⚔️ The Encounter:</strong> An animated <strong>Cornfield Scarecrow (CR 1, HP 36, AC 11)</strong> has trapped Tom in a wicker corn crib! Its claws threaten paralysis (DC 11 Wis) and Terrifying Glare freezes victims. <em>Tactical Counter: Vulnerable to Fire! Torches or fire cantrips ignite it quickly.</em>
@@ -5428,7 +5456,7 @@ Restore the angel's form, and set the morning free!
 <li><em>Tone</em>: Wholesome, cheerful high fantasy. The party feels respected, welcomed, and emotionally invested—with a clear reason to return to Beregost by <strong>11:00 AM</strong> before the afternoon catastrophe begins.</li>
 </ul>
 <ul class="notes-list">
-<li><strong>Scene 2A: The Solstice Carnival Games &amp; NPC Skill Challenges (06:30 – 08:30 AM)</strong>:</li>
+<li><strong>Scene 2A: The Solstice Carnival Games &amp; NPC Skill Challenges (10:00 – 11:30 AM)</strong>:</li>
 <li><strong>Sister Althea (Temple Priest - Temple Garden)</strong>:</li>
 <li><em>Game</em>: <strong>The Solar Bullseye of Lathander</strong> (DC 13 Ranged Weapon Attack or Dexterity Check).</li>
 <li><em>Description</em>: Contestants shoot sun-crested blunted arrows at a swinging brass sun medallion 40 feet away in the temple garden. Sister Althea blesses each bow with morning incense.</li>
@@ -5472,7 +5500,7 @@ Restore the angel's form, and set the morning free!
 <li><em>The Encounter</em>: At the eastern containment ditch, Old Farmer Branden is pinned down by <strong>2x Cinder Mephits (CR 1/2, HP 22, AC 12)</strong> leaping out of the burning barley! The party must defeat the mephits and <strong>chop down the containment windbreak</strong> (three DC 13 Strength [Athletics] checks with axes, or dealing 30 slashing/force damage to the dry cedar treeline, or dousing the ditch with <em>Create Water</em>).</li>
 <li><em>Lore &amp; Reward</em>: Containing the firebreak saves Tobias's grain shed! Old Branden points into the impenetrable 600-acre inferno: <em>"That blaze started around 5:25 AM right out in the middle of the dark furrows—like somebody dropped a burning coal or a glowing book on their walk into town! You'd never find it on foot in all this smoke; you'd have to have flown over at dawn before the fire spread!"</em> Returning to Tobias earns his <em>Baker's Warmth Loaf</em> (+5 Temp HP &amp; Cold Resistance) and <strong>Subterranean Flour-Chute Key</strong>!</li>
 <li><strong>Errand 2: South Cornfields: The Scarecrow Snare (Hex 8, 11)</strong>:</li>
-<li><em>The Hook (07:30 AM)</em>: Farmer Old Bran rushes to the south gate panicked: his 16-year-old apprentice, <em>Young Tom</em>, walked out into the sweetcorn fields at sunrise to gather festival ears and never returned. Distant crying was heard from the center maze.</li>
+<li><em>The Hook (07:30 / 10:30 AM)</em>: Baker Tobias Miller (and Farmer Old Bran) report that Tobias's 16-year-old apprentice, <em>Young Tom</em>, walked south into the sweetcorn fields at sunrise to gather festival ears and cornmeal and never returned. Distant crying was heard from the center maze.</li>
 <li><em>The Travel &amp; Terrain</em>: Hex (8, 11) is rolling pastoral farmland directly south of Beregost (1 hour on foot).</li>
 <li><em>The Encounter</em>: An animated <strong>Cornfield Scarecrow (CR 1, HP 36, AC 11)</strong> has trapped Tom inside a wicker corn crib! Its claws threaten paralysis (DC 11 Wis) and its Terrifying Glare freezes victims.</li>
 <li><em>Tactical Counter</em>: Vulnerable to Fire! Torches or fire cantrips ignite it quickly, freeing apprentice Young Tom unharmed.</li>
@@ -9388,9 +9416,9 @@ function switchTab(tabId) {
     return;
   }
 
-  // Timeline slider visibility management: hidden strictly on Campaign Notes & Day 1 Cheat Sheet
+  // Timeline slider visibility management: hidden strictly on Campaign Notes, Day 1 Cheat Sheet & Session History
   const timelineBar = document.querySelector('.timeline-bar');
-  if (timelineBar) timelineBar.style.display = (tabId === 'tab-notes' || tabId === 'tab-day1') ? 'none' : '';
+  if (timelineBar) timelineBar.style.display = (tabId === 'tab-notes' || tabId === 'tab-day1' || tabId === 'tab-history') ? 'none' : '';
   if (typeof document !== 'undefined' && document.body && document.body.classList) {
     document.body.classList.toggle('notes-active', tabId === 'tab-notes');
   }
@@ -9430,6 +9458,7 @@ function switchTab(tabId) {
     "tab-dungeons": "nav-btn-dungeons",
     "tab-notebook": "nav-btn-notebook",
     "tab-day1": "nav-btn-day1",
+    "tab-history": "nav-btn-history",
     "tab-notes": "nav-btn-notes",
     "tab-misc": "nav-btn-misc"
   };
@@ -9437,6 +9466,10 @@ function switchTab(tabId) {
   if (activeNavId) {
     const navEl = document.getElementById(activeNavId);
     if (navEl) navEl.classList.add("active");
+  }
+
+  if (tabId === "tab-history" && typeof renderSessionHistoryTab === "function") {
+    renderSessionHistoryTab();
   }
 
   if (tabId === "tab-dungeons") {
@@ -19225,14 +19258,14 @@ const FULL_HEX_DATA = [
       "color": "#58a6ff",
       "encounter": "Animated Cornfield Scarecrow (CR 1) holding apprentice Young Tom in a wicker crib",
       "loot": "Ivory-Carved Cornucopia Whistle & Farmer Bran's Solstice Ham",
-      "desc": "Pastoral sweetcorn fields just south of town. An animated wicker scarecrow has imprisoned apprentice Young Tom.",
+      "desc": "Pastoral sweetcorn fields just south of town. An animated wicker scarecrow has imprisoned Baker Tobias's apprentice Young Tom.",
       "cr": "1",
       "challenge_type": "resource_drain",
       "drain_profile": "Minor Resource Drain: Pressures 15–25 Party HP or Level 1 spell slots."
     },
     "poi_name": "South Cornfields (The Scarecrow Snare)",
     "poi_icon": "🌾",
-    "poi_desc": "Pastoral sweetcorn fields just south of town. An animated wicker scarecrow has imprisoned apprentice Young Tom.",
+    "poi_desc": "Pastoral sweetcorn fields just south of town. An animated wicker scarecrow has imprisoned Baker Tobias's apprentice Young Tom.",
     "encounter": "Animated Cornfield Scarecrow (CR 1) holding apprentice Young Tom in a wicker crib",
     "loot": "Ivory-Carved Cornucopia Whistle & Farmer Bran's Solstice Ham",
     "terrain_type": "Standard Terrain — Beregost Farmland & Plains (Normal 1h Pace)",
@@ -32844,5 +32877,174 @@ window.addEventListener('scroll', () => {
     </div>
   </div>
 
+  <script src="assets/data/session_history.js"></script>
+  <script>
+    let selectedHistorySessionId = null;
+
+    function escapeHistoryHtml(str) {
+      return String(str || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function renderSessionHistoryTab() {
+      const pillsEl = document.getElementById("history-session-pills");
+      const contentEl = document.getElementById("history-session-content");
+      if (!pillsEl || !contentEl) return;
+
+      const list = window.CAMPAIGN_SESSION_HISTORY || [];
+      if (!list.length) {
+        contentEl.innerHTML = '<div class="card"><div class="card-body">No sessions logged yet.</div></div>';
+        return;
+      }
+
+      if (!selectedHistorySessionId || !list.some(s => s.id === selectedHistorySessionId)) {
+        selectedHistorySessionId = list[list.length - 1].id;
+      }
+
+      pillsEl.innerHTML = list.map(s => {
+        const active = s.id === selectedHistorySessionId;
+        return `<button class="chip-btn ${active ? "active" : ""}" style="${active ? "border-color:#bc8cff; color:#d2a8ff; background:rgba(188,140,255,0.2); font-weight:bold;" : ""}" onclick="selectHistorySession('${s.id}')">📅 Session ${s.number}: ${escapeHistoryHtml(s.date)} (${escapeHistoryHtml(s.loops)})</button>`;
+      }).join("");
+
+      const sess = list.find(s => s.id === selectedHistorySessionId) || list[0];
+
+      const canonItems = (sess.canonLockIns || []).map(c => `<li style="margin-bottom:6px;">${escapeHistoryHtml(c)}</li>`).join("");
+      const missedItems = (sess.missedHooks || []).map(m => `<li style="margin-bottom:6px;">${escapeHistoryHtml(m)}</li>`).join("");
+
+      const partsHtml = (sess.parts || []).map((p, idx) => `
+        <details ${idx === 0 ? "" : ""} style="background:rgba(0,0,0,0.28); border:1px solid var(--border-color); border-radius:8px; padding:10px 14px; margin-bottom:10px;">
+          <summary style="cursor:pointer; font-weight:700; color:#79c0ff; font-size:0.92rem; list-style:revert;">
+            🎙️ ${escapeHistoryHtml(p.title)} <span style="font-weight:normal; color:var(--text-muted); font-size:0.78rem;">(Click to expand Gemini Notes &amp; Full Transcript)</span>
+          </summary>
+          <div style="margin-top:12px; display:flex; flex-direction:column; gap:12px;">
+            <details open style="background:rgba(22,27,34,0.85); border-left:3px solid var(--accent-gold); border-radius:6px; padding:10px 12px;">
+              <summary style="cursor:pointer; color:var(--accent-gold); font-weight:700; font-size:0.84rem;">📝 Gemini Meeting Notes &amp; Details</summary>
+              <pre class="history-searchable-text" data-raw="${escapeHistoryHtml(p.geminiNotes)}" style="white-space:pre-wrap; font-family:system-ui, -apple-system, sans-serif; font-size:0.8rem; line-height:1.5; color:#c9d1d9; margin:8px 0 0 0; max-height:360px; overflow-y:auto;">${escapeHistoryHtml(p.geminiNotes)}</pre>
+            </details>
+            <details style="background:rgba(13,17,23,0.92); border-left:3px solid #58a6ff; border-radius:6px; padding:10px 12px;">
+              <summary style="cursor:pointer; color:#79c0ff; font-weight:700; font-size:0.84rem;">📜 Full Verbatim Transcript (${(p.transcript || "").split(/\r?\n/).length} lines)</summary>
+              <pre class="history-searchable-text" data-raw="${escapeHistoryHtml(p.transcript)}" style="white-space:pre-wrap; font-family:ui-monospace, Consolas, monospace; font-size:0.76rem; line-height:1.55; color:#c9d1d9; margin:8px 0 0 0; max-height:520px; overflow-y:auto;">${escapeHistoryHtml(p.transcript)}</pre>
+            </details>
+          </div>
+        </details>
+      `).join("");
+
+      contentEl.innerHTML = `
+        <!-- Player-Facing Summary -->
+        <div class="card" style="border-left:4px solid #3fb950;">
+          <div class="card-header" style="flex-wrap:wrap; gap:8px;">
+            <div>
+              <h3 style="color:#56d364; margin:0;">📣 ${escapeHistoryHtml(sess.title)} — Player-Facing Recap (Spoiler-Free)</h3>
+              <span class="tag" style="border-color:#3fb950; color:#56d364;">${escapeHistoryHtml(sess.date)} • ${escapeHistoryHtml(sess.loops)}</span>
+            </div>
+            <button id="btn-copy-player-summary" class="chip-btn" style="border-color:#3fb950; color:#56d364; font-weight:bold; cursor:pointer;" onclick="copySessionPlayerSummary('${sess.id}')">📋 Copy Player Summary</button>
+          </div>
+          <div class="card-body" style="padding:14px;">
+            <pre style="white-space:pre-wrap; font-family:Georgia, serif; font-size:0.9rem; line-height:1.6; color:#f0f6fc; background:rgba(0,0,0,0.32); padding:14px; border-radius:6px; border:1px solid rgba(63,185,80,0.3); margin:0;">${escapeHistoryHtml(sess.playerSummary)}</pre>
+          </div>
+        </div>
+
+        <!-- DM Continuity & Canon Lock-Ins -->
+        <div class="card" style="border-left:4px solid var(--accent-gold);">
+          <div class="card-header">
+            <h3 style="color:var(--accent-gold); margin:0;">🧠 DM Continuity Notes, Canon Lock-Ins &amp; Next Session Plan</h3>
+            <span class="tag tag-gold">DM Eyes Only</span>
+          </div>
+          <div class="card-body" style="padding:14px; display:flex; flex-direction:column; gap:12px;">
+            <div style="background:rgba(188,140,255,0.12); border:1px solid #bc8cff; border-radius:6px; padding:10px 12px; font-size:0.84rem; color:#e6edf3;">
+              <strong style="color:#d2a8ff;">🎯 Party's Stated Plan Entering Next Session:</strong> ${escapeHistoryHtml(sess.nextSessionPlan)}
+            </div>
+            <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:14px;">
+              <div style="background:rgba(210,153,34,0.08); border:1px solid rgba(210,153,34,0.35); border-radius:6px; padding:12px;">
+                <strong style="color:var(--accent-gold); font-size:0.86rem;">✅ Session Canon Lock-Ins &amp; Table Realities</strong>
+                <ul style="margin:8px 0 0 0; padding-left:18px; font-size:0.82rem; color:#c9d1d9; line-height:1.45;">${canonItems}</ul>
+              </div>
+              <div style="background:rgba(88,166,255,0.08); border:1px solid rgba(88,166,255,0.35); border-radius:6px; padding:12px;">
+                <strong style="color:#79c0ff; font-size:0.86rem;">🪝 Fresh Unexplored Hooks Still Ready for Next Loop</strong>
+                <ul style="margin:8px 0 0 0; padding-left:18px; font-size:0.82rem; color:#c9d1d9; line-height:1.45;">${missedItems}</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Searchable Notes & Full Transcripts -->
+        <div class="card" style="border-left:4px solid #58a6ff;">
+          <div class="card-header" style="flex-wrap:wrap; gap:8px;">
+            <div>
+              <h3 style="color:#79c0ff; margin:0;">📜 Recorded Meeting Notes &amp; Full Transcripts</h3>
+              <span class="tag">Search across both Gemini summaries &amp; verbatim dialogue</span>
+            </div>
+            <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+              <input type="text" id="history-transcript-search" placeholder="🔍 Search transcript (e.g. Aurelius, Maya, owl, bear)..." oninput="filterSessionTranscript(this.value)" style="width:280px; max-width:100%; padding:6px 10px; background:var(--bg-primary); border:1px solid var(--border-color); border-radius:6px; color:#fff; font-size:0.8rem;" />
+              <span id="history-search-count" style="font-size:0.76rem; color:var(--text-muted);"></span>
+            </div>
+          </div>
+          <div class="card-body" style="padding:14px;">
+            ${partsHtml}
+          </div>
+        </div>
+      `;
+    }
+
+    function selectHistorySession(id) {
+      selectedHistorySessionId = id;
+      renderSessionHistoryTab();
+    }
+
+    function copySessionPlayerSummary(id) {
+      const sess = (window.CAMPAIGN_SESSION_HISTORY || []).find(s => s.id === id);
+      if (!sess) return;
+      navigator.clipboard.writeText(sess.playerSummary).then(() => {
+        const btn = document.getElementById("btn-copy-player-summary");
+        if (btn) {
+          const orig = btn.textContent;
+          btn.textContent = "✅ Copied to Clipboard!";
+          setTimeout(() => { btn.textContent = orig; }, 2000);
+        }
+      });
+    }
+
+    function filterSessionTranscript(query) {
+      const q = (query || "").trim();
+      const blocks = document.querySelectorAll("#history-session-content .history-searchable-text");
+      const countEl = document.getElementById("history-search-count");
+      let totalMatches = 0;
+
+      blocks.forEach(pre => {
+        const raw = pre.getAttribute("data-raw") || "";
+        if (!q) {
+          pre.textContent = raw;
+          return;
+        }
+        const safeQ = q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        const rx = new RegExp(safeQ, "gi");
+        const lines = raw.split(/\r?\n/);
+        const matched = [];
+        lines.forEach(line => {
+          if (rx.test(line)) {
+            rx.lastIndex = 0;
+            totalMatches += (line.match(rx) || []).length;
+            matched.push(escapeHistoryHtml(line).replace(new RegExp(safeQ, "gi"), m => `<mark style="background:#e3b341; color:#000; padding:0 2px; border-radius:2px; font-weight:bold;">${m}</mark>`));
+          }
+        });
+        if (matched.length > 0) {
+          pre.innerHTML = matched.join("\n\n");
+          const parentDetails = pre.closest("details");
+          if (parentDetails) parentDetails.open = true;
+          const outerDetails = parentDetails && parentDetails.parentElement ? parentDetails.parentElement.closest("details") : null;
+          if (outerDetails) outerDetails.open = true;
+        } else {
+          pre.innerHTML = '<span style="color:#8b949e; font-style:italic;">No matching lines in this section.</span>';
+        }
+      });
+
+      if (countEl) {
+        countEl.textContent = q ? `${totalMatches} match${totalMatches === 1 ? "" : "es"}` : "";
+      }
+    }
+  </script>
 </body>
 </html>

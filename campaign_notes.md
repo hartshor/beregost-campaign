@@ -250,6 +250,9 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
   * **Early Bootstrap Clue #1 (The Destroyed Belfry Balcony)**: Describe that the **western stone balcony and balustrade of the Clocktower Belfry have just been violently smashed inward into fresh rubble**—as if something heavy came hurtling out of the pre-dawn western sky at `05:58 AM` and crash-landed straight into the belfry! Dust still hangs in the air, scorch marks and claw/weapon scrapes mar the broken stone rail, and wedged directly into the Grand Escapement Gear is a strange pale **Chronocite Bone**, freezing the clock at `05:59 AM`!
   * Bram shouts up from the ladder in bewilderment: *"By Gond's teeth, look at my western balcony—some freak meteor or flying beast smashed clean through the stone rail in the fog a minute ago! Did you find what jammed the escapement gear?! Pull it out quick so the 6:00 bell can ring!"*
   * **The 06:00 AM Trigger**: The players pull the bone from the gears. The clock ticks forward to `06:00 AM`, the great bronze bell strikes, and the bone dissolves into gray dust in their hands! *(Later in the campaign, after defeating the Rakshasa, the players will realize: **THEY** were the ones who crashed through the Clocktower balcony at 05:59 AM with the True Angel and jammed the bone into the gears!)*
+  * **Session 1 Table Canon Lock-Ins**:
+    * *Accidental Bootstrap Foreshadowing*: On Loop 0, Artificer Bram pulled scraps of the **party's own gear and clothing** out of the smashed Belfry rubble (joked off as "crime scene contamination" on a nat-1 Investigation)—save this for the Act IV `05:59 AM` Causal Bootstrap reveal!
+    * *Canonical Timings & Reset*: Beregost's Solstice Carnival opens at **`10:00 AM`**; Young Tom (`Hex 8, 11`) is **Tobias Miller's baker's apprentice**; and a **TPK triggers an immediate `06:00 AM` loop reset** (full HP/spells, physical loot cleared, all memories kept).
   * **The DM reads the Dawn Monologue** *(including the town guard calling up to the party standing on the rubbled, destroyed clocktower balcony: `"Hey! You got the clock working! Thank you! Happy Solstice!"`)*.
   * Bram is overjoyed: *"Praise Gond's cogwheels! The Solstice mechanism is free—even if the town masons will be cursing that wrecked balcony all week!"* He rewards them with 25 gp each and points down to the square: *"Enjoy the morning booths and lend Captain Rebecca or Baker Tobias a hand if you like—just make sure you're back in Town Square by **11:00 AM sharp**! At eleven o'clock we ring the High Sun Muster Bell, Alderman Durlag pays out the **250 gp Solstice Hero Commendation** at Town Hall, and Tobias taps the midday festival feast!"*
 * **Scene 2: Feldepost Square, The 3 Emotional Anchors & The 11:00 AM Muster Hook (06:15 – 07:30 AM)**:
@@ -258,7 +261,7 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
   * **Captain Rebecca (Guard Barracks & 11:00 AM Muster Deadline)**: Veteran with a bad knee organizing the festival patrol. Party assists with drilling or resolving merchant disputes. Rebecca gives them lodging vouchers for the Jovial Juggler and offers three nearby morning errands (West to `Hex 7, 10` firebreak, South to `Hex 8, 11` cornfields, or East to `Hex 9, 10` highway patrol), adding firmly: *"Whichever gate you head out, report back to the Town Square by **11:00 AM sharp** for the High Sun Muster and your **250 gp council bounty**—the midday heat is already climbing and we close the outer gates for the noon procession!"*
   * *Tone*: Wholesome, cheerful high fantasy. The party feels respected, welcomed, and emotionally invested—with a clear reason to return to Beregost by **11:00 AM** before the afternoon catastrophe begins.
 
-* **Scene 2A: The Solstice Carnival Games & NPC Skill Challenges (06:30 – 08:30 AM)**:
+* **Scene 2A: The Solstice Carnival Games & NPC Skill Challenges (10:00 – 11:30 AM)**:
   * **Sister Althea (Temple Priest - Temple Garden)**:
     * *Game*: **The Solar Bullseye of Lathander** (DC 13 Ranged Weapon Attack or Dexterity Check).
     * *Description*: Contestants shoot sun-crested blunted arrows at a swinging brass sun medallion 40 feet away in the temple garden. Sister Althea blesses each bow with morning incense.
@@ -298,7 +301,7 @@ These rumors sound plausible to first-time adventurers on Loop 0 and can be debu
     * *The Encounter*: At the eastern containment ditch, Old Farmer Branden is pinned down by **2x Cinder Mephits (CR 1/2, HP 22, AC 12)** leaping out of the burning barley! The party must defeat the mephits and **chop down the containment windbreak** (three DC 13 Strength [Athletics] checks with axes, or dealing 30 slashing/force damage to the dry cedar treeline, or dousing the ditch with *Create Water*).
     * *Lore & Reward*: Containing the firebreak saves Tobias's grain shed! Old Branden points into the impenetrable 600-acre inferno: *"That blaze started around 5:25 AM right out in the middle of the dark furrows—like somebody dropped a burning coal or a glowing book on their walk into town! You'd never find it on foot in all this smoke; you'd have to have flown over at dawn before the fire spread!"* Returning to Tobias earns his *Baker's Warmth Loaf* (+5 Temp HP & Cold Resistance) and **Subterranean Flour-Chute Key**!
   * **Errand 2: South Cornfields: The Scarecrow Snare (Hex 8, 11)**:
-    * *The Hook (07:30 AM)*: Farmer Old Bran rushes to the south gate panicked: his 16-year-old apprentice, *Young Tom*, walked out into the sweetcorn fields at sunrise to gather festival ears and never returned. Distant crying was heard from the center maze.
+    * *The Hook (07:30 AM / 10:30 AM)*: Baker Tobias Miller (and Farmer Old Bran) anxiously report that **Tobias's 16-year-old apprentice, *Young Tom***, walked south into the sweetcorn fields at sunrise to gather Solstice festival ears and cornmeal and never returned. Distant crying was heard from the center maze.
     * *The Travel & Terrain*: Hex (8, 11) is rolling pastoral farmland directly south of Beregost (1 hour on foot).
     * *The Encounter*: An animated **Cornfield Scarecrow (CR 1, HP 36, AC 11)** has trapped Tom inside a wicker corn crib! Its claws threaten paralysis (DC 11 Wis) and its Terrifying Glare freezes victims.
     * *Tactical Counter*: Vulnerable to Fire! Torches or fire cantrips ignite it quickly, freeing apprentice Young Tom unharmed.
@@ -2765,7 +2768,7 @@ Why is Prophet Joshua risking his life to rob the *Sea Maiden*, rally vicious co
 
 ### 14.1 Cornfield Scarecrow (CR 1)
 * **Encounter Location**: Hex (8, 11) — South Cornfields (The Scarecrow Snare).
-* **Narrative Context**: An ordinary field scarecrow animated at dawn when necrotic and temporal static spilled from the southern horizon. Traps farm apprentice Young Tom in a wicker corn crib.
+* **Narrative Context**: An ordinary field scarecrow animated at dawn when necrotic and temporal static spilled from the southern horizon. Traps Baker Tobias's apprentice Young Tom in a wicker corn crib.
 * **Official D&D 2024 (5.5e) Stat Block**:
   - **Size / Type**: Medium Construct, Neutral Evil
   - **Armor Class**: 11

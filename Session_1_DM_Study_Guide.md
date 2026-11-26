@@ -129,7 +129,7 @@
 
 ### Step 2: Town Square Exploration, Carnival Booths & Micro-Quests (`06:15 – 08:30 AM`)
 * **Rescue Little Maya's Wooden Thrush (`07:15 AM` at Municipal Well)**: `DC 10 Athletics` or *Mage Hand* $\rightarrow$ **Clover Bracelet** + Maya's clue about the shadowless golden man.
-* **Play the 5 Solstice Carnival Booths (`06:30 – 08:30 AM` at Base of Church & Juggler Stage)**:
+* **Play the 5 Solstice Carnival Booths (`10:00 – 11:30 AM` at Base of Church & Juggler Stage)**:
   1. **Solar Bullseye (Sister Althea)**: `DC 13 Ranged/Dex` $\rightarrow$ *Ribbon of the Morninglord* (`+1` to 1 Death Save or radiant roll).
   2. **Blindfold Herb Tasting (Granny Morwen)**: `DC 13 Medicine/Nature` $\rightarrow$ *Mint & Lavender Lozenges* (`1d4 HP` + Adv on 1 heat save).
   3. **Anvil-Ringer Sledgehammer (Taerom)**: `DC 14 Athletics` $\rightarrow$ *Thunderhammer Whetstone* (`+1` dmg on first hit).
@@ -142,8 +142,8 @@ Each errand is **1 hex (1 hour on foot)** outside Beregost, features a quick low
 1. **🔥 West Gate Errand (`Hex 7, 10`): Old Branden's Blazing Barleyfield Firebreak** *(Given by Tobias)*
    * **Action**: Defeat **2x Cinder Mephits** (`CR 1/2`, `AC 12`, `HP 22`) pinning down Old Farmer Branden and chop down the 60-ft dry cedar windbreak (`3x DC 13 Athletics` checks, `30` slashing/force damage, or *Create Water*) so the flames don't jump the ditch into Tobias's grain shed.
    * **Clue & Reward**: Branden notes the 600-acre blaze started around `05:25 AM` right in the middle of the field *"like somebody dropped a glowing book on their walk into town—you'd never find it on foot in all this smoke; you'd have to fly over at dawn before it spread!"* Tobias rewards his **Subterranean Flour-Chute Key** and **Baker's Warmth Loaf** (`+5 Temp HP` & Cold Resistance).
-2. **🌾 South Gate Errand (`Hex 8, 11`): The Cornfield Scarecrow Snare** *(Given by Farmer Bran / Rebecca)*
-   * **Action**: Rescue 16-year-old apprentice *Young Tom* from an animated **Cornfield Scarecrow** (`CR 1`, `AC 11`, `HP 36`, **Vulnerable to Fire**, `DC 11 Wis` save vs paralyzing claws).
+2. **🌾 South Gate Errand (`Hex 8, 11`): The Cornfield Scarecrow Snare** *(Given by Tobias Miller / Rebecca)*
+   * **Action**: Rescue Tobias the Baker's 16-year-old apprentice *Young Tom* (sent south to Old Bran's sweetcorn fields for Solstice ears & cornmeal) from an animated **Cornfield Scarecrow** (`CR 1`, `AC 11`, `HP 36`, **Vulnerable to Fire**, `DC 11 Wis` save vs paralyzing claws).
    * **Clue & Reward**: Tom reveals the scarecrow twitched alive at dawn when a sulfurous chime echoed from the Southern Desert tombs. Rewards an *Ivory Cornucopia Whistle* and smoked solstice cheddar.
 3. **🏹 East Gate Errand (`Hex 9, 10`): East Highway Patrol & Snirk the Goblin** *(Given by Captain Rebecca)*
    * **Action**: Check on Corporal Harek's patrol, who have caught **Snirk the Goblin Scout** (`CR 1/4`, `AC 15`, `HP 7`) dangling upside-down in a boar snare after trying to steal strawberry tarts.

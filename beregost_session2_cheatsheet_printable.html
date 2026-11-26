@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beregost Session 2 (Loop 2) — Printable DM Cheat Sheet</title>
+  <style>
+    @page {
+      size: letter portrait;
+      margin: 0.35in 0.38in;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      color: #111;
+      background: #e9e5dc;
+      margin: 0;
+      padding: 18px 16px 36px 16px;
+      line-height: 1.29;
+      font-size: 9pt;
+    }
+    .toolbar {
+      max-width: 8.5in;
+      margin: 0 auto 14px auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #161b22;
+      color: #f0f6fc;
+      padding: 10px 14px;
+      border-radius: 8px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+    }
+    .btn {
+      background: #e3b341;
+      color: #111;
+      border: 1.5px solid #e3b341;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.82rem;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #e6edf3;
+      border: 1px solid #6e7681;
+      font-weight: 600;
+    }
+    .print-page {
+      max-width: 8.5in;
+      margin: 0 auto 20px auto;
+      background: #fff;
+      padding: 0.35in 0.38in;
+      border: 1.5px solid #333;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.14);
+      position: relative;
+    }
+    .page-badge {
+      position: absolute;
+      top: 6px;
+      right: 10px;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 7.4pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #666;
+      background: #f2f2f2;
+      border: 1px solid #ccc;
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+    header {
+      border-bottom: 3px double #111;
+      padding-bottom: 5px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 14pt;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      font-style: italic;
+      font-size: 8.4pt;
+      color: #333;
+    }
+    h2 {
+      font-size: 10.2pt;
+      text-transform: uppercase;
+      letter-spacing: 0.45px;
+      border-bottom: 1.5px solid #111;
+      padding-bottom: 2px;
+      margin: 9px 0 5px 0;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+    h2.first-heading { margin-top: 2px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 7px;
+      font-size: 8.2pt;
+    }
+    thead { display: table-header-group; }
+    tr { break-inside: avoid; page-break-inside: avoid; }
+    th, td {
+      border: 1px solid #444;
+      padding: 3.5px 5px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      background: #eaeaea;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 7.3pt;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .box {
+      border: 1.6px solid #111;
+      padding: 6px 10px;
+      margin-bottom: 7px;
+      background: #fafafa;
+      break-inside: avoid;
+      page-break-inside: avoid;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 0.95fr 1.3fr;
+      gap: 11px;
+      align-items: start;
+    }
+    .two-col-even {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      align-items: start;
+    }
+    .poem {
+      font-style: italic;
+      font-size: 8.7pt;
+      line-height: 1.4;
+      border-left: 2.5px solid #111;
+      padding-left: 8px;
+      margin: 0;
+    }
+    ul {
+      margin: 3px 0 0 0;
+      padding-left: 15px;
+      font-size: 8.1pt;
+      line-height: 1.3;
+    }
+    li { margin-bottom: 3px; }
+    li:last-child { margin-bottom: 0; }
+    .chk {
+      display: inline-block;
+      width: 9px;
+      height: 9px;
+      border: 1.3px solid #111;
+      margin-right: 4px;
+      vertical-align: -1px;
+    }
+    .tag {
+      display: inline-block;
+      border: 1px solid #222;
+      padding: 0 4px;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 6.9pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-radius: 2px;
+      margin-right: 3px;
+    }
+    @media print {
+      body { background: #fff; padding: 0; margin: 0; }
+      .toolbar, .page-badge { display: none !important; }
+      .print-page {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+      }
+      .page-break {
+        break-before: page;
+        page-break-before: always;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+      <a href="index.html" class="btn btn-outline">← Campaign Companion</a>
+      <span style="font-size:0.8rem; color:#8b949e;">Session 2 (Loop 2) DM Prep • 2 Clean Portrait Pages (1 Sheet Double-Sided)</span>
+    </div>
+    <button class="btn" onclick="window.print()">🖨️ Print Session 2 Cheat Sheet</button>
+  </div>
+
+  <!-- =========================================================
+       PAGE 1: START OF LOOP 2 — OLD JONAS, AURELIUS & ASH GROVE
+       ========================================================= -->
+  <section class="print-page">
+    <span class="page-badge">Page 1 of 2 • Loop 2 Opening, Aurelius &amp; Ash Grove</span>
+    <header>
+      <h1>Beregost Session 2 (Loop 2) — DM Table Cheat Sheet</h1>
+      <div class="subtitle">Starts at 06:00 AM Clocktower Reset • Tailored to Party's Session 1 Choices &amp; Planned Next Moves</div>
+    </header>
+
+    <div class="box" style="margin-bottom:6px;">
+      <strong style="font-size:8.4pt;">📍 WHERE SESSION 1 ENDED &amp; PARTY'S STATED PLAN:</strong>
+      <span style="font-size:8.1pt;">Party wiped to Archdruid Faelan at 11:25 AM (after detonating Aurelius's Crucible Charm at 11:20 AM) and reset to <strong>06:00 AM on the Clocktower Balcony</strong> (full HP/spells, loot cleared, memories kept). Their stated Loop 2 plan: <em>(1) Walk straight to the North Gate to grill Aurelius harder, (2) take the Crucible Charm, and (3) shoot it onto the Ash Grove "devil" on an arrow from &gt;85 ft away.</em></span>
+    </div>
+
+    <h2 class="first-heading">1. Mandatory Early Beat (06:05–06:20 AM): Intercept with Old Jonas!</h2>
+    <div class="box">
+      <div class="two-col">
+        <p class="poem">
+          "With six chimes the belfry wakes,<br/>
+          But doom is coming with no escape.<br/>
+          Only one narrow path can provide salvation,<br/>
+          Threading this needle stops the devil's elation.<br/><br/>
+          First east to the ice, then south to the sand,<br/>
+          Find the path to stop the devil's hand.<br/>
+          Blame not the angel for he is confused,<br/>
+          Led astray by the fiendish ruse."
+        </p>
+        <div>
+          <strong style="font-size:8.2pt; text-transform:uppercase;"><span class="chk"></span>Why He MUST Intersect Them Before North Gate:</strong>
+          <ul>
+            <li>They missed Old Jonas in Session 1 and are tunnel-visioned North! As they walk from the Clocktower past the Municipal Well/Bakery (<strong>06:05–06:15 AM</strong>), haggard Jonas tugs a PC's cloak and chants all 8 lines straight at them.</li>
+            <li><strong>If Shown Kindness (warm roll / DC 12 Persuasion or Insight):</strong> Jonas weeps: <em>"I burned my own mind to ash so the Pharaoh's sands couldn't steal those eight lines! <strong>Scribe Vane in Town Hall</strong> bought my scorched desert satchel!"</em> (Points them to <strong>Town Hall before 07:45 AM</strong> &amp; opens <strong>East → South</strong>!)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2>2. Grilling "Aurelius the Radiant" at North Gate (06:45–07:15 AM)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:27%;">What the Party Will Ask / Do</th>
+          <th style="width:43%;">Aurelius's Smooth, Rehearsed Reply</th>
+          <th style="width:30%;">Secret Tell / Monocle of Investigation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="chk"></span><strong>"Why did your charm blow up and kill us?!"</strong></td>
+          <td>Feigns solemn shock: <em>"Ah—you felt the fiend's death throes! The charm worked as intended, purging a corrupted vessel. Stand clear when the tether snaps—its dark fire lashes out when broken!"</em></td>
+          <td><strong>Insight (Adv w/ Monocle of Investigation, DC 14):</strong> His concern feels <em>rehearsed</em>; faint amusement flickers in his golden eyes—he is eager for the beast to die, not worried about them.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>"Forbidden by whom? Who are you?"</strong></td>
+          <td><em>"By the Concord of the Morning Spire. Celestial envoys may guide mortal champions, never spill infernal blood directly upon this soil."</em></td>
+          <td><strong>Religion / Insight (DC 14):</strong> "Concord of the Morning Spire" sounds archaic and subtly wrong—he dodges specific Lathanderite liturgy and smells faintly of <strong>cinnamon + sulfur</strong>.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>"Why do you cast no shadow? Come into the Cathedral!"</strong></td>
+          <td>Chuckles smoothly: <em>"Radiant envoys bend the solstice glare. Alas, I must keep watch at the road—do not waste precious minutes in temple halls while the beast wreaks havoc!"</em></td>
+          <td><strong>Hard Tell:</strong> Smoothly <strong>refuses to set foot on Cathedral steps</strong>. <strong>Remember New Canon:</strong> NO normal spell (*Detect Magic*, *Zone of Truth*, etc.) can unmask him—ONLY piercing his skin with a blessed weapon or under *Bless*!</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>"Where is this 'confused Angel'?"</strong></td>
+          <td><em>"Drifting west toward the sunlit sea cliffs, blinded by the devil's tether. Break the devil in the Ash Grove and the angel's mind clears!"</em></td>
+          <td><strong>Notice the Contradiction:</strong> Matches Jonas's *"Blame not the angel for he is confused"*—until they realize *which* creature is actually the Angel!</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>3. If They Shoot the Crucible Charm from &gt;85 ft (Ash Grove — Hex 7, 6)</h2>
+    <div class="box">
+      <div class="two-col-even">
+        <div>
+          <strong style="font-size:8.2pt; text-transform:uppercase;">What Happens at the Grove (10:30–11:20 AM):</strong>
+          <ul>
+            <li><strong>Dropping Archdruid Faelan's Name Early:</strong> Saying <em>"Archdruid Faelan"</em> before he introduces himself stuns him (<em>"How do you know my name?!"</em>) and earns Advantage on Persuasion—he explains the druids aren't summoning the beast, they're trying to <strong>contain it because it fell from the sky at dawn</strong>!</li>
+            <li><strong>Crucial Soft Clues Before the Shot:</strong> As they line up the arrow, the chained "devil" smells strongly of <strong>temple frankincense, roses &amp; morning rain</strong>—and cries telepathically in pained Celestial: <em>"Stop... the golden one lied... look to the sea...!"</em></li>
+            <li><strong>The Arrow Hits from 100 ft:</strong> The party survives! The 85-ft blast still vaporizes the inner druid circle and leaves the exact same glassed obsidian crater.</li>
+          </ul>
+        </div>
+        <div>
+          <strong style="font-size:8.2pt; text-transform:uppercase;">The Big Payoff — Proving the Trap Failed!</strong>
+          <ul>
+            <li><strong>Heat STILL Escalates (Even Faster!):</strong> By <strong>1:00 PM</strong> it still hits <strong>125°F sweltering</strong>, and by <strong>3:00 PM</strong> it hits <strong>175°F lethal</strong>! That proves 100% that <strong>killing the "devil" did NOT stop the heat</strong>—in fact, the True Angel's death broke the only thing slowing the solar siphon!</li>
+            <li><strong>Flight Rule Reminder (Gwen's <em>Polymorph</em> Quetzalcoatl &amp; Owl):</strong> Early-morning flight (06:00–10:00 AM) works great (1 hr Concentration, INT 2 for Quetzalcoatl). <strong>After 10:00 AM</strong>, violent upper-sky thermal updrafts make overland flight too dangerous/impossible.</li>
+            <li><strong>If They Head Back to Beregost at Noon:</strong> You finally get to run the <strong>1:00–5:30 PM Cathedral Crypt Evacuation &amp; "Daisies" Tragedy</strong> (see Page 2)!</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PAGE 2: FRESH UNEXPLORED LEADS + AFTERNOON CRYPT TRAGEDY
+       ========================================================= -->
+  <section class="print-page page-break">
+    <span class="page-badge">Page 2 of 2 • East, South, Town Mysteries &amp; Crypt Climax</span>
+
+    <h2 class="first-heading">4. Fresh Unexplored Branches (When They Pivot Away from North!)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:22%;">Branch &amp; Travel</th>
+          <th style="width:44%;">Scene, Stats &amp; Quick DCs</th>
+          <th style="width:34%;">Major Clue / Campaign Unlock</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="chk"></span><strong>EAST: Highway Patrol &amp; Snirk</strong><br/><em>Hex (9, 10) • 1 hr East</em></td>
+          <td>Corporal Harek's 3 guards have caught <strong>Snirk the Goblin Scout</strong> (CR 1/4, AC 15, HP 7) dangling upside-down in a boar snare after stealing tarts. Interrogate via <strong>DC 10 Persuasion/Intimidation</strong> or a pastry bribe.</td>
+          <td><strong>Opens Act II (East to the Ice!):</strong> Snirk sobs his entire goblin clan fled the eastern foothills at sunrise because <strong>White Dragon Rimefang</strong> woke on Frostpeak (Hex 17, 10)! (Also ties to Taerom's Dwarvenhold ballista tips!)</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>SOUTH: Tobias's Missing Apprentice</strong><br/><em>Hex (8, 11) • 1 hr South</em></td>
+          <td>Rescue Baker Tobias's 16-year-old apprentice <strong>Young Tom</strong> trapped in a wicker corn crib in Old Bran's sweetcorn maze by an animated <strong>Cornfield Scarecrow</strong> (CR 1, AC 11, HP 36, <strong>Vulnerable to Fire</strong>, DC 11 Wis vs paralyzing claws).</td>
+          <td><strong>Opens Act III (South to the Sand!):</strong> Tom reveals the scarecrow twitched alive at dawn when a sulfurous chime echoed out of the <strong>Southern Desert</strong> (Sunken Necropolis, Hex 12, 16). Reward: <em>Ivory Cornucopia Whistle</em> + cheddar.</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>TOWN HALL: Scribe Vane</strong><br/><em>Before 07:45 AM!</em></td>
+          <td><strong>Timing Twist:</strong> At <strong>07:45 AM</strong>, Aurelius corners Vane in an alley and casts <em>Dominate Person</em>. Visiting Vane <em>before</em> 07:45 AM (or breaking his charm with <em>Dispel Magic</em> / DC 15 Insight) lets him talk freely.</td>
+          <td>Reveals <strong>Brother Jonas's Scorched Final Diary Page</strong> (recording his self-inflicted memory-burn sacrifice) &amp; confirms the unabridged <strong>Golden Alabaster Tablets</strong> lie in the <strong>Southern Desert (Hex 12, 16)</strong>!</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>COBBLER'S LN: Garrick the Fence</strong><br/><em>Anytime before 11:15 AM</em></td>
+          <td>Shady dealer in Cobbler's Lane cellar (Barnaby Feldepost points to him if asked about Old Jonas). Barter via <strong>100 gp</strong> or <strong>DC 14 Persuasion/Intimidation</strong>. <em>(Note: charmed thugs try to murder him at 11:15 AM!)</em></td>
+          <td>Holds Jonas's <strong>Charcoal Rubbing of Stanza III</strong> (proving slaying the Eastern White Dragon frees <strong>Djinni Zephyrus</strong> whose Wish protects them inside the Southern Pharaoh's Tomb!).</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>5. Town Mysteries &amp; Owl Surveillance Payoffs (If They Stay in Beregost)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:16%;">Time / Spot</th>
+          <th style="width:46%;">What Happens (Owl Can Spot These!)</th>
+          <th style="width:38%;">Reward &amp; Clue If Caught</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="chk"></span><strong>08:45 AM</strong><br/>Smithy Coal-Yard</td>
+          <td>While Master Smith <strong>Taerom</strong> is out front shoeing caravan mules (08:30–08:50 AM), charmed town courier <strong>Vex</strong> scales the back Coal-Yard wall, puts Taerom's hound to sleep, and steals his <em>Weapon-Tempering Oil</em>.</td>
+          <td><strong>Free +1 Silvered/Adamantine Weapon Tempering</strong> (2 weapons) + <em>Potion of Greater Healing</em> + Vex testifies <strong>Aurelius had backwards Rakshasa hands at 07:15 AM!</strong></td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>10:15 AM</strong><br/>Cobbler's Lane</td>
+          <td>Blind herbalist <strong>Old Granny Morwen</strong> takes the Cobbler's Lane shortcut with her elixir basket; harbor cutthroat <strong>Dredge</strong> (CR 1/2, 27 HP) drops a flour sack over her head from the rafters to mug her.</td>
+          <td><strong>Potion of Heroism</strong> + <strong>2× Potions of Fire Resistance</strong> + Dredge's note sealed with a <strong>backwards wax thumbprint</strong> tipping off the <strong>11:15 AM ambush on Garrick</strong>!</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>10:00–11:30 AM</strong><br/>Carnival / Square</td>
+          <td><strong>Solstice Carnival</strong> (canonical 10:00 AM start) + <strong>11:00 AM High Sun Muster</strong> (250 gp payout; if the party didn't intervene, Taerom &amp; bruised Morwen publicly complain about the 08:45 &amp; 10:15 thefts here!).</td>
+          <td>Reminder: <strong>Taerom</strong> knows Rimefang woke on Frostpeak; <strong>Barnaby</strong> knows Rimefang sits on Djinni Zephyrus's brass urn; <strong>Tobias</strong> knows the 05:45 AM flying caravel bone heist!</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>6. If They Are in Town Past Noon: Evacuation &amp; 5:30 PM "Daisies" Climax!</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width:17%;">Time &amp; Heat</th>
+          <th style="width:43%;">Evacuation &amp; Surface Danger</th>
+          <th style="width:40%;">Townsfolk Beats &amp; Greedy Foil</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="chk"></span><strong>1:00–2:45 PM</strong><br/><em>Sweltering (125°F)</em></td>
+          <td>Heavy/medium armor <strong>DC 12 Con save</strong> vs Exhaustion. At <strong>1:00 PM</strong>, Sister Althea throws open the deep <strong>Song of the Morning Cathedral Crypts</strong>; Capt. Rebecca rings the bells and herds 50+ townsfolk underground (<strong>1:30–2:45 PM</strong>).</td>
+          <td><strong>Greedy Foil:</strong> Party sees <strong>Alderman Durlag Stonecrest</strong> slam <strong>Stonecrest Manor's</strong> iron gates on begging neighbors, hoarding ice &amp; gold inside his granite vault (door thermal-welds shut; suffocates at 3:30 PM).</td>
+        </tr>
+        <tr>
+          <td><span class="chk"></span><strong>3:00–5:25 PM</strong><br/><em>Lethal (175°F)</em></td>
+          <td><strong>MUST BE UNDERGROUND!</strong> Surface deals <strong>10d6 Fire/rd outdoors</strong> (1d10/rd indoors). Deep Cathedral sub-crypts are insulated (0 dmg)—until <strong>3:15 PM</strong>, when thermal expansion snaps the upper crypt blast-door crossbar!</td>
+          <td><strong>Tobias &amp; Rebecca's Stand:</strong> Rebecca braces her ruined war-knee against the scorching door; Tobias grabs the red-hot bar bare-handed (<em>"A baker's hands know a 500° oven!"</em>). Elorion sings a lullaby in the smoke.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="box">
+      <strong style="font-size:8.3pt;"><span class="chk"></span>🔥 3 PLAYER SELF-SACRIFICE STATIONS (3:15–5:30 PM) &amp; AUDIO CLIMAX:</strong>
+      <ul>
+        <li><strong>1. Hold the Red-Hot Crossbar:</strong> Take Tobias &amp; Rebecca's place (<strong>2d10 Fire/rd, no save</strong>) so the baker, captain, and last stragglers reach the deep sub-crypts alive.</li>
+        <li><strong>2. Shield the Cracked Belfry Air-Shaft:</strong> Wedge cloak &amp; body across the ember-raining grate above <strong>Little Maya</strong> &amp; the orphans (voluntary Exhaustion + 1d10 smoke/fire/rd)—right under the shaft when <em>"Daisies"</em> plays!</li>
+        <li><strong>3. Soul-Burn at Sister Althea's Altar → 5:30 PM Audio Cue:</strong> Pour Spell Slots/Hit Dice/HP into Althea's sun-disc to hold a cool pocket until <strong>5:30 PM</strong> → hit play on <code>530pm_crypt_tragedy.mp3</code> (0:53: coughing/rumble → unfiltered by :45 → <strong>BOOM</strong>) → 5:59 PM Whiteout → Loop 3 Reset!</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>
